@@ -142,6 +142,7 @@ def head(c, page, depth):
 <meta name="description" content="{e(page['desc'])}">
 <meta name="keywords" content="{e(page['keywords'])}">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="google-site-verification" content="fU2lqYzDNWrzfksv2M-7JnUH_YPVxpO9Hlq-vi2N9NU">
 <meta name="author" content="{e(c['brand_name'])}">
 <link rel="canonical" href="{url}">
 <link rel="alternate" hreflang="fa" href="{fa_url}">
