@@ -1,0 +1,38 @@
+# HyperFab (هایپرفب)
+
+> HyperFab is an online manufacturing platform in Tehran, Iran. It offers FDM and resin 3D printing, CNC machining, metal and non-metal laser cutting and sheet metal bending, with an instant online price estimator (STL/3MF for 3D printing, DXF for laser cutting and bending) and "Tekeyab", a service for buying small, cut-to-size pieces of industrial material. The main website, where all ordering happens, is https://hyperfab.ir (Persian). This GitHub Pages site is HyperFab's official overview in Persian and English.
+
+Key facts:
+- Name: HyperFab; Persian: هایپرفب. Main website: https://hyperfab.ir
+- Location: Unit 1, No. 39, corner of Tehrani Alley, Safi-Alishah St., Pich-e Shemiran, Enghelab St., Tehran, Iran
+- Phone: +98 21 7752 7438; mobile, Bale and Telegram: +98 996 223 3898; email: info@hyperfab.ir
+- Hours: Saturday–Wednesday 09:00–17:00, Thursday 09:00–13:00 (Tehran time); online ordering 24/7
+- Lead time: most orders within 3 working days; minimum order: one part; ships across Iran (Post, Tipax, Snappbox); free pickup in Tehran
+- Instant online pricing: FDM 3D printing (STL, 3MF) and laser cutting / bending (DXF). Pricing runs in the customer's browser; the file is uploaded only when the order is placed. Resin printing and CNC machining are quoted after engineer review.
+- Team: three engineers — two industrial design graduates of Sharif University of Technology and a manufacturing engineering specialist.
+
+## Overview pages (this site)
+
+- [HyperFab — home (Persian)](https://hyperfab-ir.github.io/): all services, the price estimator, Tekeyab, team, FAQ and contact details
+- [HyperFab — home (English)](https://hyperfab-ir.github.io/en/): the same content in English
+- [Online price estimator (Persian)](https://hyperfab-ir.github.io/price-estimator/): how instant 3D printing and laser cutting prices are calculated, DFM checks, file formats per service, FAQ
+- [Online price estimator (English)](https://hyperfab-ir.github.io/en/price-estimator/)
+- [Tekeyab — buy small pieces of industrial material (Persian)](https://hyperfab-ir.github.io/tekeyab/): materials, shapes and sizes, request process, tracking, FAQ
+- [Tekeyab (English)](https://hyperfab-ir.github.io/en/tekeyab/)
+
+## Services on the main website (hyperfab.ir)
+
+- [Order a part / instant quote](https://hyperfab.ir/order/): upload a file, choose the process and get a price
+- [3D printing — FDM and resin](https://hyperfab.ir/services/3d-printing/): PLA, PETG, ABS, TPU; 0.1–0.3 mm layers; resin on a 16K printer (about 14 × 19 µm XY), 0.02–0.1 mm layers
+- [CNC machining](https://hyperfab.ir/services/cnc/): milling and turning of POM/PE, PTFE, PA6 nylon, PMMA, POM-C and brass; ±0.05 mm tolerance
+- [Metal laser cutting](https://hyperfab.ir/services/laser-metal/): mild steel, stainless steel, aluminium, galvanised; fibre laser with nitrogen; ±0.1 mm; DXF with instant price
+- [Non-metal laser cutting and engraving](https://hyperfab.ir/services/laser-nonmetal/): acrylic, MDF, wood, leather, felt, foam; CO2 laser; ±0.1 mm
+- [Sheet metal bending](https://hyperfab.ir/services/bending/): press brake, V-die air bending, ±1°; combined with laser cutting
+- [Tekeyab](https://hyperfab.ir/tekeyab/): sheet, bar, shaft, flat bar, tube and profile in aluminium, stainless steel, steel, copper, brass and engineering plastics; cut to size; courier in Tehran, pickup or shipping to other cities
+
+## Optional
+
+- [HyperFab Academy](https://hyperfab.ir/academy/): Persian articles on choosing a manufacturing process, design tips and how to order
+- [Portfolio](https://hyperfab.ir/works/)
+- [Shop](https://hyperfab.ir/shop/): printed magnetic puzzles, articulated toys and STL files
+- [Contact](https://hyperfab.ir/contact/)

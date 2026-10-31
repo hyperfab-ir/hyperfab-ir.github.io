@@ -1,0 +1,90 @@
+/* =====================================================================
+   hyperfab-ir.github.io — افزوده‌ها روی قالب هایپرفب (hyperfab.css)
+   قالب بی‌تغییر می‌ماند؛ اینجا فقط بخش‌هایی است که سایت اصلی ندارد
+   (نوار منشأ، شرح خدمات، معرفی تخمین‌گر و تکه‌یاب) و اصلاح نسخه‌ی
+   انگلیسی چپ‌به‌راست. همه‌ی اندازه‌ها از توکن‌های :root قالب می‌آیند.
+   ===================================================================== */
+
+.wrap{max-width:var(--hf-w-page);padding-inline:var(--sp-5)}
+@media(max-width:600px){.wrap{padding-inline:var(--sp-4)}}
+
+.skip-link{position:absolute;inset-inline-start:var(--sp-3);top:-60px;z-index:200;background:var(--accent);color:var(--card);padding:var(--sp-2) var(--sp-4);border-radius:var(--r-s);font-weight:700}
+.skip-link:focus{top:var(--sp-3)}
+
+/* سربرگ: پیوند صفحه‌ی جاری و دکمه‌ی زبان */
+.main-nav a[aria-current="page"]{color:var(--card);background:rgba(255,255,255,.08)}
+.head-actions{display:flex;align-items:center;gap:var(--sp-2)}
+.lang-btn{font-family:var(--mono);font-weight:700;font-size:var(--fs-2);color:var(--card)}
+
+/* نوار منشأ زیر سربرگ: این صفحه معرفی است، سفارش در hyperfab.ir */
+.origin-bar{background:var(--navy2);border-bottom:1px solid rgba(255,255,255,.07);color:#a7afbe;font-size:var(--fs-2);line-height:1.9}
+.origin-bar .wrap{padding-block:var(--sp-2)}
+.origin-bar a{color:#ff7183;font-weight:600;font-family:var(--mono)}
+.origin-bar a:hover{text-decoration:underline}
+
+/* بخش «در یک نگاه» */
+.summary-panel .about-body p{font-size:var(--fs-4)}
+.summary-panel .about-body a,.prose a,.svc-detail-body a:not(.btn-red),.feature-text a:not(.btn-red){color:var(--accent);font-weight:600}
+
+/* معرفی تخمین‌گر و تکه‌یاب در صفحه‌ی اصلی */
+.feature{display:grid;grid-template-columns:1.25fr .75fr;gap:var(--sp-7);align-items:start}
+.feature-text>p{color:var(--ink-soft);line-height:2.1;margin:0 0 var(--sp-4);max-width:78ch}
+.feature-text b{color:var(--ink)}
+.feature .hfs-dg{margin:var(--sp-5) 0}
+/* تصویرهای این بخش پس‌زمینه‌ی شفاف دارند و برای هیروی سرمه‌ای ساخته شده‌اند */
+.feature-pic{margin:0;background:radial-gradient(120% 140% at 80% 0%,#232a3d 0%,var(--navy2) 45%,var(--navy) 100%);border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh-2);justify-self:center;max-width:420px;width:100%}
+.feature-pic img{width:100%;height:auto;max-height:560px;object-fit:contain;filter:drop-shadow(0 18px 36px rgba(0,0,0,.45))}
+.feature-pic figcaption{padding:var(--sp-3) var(--sp-4);font-size:var(--fs-2);color:#a7afbe;line-height:1.9;border-top:1px solid rgba(255,255,255,.08)}
+@media(max-width:960px){.feature{grid-template-columns:1fr;gap:var(--sp-5)}}
+
+.svc-links{display:flex;flex-wrap:wrap;gap:var(--sp-3) var(--sp-5);align-items:center;margin-top:var(--sp-5)}
+.svc-link2{color:var(--accent);font-weight:700;font-size:var(--fs-3)}
+.svc-link2:hover{text-decoration:underline}
+[dir="ltr"] .svc-link2{unicode-bidi:plaintext}
+
+/* شرح کامل خدمات */
+.svc-details{display:grid;gap:var(--sp-5)}
+.svc-detail{display:grid;grid-template-columns:120px 1fr;gap:var(--sp-5);background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-6);scroll-margin-top:calc(var(--hf-head-h) + var(--sp-3))}
+.svc-detail-pic img{width:110px;height:110px;object-fit:contain}
+.svc-detail-body h3{font-size:var(--fs-7);margin-bottom:var(--sp-3)}
+.svc-detail-body p{color:var(--ink-soft);line-height:2.1;margin:0 0 var(--sp-3);max-width:90ch}
+.svc-detail-body b{color:var(--ink)}
+.svc-specs{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:0 var(--sp-6);margin-top:var(--sp-4);border-top:1px solid var(--line)}
+.svc-specs .hfs-tech-row{border-bottom:1px solid var(--line)}
+@media(max-width:700px){
+	.svc-detail{grid-template-columns:1fr;padding:var(--sp-5) var(--sp-4)}
+	.svc-detail-pic img{width:80px;height:80px}
+}
+
+/* صفحه‌های تخمین‌گر و تکه‌یاب */
+.prose{max-width:var(--hf-w-read)}
+.prose p{color:var(--ink-soft);line-height:2.1;margin:0 0 var(--sp-4);font-size:var(--fs-4)}
+.prose b{color:var(--ink)}
+.prose + .hfs-why,.prose + .hfs-adv,.prose + .video-card{margin-top:var(--sp-6)}
+.hfs-tbl td,.hfs-tbl th{line-height:1.9}
+.hfs-head + .hfs-note,.hfs-tbl-wrap + .hfs-note{margin-top:var(--sp-4)}
+
+.video-card{display:grid;grid-template-columns:150px 1fr;gap:var(--sp-5);align-items:center;max-width:620px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-4);box-shadow:var(--sh-1);transition:.15s}
+.section-alt .video-card{background:var(--bg)}
+.video-card:hover{box-shadow:var(--sh-2)}
+.video-card img{width:150px;height:auto;border-radius:var(--r-m)}
+.video-card span{display:flex;flex-direction:column;gap:var(--sp-2);color:var(--ink-soft);font-size:var(--fs-3)}
+.video-card b{color:var(--ink);font-size:var(--fs-5)}
+.video-card em{font-style:normal;color:var(--accent);font-weight:700}
+
+.team-stats{max-width:var(--hf-w-read);margin-inline:auto}
+@media(max-width:700px){.hf-ab-stats{grid-template-columns:repeat(2,1fr)}}
+.center-cta{text-align:center;margin-top:var(--sp-6)}
+#contact .hf-contact a{color:var(--accent)}
+
+/* =====================================================================
+   نسخه‌ی انگلیسی (چپ‌به‌راست)
+   قالب برای راست‌چین نوشته شده؛ اینجا فقط جاهایی برعکس می‌شوند که
+   جهت را صریح نوشته‌اند.
+   ===================================================================== */
+[dir="ltr"] .kicker{text-align:left}
+[dir="ltr"] .about-panel .kicker{text-align:center}
+[dir="ltr"] .hfs-hero::after{left:auto;right:-6%}
+[dir="ltr"] .taglist .tl-h{margin-inline-end:4px}
+[dir="ltr"] body{letter-spacing:0}
+[dir="ltr"] .hfs-faq summary,[dir="ltr"] .hfs-faq .ans{text-align:left}
