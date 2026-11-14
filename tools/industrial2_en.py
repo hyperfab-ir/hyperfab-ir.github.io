@@ -7,6 +7,9 @@ from industrial2_fa import IMG
 BATCH_NOTE = ('<b>For production runs only:</b> this service is for batch production; one-off parts are accepted only rarely. '
               'A suitable quantity is recommended after reviewing the project.')
 
+ORDER_PHONE = 'By phone (' + TEL_EN + ') or Bale (@hyperfab_pro)'
+LOCATION = 'Tehran, Iran'
+
 
 def svc(name, alt, stype, path, desc):
     return [{'@type': 'Service', 'name': name, 'alternateName': alt, 'serviceType': stype, 'url': SITE + path,
@@ -19,6 +22,19 @@ def hero_btns():
 
 WELDING = {
     'depth': 2,
+    'answer': ('<b>TIG and MIG welding of stainless steel and 6000-series aluminium</b>, including 6061 and 6063, is offered by HyperFab, '
+               'a manufacturing company in Tehran, Iran, together with fabrication of welded machine structures and large platform structures '
+               'to the client’s approved drawings. VT, PT and phased-array ultrasonic (PAUT) weld testing is available on request, and HyperFab '
+               'has built many units for the medical and marine industries. Welding projects are priced by material, weld length and type, '
+               'structure size and requested tests; call ' + TEL_EN + '.'),
+    'key_facts': [
+        ('Service', 'TIG and MIG (argon-shielded) welding and welded fabrication'),
+        ('Materials', 'Stainless steel and 6000-series aluminium (6061, 6063)'),
+        ('Weld testing', 'VT, PT, PAUT and other tests on request'),
+        ('Pricing model', 'By material, weld length and type, structure size and requested tests'),
+        ('Ordering', ORDER_PHONE),
+        ('Location', LOCATION),
+    ],
     'hero': {
         'crumb': 'Welding & Welded Structures',
         'h1': '<em>TIG and MIG welding</em><br>Stainless steel, aluminium and welded structures',
@@ -31,16 +47,19 @@ WELDING = {
                   ('search', 'VT · PT · PAUT', '', 'weld testing on request'), ('shield', '1', 'owner', 'from drawing to delivery')],
     },
     'sections': [
-        {'kicker': 'WHAT WE DO', 'title': 'Welding and welded fabrication at HyperFab', 'id': 'what',
+        {'kicker': 'WHAT WE DO', 'title': 'TIG or MIG welding for stainless steel and aluminium?', 'id': 'what',
+         'sub': 'TIG gives clean, precise welds on thin sheet and sensitive parts; MIG is faster for long and structural welds. HyperFab does both on stainless steel and 6000-series aluminium.',
          'paras': [
-             'Argon-shielded welding — <b>TIG</b> (GTAW) and <b>MIG</b> (GMAW) — is the main way to join stainless steel and aluminium in machine and equipment building. TIG gives clean, precise welds on thin sheet and sensitive parts; MIG is faster for long and structural welds. HyperFab does both on <b>stainless steel</b> and <b>6000-series aluminium</b>.',
+             'Argon-shielded welding — <b>TIG</b> (GTAW) and <b>MIG</b> (GMAW) — is the main way to join <b>stainless steel</b> and <b>6000-series aluminium</b> in machine and equipment building.',
              'HyperFab’s work is not just laying welds; it is building and assembling the project from drawing to delivery. That covers cutting and preparing parts, fixturing, welding with distortion control, weld finishing and testing. HyperFab has built many units for the <b>medical</b> and <b>marine</b> industries, where weld cleanliness and corrosion resistance are critical.',
              'The experience goes beyond small parts. HyperFab has built large platform structures, including a framed chassis mounted on wheels that runs on rails — a structure where flatness, alignment and dimensional accuracy over long lengths decide everything.',
+             'If a welded part also needs a finish, it can be <a href="../powder-coating/">powder coated at HyperFab</a> and delivered as a finished part in one place. Flat sheet parts can also be ordered through <a href="https://hyperfab.ir/services/laser-metal/">metal laser cutting on hyperfab.ir</a>.',
          ],
          'gallery': [('assets/img/works/flange-steel-2.jpg', 'Stainless sealing assembly: drawing, parts and assembly'),
                      ('assets/img/works/flange-steel-3.jpg', 'AISI 304 parts of the same assembly before welding'),
                      ('assets/img/real-pt-test.jpg', 'PT test of the welds on the same assembly')]},
-        {'kicker': 'SERVICES', 'title': 'HyperFab welding services', 'id': 'scope',
+        {'kicker': 'SERVICES', 'title': 'Which welding services does HyperFab offer?', 'id': 'scope',
+         'sub': 'TIG welding of stainless steel, TIG and MIG welding of 6000-series aluminium, welded machine structures, large platform structures and weld testing on request.',
          'adv': [
              ('sparkle', 'TIG welding of stainless steel', 'Clean, precise welds on stainless steel for medical, food and marine equipment, with heat control to preserve corrosion resistance.'),
              ('layers', '6000-series aluminium welding', 'TIG and MIG welding of 6000-series alloys such as 6061 and 6063, for chassis, frames and light structures.'),
@@ -50,13 +69,13 @@ WELDING = {
              ('search', 'Weld testing', 'Visual testing (VT), liquid penetrant (PT), phased-array ultrasonics (PAUT) and other tests on request.'),
          ],
          'figure': {'img': IMG['tig'], 'alt': 'TIG welding on a stainless steel vessel', 'caption': 'TIG welding on stainless steel.'}},
-        {'kicker': 'YOUR DESIGN', 'title': 'Built to your drawings', 'id': 'design',
+        {'kicker': 'YOUR DESIGN', 'title': 'Does HyperFab design the welded structure?', 'id': 'design',
          'paras': [
-             'For welded structures, the structural design is the client’s, and HyperFab fabricates to your approved drawings. Before work starts, the drawings are reviewed for manufacturability: welding sequence, joint access, distortion control and tolerances that can realistically be held. Anything worth flagging is discussed with you before fabrication.',
+             'No. For welded structures, the structural design is the client’s, and HyperFab fabricates to your approved drawings. Before work starts, the drawings are reviewed for manufacturability: welding sequence, joint access, distortion control and tolerances that can realistically be held. Anything worth flagging is discussed with you before fabrication.',
              'For large and platform structures, complete approved drawings are essential before fabrication starts. HyperFab takes responsibility for fabrication, follow-up and quality control through to delivery.',
          ]},
-        {'kicker': 'WELD TESTING', 'title': 'Weld tests', 'id': 'testing',
-         'sub': 'Tests are carried out on request, to suit the project’s requirements.',
+        {'kicker': 'WELD TESTING', 'title': 'Which weld tests are available?', 'id': 'testing',
+         'sub': 'Visual testing (VT), liquid penetrant testing (PT), phased-array ultrasonic testing (PAUT) and other tests, carried out on request to suit the project’s requirements.',
          'table': [
              ('Test', 'What it checks'),
              ('VT — visual testing', 'Weld shape and size, surface cracks, undercut, spatter and visible defects'),
@@ -65,7 +84,8 @@ WELDING = {
              ('Other tests', 'As the project and client require'),
          ],
          'figure': {'img': IMG['ndt'], 'alt': 'Ultrasonic weld testing', 'caption': 'Ultrasonic testing finds internal weld defects.'}},
-        {'kicker': 'HOW IT WORKS', 'title': 'How a welding project runs', 'id': 'steps',
+        {'kicker': 'HOW IT WORKS', 'title': 'How is a welding project quoted and run?', 'id': 'steps',
+         'sub': 'Send drawings, material, quantity and required tests; the job is priced by material, weld length and type, structure size and requested tests after a manufacturability review.',
          'steps': [
              ('Send drawings', 'Send the structure or part drawings, material, quantity and required tests, or describe them by phone.'),
              ('Manufacturability review', 'Welding sequence, joint access and distortion control are reviewed.'),
@@ -73,7 +93,8 @@ WELDING = {
              ('Fabrication and welding', 'Parts are prepared, fixtured, welded and finished as needed.'),
              ('Testing and delivery', 'Requested tests are carried out and the structure is delivered.'),
          ]},
-        {'kicker': 'WHY HYPERFAB', 'title': 'Why trust HyperFab with welding', 'id': 'why',
+        {'kicker': 'WHY HYPERFAB', 'title': 'Why choose HyperFab for welding?', 'id': 'why',
+         'sub': 'Welding planned before work starts, experience in the medical and marine industries, and weld quality proven by testing.',
          'why': [
              ('file', 'Engineering before welding', 'Welding sequence and fixturing are planned before work starts so the structure stays flat and true to the drawing.'),
              ('shield', 'Experience in demanding industries', 'Many units for medical and marine use, plus large platform structures on wheels and rails.'),
@@ -81,12 +102,15 @@ WELDING = {
          ]},
     ],
     'faq': [
-        ('Does HyperFab do TIG welding of stainless steel?', 'Yes. HyperFab does TIG and MIG welding of stainless steel and has built many units for the medical and marine industries. Stainless welded structures are fabricated and assembled from drawing to delivery.'),
-        ('Do you weld 6061 and 6063 aluminium?', 'Yes. TIG and MIG welding of 6000-series aluminium, including 6061 and 6063, for chassis, frames and light structures.'),
-        ('TIG or MIG — which is better?', 'TIG gives cleaner, more precise welds and suits thin sheet, cosmetic parts and medical and food equipment. MIG is faster and more economical for long and structural welds. The right process is recommended by material, thickness and use.'),
-        ('Do you design the structure too?', 'No. Structural design is the client’s and HyperFab fabricates to the approved drawings. The drawings are reviewed for manufacturability before fabrication and any issues are discussed with you.'),
-        ('Which weld tests do you offer?', 'Visual testing (VT), liquid penetrant (PT), phased-array ultrasonics (PAUT) and other tests, on request and to suit the project’s requirements.'),
-        ('Do you build large structures?', 'Yes. HyperFab has built large platform structures, including a framed chassis mounted on wheels that runs on rails.'),
+        ('Does HyperFab do TIG welding of stainless steel?', 'Yes. HyperFab, based in Tehran, Iran, does TIG and MIG welding of stainless steel and has built many units for the medical and marine industries. Stainless welded structures are fabricated and assembled from drawing to delivery.'),
+        ('Does HyperFab weld 6061 and 6063 aluminium?', 'Yes. HyperFab does TIG and MIG welding of 6000-series aluminium, including 6061 and 6063, for chassis, frames and light structures.'),
+        ('TIG or MIG welding for stainless steel — which is better?', 'TIG gives cleaner, more precise welds and suits thin sheet, cosmetic parts and medical and food equipment. MIG is faster and more economical for long and structural welds. HyperFab does both and recommends the right process by material, thickness and use.'),
+        ('How is welding priced at HyperFab?', 'HyperFab prices a welding project by material, weld length and type, structure size and the weld tests requested. The quotation follows a manufacturability review of your drawings.'),
+        ('What should I send for a welding quote?', 'Send HyperFab the structure or part drawings, the material, the quantity and any weld tests you need, or describe them by phone on ' + TEL_EN + '.'),
+        ('Does HyperFab design the welded structure?', 'No. Structural design is the client’s and HyperFab fabricates to the approved drawings. The drawings are reviewed for manufacturability before fabrication and any issues are discussed with you.'),
+        ('Which weld tests does HyperFab offer?', 'HyperFab offers visual testing (VT), liquid penetrant testing (PT), phased-array ultrasonic testing (PAUT) and other tests, on request and to suit the project’s requirements.'),
+        ('Does HyperFab build large welded structures?', 'Yes. HyperFab has built large platform structures, including a framed chassis mounted on wheels that runs on rails.'),
+        ('Where is HyperFab’s welding service based?', 'HyperFab is based in Tehran, Iran. Welding projects are discussed and quoted by phone on ' + TEL_EN + ' or on Bale (@hyperfab_pro).'),
     ],
     'cta_h': 'Tell us about your welding project',
     'cta_p': 'Send the structure drawings or call. HyperFab’s industrial projects specialist answers by phone.',
@@ -98,6 +122,19 @@ WELDING = {
 
 TURNING = {
     'depth': 2,
+    'answer': ('<b>Batch CNC turning</b> is the production of rotational parts — shafts, bushings, pins, nozzles, fittings and mating parts — '
+               'in runs where every part must be as good as the approved first article. HyperFab, a manufacturing company in Tehran, Iran, '
+               'produces batch turned parts to drawing in brass, MO40 (42CrMo4) and CK45 (C45) steel and other metals, with each part’s '
+               'critical points engineered before production. Pricing is by material, complexity, tolerances and quantity and is quoted '
+               'after drawing review; call ' + TEL_EN + '.'),
+    'key_facts': [
+        ('Service', 'Batch CNC turning to drawing, for production runs'),
+        ('Materials', 'Brass, MO40 (42CrMo4), CK45 (C45), stainless steel, aluminium and other metals'),
+        ('Quality control', 'First-article approval and dimensional inspection'),
+        ('Pricing model', 'By material, complexity, tolerances and quantity, after drawing review'),
+        ('Ordering', ORDER_PHONE),
+        ('Location', LOCATION),
+    ],
     'hero': {
         'crumb': 'Batch CNC Turning',
         'h1': '<em>CNC turning</em> of industrial parts<br>Production runs with proven precision',
@@ -110,7 +147,7 @@ TURNING = {
                   ('layers', 'PTFE · 304', '', 'PTFE and stainless'), ('file', '1st', 'article', 'approved before the run')],
     },
     'sections': [
-        {'kicker': 'WHAT WE DO', 'title': 'Batch CNC turning at HyperFab', 'id': 'what',
+        {'kicker': 'WHAT WE DO', 'title': 'What is batch CNC turning?', 'id': 'what',
          'paras': [
              'CNC turning is the main way to make rotational parts: shafts, bushings, pins, nuts, nozzles, fittings and parts that must fit precisely into each other. In batch production, the real challenge is not making one good part. It is making hundreds or thousands of parts that are all exactly that good part.',
              'HyperFab has produced batch turned parts for a long time. They range from <b>brass parts with fit tolerances</b> that must mate with each other to <b>gauge parts</b> in <b>MO40</b> alloy steel and <b>CK45</b> steel. They were made to high precision and approved by the customers.',
@@ -123,7 +160,8 @@ TURNING = {
                      ('assets/img/works/steel-bush-1.jpg', 'AISI 304 bushing with precise steps and grooves'),
                      ('assets/img/works/flange-steel-4.jpg', 'Turning an AISI 304 stainless part'),
                      ('assets/img/works/misc-parts-1.jpg', 'Precision brass, stainless and polymer parts')]},
-        {'kicker': 'MATERIALS & PARTS', 'title': 'Materials and parts we turn', 'id': 'scope',
+        {'kicker': 'MATERIALS & PARTS', 'title': 'Which materials and parts does HyperFab turn?', 'id': 'scope',
+         'sub': 'Brass, MO40 (42CrMo4) and CK45 (C45) steel, stainless steel, aluminium and other metals — for mating parts, gauges, shafts, pins, bushings and fittings.',
          'adv': [
              ('coin', 'Brass parts', 'Brass bushings, nozzles, fittings, pins and mating parts with fit tolerances and a clean finish.'),
              ('wrench', 'MO40 steel (42CrMo4)', 'Chromium-molybdenum alloy steel for loaded parts and gauges, with high strength and toughness.'),
@@ -132,7 +170,8 @@ TURNING = {
              ('ruler', 'Mating parts', 'Sliding and press fits between parts, with control of critical diameters and concentricity.'),
              ('cube', 'Other metals', 'Stainless steel, aluminium and other steels, depending on the project.'),
          ]},
-        {'kicker': 'PRECISION', 'title': 'How precision is held across a run', 'id': 'precision',
+        {'kicker': 'PRECISION', 'title': 'How is precision held across a production run?', 'id': 'precision',
+         'sub': 'By engineering the drawing before production, briefing the machinist on every critical point, approving a first article and inspecting dimensions during production and before delivery.',
          'checks': [
              '<b>Drawing engineering before production:</b> identifying fit surfaces, critical dimensions and measurement datums.',
              '<b>Technical briefing for the machinist:</b> the accuracy of each critical point, the operation sequence and the measurement method.',
@@ -141,12 +180,13 @@ TURNING = {
              '<b>Dimensional inspection</b> during production and before delivery.',
              '<b>Suitable packing</b> so precision fit surfaces are not damaged.',
          ]},
-        {'kicker': 'MORE THAN TURNING', 'title': 'After turning', 'id': 'after',
+        {'kicker': 'MORE THAN TURNING', 'title': 'Can turned parts be plated, coated or welded?', 'id': 'after',
          'paras': [
-             'A turned part usually needs a finish or assembly too. At HyperFab you can include <a href="../plating-anodizing/">silver and gold plating, anodizing and chromate</a>, <a href="../powder-coating/">powder coating</a> and <a href="../welding/">welding</a> in the same project, and receive the finished, ready-to-use part.',
+             'Yes. A turned part usually needs a finish or assembly too. At HyperFab you can include <a href="../plating-anodizing/">silver and gold plating, anodizing and chromate</a>, <a href="../powder-coating/">powder coating</a> and <a href="../welding/">welding</a> in the same project, and receive the finished, ready-to-use part.',
              'For one-off parts and prototypes, see <a href="https://hyperfab.ir/services/cnc/">CNC machining on the HyperFab website</a>.',
          ]},
-        {'kicker': 'HOW IT WORKS', 'title': 'How a batch turning order runs', 'id': 'steps',
+        {'kicker': 'HOW IT WORKS', 'title': 'How does a batch turning order work?', 'id': 'steps',
+         'sub': 'Send a dimensioned drawing with tolerances, the material and the quantity; after engineering review and a quotation, a first article is made for your approval before the run starts.',
          'steps': [
              ('Send the drawing', 'Send a dimensioned drawing with tolerances, the material and the quantity, or describe them by phone.'),
              ('Engineering review', 'Fit surfaces and critical dimensions are identified and production notes are set.'),
@@ -156,12 +196,14 @@ TURNING = {
          ]},
     ],
     'faq': [
-        ('Does HyperFab do batch CNC turning?', 'Yes. HyperFab produces batch turned parts to drawing. Examples include brass parts with fit tolerances and gauge parts in MO40 and CK45 steel, made to high precision and approved by the customers.'),
-        ('Do you turn MO40 and CK45 steel?', 'Yes. MO40 (equivalent to 42CrMo4) and CK45 (equivalent to C45) are among the materials HyperFab has used for gauge parts and batch industrial parts.'),
-        ('Do you make precision mating brass parts?', 'Yes. Brass parts that must fit into each other with sliding or press fits are one of HyperFab’s core experiences. Critical diameters and concentricity are engineered before production and checked during it.'),
-        ('Do you turn single parts?', 'This service is for production runs. For single parts and prototypes, see CNC machining on hyperfab.ir.'),
-        ('How is batch turning priced?', 'By material, part complexity, tolerances and quantity. The production method and precision level are matched to the part’s requirements, so the price matches its importance and precision.'),
-        ('Can you plate or coat the parts too?', 'Yes. Silver and gold plating, anodizing and chromate, and powder coating are also available at HyperFab, and the finished part is delivered.'),
+        ('Does HyperFab do batch CNC turning?', 'Yes. HyperFab, based in Tehran, Iran, produces batch turned parts to drawing. Examples include brass parts with fit tolerances and gauge parts in MO40 and CK45 steel, made to high precision and approved by the customers.'),
+        ('Does HyperFab turn MO40 and CK45 steel?', 'Yes. MO40 (equivalent to 42CrMo4) and CK45 (equivalent to C45) are among the materials HyperFab has used for gauge parts and batch industrial parts.'),
+        ('Does HyperFab make precision mating brass parts?', 'Yes. Brass parts that must fit into each other with sliding or press fits are one of HyperFab’s core experiences. Critical diameters and concentricity are engineered before production and checked during it.'),
+        ('How is batch CNC turning priced?', 'HyperFab prices batch turning by material, part complexity, tolerances and quantity, after reviewing the drawing. The production method and precision level are matched to the part’s requirements, so the price matches its importance and precision.'),
+        ('Is there a minimum quantity for batch CNC turning?', 'HyperFab’s batch turning service is for production runs; one-off parts are accepted only rarely, and a suitable quantity is recommended after reviewing the project. For single parts and prototypes, see CNC machining on hyperfab.ir.'),
+        ('What should I send for a CNC turning quote?', 'Send HyperFab a dimensioned drawing with tolerances, the material and the quantity, or describe them by phone on ' + TEL_EN + '. Fit surfaces and critical dimensions are identified in the engineering review before the quotation.'),
+        ('Can HyperFab plate or coat turned parts?', 'Yes. Silver and gold plating, anodizing and chromate, and powder coating are also available at HyperFab, and the finished part is delivered.'),
+        ('Where is HyperFab’s batch CNC turning service based?', 'HyperFab is based in Tehran, Iran. Batch turning projects are discussed by phone on ' + TEL_EN + ' or on Bale (@hyperfab_pro), and a first article is approved before each production run.'),
     ],
     'cta_h': 'Send the drawing of your batch part',
     'cta_p': 'Send the drawing with tolerances, material and quantity, or call. HyperFab’s industrial projects specialist answers by phone.',
@@ -172,6 +214,18 @@ TURNING = {
 
 EXTRUSION = {
     'depth': 2,
+    'answer': ('<b>Custom aluminium extrusion</b> makes long aluminium profiles with your own constant cross-section by pushing a hot billet '
+               'through a dedicated steel die. HyperFab, a manufacturing company in Tehran, Iran, specialises in aluminium extrusion: you have '
+               'the required tonnage and pay for the die, and HyperFab’s engineering team handles section consultation, die making, profile '
+               'production, quality control and delivery. Die cost and profile price are quoted separately; call ' + TEL_EN + '.'),
+    'key_facts': [
+        ('Service', 'Custom aluminium profile extrusion with a dedicated die'),
+        ('Material', 'Aluminium only'),
+        ('Minimum order', 'By tonnage, advised after section consultation'),
+        ('Pricing model', 'Die cost plus profile price by alloy, weight and tonnage, quoted separately'),
+        ('Ordering', ORDER_PHONE),
+        ('Location', LOCATION),
+    ],
     'hero': {
         'crumb': 'Aluminium Extrusion',
         'h1': '<em>Aluminium profile extrusion</em><br>Your cross-section, with a dedicated die',
@@ -184,14 +238,15 @@ EXTRUSION = {
                   ('wrench', 'Die', 'tooling', 'dedicated to your profile'), ('shield', '1', 'owner', 'from consultation to delivery')],
     },
     'sections': [
-        {'kicker': 'WHAT IT IS', 'title': 'Aluminium extrusion at HyperFab', 'id': 'what',
+        {'kicker': 'WHAT IT IS', 'title': 'What is aluminium extrusion?', 'id': 'what',
          'paras': [
              '<b>Aluminium extrusion</b> pushes a hot aluminium billet under pressure through a steel die to make a long profile with a constant cross-section. Almost any section you can draw can be made with a dedicated die: solid, hollow, slotted, finned or with screw ports. That makes extrusion the most economical way to make long, uniform aluminium parts.',
              'HyperFab <b>specialises in aluminium extrusion</b>. The model is simple: you have the required tonnage and pay for the die. Section design consultation, die making, profile production, quality control and delivery are handled by HyperFab’s engineering team. The result is a profile with exactly the section you need, not the closest one available on the market.',
              'Consultation before the die matters. Extrusion dies are expensive, and a poorly designed section can lead to warped profiles, uneven surfaces or a broken die. Before the die is made, HyperFab’s engineering team reviews your section for wall thickness, symmetry, corner radii and tongue ratios and suggests changes, so the die is built once, and built right.',
          ],
          'note': '<b>Aluminium only:</b> in extrusion, HyperFab works exclusively with aluminium. Orders are by tonnage, and the right tonnage for each section is advised after consultation.'},
-        {'kicker': 'WHO DOES WHAT', 'title': 'Your part and our part', 'id': 'roles',
+        {'kicker': 'WHO DOES WHAT', 'title': 'Who does what in a custom extrusion order?', 'id': 'roles',
+         'sub': 'You define the use, approve the section and pay for the die; HyperFab designs and builds the die, produces the profile at the ordered tonnage and handles quality control and delivery.',
          'table': [
              ('Step', 'Who'),
              ('Defining the use and initial section', 'You'),
@@ -201,7 +256,8 @@ EXTRUSION = {
              ('Profile production at the ordered tonnage', 'HyperFab'),
              ('Quality control and delivery', 'HyperFab'),
          ]},
-        {'kicker': 'PROFILES', 'title': 'Profiles we extrude', 'id': 'profiles',
+        {'kicker': 'PROFILES', 'title': 'Which aluminium profiles can HyperFab extrude?', 'id': 'profiles',
+         'sub': 'Industrial and T-slot profiles, heat sinks, housings and enclosures, architectural profiles, hollow sections and rails — each in your own cross-section.',
          'adv': [
              ('stack', 'Industrial and T-slot profiles', 'Structural and slotted profiles for machine frames, workbenches and production lines.'),
              ('bolt', 'Heat sinks and finned profiles', 'Finned profiles for heat dissipation in power electronics, drives and LEDs.'),
@@ -210,8 +266,8 @@ EXTRUSION = {
              ('layers', 'Hollow and multi-cavity profiles', 'Hollow and multi-cavity sections that are both light and strong.'),
              ('ruler', 'Rails and guides', 'Rails, linear guides and light parts for equipment and transport.'),
          ]},
-        {'kicker': 'DESIGN TIPS', 'title': 'Designing an extrusion section', 'id': 'design',
-         'sub': 'Following these points extends die life and lowers the cost per kilo; all of them are reviewed in consultation.',
+        {'kicker': 'DESIGN TIPS', 'title': 'How should an extrusion section be designed?', 'id': 'design',
+         'sub': 'Keep walls uniform, round sharp corners, balance the section and control slot depth: these extend die life and lower the cost per kilo, and all of them are reviewed in consultation.',
          'checks': [
              '<b>Uniform wall thickness:</b> large thickness differences unbalance metal flow and warp the profile.',
              '<b>Rounded corners:</b> give sharp corners a small radius for longer die life and a better surface.',
@@ -220,12 +276,13 @@ EXTRUSION = {
              '<b>Section size:</b> the section must fit the production range; the right size is set in consultation.',
              '<b>Tolerances:</b> keep tight tolerances for functional dimensions only.',
          ]},
-        {'kicker': 'AFTER EXTRUSION', 'title': 'After extrusion', 'id': 'after',
+        {'kicker': 'AFTER EXTRUSION', 'title': 'Can extruded profiles be anodized, coated or machined?', 'id': 'after',
          'paras': [
-             'An extruded profile is usually not yet the finished product. At HyperFab you can add <a href="../plating-anodizing/">anodizing</a>, <a href="../powder-coating/">powder coating</a>, <a href="../cnc-turning/">machining</a>, <a href="../punching/">punching</a> and <a href="../welding/">aluminium welding</a>, and receive a part that is ready to assemble.',
+             'Yes. An extruded profile is usually not yet the finished product. At HyperFab you can add <a href="../plating-anodizing/">aluminium anodizing</a>, <a href="../powder-coating/">powder coating</a>, <a href="../cnc-turning/">machining</a>, <a href="../punching/">punching</a> and <a href="../welding/">aluminium welding</a>, and receive a part that is ready to assemble.',
          ],
          'figure': {'img': 'assets/img/arc-extrusion-coating.jpg', 'alt': 'Aluminium profiles on a powder coating line', 'caption': 'Extruded aluminium profiles on a coating line.'}},
-        {'kicker': 'HOW IT WORKS', 'title': 'How an extrusion order runs', 'id': 'steps',
+        {'kicker': 'HOW IT WORKS', 'title': 'How is a custom aluminium profile ordered and priced?', 'id': 'steps',
+         'sub': 'After section consultation, the die cost and the profile price — by alloy, weight and tonnage — are quoted separately; a sample profile is approved before production.',
          'steps': [
              ('Send the section or idea', 'Send the section drawing, a DXF or even a sketch and the profile’s use, or describe it by phone.'),
              ('Section consultation', 'The engineering team reviews and optimises the section for extrusion and advises the right tonnage.'),
@@ -235,12 +292,14 @@ EXTRUSION = {
          ]},
     ],
     'faq': [
-        ('Does HyperFab extrude aluminium profiles?', 'Yes. HyperFab specialises in aluminium extrusion: aluminium profiles in the customer’s own cross-section, with a dedicated die. Section consultation, die making, production and delivery are handled by HyperFab’s engineering team.'),
-        ('What do I need to order a custom aluminium profile?', 'The required tonnage and payment for the die. The section is finalised after consultation with HyperFab’s engineering team, and everything else, from die making to profile delivery, is handled by HyperFab.'),
-        ('What is the minimum order for aluminium extrusion?', 'Orders are by tonnage. The right tonnage depends on the section’s size and weight and is advised after consultation.'),
-        ('Do you design the profile section?', 'HyperFab’s engineering team advises on the section geometry and optimises it for extrusion: wall thickness, symmetry, corner radii and tongue ratios. The final section is made with your approval.'),
-        ('Do you extrude materials other than aluminium?', 'No. In extrusion, HyperFab works with aluminium only.'),
-        ('Can you anodize or coat the profiles?', 'Yes. Anodizing, powder coating, machining, punching and welding of profiles are also available at HyperFab.'),
+        ('Does HyperFab extrude aluminium profiles?', 'Yes. HyperFab, based in Tehran, Iran, specialises in aluminium extrusion: aluminium profiles in the customer’s own cross-section, with a dedicated die. Section consultation, die making, production and delivery are handled by HyperFab’s engineering team.'),
+        ('What do I need to order a custom aluminium profile?', 'The required tonnage and payment for the die. To start, send HyperFab the section drawing, a DXF or a sketch and the profile’s use. The section is finalised after consultation with HyperFab’s engineering team, and everything else, from die making to profile delivery, is handled by HyperFab.'),
+        ('How is custom aluminium extrusion priced?', 'HyperFab quotes two items separately: the cost of the dedicated extrusion die, which the customer pays, and the profile price by alloy, weight and tonnage.'),
+        ('What is the minimum order for aluminium extrusion?', 'HyperFab takes extrusion orders by tonnage. The right tonnage depends on the section’s size and weight and is advised after consultation.'),
+        ('Does HyperFab design the profile section?', 'HyperFab’s engineering team advises on the section geometry and optimises it for extrusion: wall thickness, symmetry, corner radii and tongue ratios. The final section is made with your approval.'),
+        ('Does HyperFab extrude materials other than aluminium?', 'No. In extrusion, HyperFab works with aluminium only.'),
+        ('Can HyperFab anodize or powder-coat extruded profiles?', 'Yes. Anodizing, powder coating, machining, punching and welding of profiles are also available at HyperFab.'),
+        ('Where is HyperFab’s aluminium extrusion service based?', 'HyperFab is based in Tehran, Iran. Custom profile projects start with a consultation by phone on ' + TEL_EN + ' or on Bale (@hyperfab_pro).'),
     ],
     'cta_h': 'Tell us about your profile section',
     'cta_p': 'Send the section drawing or sketch, or call. HyperFab’s engineering team advises on the section, tonnage and die.',
@@ -252,6 +311,18 @@ EXTRUSION = {
 
 PLATING = {
     'depth': 2,
+    'answer': ('<b>Gold and silver plating</b> on brass and other metals, and <b>anodizing</b> and <b>chromate conversion (Alodine)</b> on '
+               'aluminium, are offered by HyperFab, a manufacturing company in Tehran, Iran, for decorative, electrical and industrial parts. '
+               'The service is for production runs, with the same preparation and checks for every part in a batch. To get a quote, tell '
+               'HyperFab the part material, finish and quantity or send a sample; call ' + TEL_EN + '.'),
+    'key_facts': [
+        ('Service', 'Silver and gold plating, anodizing and chromate (Alodine)'),
+        ('Base metals', 'Brass and other metals for plating; aluminium for anodizing and chromate'),
+        ('Quantity', 'Production runs; one-off work is accepted only rarely'),
+        ('Quote', 'From part material, finish and quantity, or a sample part'),
+        ('Ordering', ORDER_PHONE),
+        ('Location', LOCATION),
+    ],
     'hero': {
         'crumb': 'Plating & Anodizing',
         'h1': '<em>Silver and gold plating</em>, anodizing and chromate<br>Finishing for batch metal parts',
@@ -264,13 +335,15 @@ PLATING = {
                   ('layers', 'Al', 'anodizing', 'on aluminium'), ('shield', 'Alodine', 'chromate', 'conversion coating')],
     },
     'sections': [
-        {'kicker': 'WHAT WE DO', 'title': 'Plating and anodizing at HyperFab', 'id': 'what',
+        {'kicker': 'WHAT WE DO', 'title': 'Does HyperFab do gold plating, silver plating and anodizing?', 'id': 'what',
+         'sub': 'Yes. HyperFab does silver and gold plating on brass and other metals, and anodizing and chromate conversion (Alodine) on aluminium, for production runs.',
          'paras': [
-             'Surface finish is the last and most visible step in making a part. It sets the part’s appearance and its resistance to corrosion and wear, and its electrical behaviour. HyperFab does <b>silver and gold plating</b> on brass and other metals, and <b>anodizing</b> and <b>chromate conversion (Alodine)</b> on aluminium.',
+             'Surface finish is the last and most visible step in making a part. It sets the part’s appearance and its resistance to corrosion and wear, and its electrical behaviour.',
              'The service covers both <b>decorative</b> and <b>technical</b> parts. For decorative parts, a bright, lasting appearance matters: décor items, hardware, statuettes and corporate gifts. For technical parts, conductivity, corrosion resistance and a good paint base matter: connectors, contacts and electronic and industrial parts. It is for production runs, and it pairs well with HyperFab’s <a href="../cnc-turning/">batch CNC turning</a>: a turned brass part is delivered plated and ready.',
          ],
          'note': BATCH_NOTE},
-        {'kicker': 'COATINGS', 'title': 'Finishes we offer', 'id': 'coatings',
+        {'kicker': 'COATINGS', 'title': 'Which plating and anodizing finishes are available?', 'id': 'coatings',
+         'sub': 'Silver plating, gold plating, aluminium anodizing and chromate (Alodine), on brass, aluminium and other metals.',
          'adv': [
              ('sparkle', 'Silver plating', 'The highest electrical conductivity of any metal; for contacts, connectors, busbars and electrical parts, and for decorative items with a bright silver look.'),
              ('coin', 'Gold plating', 'Excellent resistance to oxidation and stable contact resistance; for connectors and electronics, and for jewellery, hardware and luxury items.'),
@@ -280,7 +353,8 @@ PLATING = {
              ('stack', 'Consistent across the run', 'The same preparation and checks for every part in a batch, so colour and appearance match from first part to last.'),
          ],
          'figure': {'img': IMG['anodizing'], 'alt': 'Colour-anodized aluminium parts', 'caption': 'Colour anodizing on aluminium parts.'}},
-        {'kicker': 'COMPARE', 'title': 'Which finish suits your part', 'id': 'compare',
+        {'kicker': 'COMPARE', 'title': 'Silver, gold, anodizing or chromate: which finish suits your part?', 'id': 'compare',
+         'sub': 'Silver for the highest conductivity, gold for oxidation resistance and stable contact resistance, anodizing for a hard, corrosion- and wear-resistant layer on aluminium, and chromate for a conductive, paintable surface on aluminium.',
          'table': [
              ('Finish', 'Base metal', 'Main property', 'Typical uses'),
              ('Silver plating', 'Brass, copper and other metals', 'Highest conductivity, silver appearance', 'Contacts and connectors, busbars, RF parts, decorative items'),
@@ -288,22 +362,24 @@ PLATING = {
              ('Anodizing', 'Aluminium', 'Hard oxide layer, corrosion- and wear-resistant', 'Housings, profiles, industrial and decorative parts'),
              ('Chromate (Alodine)', 'Aluminium', 'Corrosion protection with a conductive surface, paint base', 'Electronic parts, enclosures, parts before painting'),
          ]},
-        {'kicker': 'APPLICATIONS', 'title': 'Uses of plating and anodizing', 'id': 'uses',
+        {'kicker': 'APPLICATIONS', 'title': 'What are plating and anodizing used for?', 'id': 'uses',
          'checks': [
              '<b>Electrical and electronic parts:</b> contacts, connectors, terminals and busbars with silver or gold plating.',
              '<b>Decorative items and gifts:</b> statuettes, badges, hardware and décor with gold and silver plating.',
-             '<b>Device housings and frames:</b> anodized or chromated aluminium parts.',
+             '<b>Device housings and frames:</b> anodized or chromated aluminium parts, including <a href="../aluminium-extrusion/">custom aluminium extrusion profiles</a>.',
              '<b>Turned brass parts:</b> fittings and precision parts with protective or decorative plating.',
-             '<b>Aluminium parts before painting:</b> chromate as an adhesion base.',
+             '<b>Aluminium parts before painting:</b> chromate as an adhesion base, for example before <a href="../powder-coating/">powder coating</a>.',
          ]},
     ],
     'faq': [
-        ('Does HyperFab do gold and silver plating?', 'Yes. HyperFab does silver and gold plating on brass and other metals for decorative, electrical and industrial uses. The service is for production runs.'),
-        ('Do you anodize aluminium?', 'Yes. Anodizing and chromate conversion (Alodine) are done on aluminium parts.'),
+        ('Does HyperFab do gold and silver plating?', 'Yes. HyperFab, based in Tehran, Iran, does silver and gold plating on brass and other metals for decorative, electrical and industrial uses. The service is for production runs.'),
+        ('Does HyperFab anodize aluminium?', 'Yes. HyperFab does anodizing and chromate conversion (Alodine) on aluminium parts, for production runs.'),
         ('What is chromate or Alodine?', 'Chromate is a thin conversion coating on aluminium that prevents corrosion and, unlike anodizing, keeps the surface electrically conductive. It is also a good paint base. Alodine is the well-known trade name of this kind of coating.'),
         ('Silver or gold plating — which is better?', 'Silver has the highest conductivity and costs less but tarnishes over time in air. Gold conducts less but does not oxidise, so its contact resistance stays stable. The choice depends on use, environment and budget.'),
-        ('Do you plate single parts?', 'The service is for production runs; one-off work is accepted only rarely.'),
-        ('Can you make the part too?', 'Yes. You can also have the part made by HyperFab through batch CNC turning, punching or injection moulding, and receive it finished.'),
+        ('Is there a minimum quantity for plating and anodizing?', 'HyperFab’s plating and anodizing service is for production runs; one-off work is accepted only rarely, and a suitable quantity is recommended after reviewing the project.'),
+        ('What should I send for a plating or anodizing quote?', 'Tell HyperFab the part material, the finish you need and the quantity, or send a sample part. HyperFab’s industrial projects specialist answers by phone on ' + TEL_EN + '.'),
+        ('Can HyperFab make the part as well as plate it?', 'Yes. You can also have the part made by HyperFab through batch CNC turning, punching or injection moulding, and receive it finished.'),
+        ('Where is HyperFab’s plating and anodizing service based?', 'HyperFab is based in Tehran, Iran. Plating, anodizing and chromate projects are handled by phone on ' + TEL_EN + ' or on Bale (@hyperfab_pro).'),
     ],
     'cta_h': 'Send your parts for plating or anodizing',
     'cta_p': 'Tell us the part material, finish and quantity, or send a sample. HyperFab’s industrial projects specialist answers by phone.',
@@ -315,6 +391,18 @@ PLATING = {
 
 COATING = {
     'depth': 2,
+    'answer': ('<b>Powder coating</b> is a dry, electrostatically charged powder that is oven-cured into a hard, even layer, more durable than '
+               'liquid paint. HyperFab, a manufacturing company in Tehran, Iran, powder-coats batch parts in steel, iron, aluminium and other '
+               'metals, in electrostatic powder, pearl, hammer and textured finishes, gloss or matt, in a wide range of colours including RAL codes. '
+               'Pricing depends on part size and surface area, finish, preparation and quantity and is quoted after review; call ' + TEL_EN + '.'),
+    'key_facts': [
+        ('Service', 'Electrostatic, oven-cured powder coating of steel, iron, aluminium and other metals'),
+        ('Finishes', 'Powder, pearl, hammer, texture and wrinkle; gloss, satin or matt; RAL colours'),
+        ('Quantity', 'Production runs; one-off work is accepted only rarely'),
+        ('Pricing model', 'By size and surface area, finish, preparation and quantity, after review'),
+        ('Ordering', ORDER_PHONE),
+        ('Location', LOCATION),
+    ],
     'hero': {
         'crumb': 'Powder Coating',
         'h1': '<em>Powder coating</em> (electrostatic, oven-cured)<br>Durable finishes for batch parts',
@@ -327,13 +415,14 @@ COATING = {
                   ('wrench', 'Hammer', 'finish', 'hides imperfections'), ('target', 'RAL', 'colours', 'standard codes')],
     },
     'sections': [
-        {'kicker': 'WHAT IT IS', 'title': 'What powder coating is', 'id': 'what',
+        {'kicker': 'WHAT IT IS', 'title': 'What is powder coating?', 'id': 'what',
          'paras': [
              '<b>Powder coating</b> applies a dry powder to a metal part. The electrically charged powder clings to the part, which is then cured in an oven so the powder melts into a continuous, hard layer. The result is thicker, more even and more resistant to impact, scratches and corrosion than liquid paint.',
-             'HyperFab powder-coats batch metal parts with high quality at a fair price: machine housings and chassis, structures, industrial parts and consumer products. If the part is also made at HyperFab — by <a href="../punching/">punching</a>, <a href="../welding/">welding</a> or <a href="../cnc-turning/">turning</a> — you receive the coated, finished part in one place.',
+             'HyperFab powder-coats batch metal parts with high quality at a fair price: machine housings and chassis, structures, industrial parts and consumer products. If the part is also made at HyperFab — by <a href="../punching/">punching</a>, <a href="../welding/">welding</a> or <a href="../cnc-turning/">turning</a> — you receive the coated, finished part in one place. On aluminium, <a href="../plating-anodizing/">chromate conversion</a> as a base improves paint adhesion.',
          ],
          'note': BATCH_NOTE},
-        {'kicker': 'FINISHES', 'title': 'Powder coating finishes', 'id': 'types',
+        {'kicker': 'FINISHES', 'title': 'Which powder coating finishes are available?', 'id': 'types',
+         'sub': 'Electrostatic powder, pearl, hammer, texture and wrinkle finishes, in gloss, satin or matt and a wide range of colours, including standard RAL codes.',
          'adv': [
              ('layers', 'Electrostatic powder', 'The most common powder coating: an even, solvent-free finish with strong adhesion and durability.'),
              ('sparkle', 'Pearl (metallic and pearlescent)', 'A metallic or pearlescent sheen for cosmetic parts, décor and premium products.'),
@@ -342,14 +431,15 @@ COATING = {
              ('target', 'Gloss, satin and matt', 'The gloss level to suit the use and look of the product.'),
              ('chat', 'Wide colour range', 'A wide range of colours, including standard RAL codes.'),
          ]},
-        {'kicker': 'PROCESS', 'title': 'Powder coating steps', 'id': 'process',
+        {'kicker': 'PROCESS', 'title': 'How does powder coating work, step by step?', 'id': 'process',
+         'sub': 'Surface preparation, electrostatic powder application, oven curing, then inspection and delivery.',
          'steps': [
              ('Surface preparation', 'Degreasing and cleaning, plus other preparation where needed for better adhesion.'),
              ('Powder application', 'Charged powder is sprayed evenly onto the part.'),
              ('Oven curing', 'The part is cured in an oven so the powder melts into a hard, continuous layer.'),
              ('Inspection and delivery', 'Appearance and evenness are checked and parts are packed and delivered.'),
          ]},
-        {'kicker': 'APPLICATIONS', 'title': 'Uses of powder coating', 'id': 'uses',
+        {'kicker': 'APPLICATIONS', 'title': 'What is powder coating used for?', 'id': 'uses',
          'checks': [
              '<b>Machine housings and chassis</b> and industrial equipment.',
              '<b>Electrical cabinets</b>, enclosures and metal boxes.',
@@ -358,7 +448,8 @@ COATING = {
              '<b>Car and motorcycle parts</b>, wheels and body parts.',
              '<b>Home appliances</b> and metal consumer products.',
          ]},
-        {'kicker': 'WHY POWDER', 'title': 'Why powder coating instead of ordinary paint', 'id': 'why',
+        {'kicker': 'WHY POWDER', 'title': 'Powder coating or ordinary paint: which lasts longer?', 'id': 'why',
+         'sub': 'Powder coating gives a thicker, harder layer that lasts longer than ordinary liquid paint against impact, scratches and corrosion.',
          'why': [
              ('shield', 'More durable', 'A thicker, harder layer that lasts longer against impact, scratches and corrosion.'),
              ('layers', 'Consistent across the run', 'The same thickness and look on every part in a batch, with no runs or blotches.'),
@@ -366,12 +457,14 @@ COATING = {
          ]},
     ],
     'faq': [
-        ('What is powder coating?', 'Powder coating is an electrostatically charged powder that clings to a metal part and is cured in an oven into a hard, even layer. It is more durable than liquid paint.'),
-        ('Which powder coatings does HyperFab offer?', 'Electrostatic powder, pearl (metallic and pearlescent), hammer, texture and wrinkle finishes, in gloss, satin or matt and a wide range of colours.'),
+        ('What is powder coating?', 'Powder coating is an electrostatically charged powder that clings to a metal part and is cured in an oven into a hard, even layer. It is more durable than liquid paint. HyperFab, based in Tehran, Iran, powder-coats batch metal parts.'),
+        ('Which powder coatings does HyperFab offer?', 'HyperFab offers electrostatic powder, pearl (metallic and pearlescent), hammer, texture and wrinkle finishes, in gloss, satin or matt and a wide range of colours, including standard RAL codes.'),
         ('What is a pearl finish?', 'A powder coating with metallic or pearlescent particles that gives a metallic or pearl-like sheen; popular for cosmetic parts and premium products.'),
-        ('Do you powder-coat aluminium?', 'Yes. Powder coating is done on steel, iron, aluminium and other metals. On aluminium, chromate as a base improves paint adhesion.'),
-        ('Do you coat single parts?', 'The service is for production runs; one-off work is accepted only rarely.'),
-        ('How is powder coating priced?', 'By part size and surface area, finish type and texture, preparation required and quantity. The price is quoted after review.'),
+        ('Does HyperFab powder-coat aluminium?', 'Yes. HyperFab powder-coats steel, iron, aluminium and other metals. On aluminium, chromate as a base improves paint adhesion.'),
+        ('How is powder coating priced?', 'HyperFab prices powder coating by part size and surface area, finish type and texture, preparation required and quantity. The price is quoted after review.'),
+        ('Is there a minimum quantity for powder coating?', 'HyperFab’s powder coating service is for production runs; one-off work is accepted only rarely, and a suitable quantity is recommended after reviewing the project.'),
+        ('What should I send for a powder coating quote?', 'Tell HyperFab the part size, the finish you want and the quantity, or send a sample part. HyperFab’s industrial projects specialist answers by phone on ' + TEL_EN + '.'),
+        ('Where is HyperFab’s powder coating service based?', 'HyperFab is based in Tehran, Iran. Powder coating projects are handled by phone on ' + TEL_EN + ' or on Bale (@hyperfab_pro).'),
     ],
     'cta_h': 'Send your batch parts for powder coating',
     'cta_p': 'Tell us the part size, finish and quantity, or send a sample. HyperFab’s industrial projects specialist answers by phone.',
@@ -388,21 +481,21 @@ def page(key, slug, title, desc, kw):
 
 
 PAGES = {
-    'page_welding': page('welding', 'welding', 'TIG & MIG Welding of Stainless Steel and Aluminium | Welded Fabrication — HyperFab, Iran',
-                         'TIG and MIG welding of stainless steel and 6000-series aluminium, welded machine structures and large platforms built to drawings, with VT, PT and PAUT testing; experience in medical and marine industries. HyperFab, Tehran, Iran.',
-                         'TIG welding Iran, stainless steel welding Tehran, aluminium welding, 6061 welding, welded fabrication Iran, stainless frame fabrication, weld testing PT PAUT, HyperFab'),
-    'page_turning': page('turning', 'cnc-turning', 'Batch CNC Turning | Brass, MO40 and CK45 Industrial Parts — HyperFab, Iran',
-                         'Batch CNC turning of industrial parts by HyperFab, Tehran: brass parts with fit tolerances and gauge parts in MO40 and CK45 steel, with critical points engineered before production, first-article approval and dimensional inspection.',
-                         'CNC turning Iran, batch turning Tehran, precision brass parts, 42CrMo4 turning, C45 turning, gauge manufacturing, turned parts supplier Iran, HyperFab'),
-    'page_extrusion': page('extrusion', 'aluminium-extrusion', 'Custom Aluminium Extrusion Profiles | Extrusion Dies — HyperFab, Iran',
-                           'Specialised aluminium profile extrusion in your own cross-section by HyperFab, Iran: section design consultation, dedicated extrusion die, production at your tonnage and delivery; industrial, heat-sink, enclosure and architectural profiles.',
-                           'aluminium extrusion Iran, aluminum extrusion, custom aluminium profiles, extrusion die, T-slot profile, heat sink extrusion, aluminium profile manufacturer Iran, HyperFab'),
-    'page_plating': page('plating', 'plating-anodizing', 'Gold & Silver Plating, Anodizing and Chromate (Alodine) — HyperFab, Iran',
-                         'Silver and gold plating on brass and other metals, and anodizing and chromate (Alodine) on aluminium, by HyperFab, Tehran — for decorative, electrical and industrial parts in production runs.',
-                         'gold plating Iran, silver plating brass, anodizing Tehran, aluminium anodizing, chromate conversion, Alodine, connector plating, HyperFab'),
-    'page_coating': page('coating', 'powder-coating', 'Powder Coating | Pearl, Hammer and Textured Finishes — HyperFab, Iran',
-                         'Electrostatic powder coating in pearl, hammer and textured finishes, gloss and matt, on batch metal parts by HyperFab, Tehran; durable finishes for machine housings, structures and industrial parts.',
-                         'powder coating Iran, powder coating Tehran, electrostatic painting, pearl powder coat, hammer finish, RAL powder coating, HyperFab'),
+    'page_welding': page('welding', 'welding', 'TIG & MIG Welding, Stainless & Aluminium, Tehran | HyperFab',
+                         'HyperFab in Tehran, Iran does TIG and MIG welding of stainless steel and 6000-series aluminium and welded structures to drawing, with VT, PT and PAUT.',
+                         'TIG welding stainless steel Tehran, TIG welding Iran, MIG welding Iran, stainless steel welding Tehran, aluminium welding Iran, 6061 aluminium welding, welded fabrication Iran, stainless frame fabrication, weld testing PT PAUT, HyperFab'),
+    'page_turning': page('turning', 'cnc-turning', 'Batch CNC Turning in Tehran, Iran: Brass & Steel | HyperFab',
+                         'HyperFab in Tehran, Iran produces batch CNC turned parts to drawing in brass, MO40 and CK45 steel, with fit tolerances and first-article approval.',
+                         'CNC turning batch production Iran, CNC turning Tehran, batch turning Iran, precision brass parts Iran, MO40 42CrMo4 turning, CK45 C45 turning, gauge manufacturing, turned parts supplier Iran, HyperFab'),
+    'page_extrusion': page('extrusion', 'aluminium-extrusion', 'Custom Aluminium Extrusion Profiles, Tehran, Iran | HyperFab',
+                           'HyperFab in Tehran, Iran extrudes aluminium profiles in your own cross-section with a dedicated die. You order by tonnage and pay for the die.',
+                           'custom aluminium extrusion profiles Iran, aluminium extrusion Tehran, aluminum extrusion Iran, custom aluminium profile, extrusion die, T-slot profile, heat sink extrusion, aluminium profile manufacturer Iran, HyperFab'),
+    'page_plating': page('plating', 'plating-anodizing', 'Gold & Silver Plating and Anodizing, Tehran, Iran | HyperFab',
+                         'HyperFab in Tehran, Iran does gold and silver plating on brass and other metals, and anodizing and chromate (Alodine) on aluminium, for production runs.',
+                         'gold plating Tehran, gold plating Iran, silver plating brass Iran, anodizing Tehran, aluminium anodizing Iran, chromate conversion, Alodine, connector plating, HyperFab'),
+    'page_coating': page('coating', 'powder-coating', 'Powder Coating in Tehran, Iran: Pearl & Hammer | HyperFab',
+                         'HyperFab in Tehran, Iran powder-coats batch metal parts in pearl, hammer, textured, gloss and matt finishes. Priced by size, finish and quantity.',
+                         'powder coating Tehran, powder coating Iran, electrostatic powder coating, oven-cured paint, pearl powder coat, hammer finish, RAL powder coating, aluminium powder coating, HyperFab'),
 }
 
 FEATURE_PARAS = [

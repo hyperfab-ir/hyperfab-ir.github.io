@@ -1,0 +1,2557 @@
+# HyperFab (هایپرفب) — full site content
+
+> Full text of every page of https://hyperfabgroup.github.io/ in English and Persian, generated from the site sources on 2026-11-14. English pages come first, then Persian. Short index: https://hyperfabgroup.github.io/llms.txt. Main website and online ordering: https://hyperfab.ir/
+
+---
+
+<!-- language: en -->
+
+# 3D Printing, CNC & Laser Cutting in Tehran, Iran | HyperFab
+
+URL: https://hyperfabgroup.github.io/en/
+
+Making a part is as simple as an upload
+
+Choose process, material and quantity on one page; the price appears right there.
+
+Upload your design to HyperFab and get a production price within minutes. For FDM 3D printing and laser cutting, the online estimator prices your part instantly.
+
+## HyperFab at a glance
+
+HyperFab (Persian: هایپرفب) is an online manufacturing platform in Tehran, Iran, offering FDM and resin 3D printing, CNC machining, metal and non-metal laser cutting and sheet metal bending, plus batch and industrial production. Customers upload a design file on hyperfab.ir: FDM 3D printing and laser cutting are priced instantly by the online price estimator, and other processes are quoted after an engineer reviews the file.
+
+HyperFab’s 3D printing, CNC, laser and bending orders are usually ready within three working days, and the minimum order is one part. Parts are shipped across Iran by Post, Tipax and Snappbox, and pickup in Tehran is free. HyperFab’s Tekeyab service sources small pieces of industrial material — sheet, bar, shaft, flat bar, tube and profile in aluminium, stainless steel, steel, copper, brass and engineering plastics — quotes a price and cuts them to size if needed.
+
+For industrial and batch production, HyperFab offers sheet and tube punching (metal and polyethylene), mould making and plastic injection moulding, batch CNC turning, custom aluminium extrusion, TIG and MIG welding, gold and silver plating and anodizing and powder coating. For punching, injection moulding and extrusion, tooling design and manufacture are part of the service, and every industrial project runs through quality control to delivery. HyperFab’s engineering team comes from Iran’s top universities and has worked in industry for years. Industrial projects are handled by phone: +98 996 223 3898.
+
+## Services and manufacturing processes
+
+Every order is placed online: upload your design and get a price within minutes.
+
+### FDM 3D Printing
+
+FDM (Fused Deposition Modeling) 3D printing at HyperFab turns your 3D file into a plastic part, layer by layer, with no mould or tooling. You upload an STL or 3MF file on hyperfab.ir and the online price estimator instantly shows volume, weight, dimensions, print time and price. The calculation runs in your own browser, so the file is not sent anywhere until you place the order. PLA, PETG, ABS and TPU filaments are available, with layer heights from 0.1 to 0.3 mm.
+
+FDM is the most economical additive manufacturing process and gives the best cost-to-result ratio for prototypes, spare parts that are no longer sold, workshop jigs and fixtures, architectural models and student projects. Before printing, every model is checked for wall thickness, orientation and weak points. The minimum order is a single part, quantity discounts are applied automatically, and parts are ready within three working days and shipped anywhere in Iran.
+- File formats: STL · 3MF · OBJ · STEP
+- Materials: PLA, PETG, ABS, TPU
+- Layer height: 0.1 – 0.3 mm
+- Pricing: Online, instant
+- Lead time: Up to 3 working days
+
+URL: https://hyperfab.ir/services/3d-printing/#fdm
+
+### Resin 3D Printing (SLA / DLP)
+
+Resin 3D printing (SLA / DLP) cures liquid resin layer by layer with ultraviolet light, giving far finer detail and a much smoother surface than FDM. HyperFab’s resin printing runs at 16K resolution, roughly 14 × 19 microns horizontally, and layer height is adjustable from 0.02 to 0.1 mm, so layer lines are almost invisible.
+
+It is the first choice for small, precise parts: figures and miniatures, dental models, jewellery casting patterns, high-detail prototypes and display models. Three resins are available: standard resin for the highest detail, a tough engineering resin for parts that must take some impact, and a castable resin for investment-casting patterns. Resin print prices are based on resin volume and print time and are quoted after the file has been reviewed.
+- Resolution: 16K — 14 × 19 µm XY
+- Layer height: 0.02 – 0.1 mm
+- Resins: Standard, Tough, Castable
+- Pricing: After file review
+
+URL: https://hyperfab.ir/services/3d-printing/#resin
+
+### CNC Machining
+
+CNC machining at HyperFab covers milling, turning, drilling, slotting and threading to your drawing, in engineering plastics and soft metals: polyethylene and acetal (POM / PE), PTFE (Teflon), nylon (PA6), acrylic (PMMA), Delrin (POM-C) and brass. Standard tolerance is ±0.05 mm, tighter tolerances are possible by arrangement, and surface finish is Ra 1.6 or better depending on material and tooling.
+
+You upload a STEP or IGES model, a DWG or DXF drawing, or a dimensioned PDF on hyperfab.ir. The drawing is reviewed for tolerances, tool access to corners and manufacturability, then a price and lead time are quoted. Typical jobs include bushings, gears and rollers for machinery, PTFE seals and gaskets for chemical equipment, jigs and fixtures, clear acrylic enclosures and decorative brass parts. The minimum order is one part and lead time is up to three working days, depending on complexity.
+
+CNC machining at HyperFab is not only for mould making. HyperFab makes all kinds of parts to customers’ drawings with high quality and precision, from single parts and prototypes to batch production of turned parts in brass and MO40 and CK45 steel.
+- Operations: Milling, turning, drilling, slotting, threading
+- Tolerance: ±0.05 mm
+- Surface finish: Ra 1.6 or better
+- File formats: STEP · IGES · DWG · DXF · PDF
+- Pricing: After drawing review
+- Batch production: Batch CNC turning
+
+URL: https://hyperfab.ir/services/cnc/
+
+### Metal Laser Cutting
+
+HyperFab cuts mild steel, stainless steel, aluminium, galvanised and oiled sheet on a fibre laser with nitrogen assist gas, leaving a clean, oxide-free edge; CO₂ cutting is also available for general work. Cutting accuracy is ±0.1 mm with a kerf of about 0.15 mm, so outlines and hole positions match your file exactly and repeat from part to part.
+
+Upload a DXF file on hyperfab.ir and the laser price estimator measures cut length, pierce count, sheet weight and bends directly from the drawing and gives a price instantly. At the same time it checks the drawing for duplicate lines, open contours, holes smaller than the sheet thickness and more than ten other common errors. Typical parts include brackets, machine panels and chassis, metal signs and logos, washers and plates, and sheet-metal prototypes. If the part also needs bending, cutting and bending are handled in one order.
+- Laser: Fibre with nitrogen, and CO₂
+- Accuracy: ±0.1 mm
+- Kerf: About 0.15 mm
+- File format: DXF
+- Pricing: Online, instant
+
+URL: https://hyperfab.ir/services/laser-metal/
+
+### Non-metal Laser Cutting & Engraving
+
+HyperFab cuts and engraves acrylic (Plexiglas), MDF, wood, leather, felt and foam on a CO₂ laser. Through-cutting, surface engraving and marking can be combined in one file and one run, and delicate lattice designs that a saw or router cannot reach are cut cleanly. Cutting accuracy is ±0.1 mm.
+
+Send a vector DXF at 1:1 scale in millimetres, with cut lines and engraving areas on separate colours or layers. Typical jobs include custom boxes and packaging, architectural and teaching models, acrylic signs and logos, promotional items such as key rings and coasters, fabric and leather templates, and decorative panels. Single parts are welcome, and for larger runs the nesting on the sheet is optimised to lower the unit price.
+- Laser: CO₂
+- Accuracy: ±0.1 mm
+- Operations: Cutting, engraving, marking
+- File format: DXF
+- Pricing: Online, instant
+
+URL: https://hyperfab.ir/services/laser-nonmetal/
+
+### Sheet Metal Bending
+
+HyperFab bends sheet metal on a press brake with V-dies (air bending) to an angular accuracy of ±1°. Bending can be ordered on its own or as the next step after laser cutting. When cutting and bending are done in one order, lead time is shorter and bend positions line up more accurately with the holes.
+
+Send the flat pattern as a DXF, a 3D STEP model or a dimensioned PDF; from a 3D model the correct flat pattern is calculated with the K-factor. Bend sequence, bend radius and tool clearance are checked before production so the sheet does not crack at the bend. Typical parts include L and U brackets, electrical cabinets and machine enclosures, chassis and frames for industrial equipment, cable trays and channels, façade panels and sheet-metal spare parts.
+- Method: Press brake, V-die air bending
+- Angle accuracy: ±1°
+- File formats: DXF · STEP · PDF
+- Combined service: Laser cutting and bending in one order
+
+URL: https://hyperfab.ir/services/bending/
+
+## Online price estimator: the price of your part, instantly
+
+3D printing prices from STL and 3MF files, laser cutting and bending prices from DXF files — no phone quotes.
+
+The HyperFab price estimator (HyperFab Quote) is the online tool on hyperfab.ir that prices a manufactured part. You upload the part file, choose material, thickness, scale and quantity, and see the production price immediately, with no phone calls, no email back-and-forth and no waiting days for a quote.
+
+It has two calculation engines: an FDM 3D printing engine that analyses STL and 3MF files, and a laser cutting and sheet bending engine that reads DXF files. Both run inside your own browser. To get a price, your file is not sent to any server; it is uploaded only when you finalise the order, and only to make that order.
+
+- FDM 3D printing: optimal part orientation, support analysis, wall and infill volume slice by slice, filament mass and print time.
+- Laser cutting and bending: cut length, pierce count, number and length of bends, engraving and sheet weight.
+- Automatic drawing checks: duplicate lines, open contours, holes smaller than the thickness, holes too close to a bend line and more than ten other common errors, before you pay.
+- File privacy: everything is calculated in your browser; the file is uploaded only when you finalise the order.
+
+## Tekeyab: buy small pieces of industrial material without endless phone calls
+
+Sheet, bar, shaft, flat bar, tube and profile in aluminium, stainless steel, steel, copper, brass and engineering plastics — in the size you need.
+
+Need a small piece of aluminium sheet, a short length of stainless steel bar or one brass shaft, but suppliers only sell full lengths and whole sheets? Tekeyab is HyperFab’s online service for buying small pieces of industrial material. You describe the piece once in the Tekeyab form, and HyperFab sources it, quotes a price and cuts it to size if needed.
+
+Tekeyab covers aluminium, stainless steel, carbon steel, copper and brass, engineering plastics and special metals, as sheet and plate, shaft and round bar, flat bar, tube and profile. Delivery is by courier in Tehran, in-person pickup, or shipping to other cities. If the piece is going to be machined, laser-cut or bent, you can order the fabrication in the same place.
+
+- One form instead of ten calls: enter material, grade, shape, dimensions, quantity, when you need it and how to deliver it in a four-step form.
+- Price in your account: after sourcing from suppliers, the final price is posted to your HyperFab account.
+- Cut to size: the piece is cut to the requested size when needed and delivered ready to use.
+- Tracking with a TK code: each request has a tracking code and its status, from sourcing to delivery, is visible in your account.
+
+## Industrial and batch production: from moulds and turning to welding, plating and coating
+
+A complete chain for batch parts, from production to final finish, with one responsible engineering team.
+
+When a part moves from prototype to volume, the process has to change. For industrial and batch production, HyperFab offers a complete chain: sheet and tube punching, mould making and injection moulding, batch CNC turning, aluminium extrusion, welding and welded fabrication, plating and anodizing and powder coating. A part can go from production to final finish in one place.
+
+HyperFab’s engineering team comes from Iran’s top universities, including Sharif University of Technology, and has worked in industry for years. It has taken four polyethylene injection moulds from build to commissioning, and more than 80,000 parts have been produced with them. Its record also includes quality control of 8,000 punched tubes, mating brass parts and MO40 and CK45 gauges, and stainless and aluminium structures for the medical and marine industries.
+
+- Sheet and tube punching: metal and polyethylene; punching die design and manufacture and production runs.
+- Mould making and injection moulding: mould making, sampling and production in PE, PP, ABS and nylon.
+- Batch CNC turning: brass parts with fit tolerances and gauge parts in MO40 and CK45.
+- Aluminium extrusion: your section with a dedicated die; you bring tonnage and die cost, we do the rest.
+- TIG and MIG welding: stainless steel and 6000-series aluminium, welded structures and platforms, with VT, PT and PAUT.
+- Plating and anodizing: silver and gold on brass and other metals, anodizing and chromate on aluminium.
+- Powder coating: powder, pearl, hammer and textured finishes.
+- Phone consultation: HyperFab’s industrial projects specialist: +98 996 223 3898.
+
+## Why manufacture with HyperFab
+
+- **Engineering before production**: Before any machine starts, your file is checked for manufacturability, material, process and real dimensions. If a design cannot be made, we tell you why and what to change, up front.
+- **Clear prices, realistic lead times**: FDM printing and laser cutting are priced online, instantly. For other processes, price and lead time are fixed after review: no hidden costs, no “we’ll see later”.
+- **Online tracking, nationwide shipping**: Follow your order in your account; parts are packed securely and shipped anywhere in Iran.
+
+## Real HyperFab work
+
+Real photos of parts HyperFab has made, from CNC turning and batch PTFE parts to a welded and tested stainless steel assembly.
+
+- **AISI 304 stainless sealing assembly, CNC-turned and TIG-welded** (AISI 304 stainless · process industry): Made end to end by HyperFab: precision CNC turning and drilling, TIG welding of the parts and a PT test of the welds to confirm joint integrity, with final dimensional inspection to the drawing, for a pressurised industrial application.
+- **CNC-turned PTFE parts and gaskets** (PTFE · chemical industry): PTFE parts and gaskets CNC-turned in a production run, with tolerances held for leak-free sealing in corrosive service.
+- **CNC-turned CK45 steel hub** (CK45 (C45) steel · industrial): A CNC-turned steel hub with grooves and steps held to tight tolerances for rotating and bearing applications.
+- **Machined steel shaft splined at both ends** (Steel · mechanical and automotive): A shaft with splines at both ends for high-torque transmission, machined for full, backlash-free engagement.
+- **Turned AISI 304 stainless steel bushing** (AISI 304 stainless · industrial): A stainless bushing with precise steps and grooves and a clean finish, for bearing seats and other precision locations.
+- **Precision off-axis parts in brass, stainless steel and polymer** (Brass, stainless and polymer · mechanisms): A set of small precision parts, including off-axis parts, in brass, stainless steel and polymer, made in one project with meticulous dimensional inspection.
+
+## How it works
+
+From file to finished part in four steps.
+
+1. **You send the file**: A 3D model, a technical drawing, or even a photo and a description, uploaded on hyperfab.ir.
+2. **An engineer reviews it**: Manufacturability, material, process and real dimensions are checked.
+3. **Price and lead time are fixed**: Instant online for FDM and laser; after review for everything else. No hidden costs.
+4. **We make and ship it**: With inspection before packing and delivery anywhere in Iran.
+
+## We make parts. We have for years.
+
+HyperFab grew out of the workshop, not out of a slide deck. We have designed parts, built moulds, stood over production lines and pulled defective parts with our own hands. So when we look at your file, we know where it will break.
+
+HyperFab’s technical core is three engineers: two Sharif University of Technology graduates in mechanical engineering (applied design) and a manufacturing engineering specialist. Together they cover mechanical design, forming-process simulation, controls, and production and quality management.
+
+- 4 polyethylene injection moulds, from build supervision to commissioning
+- 80,000+ parts produced with those moulds
+- 8,000 punched tubes in one industrial project, with quality-control responsibility
+- 55 3D designs published by our design brand, Manabun Lab
+
+Our experience is not limited to small parts. From injection moulds and deep-drawing dies for aluminium sheet to process simulation in Abaqus and AutoForm, we know the road from design to industrial production first-hand. Every order is backed by one responsible engineering team. You place the order with us once, and we choose the best way to make it, get your approval on a sample before production and inspect quality before delivery.
+
+## HyperFab Academy
+
+Before you order, learn which process is right for your part (articles in Persian).
+
+- **Knowledge Hall**: Technical basics of FDM and resin printing, laser cutting, machining and bending: design tips, process comparisons and how costs are calculated.
+- **Experience Hall**: Real customer projects: where the part started, which process was chosen, what challenges came up and how it turned out.
+- **Technology Hall**: News from digital manufacturing: new materials, machine advances and trends shaping part production.
+- **Guide Hall**: Step-by-step help with the HyperFab website: creating an account, uploading files, getting an online price, ordering and tracking.
+
+## FAQ
+
+### What is HyperFab?
+
+HyperFab (هایپرفب) is an online manufacturing platform in Tehran, Iran, offering FDM and resin 3D printing, CNC machining, metal and non-metal laser cutting and sheet metal bending. HyperFab also runs an instant online price estimator and the Tekeyab service for buying small pieces of industrial material. The main website and ordering are at hyperfab.ir.
+
+### How do I get an online 3D printing price?
+
+On hyperfab.ir, upload an STL or 3MF file in the order section. HyperFab’s estimator analyses the model in your browser and instantly shows the FDM price based on material, infill, layer height, scale and quantity. Resin printing is quoted after file review.
+
+### How do I get a laser cutting price?
+
+Upload the part’s DXF file at 1:1 scale in millimetres on hyperfab.ir and choose sheet material and thickness. The estimator measures cut length, pierce count, bends and sheet weight from the drawing and gives a price instantly.
+
+### What is HyperFab Tekeyab?
+
+Tekeyab is a service for buying small pieces of industrial material. You describe the piece in a form: material, shape, dimensions, quantity, when you need it and how to deliver it. HyperFab sources it from suppliers, quotes a price, cuts it to size if needed and ships it. Shapes include sheet, bar, shaft, flat bar, tube and profile, and materials include aluminium, stainless steel, steel, copper, brass and engineering plastics.
+
+### How long does manufacturing take?
+
+Most orders are ready within three working days. The exact time depends on the process, size and quantity. Shipping time is added to this and depends on the destination city and shipping method. Schedules for punching and injection moulding projects are agreed together with the quotation.
+
+### Is there a minimum order quantity?
+
+No. Even a single part is made. For larger quantities, a stepped discount is applied to the unit price automatically. For punching and injection moulding, which need tooling, a suitable quantity is recommended after reviewing the project.
+
+### Does HyperFab do tube and sheet punching?
+
+Yes. HyperFab punches sheet and tube in metal and polyethylene, including punching die design and manufacture and production runs. One example is kidney-shaped slots punched in polyethylene pipe with a 125 mm diameter, 5 mm wall and 6-bar pressure rating. Pricing is a die cost plus a cost per stroke, depending on the part’s geometry and material.
+
+### Does HyperFab do mould making and plastic injection moulding?
+
+Yes. HyperFab designs and builds injection moulds and produces and delivers plastic parts in a range of materials, including polyethylene, polypropylene, ABS and nylon. HyperFab’s team has taken four polyethylene injection moulds from build to commissioning, and more than 80,000 parts have been produced with them. Consultation is by phone: +98 996 223 3898.
+
+### Does HyperFab ship outside Tehran?
+
+Yes, anywhere in Iran via Post, Tipax and Snappbox. Pickup in Tehran is free.
+
+### I don’t have a design file. What can I do?
+
+Send a hand sketch, a photo of a sample part or a description of what it does. Design and 3D modelling are offered at a separate cost, and production starts after you approve the design. The order form also has an “I’m not sure / I want advice” option.
+
+### Does HyperFab weld stainless steel and aluminium?
+
+Yes. HyperFab does TIG and MIG welding of stainless steel and 6000-series aluminium and builds welded machine structures and large platform structures to the client’s drawings. VT, PT and PAUT testing is available on request. HyperFab has built many units for the medical and marine industries.
+
+### Does HyperFab do batch CNC turning?
+
+Yes. HyperFab produces batch turned parts to drawing, including brass parts with fit tolerances and gauge parts in MO40 and CK45 steel. Each part’s critical points are engineered and checked before production.
+
+### Does HyperFab extrude aluminium profiles?
+
+Yes, as a specialisation and for aluminium only. Profiles are made in the customer’s own section with a dedicated die. The customer has the required tonnage and pays for the die, and HyperFab’s engineering team handles everything from section consultation to delivery.
+
+### Does HyperFab do plating, anodizing and powder coating?
+
+Yes, for production runs. HyperFab does silver and gold plating on brass and other metals, and anodizing and chromate (Alodine) on aluminium. Powder coating in powder, pearl, hammer and textured finishes is also available.
+
+### Where is HyperFab and how do I contact it?
+
+HyperFab’s order processing centre is at Unit 1, No. 39, corner of Tehrani Alley, Safi-Alishah St., Pich-e Shemiran, Enghelab St., Tehran, Iran. Phone +98 21 7752 7438; mobile, Bale and Telegram +98 996 223 3898; email info@hyperfab.ir. Hours are Saturday to Wednesday 9:00–17:00 and Thursday 9:00–13:00, Tehran time. Online ordering is open 24 hours.
+
+## Contact HyperFab
+
+Questions before ordering? Get in touch.
+
+- Order processing centre: Unit 1, No. 39, corner of Tehrani Alley, Safi-Alishah St., Pich-e Shemiran, Enghelab St., Tehran, Iran
+- Phone: +98 21 7752 7438+98 996 223 3898
+- Design and manufacturing orders: +98 996 223 3898Bale, Eitaa and Telegram
+- Hours (Tehran time): Saturday–Wednesday: 9:00–17:00Thursday: 9:00–13:00Online ordering: 24/7
+- Email: info@hyperfab.ir
+- Bale and Instagram: 3D printing: @y_admin3d · @Hyper_3dprintIndustrial & Tekeyab: @hyperfab_pro · @hyperfab.ir
+
+---
+
+# HyperFab Online Price Estimator — The price of your part, instantly
+
+URL: https://hyperfabgroup.github.io/en/price-estimator/
+
+The HyperFab Online Price Estimator is a free tool on hyperfab.ir that gives an instant price for FDM 3D printing from STL or 3MF files and for laser cutting and sheet bending from DXF files. It runs in your browser, so your file is not uploaded until you finalise the order, and the laser engine marks drawing errors before you pay. HyperFab is an online manufacturing platform in Tehran, Iran; resin 3D printing and CNC machining are quoted after an engineer reviews the file.
+
+Upload a 3D file or a DXF drawing and see volume, weight, production time and price immediately. Everything is calculated in your browser, and your file is not sent anywhere to get a price.
+
+- Service: Instant online quotes for FDM 3D printing and laser cutting and bending
+- File formats: STL and 3MF for 3D printing; DXF for laser cutting and bending
+- Cost: Free, with no obligation; an account is needed only to order
+- Minimum order: One part; a minimum order value may apply
+- Ordering: Online at hyperfab.ir, at any hour
+- Location: HyperFab, Tehran, Iran
+
+- FDM 3D printing: STL · 3MF
+- Laser cutting and sheet bending: DXF
+- Other processes: Resin and CNC quoted by an engineer after review
+
+## What is the HyperFab price estimator?
+
+The HyperFab price estimator (HyperFab Quote) is the online tool on hyperfab.ir that prices a manufactured part. You upload the part file, choose material, thickness, scale and quantity, and see the production price immediately, with no phone calls, no email back-and-forth and no waiting days for a quote.
+
+It has two calculation engines: an FDM 3D printing engine that analyses STL and 3MF files, and a laser cutting and sheet bending engine that reads DXF files. Both run inside your own browser. To get a price, your file is not sent to any server; it is uploaded only when you finalise the order, and only to make that order.
+
+The estimator’s price is not a rough guess. The printing engine slices the model by height like slicer software and calculates walls, infill and supports separately. The laser engine measures the real cut length, pierce count and bends from the drawing. No rate is hard-coded: every rate, from material price per kilo to the fee per bend, is set from HyperFab’s admin panel.
+
+- **Price on the spot**: For FDM printing and laser cutting there is no waiting for a quote. Upload the file and see the price right away, even at 3 a.m.
+- **Your file stays with you**: Geometry analysis and pricing run in your browser. The file is uploaded only when you finalise the order, and used only to make that order.
+- **Drawing errors, before you pay**: An open contour, a duplicate line or a hole too small for the thickness is shown on the drawing before you order, not after a bad part is made.
+
+## How is a 3D printing price calculated from an STL file?
+
+A 3D print’s price depends above all on machine time and filament mass. HyperFab’s engine calculates both from your model’s real geometry.
+
+- **Reads STL and 3MF**: The 3D model opens in your browser and its volume, dimensions, surface and cross-sections are extracted. A 3D preview of the part is shown on the same page.
+- **Optimal bed orientation**: The engine evaluates different faces of the model and picks the orientation on the build plate that needs less support and prints more reliably.
+- **Support analysis**: Overhanging surfaces are detected and the required support volume is estimated; supports cost both material and machine time.
+- **Walls and infill, slice by slice**: The model is cut into successive slices. Each slice’s perimeter gives wall volume and its inner area gives infill volume, at the layer height and infill percentage you choose.
+- **Filament mass and print time**: Volumes and nozzle speeds give filament mass and real machine time. Top and bottom skins are computed from the change in area between slices, so curved and stepped surfaces are not under-estimated.
+- **Scale, quantity and discount**: Changing the scale updates the price instantly without re-uploading. As quantity rises, a stepped volume discount up to a set cap is applied to the unit price.
+
+## How is laser cutting priced from a DXF file?
+
+Each part of the price comes from a direct measurement of the drawing: cut length, pierce count, bends, engraving and sheet weight, plus setup and quantity. Upload a DXF at 1:1 scale in millimetres and choose sheet material and thickness. To order the part, see metal laser cutting and sheet metal bending on hyperfab.ir.
+
+| Price component | How it is measured from the drawing |
+|---|---|
+| Cutting | Total cut length × sheet thickness, at a rate specific to each material, thickness and assist gas (oxygen or nitrogen) |
+| Piercing | Number of points where the laser must pierce the sheet to start each contour |
+| Bending | Number of bends and the length of each bend line, plus press-brake setup |
+| Engraving | Length of engraving paths on the part |
+| Material | Sheet weight from part area, thickness and material density, times price per kilo |
+| Setup | A one-off fee per order, spread across the quantity rather than charged in full on every part |
+| Quantity | Stepped discounts by quantity |
+
+Note: because setup is spread across the quantity, the unit price genuinely drops at 20 or 40 parts; it does not depend on the discount alone.
+
+## Which drawing errors does the estimator catch before you order?
+
+Duplicate lines, open contours, holes smaller than the sheet thickness, holes too close to a bend line and other common errors. The laser estimator reviews the drawing like an experienced operator and marks every problem on the drawing itself.
+
+- Duplicate overlapping lines: the same path would be cut twice and ruin the edge. Duplicates are excluded from the price.
+- Open contour: an outline that does not close, so the part will not drop out of the sheet.
+- Self-intersecting paths and no closed contour in the drawing.
+- Hole smaller than sheet thickness: will not cut cleanly with a laser.
+- Web thinner than the thickness: a narrow strip that warps or burns during cutting.
+- Part larger than a standard sheet and machine capacity.
+- Text, hatching and dimension lines left in the cutting drawing by mistake.
+- Hole too close to a bend line: it will distort during bending.
+- Short flange: an edge too short to sit on the bending tool.
+- Sheet too thick to bend and bend longer than the press brake.
+- Missing bending drawing when the part has bends.
+
+## Which file formats does HyperFab accept, and how is each service priced?
+
+FDM 3D printing and laser cutting are priced instantly by the estimator; resin 3D printing and CNC machining are quoted after an engineer reviews the file. For production runs of turned parts, see batch CNC turning; for small pieces of raw material, see Tekeyab.
+
+| Process | File format | Pricing |
+|---|---|---|
+| FDM 3D printing | STL · 3MF (also OBJ, STEP) | Instant, with the estimator |
+| Metal laser cutting | DXF | Instant, with the estimator |
+| Non-metal laser cutting | DXF | Instant, with the estimator |
+| Sheet metal bending | DXF · STEP · PDF | Bends priced from DXF; confirmed after the bending drawing is reviewed |
+| Resin 3D printing | STL · OBJ · STEP · 3MF | After file review, by resin volume and print time |
+| CNC machining | STEP · IGES · DWG · DXF · PDF | After drawing review, by material, stock removal and machine time |
+| Not sure / advice | Any format, even a photo and description | After talking to an engineer |
+
+## How do you order a part with an instant online quote?
+
+Upload the file on hyperfab.ir, choose the specs, check the price and warnings, then order and track the part in your account.
+
+1. **Upload the file**: On hyperfab.ir choose the process and upload an STL, 3MF or DXF file; the process is guessed from the file extension.
+2. **Choose the specs**: Set material, colour, sheet thickness, layer height, infill, scale and quantity; the price updates with every change.
+3. **See price and warnings**: Unit and total price are shown, together with manufacturability warnings on the drawing.
+4. **Order and track**: Add the part to the cart and place the order. Its status appears under “Production orders” in your account.
+
+## FAQ
+
+### How does HyperFab calculate a 3D printing price?
+
+HyperFab’s estimator analyses your STL or 3MF file in your browser. It places the model in the best orientation, estimates the supports needed, calculates wall and infill volume slice by slice, and derives filament mass and print time from these. The price comes from these two values and current rates, with a stepped discount for larger quantities.
+
+### How do I get an online laser cutting quote?
+
+Upload the part’s DXF file at 1:1 scale in millimetres on hyperfab.ir and choose sheet material and thickness. The estimator measures cut length, pierce count, bends, engraving and sheet weight from the drawing and shows the price immediately.
+
+### Is my file sent to a server to calculate the price?
+
+No. In HyperFab’s estimator, analysis and pricing run entirely in your own browser. The file is uploaded only when you finalise the order, and used only to make that order.
+
+### Is the estimator’s price final?
+
+The estimator’s price comes from your file’s real geometry and current rates, and it is the basis of the order. If the technical review before production finds an issue, HyperFab contacts you before production starts.
+
+### Does the HyperFab estimator give instant prices for resin printing and CNC machining?
+
+No. At HyperFab, resin printing and CNC machining depend on factors that need an engineer’s review, such as resin print orientation or the tooling and number of CNC operations. You upload the file and a price and lead time are quoted after review.
+
+### Is the HyperFab price estimator free?
+
+Yes. Getting a price is free and creates no obligation. You sign in to a HyperFab account only to place the final order.
+
+### Why does print time determine a 3D printing price?
+
+In 3D printing, the main cost is the time the machine spends building the part, not the weight of the plastic. Two parts of the same weight but different geometry can have very different print times and therefore very different prices. That is why HyperFab’s estimator calculates print time from the model’s real geometry.
+
+### Is there a minimum order?
+
+HyperFab has no minimum quantity; one part is accepted. A minimum order value may apply, and the estimator shows it clearly as a separate line.
+
+### Which files can I upload to get an instant quote?
+
+HyperFab’s estimator reads STL and 3MF files for FDM 3D printing and DXF files, at 1:1 scale in millimetres, for laser cutting and sheet bending. Resin printing files (STL, OBJ, STEP, 3MF) and CNC machining files (STEP, IGES, DWG, DXF, PDF) are quoted after review.
+
+### Where is HyperFab and where do I get an instant quote?
+
+HyperFab is an online manufacturing platform based in Tehran, Iran. Instant quotes are on hyperfab.ir in the order section, available at any hour; for advice, call +98 996 223 3898.
+
+---
+
+# HyperFab Tekeyab — Industrial material, in the size you need
+
+URL: https://hyperfabgroup.github.io/en/tekeyab/
+
+Tekeyab is HyperFab’s online service for buying small pieces of industrial material in Iran — sheet, bar, shaft, flat bar, tube and profile in aluminium, stainless steel, steel, copper, brass and engineering plastics. You describe the piece once in a four-step form on hyperfab.ir; HyperFab, based in Tehran, sources it, posts the price to your account, cuts it to size if needed and delivers it by courier in Tehran, by pickup or by shipping to other cities. You can request a single piece.
+
+Need one piece of aluminium sheet, a short stainless bar or a single brass shaft, while the market only sells full lengths and whole sheets? Describe the piece in the Tekeyab form; HyperFab sources it, quotes a price and cuts it to size if needed.
+
+- Service: Sourcing and cut-to-size supply of small pieces of industrial material
+- Materials: Aluminium, stainless steel, steel, copper, brass, engineering plastics, special metals
+- Shapes: Sheet and plate, shaft and round bar, flat bar, tube, profile
+- Ordering: Online four-step form at hyperfab.ir; a single piece is accepted
+- Pricing model: Final price posted to your account after sourcing
+- Delivery: Courier in Tehran, pickup, or shipping to other cities in Iran
+
+- Materials: aluminium, stainless steel, steel, copper and brass, engineering plastics, special metals
+- Shapes: sheet and plate, shaft and bar, flat bar, tube, profile
+- Delivery: courier in Tehran, pickup, shipping to other cities
+
+## What is Tekeyab, and what problem does it solve?
+
+Tekeyab is HyperFab’s online service for buying a small piece of industrial material — one plate, a short bar or a single shaft — without calling supplier after supplier.
+
+Anyone who has built a part or repaired a machine knows the routine. For one brass bushing or a small aluminium plate, you call several suppliers. Each sells only six-metre lengths or full sheets and quotes prices over the phone. In the end you are still not sure the material is the grade you asked for. Buying a small piece of industrial material usually means call after call.
+
+Tekeyab is HyperFab’s online service built for exactly this. You describe the piece once in Tekeyab’s four-step form: material and grade, shape, dimensions, quantity, when you need it and how it should be delivered. You can attach a photo or notes if needed. The HyperFab team asks its supplier network and posts the final price to your account. After payment, the piece is prepared, cut to size if needed and shipped.
+
+Tekeyab is connected to HyperFab’s fabrication services. If the piece will be turned or milled by CNC machining, laser-cut or bent, you can order the fabrication in the same place. Material and manufacturing are handled together, and you don’t have to carry stock between supplier and workshop.
+
+## What materials can you buy through Tekeyab?
+
+Six material families: aluminium, stainless steel, steel, copper and brass, engineering plastics, and other special metals. If you need a specific grade or alloy, write it in the form.
+
+- **Aluminium**: Aluminium sheet, plate, bar, flat bar and profile; light and easy to machine for housings, mounting plates, fixtures and machined parts.
+- **Stainless steel**: Stainless sheet, bar and tube for parts in contact with water, food or chemicals.
+- **Steel**: Steel bar, shaft, flat bar and sheet for shafts, flanges, brackets and load-bearing parts.
+- **Copper and brass**: Free-machining brass for bushings, nozzles and fittings, and copper for electrical and thermal uses.
+- **Engineering plastics**: PTFE (Teflon), polyethylene, acetal (POM), nylon and acrylic for gaskets, bushings, gears, sliding and insulating parts.
+- **Other and special metals**: If you need a rare material or alloy, describe it and its availability will be checked.
+
+## Which shapes and sizes can you order?
+
+Sheet and plate, shaft and round bar, flat bar, tube and profile, each described by the dimensions below.
+
+| Shape | Dimensions needed | Example |
+|---|---|---|
+| Sheet and plate | length × width × thickness | Aluminium plate 200 × 150 × 5 mm |
+| Shaft and round bar | diameter × length | Stainless bar Ø20, 300 mm long |
+| Flat bar | width × thickness × length | Brass flat bar 30 × 5, 500 mm long |
+| Tube | outer diameter × wall thickness × length | Stainless tube 42 × 2, 1 m long |
+| Profile and other | section and length | Angle, channel or box section of any size |
+
+Note: if you are unsure of the dimensions or grade, describe the part’s use or send a photo. If needed, dimensions are confirmed with you before the price is quoted.
+
+## How does a Tekeyab request work?
+
+You submit a four-step form on hyperfab.ir, HyperFab sources the material and posts a price to your account, and after payment the piece is cut to size if needed and delivered.
+
+1. **Submit the request**: Fill in the four-step form on hyperfab.ir. Your mobile number is verified by SMS code and an account is created for you automatically.
+2. **Sourcing**: The Tekeyab team asks suppliers and matches material, grade and dimensions.
+3. **Price quoted**: The final price is posted to your account, and you are notified by email or messenger.
+4. **Payment and preparation**: After payment, the piece is prepared and cut to size when needed.
+5. **Shipping or pickup**: By courier in Tehran, in-person pickup, or shipping to other cities.
+
+## How do you track a Tekeyab request?
+
+Every Tekeyab request gets a tracking code such as TK1001 and appears under the “Material orders” tab of your HyperFab account. Its status updates there, from “sourcing” and “price quoted” to “payment confirmed”, “preparing”, “shipped” and “delivered”.
+
+If the requested material cannot be found, you are told so clearly; requests are not left hanging. Tekeyab questions are answered by HyperFab’s industrial team on the Bale messenger (@hyperfab_pro).
+
+## Who is Tekeyab for?
+
+Anyone who needs a small piece of industrial material rather than a full length or a whole sheet.
+
+- Machine repairers and maintenance teams who need a small piece of a specific material to make one spare part.
+- Turning and fabrication workshops with one-off or low-volume jobs, for whom a full length does not pay.
+- Engineering students working on theses and robotics competitions.
+- Prototype builders and hardware teams who need several materials at once.
+- Designers and makers of furniture, décor and handmade metal and plastic products.
+- Buyers in other cities without access to Tehran’s metal markets.
+
+## FAQ
+
+### What is HyperFab Tekeyab?
+
+Tekeyab is HyperFab’s online service for buying small pieces of industrial material. You describe the piece in a form: material, shape, dimensions, quantity, when you need it and how to deliver it. HyperFab sources it from suppliers, quotes a price, cuts it to size if needed and ships it.
+
+### What materials can I buy through Tekeyab?
+
+Through HyperFab Tekeyab you can buy aluminium, stainless steel, steel, copper and brass, engineering plastics such as PTFE, polyethylene, acetal (POM), nylon and acrylic, and special metals. Shapes include sheet and plate, shaft and round bar, flat bar, tube and profile.
+
+### What is the minimum quantity on Tekeyab?
+
+HyperFab Tekeyab is built for small quantities, and you can request a single piece. The final price depends on material, dimensions and any cutting required.
+
+### Does HyperFab cut material to size?
+
+Yes. Through Tekeyab, the piece is cut to the requested size when needed. If it then needs machining, laser cutting or bending, you can order that fabrication from HyperFab as well.
+
+### How is the Tekeyab price given?
+
+After sourcing from suppliers, the final price is posted to your HyperFab account and you are notified by email or messenger. You don’t need to call to get a price.
+
+### What do I need to submit a Tekeyab request?
+
+Only the piece’s specifications and a mobile number, entered in the Tekeyab form on hyperfab.ir. You can attach a photo or notes if needed. The number is verified by SMS code, and an account is created automatically so you can track the request.
+
+### Does Tekeyab deliver outside Tehran?
+
+Yes. HyperFab is based in Tehran, Iran, and Tekeyab has three delivery options: courier in Tehran, in-person pickup, and shipping to other cities.
+
+### What if the material cannot be found?
+
+If material matching your specifications cannot be found, the request is marked “not found” and you are not charged. If a suitable alternative exists, it is suggested.
+
+---
+
+# Sheet and tube punching — From die design to production runs
+
+URL: https://hyperfabgroup.github.io/en/punching/
+
+Sheet and tube punching makes holes, slots and shaped cut-outs with a press stroke and a die, and is one of the fastest and most economical processes for repeat quantities. HyperFab, a manufacturing company in Tehran, Iran, punches metal and polyethylene sheet and tube, designs and builds the punching die, and runs production with quality control — including kidney-shaped slots in 125 mm polyethylene pipe. Pricing is a one-off die cost plus a cost per stroke, quoted after the drawing is reviewed; call +98 996 223 3898.
+
+Holes, slots and custom shapes in metal and polyethylene sheet and tube. HyperFab designs and builds the punching die, runs a trial sample for your approval, and carries production through to delivery with full quality control.
+
+- Service: Sheet and tube punching, punching die design and manufacture, production runs
+- Materials: Metal and polymer sheet and tube, including polyethylene pipe
+- Pricing model: One-off die cost plus cost per stroke, by geometry and material
+- Minimum quantity: Recommended after project review, as a die is needed
+- Ordering: By phone (+98 996 223 3898) or Bale (@hyperfab_pro)
+- Location: Tehran, Iran; parts shipped across Iran
+
+- Punching: sheet and tube
+- Materials: metals and polymers, including polyethylene
+- Pricing: die cost + cost per stroke, by geometry and material
+
+## What is sheet and tube punching?
+
+Punching creates holes, slots and shaped cut-outs in sheet and tube with a press stroke and a die. For repeat quantities it is one of the fastest and most economical processes. Once the die is made, each part reaches its final shape in one or a few strokes, and every part comes out the same.
+
+HyperFab handles punching end to end. The drawing is reviewed, a punching die is designed and built for the material and thickness, and a trial sample is punched for your approval. Production and quality control then run through to delivery. The service covers both sheet and tube, in metal and in polymers such as polyethylene, and punched parts can also be powder coated at HyperFab and delivered finished.
+
+Punching polymer pipe is one of the hard jobs in this field. The pipe is round, the wall deforms under the stroke, and polyethylene behaves very differently from metal. HyperFab’s team has punched kidney-shaped slots in polyethylene pipe with a 125 mm diameter, 5 mm wall and 6-bar pressure rating. In another industrial project, the team was responsible for quality control of 8,000 punched tubes.
+
+Punching or laser cutting? For low quantities or designs that keep changing, metal laser cutting is cheaper because there is no die cost. For repeat quantities, once the die is built, punching makes each part faster and cheaper. HyperFab offers both and recommends the right one for your quantity and geometry.
+
+## What can HyperFab punch?
+
+Metal and polymer sheet, metal tube and profile, and polyethylene pipe — with round and square holes, slots, kidney-shaped slots, perforated patterns and custom shapes to your drawing.
+
+- **Metal sheet punching**: Round and square holes, slots, repeating patterns and custom shapes in mild steel, galvanised, stainless steel and aluminium sheet.
+- **Metal tube and profile punching**: Holes and slots in metal tube and profile for structures, fittings, shelving, railings and furniture.
+- **Polyethylene pipe punching**: Slots and holes in polyethylene pipe, including kidney-shaped slots, for drainage, filter and distribution pipes.
+- **Polymer sheet punching**: Polyethylene and engineering-plastic sheet for gaskets, perforated plates and flat punched parts.
+- **Custom shapes**: From a simple round hole to kidney slots, perforated patterns and special forms, exactly to your drawing.
+- **Repeatable production runs**: Once the die is built, parts are produced with identical strokes and dimensions stay consistent from the first part to the last.
+
+## How is punching priced?
+
+Punching is priced as a one-off die cost plus a cost per stroke, quoted separately after the drawing is reviewed. Both depend on the part’s geometry and the material being punched.
+
+| Cost component | What it depends on |
+|---|---|
+| Punching die (one-off) | Geometry and number of holes and slots, required accuracy, material and thickness, and whether the die is simple, progressive or tube-specific |
+| Per stroke (production) | Material and thickness, strokes needed per part, and run quantity |
+| Material | At current prices, if HyperFab supplies the sheet or tube |
+
+Note: the tooling cost is paid once and spread across the run; the larger the quantity, the smaller the tooling share of each part’s price.
+
+## Why choose HyperFab for a punching project?
+
+Engineering review before the die is built, real tube-punching experience, and one owner from die design to delivery.
+
+- **Engineering before the die**: The die is the most expensive part of the project. Before it is built, the design is reviewed from the die’s point of view: hole-to-edge distance, hole-diameter-to-thickness ratio and how the material behaves under the stroke. The goal is to build the die once, and build it right.
+- **Real tube-punching experience**: From quality control of 8,000 punched tubes to kidney slots in 125 mm polyethylene pipe, we know the practical problems of this work first-hand.
+- **Full responsibility to delivery**: From die design to the last stroke, the project has one owner: HyperFab. You approve a sample before production, and parts are inspected before delivery.
+
+## How does a punching project work?
+
+Send a drawing or sample with material, thickness and quantity; after engineering review and a quotation, the die is built and a trial sample is approved before production.
+
+1. **Send drawing and specs**: Send the part drawing, material, thickness and quantity, or describe them by phone. A physical sample also works.
+2. **Engineering review**: The design is checked for die manufacturability and changes are suggested where needed.
+3. **Quotation**: Die cost and cost per stroke are quoted separately and clearly.
+4. **Die and sample**: The die is built and a trial sample is punched for your approval before production.
+5. **Production and delivery**: Parts are produced with dimensional quality control, packed and delivered.
+
+## What is sheet and tube punching used for?
+
+- Drainage and dewatering pipes with repeating slots or holes.
+- Filter and strainer pipes, and water and air distribution pipes.
+- Perforated plates, meshes and ventilation grilles.
+- Flat punched parts for assembly such as washers, brackets and mounting plates.
+- Housings and panels for industrial equipment with fixed hole patterns.
+- Perforated profile and tube for structures, shelving and furniture.
+
+## FAQ
+
+### Does HyperFab punch polyethylene pipe?
+
+Yes. HyperFab, based in Tehran, Iran, has punched kidney-shaped slots in polyethylene pipe with a 125 mm diameter, 5 mm wall and 6-bar pressure rating. Metal tube and sheet punching is also available.
+
+### How is punching priced?
+
+HyperFab prices punching in two parts: a one-off punching die cost and a cost per stroke in production. Both depend on the part’s geometry, meaning the number and shape of holes and slots, and on the material and thickness. Both are quoted separately after the drawing is reviewed.
+
+### Does HyperFab make the punching die?
+
+Yes. Designing and building the punching die is part of HyperFab’s service, and a trial sample is punched for your approval before production.
+
+### What shapes can HyperFab punch?
+
+HyperFab punches round and square holes, straight slots, kidney-shaped slots, perforated patterns and custom forms to your drawing, in sheet and tube.
+
+### What should I send for a punching quote?
+
+Send HyperFab a drawing or sample of the part, the material and thickness, and an approximate quantity. You can also give the details by phone on +98 996 223 3898.
+
+### Is there a minimum quantity for punching?
+
+Punching needs a die, so HyperFab recommends a suitable quantity after reviewing the project. For low quantities or designs that keep changing, laser cutting is usually cheaper because there is no die cost.
+
+### Punching or laser cutting — which is better?
+
+For low quantities or designs that keep changing, laser cutting is cheaper because there is no die cost. For repeat quantities, once the die is built, punching makes each part faster and cheaper. HyperFab offers both and recommends the right one for your quantity and geometry.
+
+### Where is HyperFab, and does it deliver outside Tehran?
+
+HyperFab is based in Tehran, Iran, and punched parts are shipped across Iran. Punching projects are discussed by phone on +98 996 223 3898 or on Bale (@hyperfab_pro).
+
+---
+
+# Mould making and plastic injection moulding — From part design to mass production
+
+URL: https://hyperfabgroup.github.io/en/injection-molding/
+
+Plastic injection moulding mass-produces plastic parts by injecting molten polymer into a steel mould, giving repeatable dimensions and, at high quantities, the lowest cost per part. HyperFab, a manufacturing company in Tehran, Iran, reviews the part for mouldability, designs and builds the injection mould, and runs production in polyethylene, polypropylene, ABS, nylon and other thermoplastics; its team has taken four polyethylene moulds to commissioning, producing more than 80,000 parts. Pricing is a one-off mould cost plus a cost per shot; call +98 996 223 3898.
+
+Injection mould design and manufacture, and production runs of plastic parts in a range of materials. HyperFab carries the project from design review to delivery of finished parts, with controlled quality.
+
+- Service: Injection mould design and manufacture, sampling and production runs
+- Materials: PE, PP, ABS, nylon, polycarbonate, acetal and other thermoplastics
+- Team experience: 4 polyethylene injection moulds to commissioning; 80,000+ parts produced
+- Pricing model: One-off mould cost plus cost per shot, after design review
+- Ordering: By phone (+98 996 223 3898) or Bale (@hyperfab_pro)
+- Location: Tehran, Iran
+
+- Services: mould design and manufacture, sampling, production runs
+- Materials: polyethylene, polypropylene, ABS, nylon and other thermoplastics
+- Pricing: mould cost + cost per shot
+
+## What is injection moulding, and how does HyperFab handle it?
+
+Injection moulding is the main process for mass-producing plastic parts. Molten polymer is injected under pressure into a steel mould, cools, and the part comes out with repeatable dimensions. At high quantities, no other process matches its cost per part and consistency.
+
+An injection project succeeds or fails on the mould, and HyperFab starts there. First the part design is reviewed for mouldability. Then the mould is designed and built, and sampling and correction continue until the part is approved. Production runs follow, with quality control through to delivery.
+
+HyperFab’s team has taken four polyethylene injection moulds from build supervision to commissioning, and more than 80,000 parts have been produced with them. That experience shows, before the mould is built, where a design is likely to cause trouble in production.
+
+For smaller runs, 3D printing or CNC machining may be cheaper than a mould. HyperFab offers all three and recommends the right process after reviewing the project.
+
+## What is checked before an injection mould is built?
+
+Draft angles, wall thickness, ribs and bosses, gate location, undercuts and realistic tolerances are reviewed before tooling, because changing a design on paper costs almost nothing and changing a steel mould is expensive.
+
+- Sufficient draft angle on walls, so the part releases without scuffing or sticking.
+- Uniform wall thickness, so the part does not warp or show sink marks.
+- Proper ribs and bosses instead of thick, material-heavy walls.
+- Gate location, parting line and ejector pin positions.
+- Undercuts and the need for slides or cores in the mould.
+- Realistic tolerances for each material, allowing for polymer shrinkage.
+
+## Which plastics can HyperFab injection mould?
+
+Polyethylene, polypropylene, ABS, nylon and engineering thermoplastics such as polycarbonate and acetal; the material is recommended based on load, temperature, working environment and part cost.
+
+- **Polyethylene (PE)**: Chemical- and impact-resistant; for caps, containers, fittings and industrial parts.
+- **Polypropylene (PP)**: Light and fatigue-resistant; for living hinges, packaging and consumer parts.
+- **ABS**: Good-looking surface and solid strength; for device housings and cosmetic parts.
+- **Nylon (PA)**: Tough and wear-resistant; for gears, bushings and mechanical parts.
+- **Engineering thermoplastics**: Polycarbonate, acetal (POM) and other materials, depending on the part’s use.
+- **Choose the material with us**: Not sure? Describe the part’s use and a suitable material and grade will be recommended.
+
+## How is injection moulding priced?
+
+Injection moulding is priced as a one-off mould cost plus a cost per shot in production, quoted separately and clearly after the design is reviewed.
+
+| Cost component | What it depends on |
+|---|---|
+| Mould (one-off) | Part size and complexity, number of cavities, undercuts and slides, surface finish and mould steel |
+| Per shot (production) | Part material and weight, cycle time and run quantity |
+| Material | Polymer type, grade and colour |
+
+Note: the tooling cost is paid once and spread across the run; the larger the quantity, the smaller the tooling share of each part’s price.
+
+## How does an injection moulding project work?
+
+Send a 3D file, drawing or sample part; after a mouldability review and a quotation, the mould is built and sampled until you approve, then production runs.
+
+1. **Send the design**: Send a 3D file, drawing or sample part. If you only have an idea, part design is available too.
+2. **Mouldability review**: The design is checked for draft, wall thickness and parting line, and changes are suggested.
+3. **Quotation**: Mould cost and cost per shot are quoted separately and clearly.
+4. **Mould and sampling**: The mould is built, sampled and corrected until you give final approval.
+5. **Production and delivery**: Parts are produced with quality control and delivered.
+
+Before investing in a mould: you can make a prototype with HyperFab FDM 3D printing and check form, dimensions and assembly on a real part.
+
+## Why choose HyperFab for an injection moulding project?
+
+Engineering review before tooling, real production experience and one owner from design to delivery.
+
+- **Engineering before tooling**: HyperFab’s engineering team comes from Iran’s top universities and has worked at the heart of industry for years. It reviews your design from a production point of view before the mould is built, so the mould is built once, and built right.
+- **Real production experience**: Four injection moulds from build supervision to commissioning and more than 80,000 parts produced; we know the road from design to mass production first-hand.
+- **One owner from design to delivery**: From the mould to the last part, full responsibility for the project lies with HyperFab. You approve samples before production and quality is checked before delivery.
+
+## FAQ
+
+### Does HyperFab make plastic injection moulds?
+
+Yes. HyperFab, based in Tehran, Iran, designs and builds injection moulds and runs production of plastic parts in a range of materials. The project is with HyperFab from design review to delivery.
+
+### How are mould making and injection moulding priced?
+
+HyperFab prices them in two main parts: a one-off mould cost and a cost per shot in production. The mould cost depends on part size and complexity, number of cavities and undercuts. The cost per shot depends on part material and weight and cycle time. Both are quoted separately after the design is reviewed.
+
+### Which plastics does HyperFab injection mould?
+
+HyperFab moulds polyethylene, polypropylene, ABS, nylon and other engineering thermoplastics such as polycarbonate and acetal, depending on the part’s use.
+
+### At what quantity does injection moulding pay off?
+
+It depends on the mould cost and the price per part, and it usually pays off at high quantities. For smaller runs, 3D printing or CNC machining may be cheaper. HyperFab offers all three and recommends the right process after reviewing the project.
+
+### Is there a minimum quantity for injection moulding?
+
+Injection moulding needs a mould, so HyperFab recommends a suitable quantity after reviewing the project. For smaller runs, 3D printing or CNC machining may be cheaper.
+
+### What should I send for an injection moulding quote?
+
+Send HyperFab a 3D file, a drawing or a sample part. If you only have a photo or an idea, part design and modelling are available, and the mould is built after you approve the design.
+
+### Will I see a sample before production?
+
+Yes. HyperFab takes samples after the mould is built and production starts after your approval. Before tooling, you can also make a prototype with 3D printing.
+
+### Where is HyperFab’s injection moulding service based?
+
+HyperFab is based in Tehran, Iran. Mould making and injection moulding projects are discussed by phone on +98 996 223 3898 or on Bale (@hyperfab_pro).
+
+---
+
+# CNC turning of industrial parts — Production runs with proven precision
+
+URL: https://hyperfabgroup.github.io/en/cnc-turning/
+
+Batch CNC turning is the production of rotational parts — shafts, bushings, pins, nozzles, fittings and mating parts — in runs where every part must be as good as the approved first article. HyperFab, a manufacturing company in Tehran, Iran, produces batch turned parts to drawing in brass, MO40 (42CrMo4) and CK45 (C45) steel and other metals, with each part’s critical points engineered before production. Pricing is by material, complexity, tolerances and quantity and is quoted after drawing review; call +98 996 223 3898.
+
+Batch production of turned parts in brass, MO40 alloy steel, CK45 steel and other metals, to drawing and with precise fit tolerances. The critical points of every part are engineered and checked before production, from the first sample to the last part of the run.
+
+- Service: Batch CNC turning to drawing, for production runs
+- Materials: Brass, MO40 (42CrMo4), CK45 (C45), stainless steel, aluminium and other metals
+- Quality control: First-article approval and dimensional inspection
+- Pricing model: By material, complexity, tolerances and quantity, after drawing review
+- Ordering: By phone (+98 996 223 3898) or Bale (@hyperfab_pro)
+- Location: Tehran, Iran
+
+- For: production runs
+- Materials: brass, MO40 (42CrMo4), CK45 (C45) and other metals
+- Precision: fit tolerances, mating parts and gauges
+
+## What is batch CNC turning?
+
+CNC turning is the main way to make rotational parts: shafts, bushings, pins, nuts, nozzles, fittings and parts that must fit precisely into each other. In batch production, the real challenge is not making one good part. It is making hundreds or thousands of parts that are all exactly that good part.
+
+HyperFab has produced batch turned parts for a long time. They range from brass parts with fit tolerances that must mate with each other to gauge parts in MO40 alloy steel and CK45 steel. They were made to high precision and approved by the customers.
+
+Behind that precision is engineering before turning. Before production starts, each part’s critical points are engineered and briefed to the machinist: fit surfaces, critical diameters, concentricity and surface finish at specific points. The machinist then knows exactly where the part needs which accuracy. For each part, the production method and precision level are chosen to match its requirements — no more expensive than needed, never below requirements.
+
+For production runs only: this service is for batch production; one-off parts are accepted only rarely. A suitable quantity is recommended after reviewing the project.
+
+## Which materials and parts does HyperFab turn?
+
+Brass, MO40 (42CrMo4) and CK45 (C45) steel, stainless steel, aluminium and other metals — for mating parts, gauges, shafts, pins, bushings and fittings.
+
+- **Brass parts**: Brass bushings, nozzles, fittings, pins and mating parts with fit tolerances and a clean finish.
+- **MO40 steel (42CrMo4)**: Chromium-molybdenum alloy steel for loaded parts and gauges, with high strength and toughness.
+- **CK45 steel (C45)**: Medium-carbon steel for shafts, pins, machine parts and gauges.
+- **Gauge parts**: Dimensional inspection gauges that are themselves the precision reference of a production line.
+- **Mating parts**: Sliding and press fits between parts, with control of critical diameters and concentricity.
+- **Other metals**: Stainless steel, aluminium and other steels, depending on the project.
+
+## How is precision held across a production run?
+
+By engineering the drawing before production, briefing the machinist on every critical point, approving a first article and inspecting dimensions during production and before delivery.
+
+- Drawing engineering before production: identifying fit surfaces, critical dimensions and measurement datums.
+- Technical briefing for the machinist: the accuracy of each critical point, the operation sequence and the measurement method.
+- Precision matched to requirements: the precision level and cost are set by each part’s importance — no more than needed, no less.
+- First-article approval before the production run starts.
+- Dimensional inspection during production and before delivery.
+- Suitable packing so precision fit surfaces are not damaged.
+
+## Can turned parts be plated, coated or welded?
+
+Yes. A turned part usually needs a finish or assembly too. At HyperFab you can include silver and gold plating, anodizing and chromate, powder coating and welding in the same project, and receive the finished, ready-to-use part.
+
+For one-off parts and prototypes, see CNC machining on the HyperFab website.
+
+## How does a batch turning order work?
+
+Send a dimensioned drawing with tolerances, the material and the quantity; after engineering review and a quotation, a first article is made for your approval before the run starts.
+
+1. **Send the drawing**: Send a dimensioned drawing with tolerances, the material and the quantity, or describe them by phone.
+2. **Engineering review**: Fit surfaces and critical dimensions are identified and production notes are set.
+3. **Quotation**: Priced by material, complexity, tolerances and quantity.
+4. **First article**: The first part is made and inspected; the run starts after your approval.
+5. **Production and delivery**: The run is produced with dimensional inspection and delivered.
+
+## FAQ
+
+### Does HyperFab do batch CNC turning?
+
+Yes. HyperFab, based in Tehran, Iran, produces batch turned parts to drawing. Examples include brass parts with fit tolerances and gauge parts in MO40 and CK45 steel, made to high precision and approved by the customers.
+
+### Does HyperFab turn MO40 and CK45 steel?
+
+Yes. MO40 (equivalent to 42CrMo4) and CK45 (equivalent to C45) are among the materials HyperFab has used for gauge parts and batch industrial parts.
+
+### Does HyperFab make precision mating brass parts?
+
+Yes. Brass parts that must fit into each other with sliding or press fits are one of HyperFab’s core experiences. Critical diameters and concentricity are engineered before production and checked during it.
+
+### How is batch CNC turning priced?
+
+HyperFab prices batch turning by material, part complexity, tolerances and quantity, after reviewing the drawing. The production method and precision level are matched to the part’s requirements, so the price matches its importance and precision.
+
+### Is there a minimum quantity for batch CNC turning?
+
+HyperFab’s batch turning service is for production runs; one-off parts are accepted only rarely, and a suitable quantity is recommended after reviewing the project. For single parts and prototypes, see CNC machining on hyperfab.ir.
+
+### What should I send for a CNC turning quote?
+
+Send HyperFab a dimensioned drawing with tolerances, the material and the quantity, or describe them by phone on +98 996 223 3898. Fit surfaces and critical dimensions are identified in the engineering review before the quotation.
+
+### Can HyperFab plate or coat turned parts?
+
+Yes. Silver and gold plating, anodizing and chromate, and powder coating are also available at HyperFab, and the finished part is delivered.
+
+### Where is HyperFab’s batch CNC turning service based?
+
+HyperFab is based in Tehran, Iran. Batch turning projects are discussed by phone on +98 996 223 3898 or on Bale (@hyperfab_pro), and a first article is approved before each production run.
+
+---
+
+# Aluminium profile extrusion — Your cross-section, with a dedicated die
+
+URL: https://hyperfabgroup.github.io/en/aluminium-extrusion/
+
+Custom aluminium extrusion makes long aluminium profiles with your own constant cross-section by pushing a hot billet through a dedicated steel die. HyperFab, a manufacturing company in Tehran, Iran, specialises in aluminium extrusion: you have the required tonnage and pay for the die, and HyperFab’s engineering team handles section consultation, die making, profile production, quality control and delivery. Die cost and profile price are quoted separately; call +98 996 223 3898.
+
+Aluminium profiles in the cross-section you need. HyperFab’s engineering team advises on the section geometry, then a dedicated extrusion die is built and the profile is produced. You need the required tonnage and pay for the die; HyperFab’s engineering team handles the rest.
+
+- Service: Custom aluminium profile extrusion with a dedicated die
+- Material: Aluminium only
+- Minimum order: By tonnage, advised after section consultation
+- Pricing model: Die cost plus profile price by alloy, weight and tonnage, quoted separately
+- Ordering: By phone (+98 996 223 3898) or Bale (@hyperfab_pro)
+- Location: Tehran, Iran
+
+- Speciality: aluminium extrusion only
+- Your part: required tonnage + die cost
+- Our part: section consultation, die, production, QC and delivery
+
+## What is aluminium extrusion?
+
+Aluminium extrusion pushes a hot aluminium billet under pressure through a steel die to make a long profile with a constant cross-section. Almost any section you can draw can be made with a dedicated die: solid, hollow, slotted, finned or with screw ports. That makes extrusion the most economical way to make long, uniform aluminium parts.
+
+HyperFab specialises in aluminium extrusion. The model is simple: you have the required tonnage and pay for the die. Section design consultation, die making, profile production, quality control and delivery are handled by HyperFab’s engineering team. The result is a profile with exactly the section you need, not the closest one available on the market.
+
+Consultation before the die matters. Extrusion dies are expensive, and a poorly designed section can lead to warped profiles, uneven surfaces or a broken die. Before the die is made, HyperFab’s engineering team reviews your section for wall thickness, symmetry, corner radii and tongue ratios and suggests changes, so the die is built once, and built right.
+
+Aluminium only: in extrusion, HyperFab works exclusively with aluminium. Orders are by tonnage, and the right tonnage for each section is advised after consultation.
+
+## Who does what in a custom extrusion order?
+
+You define the use, approve the section and pay for the die; HyperFab designs and builds the die, produces the profile at the ordered tonnage and handles quality control and delivery.
+
+| Step | Who |
+|---|---|
+| Defining the use and initial section | You |
+| Consultation and final section geometry | HyperFab’s engineering team, with your approval |
+| Paying for the die | You |
+| Extrusion die design and manufacture | HyperFab |
+| Profile production at the ordered tonnage | HyperFab |
+| Quality control and delivery | HyperFab |
+
+## Which aluminium profiles can HyperFab extrude?
+
+Industrial and T-slot profiles, heat sinks, housings and enclosures, architectural profiles, hollow sections and rails — each in your own cross-section.
+
+- **Industrial and T-slot profiles**: Structural and slotted profiles for machine frames, workbenches and production lines.
+- **Heat sinks and finned profiles**: Finned profiles for heat dissipation in power electronics, drives and LEDs.
+- **Housings and enclosures**: Device housings and electronic enclosures with a section dedicated to your product.
+- **Architectural and decorative profiles**: Frames, edges, handles and decorative profiles.
+- **Hollow and multi-cavity profiles**: Hollow and multi-cavity sections that are both light and strong.
+- **Rails and guides**: Rails, linear guides and light parts for equipment and transport.
+
+## How should an extrusion section be designed?
+
+Keep walls uniform, round sharp corners, balance the section and control slot depth: these extend die life and lower the cost per kilo, and all of them are reviewed in consultation.
+
+- Uniform wall thickness: large thickness differences unbalance metal flow and warp the profile.
+- Rounded corners: give sharp corners a small radius for longer die life and a better surface.
+- Balanced section: symmetric, balanced sections extrude more stably and accurately.
+- Die tongues: deep, narrow slots weaken the die tongue; the depth-to-width ratio must be controlled.
+- Section size: the section must fit the production range; the right size is set in consultation.
+- Tolerances: keep tight tolerances for functional dimensions only.
+
+## Can extruded profiles be anodized, coated or machined?
+
+Yes. An extruded profile is usually not yet the finished product. At HyperFab you can add aluminium anodizing, powder coating, machining, punching and aluminium welding, and receive a part that is ready to assemble.
+
+## How is a custom aluminium profile ordered and priced?
+
+After section consultation, the die cost and the profile price — by alloy, weight and tonnage — are quoted separately; a sample profile is approved before production.
+
+1. **Send the section or idea**: Send the section drawing, a DXF or even a sketch and the profile’s use, or describe it by phone.
+2. **Section consultation**: The engineering team reviews and optimises the section for extrusion and advises the right tonnage.
+3. **Quotation**: Die cost and profile price, by alloy, weight and tonnage, are quoted separately.
+4. **Die and sample**: The die is built and a sample profile is produced for your approval.
+5. **Production and delivery**: The profile is produced at the ordered tonnage, inspected and delivered.
+
+## FAQ
+
+### Does HyperFab extrude aluminium profiles?
+
+Yes. HyperFab, based in Tehran, Iran, specialises in aluminium extrusion: aluminium profiles in the customer’s own cross-section, with a dedicated die. Section consultation, die making, production and delivery are handled by HyperFab’s engineering team.
+
+### What do I need to order a custom aluminium profile?
+
+The required tonnage and payment for the die. To start, send HyperFab the section drawing, a DXF or a sketch and the profile’s use. The section is finalised after consultation with HyperFab’s engineering team, and everything else, from die making to profile delivery, is handled by HyperFab.
+
+### How is custom aluminium extrusion priced?
+
+HyperFab quotes two items separately: the cost of the dedicated extrusion die, which the customer pays, and the profile price by alloy, weight and tonnage.
+
+### What is the minimum order for aluminium extrusion?
+
+HyperFab takes extrusion orders by tonnage. The right tonnage depends on the section’s size and weight and is advised after consultation.
+
+### Does HyperFab design the profile section?
+
+HyperFab’s engineering team advises on the section geometry and optimises it for extrusion: wall thickness, symmetry, corner radii and tongue ratios. The final section is made with your approval.
+
+### Does HyperFab extrude materials other than aluminium?
+
+No. In extrusion, HyperFab works with aluminium only.
+
+### Can HyperFab anodize or powder-coat extruded profiles?
+
+Yes. Anodizing, powder coating, machining, punching and welding of profiles are also available at HyperFab.
+
+### Where is HyperFab’s aluminium extrusion service based?
+
+HyperFab is based in Tehran, Iran. Custom profile projects start with a consultation by phone on +98 996 223 3898 or on Bale (@hyperfab_pro).
+
+---
+
+# TIG and MIG welding — Stainless steel, aluminium and welded structures
+
+URL: https://hyperfabgroup.github.io/en/welding/
+
+TIG and MIG welding of stainless steel and 6000-series aluminium, including 6061 and 6063, is offered by HyperFab, a manufacturing company in Tehran, Iran, together with fabrication of welded machine structures and large platform structures to the client’s approved drawings. VT, PT and phased-array ultrasonic (PAUT) weld testing is available on request, and HyperFab has built many units for the medical and marine industries. Welding projects are priced by material, weld length and type, structure size and requested tests; call +98 996 223 3898.
+
+TIG and MIG welding of stainless steel and 6000-series aluminium, fabrication and assembly of welded structures for machines, and large platform structures — with VT, PT and phased-array weld testing on request, from drawing to delivery.
+
+- Service: TIG and MIG (argon-shielded) welding and welded fabrication
+- Materials: Stainless steel and 6000-series aluminium (6061, 6063)
+- Weld testing: VT, PT, PAUT and other tests on request
+- Pricing model: By material, weld length and type, structure size and requested tests
+- Ordering: By phone (+98 996 223 3898) or Bale (@hyperfab_pro)
+- Location: Tehran, Iran
+
+- Processes: TIG and MIG (argon shielded)
+- Materials: stainless steel, 6000-series aluminium
+- Weld testing: VT · PT · PAUT and other tests as required
+
+## TIG or MIG welding for stainless steel and aluminium?
+
+TIG gives clean, precise welds on thin sheet and sensitive parts; MIG is faster for long and structural welds. HyperFab does both on stainless steel and 6000-series aluminium.
+
+Argon-shielded welding — TIG (GTAW) and MIG (GMAW) — is the main way to join stainless steel and 6000-series aluminium in machine and equipment building.
+
+HyperFab’s work is not just laying welds; it is building and assembling the project from drawing to delivery. That covers cutting and preparing parts, fixturing, welding with distortion control, weld finishing and testing. HyperFab has built many units for the medical and marine industries, where weld cleanliness and corrosion resistance are critical.
+
+The experience goes beyond small parts. HyperFab has built large platform structures, including a framed chassis mounted on wheels that runs on rails — a structure where flatness, alignment and dimensional accuracy over long lengths decide everything.
+
+If a welded part also needs a finish, it can be powder coated at HyperFab and delivered as a finished part in one place. Flat sheet parts can also be ordered through metal laser cutting on hyperfab.ir.
+
+## Which welding services does HyperFab offer?
+
+TIG welding of stainless steel, TIG and MIG welding of 6000-series aluminium, welded machine structures, large platform structures and weld testing on request.
+
+- **TIG welding of stainless steel**: Clean, precise welds on stainless steel for medical, food and marine equipment, with heat control to preserve corrosion resistance.
+- **6000-series aluminium welding**: TIG and MIG welding of 6000-series alloys such as 6061 and 6063, for chassis, frames and light structures.
+- **Welded machine structures**: Chassis, frames, housings and enclosures for many kinds of machines in stainless steel or aluminium, from cut parts to assembled structure.
+- **Large platform structures**: Large platforms and framed chassis, including a structure mounted on wheels that runs on rails.
+- **Medical and marine industries**: Many units built for medical equipment and marine applications, meeting those industries’ cleanliness and corrosion requirements.
+- **Weld testing**: Visual testing (VT), liquid penetrant (PT), phased-array ultrasonics (PAUT) and other tests on request.
+
+## Does HyperFab design the welded structure?
+
+No. For welded structures, the structural design is the client’s, and HyperFab fabricates to your approved drawings. Before work starts, the drawings are reviewed for manufacturability: welding sequence, joint access, distortion control and tolerances that can realistically be held. Anything worth flagging is discussed with you before fabrication.
+
+For large and platform structures, complete approved drawings are essential before fabrication starts. HyperFab takes responsibility for fabrication, follow-up and quality control through to delivery.
+
+## Which weld tests are available?
+
+Visual testing (VT), liquid penetrant testing (PT), phased-array ultrasonic testing (PAUT) and other tests, carried out on request to suit the project’s requirements.
+
+| Test | What it checks |
+|---|---|
+| VT — visual testing | Weld shape and size, surface cracks, undercut, spatter and visible defects |
+| PT — liquid penetrant | Surface-breaking cracks and discontinuities; suited to non-magnetic stainless steel and aluminium |
+| PAUT — phased-array ultrasonics | Internal weld defects such as lack of fusion, internal cracks and porosity, with a cross-section image of the weld |
+| Other tests | As the project and client require |
+
+## How is a welding project quoted and run?
+
+Send drawings, material, quantity and required tests; the job is priced by material, weld length and type, structure size and requested tests after a manufacturability review.
+
+1. **Send drawings**: Send the structure or part drawings, material, quantity and required tests, or describe them by phone.
+2. **Manufacturability review**: Welding sequence, joint access and distortion control are reviewed.
+3. **Quotation**: Priced by material, weld length and type, structure size and requested tests.
+4. **Fabrication and welding**: Parts are prepared, fixtured, welded and finished as needed.
+5. **Testing and delivery**: Requested tests are carried out and the structure is delivered.
+
+## Why choose HyperFab for welding?
+
+Welding planned before work starts, experience in the medical and marine industries, and weld quality proven by testing.
+
+- **Engineering before welding**: Welding sequence and fixturing are planned before work starts so the structure stays flat and true to the drawing.
+- **Experience in demanding industries**: Many units for medical and marine use, plus large platform structures on wheels and rails.
+- **Quality you can verify**: VT, PT and PAUT on request: weld quality is proven by testing, not by words.
+
+## FAQ
+
+### Does HyperFab do TIG welding of stainless steel?
+
+Yes. HyperFab, based in Tehran, Iran, does TIG and MIG welding of stainless steel and has built many units for the medical and marine industries. Stainless welded structures are fabricated and assembled from drawing to delivery.
+
+### Does HyperFab weld 6061 and 6063 aluminium?
+
+Yes. HyperFab does TIG and MIG welding of 6000-series aluminium, including 6061 and 6063, for chassis, frames and light structures.
+
+### TIG or MIG welding for stainless steel — which is better?
+
+TIG gives cleaner, more precise welds and suits thin sheet, cosmetic parts and medical and food equipment. MIG is faster and more economical for long and structural welds. HyperFab does both and recommends the right process by material, thickness and use.
+
+### How is welding priced at HyperFab?
+
+HyperFab prices a welding project by material, weld length and type, structure size and the weld tests requested. The quotation follows a manufacturability review of your drawings.
+
+### What should I send for a welding quote?
+
+Send HyperFab the structure or part drawings, the material, the quantity and any weld tests you need, or describe them by phone on +98 996 223 3898.
+
+### Does HyperFab design the welded structure?
+
+No. Structural design is the client’s and HyperFab fabricates to the approved drawings. The drawings are reviewed for manufacturability before fabrication and any issues are discussed with you.
+
+### Which weld tests does HyperFab offer?
+
+HyperFab offers visual testing (VT), liquid penetrant testing (PT), phased-array ultrasonic testing (PAUT) and other tests, on request and to suit the project’s requirements.
+
+### Does HyperFab build large welded structures?
+
+Yes. HyperFab has built large platform structures, including a framed chassis mounted on wheels that runs on rails.
+
+### Where is HyperFab’s welding service based?
+
+HyperFab is based in Tehran, Iran. Welding projects are discussed and quoted by phone on +98 996 223 3898 or on Bale (@hyperfab_pro).
+
+---
+
+# Silver and gold plating, anodizing and chromate — Finishing for batch metal parts
+
+URL: https://hyperfabgroup.github.io/en/plating-anodizing/
+
+Gold and silver plating on brass and other metals, and anodizing and chromate conversion (Alodine) on aluminium, are offered by HyperFab, a manufacturing company in Tehran, Iran, for decorative, electrical and industrial parts. The service is for production runs, with the same preparation and checks for every part in a batch. To get a quote, tell HyperFab the part material, finish and quantity or send a sample; call +98 996 223 3898.
+
+Silver and gold plating on brass and other metals, and anodizing and chromate conversion (Alodine) on aluminium — for decorative, electrical and industrial uses, with consistent quality across the run.
+
+- Service: Silver and gold plating, anodizing and chromate (Alodine)
+- Base metals: Brass and other metals for plating; aluminium for anodizing and chromate
+- Quantity: Production runs; one-off work is accepted only rarely
+- Quote: From part material, finish and quantity, or a sample part
+- Ordering: By phone (+98 996 223 3898) or Bale (@hyperfab_pro)
+- Location: Tehran, Iran
+
+- Plating: silver and gold on brass and other metals
+- Aluminium: anodizing and chromate (Alodine)
+- For: production runs
+
+## Does HyperFab do gold plating, silver plating and anodizing?
+
+Yes. HyperFab does silver and gold plating on brass and other metals, and anodizing and chromate conversion (Alodine) on aluminium, for production runs.
+
+Surface finish is the last and most visible step in making a part. It sets the part’s appearance and its resistance to corrosion and wear, and its electrical behaviour.
+
+The service covers both decorative and technical parts. For decorative parts, a bright, lasting appearance matters: décor items, hardware, statuettes and corporate gifts. For technical parts, conductivity, corrosion resistance and a good paint base matter: connectors, contacts and electronic and industrial parts. It is for production runs, and it pairs well with HyperFab’s batch CNC turning: a turned brass part is delivered plated and ready.
+
+For production runs only: this service is for batch production; one-off parts are accepted only rarely. A suitable quantity is recommended after reviewing the project.
+
+## Which plating and anodizing finishes are available?
+
+Silver plating, gold plating, aluminium anodizing and chromate (Alodine), on brass, aluminium and other metals.
+
+- **Silver plating**: The highest electrical conductivity of any metal; for contacts, connectors, busbars and electrical parts, and for decorative items with a bright silver look.
+- **Gold plating**: Excellent resistance to oxidation and stable contact resistance; for connectors and electronics, and for jewellery, hardware and luxury items.
+- **Aluminium anodizing**: A hard oxide layer grown on aluminium that raises corrosion and wear resistance; for housings, profiles and industrial and decorative parts.
+- **Chromate (Alodine)**: A thin conversion coating on aluminium that prevents corrosion, keeps the surface electrically conductive and makes a good paint base.
+- **On brass and other metals**: Plating on brass and other metals, from turned parts to castings and sheet parts.
+- **Consistent across the run**: The same preparation and checks for every part in a batch, so colour and appearance match from first part to last.
+
+## Silver, gold, anodizing or chromate: which finish suits your part?
+
+Silver for the highest conductivity, gold for oxidation resistance and stable contact resistance, anodizing for a hard, corrosion- and wear-resistant layer on aluminium, and chromate for a conductive, paintable surface on aluminium.
+
+| Finish | Base metal | Main property | Typical uses |
+|---|---|---|---|
+| Silver plating | Brass, copper and other metals | Highest conductivity, silver appearance | Contacts and connectors, busbars, RF parts, decorative items |
+| Gold plating | Brass, copper and other metals | Oxidation-resistant, stable contact resistance, gold appearance | Connectors and electronics, jewellery, luxury hardware |
+| Anodizing | Aluminium | Hard oxide layer, corrosion- and wear-resistant | Housings, profiles, industrial and decorative parts |
+| Chromate (Alodine) | Aluminium | Corrosion protection with a conductive surface, paint base | Electronic parts, enclosures, parts before painting |
+
+## What are plating and anodizing used for?
+
+- Electrical and electronic parts: contacts, connectors, terminals and busbars with silver or gold plating.
+- Decorative items and gifts: statuettes, badges, hardware and décor with gold and silver plating.
+- Device housings and frames: anodized or chromated aluminium parts, including custom aluminium extrusion profiles.
+- Turned brass parts: fittings and precision parts with protective or decorative plating.
+- Aluminium parts before painting: chromate as an adhesion base, for example before powder coating.
+
+## FAQ
+
+### Does HyperFab do gold and silver plating?
+
+Yes. HyperFab, based in Tehran, Iran, does silver and gold plating on brass and other metals for decorative, electrical and industrial uses. The service is for production runs.
+
+### Does HyperFab anodize aluminium?
+
+Yes. HyperFab does anodizing and chromate conversion (Alodine) on aluminium parts, for production runs.
+
+### What is chromate or Alodine?
+
+Chromate is a thin conversion coating on aluminium that prevents corrosion and, unlike anodizing, keeps the surface electrically conductive. It is also a good paint base. Alodine is the well-known trade name of this kind of coating.
+
+### Silver or gold plating — which is better?
+
+Silver has the highest conductivity and costs less but tarnishes over time in air. Gold conducts less but does not oxidise, so its contact resistance stays stable. The choice depends on use, environment and budget.
+
+### Is there a minimum quantity for plating and anodizing?
+
+HyperFab’s plating and anodizing service is for production runs; one-off work is accepted only rarely, and a suitable quantity is recommended after reviewing the project.
+
+### What should I send for a plating or anodizing quote?
+
+Tell HyperFab the part material, the finish you need and the quantity, or send a sample part. HyperFab’s industrial projects specialist answers by phone on +98 996 223 3898.
+
+### Can HyperFab make the part as well as plate it?
+
+Yes. You can also have the part made by HyperFab through batch CNC turning, punching or injection moulding, and receive it finished.
+
+### Where is HyperFab’s plating and anodizing service based?
+
+HyperFab is based in Tehran, Iran. Plating, anodizing and chromate projects are handled by phone on +98 996 223 3898 or on Bale (@hyperfab_pro).
+
+---
+
+# Powder coating (electrostatic, oven-cured) — Durable finishes for batch parts
+
+URL: https://hyperfabgroup.github.io/en/powder-coating/
+
+Powder coating is a dry, electrostatically charged powder that is oven-cured into a hard, even layer, more durable than liquid paint. HyperFab, a manufacturing company in Tehran, Iran, powder-coats batch parts in steel, iron, aluminium and other metals, in electrostatic powder, pearl, hammer and textured finishes, gloss or matt, in a wide range of colours including RAL codes. Pricing depends on part size and surface area, finish, preparation and quantity and is quoted after review; call +98 996 223 3898.
+
+Electrostatic powder coating in pearl, hammer and textured finishes, gloss and matt, on batch metal parts — a hard, even, durable finish for machine housings, structures, industrial parts and consumer products.
+
+- Service: Electrostatic, oven-cured powder coating of steel, iron, aluminium and other metals
+- Finishes: Powder, pearl, hammer, texture and wrinkle; gloss, satin or matt; RAL colours
+- Quantity: Production runs; one-off work is accepted only rarely
+- Pricing model: By size and surface area, finish, preparation and quantity, after review
+- Ordering: By phone (+98 996 223 3898) or Bale (@hyperfab_pro)
+- Location: Tehran, Iran
+
+- Finishes: powder, pearl, hammer, texture, gloss and matt
+- On: steel, iron, aluminium and other metals
+- For: production runs
+
+## What is powder coating?
+
+Powder coating applies a dry powder to a metal part. The electrically charged powder clings to the part, which is then cured in an oven so the powder melts into a continuous, hard layer. The result is thicker, more even and more resistant to impact, scratches and corrosion than liquid paint.
+
+HyperFab powder-coats batch metal parts with high quality at a fair price: machine housings and chassis, structures, industrial parts and consumer products. If the part is also made at HyperFab — by punching, welding or turning — you receive the coated, finished part in one place. On aluminium, chromate conversion as a base improves paint adhesion.
+
+For production runs only: this service is for batch production; one-off parts are accepted only rarely. A suitable quantity is recommended after reviewing the project.
+
+## Which powder coating finishes are available?
+
+Electrostatic powder, pearl, hammer, texture and wrinkle finishes, in gloss, satin or matt and a wide range of colours, including standard RAL codes.
+
+- **Electrostatic powder**: The most common powder coating: an even, solvent-free finish with strong adhesion and durability.
+- **Pearl (metallic and pearlescent)**: A metallic or pearlescent sheen for cosmetic parts, décor and premium products.
+- **Hammer finish**: A texture like hammered metal that hides imperfections; common on machine housings, cabinets and tools.
+- **Texture and wrinkle**: A rough, matt surface that hides fingerprints and scratches; for high-touch parts.
+- **Gloss, satin and matt**: The gloss level to suit the use and look of the product.
+- **Wide colour range**: A wide range of colours, including standard RAL codes.
+
+## How does powder coating work, step by step?
+
+Surface preparation, electrostatic powder application, oven curing, then inspection and delivery.
+
+1. **Surface preparation**: Degreasing and cleaning, plus other preparation where needed for better adhesion.
+2. **Powder application**: Charged powder is sprayed evenly onto the part.
+3. **Oven curing**: The part is cured in an oven so the powder melts into a hard, continuous layer.
+4. **Inspection and delivery**: Appearance and evenness are checked and parts are packed and delivered.
+
+## What is powder coating used for?
+
+- Machine housings and chassis and industrial equipment.
+- Electrical cabinets, enclosures and metal boxes.
+- Metal structures, shelving and racks.
+- Metal furniture and décor.
+- Car and motorcycle parts, wheels and body parts.
+- Home appliances and metal consumer products.
+
+## Powder coating or ordinary paint: which lasts longer?
+
+Powder coating gives a thicker, harder layer that lasts longer than ordinary liquid paint against impact, scratches and corrosion.
+
+- **More durable**: A thicker, harder layer that lasts longer against impact, scratches and corrosion.
+- **Consistent across the run**: The same thickness and look on every part in a batch, with no runs or blotches.
+- **Many looks**: From matt and gloss to pearl, hammer and textured, for every taste and use.
+
+## FAQ
+
+### What is powder coating?
+
+Powder coating is an electrostatically charged powder that clings to a metal part and is cured in an oven into a hard, even layer. It is more durable than liquid paint. HyperFab, based in Tehran, Iran, powder-coats batch metal parts.
+
+### Which powder coatings does HyperFab offer?
+
+HyperFab offers electrostatic powder, pearl (metallic and pearlescent), hammer, texture and wrinkle finishes, in gloss, satin or matt and a wide range of colours, including standard RAL codes.
+
+### What is a pearl finish?
+
+A powder coating with metallic or pearlescent particles that gives a metallic or pearl-like sheen; popular for cosmetic parts and premium products.
+
+### Does HyperFab powder-coat aluminium?
+
+Yes. HyperFab powder-coats steel, iron, aluminium and other metals. On aluminium, chromate as a base improves paint adhesion.
+
+### How is powder coating priced?
+
+HyperFab prices powder coating by part size and surface area, finish type and texture, preparation required and quantity. The price is quoted after review.
+
+### Is there a minimum quantity for powder coating?
+
+HyperFab’s powder coating service is for production runs; one-off work is accepted only rarely, and a suitable quantity is recommended after reviewing the project.
+
+### What should I send for a powder coating quote?
+
+Tell HyperFab the part size, the finish you want and the quantity, or send a sample part. HyperFab’s industrial projects specialist answers by phone on +98 996 223 3898.
+
+### Where is HyperFab’s powder coating service based?
+
+HyperFab is based in Tehran, Iran. Powder coating projects are handled by phone on +98 996 223 3898 or on Bale (@hyperfab_pro).
+
+---
+
+<!-- language: fa -->
+
+# ساخت آنلاین قطعه و تولید صنعتی در تهران | هایپرفب
+
+URL: https://hyperfabgroup.github.io/
+
+ساخت قطعه، به سادگی یک بارگذاری
+
+انتخاب روش تولید، جنس و تیراژ در یک صفحه؛ قیمت همان‌جا مشخص می‌شود.
+
+فایل طرح خود را در هایپرفب بارگذاری کنید تا در عرض چند دقیقه قیمت تولید قطعه به شما اعلام شود. برای پرینت سه‌بعدی FDM و برش لیزر، تخمین‌گر آنلاین قیمت را همان لحظه می‌دهد.
+
+## هایپرفب در یک نگاه
+
+هایپرفب (HyperFab، hyperfab.ir) پلتفرم آنلاین ساخت و تولید قطعه در تهران است که پرینت سه‌بعدی FDM و رزینی، ماشین‌کاری CNC، برش لیزر فلزات و غیرفلزات و خم‌کاری ورق را آنلاین و با ارسال به سراسر ایران ارائه می‌دهد. مشتری فایل طرح را در سایت hyperfab.ir بارگذاری می‌کند و قیمت پرینت سه‌بعدی FDM و برش لیزر را همان لحظه از تخمین‌گر آنلاین قیمت هایپرفب می‌گیرد. برای روش‌های دیگر، قیمت پس از بررسی کارشناس اعلام می‌شود. حداقل سفارش یک قطعه است و سفارش‌های این خدمات معمولاً حداکثر ظرف سه روز کاری آماده می‌شوند.
+
+برای خرید تکه‌ی کوچک متریال صنعتی، سرویس تکه‌یاب هایپرفب تکه را پیدا می‌کند، قیمت می‌دهد و در صورت نیاز به اندازه برش می‌زند: ورق، میلگرد، شفت، تسمه، لوله و پروفیل از آلومینیوم، استیل، فولاد، مس، برنج و پلاستیک مهندسی. ارسال به سراسر ایران با پست پیشتاز، تیپاکس و اسنپ‌باکس است و تحویل حضوری در تهران رایگان است.
+
+برای تولید صنعتی و تیراژی، هایپرفب پانچ ورق و لوله (فلزی و پلی‌اتیلن)، قالب‌سازی و تزریق پلاستیک، تراشکاری CNC تیراژی، اکسترود پروفیل آلومینیوم، جوشکاری آرگون TIG و MIG، آبکاری و آندایز و رنگ کوره‌ای را انجام می‌دهد؛ از طراحی و ساخت قالب و تولید ضربی تا کنترل کیفیت و تحویل قطعه. گروه مهندسی هایپرفب از دانشگاه‌های برتر کشور می‌آید و سال‌ها در دل صنعت کار کرده است. مشاوره‌ی این پروژه‌ها تلفنی است: ۰۹۹۶۲۲۳۳۸۹۸.
+
+## خدمات و روش‌های تولید
+
+هر سفارش کاملاً آنلاین ثبت می‌شود؛ فایل طرح را بارگذاری کنید و در عرض چند دقیقه قیمت را دریافت کنید.
+
+### پرینت سه‌بعدی FDM
+
+پرینت سه‌بعدی FDM (Fused Deposition Modeling) در هایپرفب یعنی ساخت قطعه‌ی پلاستیکی از روی فایل سه‌بعدی، لایه‌به‌لایه و بدون قالب. فایل STL یا 3MF را در سایت hyperfab.ir بارگذاری می‌کنید و تخمین‌گر آنلاین قیمت همان لحظه حجم، وزن، ابعاد، زمان چاپ و قیمت را نشان می‌دهد. محاسبه در مرورگر خودتان انجام می‌شود و فایل تا وقتی سفارش را نهایی نکنید جایی فرستاده نمی‌شود. فیلامنت‌های PLA، PETG، ABS و TPU با ضخامت لایه‌ی ۰٫۱ تا ۰٫۳ میلی‌متر در دسترس‌اند.
+
+FDM اقتصادی‌ترین روش ساخت افزایشی است و برای نمونه‌ی اولیه (پروتوتایپ)، قطعه‌ی یدکی‌ای که دیگر در بازار پیدا نمی‌شود، فیکسچر و جیگ کارگاهی، ماکت معماری و پروژه‌های دانشجویی بهترین نسبت هزینه به نتیجه را دارد. پیش از چاپ، مدل از نظر ضخامت دیواره، جهت‌گیری و نقاط ضعف بررسی می‌شود. حداقل سفارش یک قطعه است، برای تیراژ بیشتر تخفیف پلکانی خودکار اعمال می‌شود و قطعه حداکثر ظرف سه روز کاری آماده و به سراسر ایران ارسال می‌شود. وقتی نمونه تأیید شد و تیراژ بالا رفت، قالب‌سازی و تزریق پلاستیک هایپرفب قدم بعدی است.
+- فرمت فایل: STL · 3MF · OBJ · STEP
+- متریال: PLA، PETG، ABS، TPU
+- ضخامت لایه: 0.1 – 0.3 mm
+- قیمت‌گذاری: آنلاین و لحظه‌ای
+- تحویل: حداکثر ۳ روز کاری
+
+URL: https://hyperfab.ir/services/3d-printing/#fdm
+
+### پرینت سه‌بعدی رزینی
+
+پرینت سه‌بعدی رزینی (SLA / DLP) رزین مایع را با نور فرابنفش لایه‌به‌لایه سخت می‌کند و جزئیاتی به‌مراتب ریزتر و سطحی صاف‌تر از FDM می‌دهد. پرینت رزینی هایپرفب با رزولوشن ۱۶K انجام می‌شود که دقت افقی حدود ۱۴ در ۱۹ میکرون می‌دهد و ضخامت لایه‌اش بین ۰٫۰۲ تا ۰٫۱ میلی‌متر تنظیم می‌شود؛ یعنی خط لایه روی قطعه تقریباً دیده نمی‌شود.
+
+این روش برای قطعات کوچک و دقیق انتخاب اول است: فیگور و مینیاتور، مدل دندانی، مدل ریخته‌گری جواهرسازی، پروتوتایپ دقیق و مدل نمایشی. سه نوع رزین در دسترس است: رزین استاندارد برای بالاترین جزئیات، رزین مهندسی چقرمه (Tough) برای قطعه‌ای که باید ضربه تحمل کند و رزین قابل ریخته‌گری (Castable) برای مدل ریخته‌گری. قیمت پرینت رزینی بر اساس حجم رزین مصرفی و زمان چاپ، پس از بررسی فایل اعلام می‌شود.
+- رزولوشن: 16K — دقت افقی 14 × 19 µm
+- ضخامت لایه: 0.02 – 0.1 mm
+- رزین: استاندارد، مهندسی (Tough)، ریخته‌گری (Castable)
+- قیمت‌گذاری: پس از بررسی فایل
+
+URL: https://hyperfab.ir/services/3d-printing/#resin
+
+### ماشین‌کاری CNC
+
+ماشین‌کاری CNC در هایپرفب یعنی فرزکاری، تراشکاری، سوراخ‌کاری، شیارزنی و رزوه‌زنی دقیق طبق نقشه‌ی شما، روی پلیمرهای مهندسی و فلزات نرم: پلی‌اتیلن و پلی‌استال (POM / PE)، تفلون (PTFE)، نایلون (PA6)، پلکسی‌گلاس (PMMA)، دلرین (POM-C) و برنج. تلرانس استاندارد ±۰٫۰۵ میلی‌متر است و تلرانس دقیق‌تر با هماهنگی قبلی ممکن است. کیفیت سطح، بسته به جنس و ابزار، از Ra 1.6 به بالاست.
+
+فایل STEP یا IGES، نقشه‌ی DWG و DXF یا PDF ابعادگذاری‌شده را در hyperfab.ir بارگذاری می‌کنید. نقشه از نظر تلرانس‌ها، ابزارخور بودن گوشه‌ها و امکان‌پذیری ساخت بررسی می‌شود و بعد قیمت و زمان تحویل اعلام می‌شود. کاربردهای رایج: بوش، چرخ‌دنده و غلتک یدکی ماشین‌آلات، واشر و آب‌بند تفلونی برای تجهیزات شیمیایی، فیکسچر و جیگ، محفظه‌ی شفاف پلکسی و قطعات تزئینی برنجی. حداقل سفارش یک قطعه است و تحویل، بسته به پیچیدگی قطعه، حداکثر سه روز کاری طول می‌کشد.
+
+ماشین‌کاری CNC در هایپرفب فقط برای ساخت قالب نیست. هایپرفب قطعات مختلف را طبق نقشه‌ی مشتری، با کیفیت و دقت بالا، می‌سازد و تحویل می‌دهد: از تک‌قطعه و نمونه‌ی اولیه تا تولید تیراژی قطعات تراشکاری از برنج و فولادهای MO40 و CK45.
+- عملیات: فرزکاری، تراشکاری، سوراخ‌کاری، شیارزنی، رزوه‌زنی
+- تلرانس: ±0.05 mm
+- کیفیت سطح: Ra 1.6 به بالا
+- فرمت فایل: STEP · IGES · DWG · DXF · PDF
+- قیمت‌گذاری: پس از بررسی نقشه
+- تولید تیراژی: تراشکاری CNC تیراژی
+
+URL: https://hyperfab.ir/services/cnc/
+
+### برش لیزر فلزات
+
+برش لیزر فلزات هایپرفب ورق آهن، استیل، آلومینیوم، گالوانیزه و روغنی را با لیزر فایبر و گاز نیتروژن برش می‌دهد تا لبه‌ی تمیز و بدون سوختگی و اکسید بماند. برای کاربردهای متعارف، برش CO₂ هم در دسترس است. دقت برش ±۰٫۱ میلی‌متر و عرض شیار برش حدود ۰٫۱۵ میلی‌متر است و ابعاد و جای سوراخ‌ها دقیقاً مطابق فایل و بین قطعات تکرارپذیر درمی‌آید.
+
+کافی است فایل DXF قطعه را در hyperfab.ir بارگذاری کنید. تخمین‌گر قیمت لیزر طول مسیر برش، تعداد سوراخ‌کاری (پیرس)، وزن ورق و خم‌ها را از روی نقشه حساب می‌کند و قیمت را همان لحظه می‌دهد. هم‌زمان نقشه را از نظر خطوط تکراری، مسیرهای باز، سوراخ‌های کوچک‌تر از ضخامت ورق و بیش از ده خطای رایج دیگر بررسی می‌کند. این خدمت برای براکت، پنل و شاسی دستگاه، تابلو و لوگوی فلزی، واشر و صفحه‌ی فلزی و نمونه‌سازی ورقی مناسب است. اگر قطعه خم هم لازم داشته باشد، برش و خم در یک سفارش انجام می‌شود. برای تیراژ تکراری با الگوی سوراخ ثابت، پانچ ورق و لوله هایپرفب پس از ساخت قالب هر قطعه را سریع‌تر و ارزان‌تر می‌سازد.
+- نوع لیزر: فایبر با گاز نیتروژن، و CO₂
+- دقت برش: ±0.1 mm
+- عرض شیار (kerf): حدود 0.15 mm
+- فرمت فایل: DXF
+- قیمت‌گذاری: آنلاین و لحظه‌ای
+
+URL: https://hyperfab.ir/services/laser-metal/
+
+### برش لیزر غیرفلزات
+
+برش و حکاکی لیزر غیرفلزات در هایپرفب با لیزر CO₂ روی پلکسی‌گلاس (اکریلیک)، MDF، چوب، چرم، نمد و فوم انجام می‌شود. برش کامل، حکاکی سطحی و علامت‌گذاری می‌تواند روی یک فایل و در یک مرحله اجرا شود. طرح‌های مشبک و ظریفی که با اره و فرز اجراشدنی نیستند، با لیزر بدون مشکل برش می‌خورند. دقت برش ±۰٫۱ میلی‌متر است.
+
+فایل برداری DXF را با مقیاس ۱:۱ و واحد میلی‌متر بفرستید و خطوط برش و نواحی حکاکی را با دو رنگ یا دو لایه‌ی جدا مشخص کنید. کاربردهای رایج: جعبه و بسته‌بندی سفارشی، ماکت معماری و آموزشی، تابلو و لوگوی پلکسی، اقلام تبلیغاتی مثل جاکلیدی و زیرلیوانی، شابلون برش پارچه و چرم و قطعات دکوراتیو. سفارش از یک قطعه پذیرفته می‌شود و برای تیراژ بیشتر چیدمان قطعات روی ورق بهینه می‌شود تا قیمت واحد پایین بیاید.
+- نوع لیزر: CO₂
+- دقت برش: ±0.1 mm
+- عملیات: برش کامل، حکاکی سطحی، علامت‌گذاری
+- فرمت فایل: DXF
+- قیمت‌گذاری: آنلاین و لحظه‌ای
+
+URL: https://hyperfab.ir/services/laser-nonmetal/
+
+### خم‌کاری ورق
+
+خم‌کاری ورق فلزی در هایپرفب با پرس‌برک و ابزار V به روش خم آزاد (air bending) انجام می‌شود و دقت زاویه‌ی خم ±۱ درجه است. می‌توانید خم‌کاری را مستقل سفارش دهید یا در ادامه‌ی برش لیزر. وقتی برش و خم در یک سفارش انجام شود، زمان تولید کوتاه‌تر می‌شود و جای خم نسبت به سوراخ‌ها دقیق‌تر درمی‌آید.
+
+گسترده‌ی قطعه را به‌صورت DXF، فایل سه‌بعدی STEP یا نقشه‌ی PDF ابعادگذاری‌شده بفرستید. اگر فایل سه‌بعدی بدهید، گسترده‌ی درست با ضریب K حساب می‌شود. ترتیب خم، شعاع خم و برخورد ابزار پیش از تولید بررسی می‌شود تا ورق در محل خم ترک نخورد. کاربردهای رایج: براکت L و U، جعبه‌ی تابلو برق و محفظه‌ی دستگاه، شاسی و بدنه‌ی تجهیزات صنعتی، سینی کابل و کانال، پانل نما و قطعات یدکی ورقی.
+- روش: پرس‌برک با ابزار V، خم آزاد
+- دقت زاویه: ±1°
+- فرمت فایل: DXF · STEP · PDF
+- خدمت ترکیبی: برش لیزر و خم در یک سفارش
+
+URL: https://hyperfab.ir/services/bending/
+
+## تخمین‌گر آنلاین قیمت: قیمت ساخت قطعه، همان لحظه
+
+قیمت پرینت سه‌بعدی از روی فایل STL و 3MF، و قیمت برش لیزر و خم‌کاری از روی فایل DXF؛ بدون استعلام تلفنی.
+
+تخمین‌گر قیمت هایپرفب (HyperFab Quote) ابزار آنلاین محاسبه‌ی قیمت ساخت قطعه در سایت hyperfab.ir است. فایل قطعه را بارگذاری می‌کنید، جنس، ضخامت، مقیاس و تعداد را انتخاب می‌کنید و قیمت تولید را همان لحظه می‌بینید؛ بدون تماس تلفنی، بدون رفت‌وبرگشت ایمیل و بدون چند روز انتظار برای استعلام.
+
+این ابزار دو موتور محاسبه دارد: موتور پرینت سه‌بعدی FDM که فایل STL و 3MF را تحلیل می‌کند، و موتور برش لیزر و خم‌کاری ورق که فایل DXF را می‌خواند. هر دو موتور در مرورگر خود شما اجرا می‌شوند. برای گرفتن قیمت، فایل به هیچ سروری فرستاده نمی‌شود و فقط وقتی سفارش را نهایی کنید، برای تولید همان سفارش ارسال می‌شود.
+
+- پرینت سه‌بعدی FDM: جهت‌گیری بهینه‌ی مدل، تحلیل ساپورت، حجم دیواره و پرشدگی لایه‌به‌لایه، جرم فیلامنت و زمان چاپ.
+- برش لیزر و خم‌کاری: طول مسیر برش، تعداد سوراخ‌کاری (پیرس)، تعداد و طول خم، حکاکی و وزن ورق.
+- بررسی خودکار نقشه: خطوط تکراری، مسیر باز، سوراخ کوچک‌تر از ضخامت، سوراخ نزدیک خط خم و بیش از ده خطای رایج دیگر، پیش از پرداخت.
+- حریم فایل: محاسبه در مرورگر شما انجام می‌شود و فایل فقط پس از نهایی‌کردن سفارش ارسال می‌شود.
+
+## تکه‌یاب: خرید تکه‌ی متریال صنعتی، بدون تلفن پشت تلفن
+
+ورق، میلگرد، شفت، تسمه، لوله و پروفیل از آلومینیوم، استیل، فولاد، مس، برنج و پلاستیک مهندسی؛ به اندازه‌ای که لازم دارید.
+
+به یک تکه ورق آلومینیوم، چند سانت میلگرد استیل یا یک شفت برنجی نیاز دارید، ولی فروشنده‌ها شاخه‌ی کامل یا ورق درسته می‌فروشند؟ تکه‌یاب سرویس آنلاین هایپرفب برای خرید تکه‌ی کوچک متریال صنعتی است. مشخصات تکه را یک بار در فرم تکه‌یاب ثبت می‌کنید و هایپرفب آن را پیدا می‌کند، قیمت را اعلام می‌کند و در صورت نیاز به اندازه برش می‌زند.
+
+تکه‌یاب آلومینیوم، استیل، فولاد، مس و برنج، پلاستیک‌های مهندسی و فلزات خاص را به شکل ورق و صفحه، شفت و میلگرد، تسمه، لوله و پروفیل پوشش می‌دهد. تحویل با پیک در تهران، حضوری یا ارسال به شهرهای دیگر انجام می‌شود. اگر همان تکه قرار است تراشکاری، برش لیزر یا خم‌کاری شود، ساختش را هم همین‌جا می‌سپارید.
+
+- یک فرم، به‌جای ده تماس: جنس، گرید، شکل، ابعاد، تعداد، زمان نیاز و روش تحویل را در فرم چهارمرحله‌ای ثبت می‌کنید.
+- قیمت در حساب کاربری: پس از استعلام از تأمین‌کنندگان، قیمت نهایی در حساب کاربری هایپرفب اعلام می‌شود.
+- برش به اندازه: تکه در صورت نیاز به اندازه‌ی درخواستی برش می‌خورد و آماده‌ی استفاده تحویل می‌شود.
+- پیگیری با کد TK: هر درخواست کد پیگیری دارد و وضعیتش از استعلام تا تحویل در حساب کاربری دیده می‌شود.
+
+## تولید صنعتی و تیراژی: از قالب و تراش تا جوش، آبکاری و رنگ
+
+زنجیره‌ی کامل ساخت قطعات تیراژی، از ساخت قطعه تا پوشش نهایی، با یک گروه مهندسی مسئول.
+
+وقتی قطعه از نمونه به تیراژ می‌رسد، روش ساخت هم باید عوض شود. هایپرفب برای تولید صنعتی و تیراژی، زنجیره‌ی کاملی از خدمات دارد: پانچ ورق و لوله، قالب‌سازی و تزریق پلاستیک، تراشکاری CNC تیراژی، اکسترود پروفیل آلومینیوم، جوشکاری و ساخت سازه‌های جوشی، آبکاری و آندایز و رنگ کوره‌ای. یعنی قطعه از ساخت تا پوشش نهایی یک‌جا انجام و تحویل می‌شود.
+
+گروه مهندسی هایپرفب از دانشگاه‌های برتر کشور، از جمله دانشگاه صنعتی شریف، می‌آید و سال‌ها در دل صنعت کار کرده است. چهار قالب تزریق پلی‌اتیلن را از ساخت تا راه‌اندازی برده و با آن‌ها بیش از ۸۰٬۰۰۰ قطعه تولید شده است. کنترل کیفیت ۸٬۰۰۰ لوله‌ی پانچ‌شده، قطعات برنجی جفت‌شونده و گیج‌های MO40 و CK45، و سازه‌های استیل و آلومینیوم برای صنایع پزشکی و دریایی هم در کارنامه‌اش است.
+
+- پانچ ورق و لوله: فلزی و پلی‌اتیلن؛ طراحی و ساخت قالب پانچ و تولید ضربی.
+- قالب‌سازی و تزریق پلاستیک: ساخت قالب، نمونه‌گیری و تولید ضربی با PE، PP، ABS و نایلون.
+- تراشکاری CNC تیراژی: قطعات برنجی با تلرانس انطباقی و قطعات گیج از MO40 و CK45.
+- اکسترود پروفیل آلومینیوم: مقطع دلخواه با قالب اختصاصی؛ تناژ و هزینه‌ی قالب با شما، بقیه با ما.
+- جوشکاری TIG و MIG: استیل ضدزنگ و آلومینیوم ۶۰۰۰، سازه‌های جوشی و پلتفرم، با آزمون VT، PT و PAUT.
+- آبکاری و آندایز: نقره و طلا روی برنج و فلزات، آندایز و کروماته روی آلومینیوم.
+- رنگ کوره‌ای: پودری، صدفی، چکشی و بافت‌دار.
+- مشاوره‌ی تلفنی: کارشناس پروژه‌های صنعتی هایپرفب: ۰۹۹۶۲۲۳۳۸۹۸.
+
+## چرا ساخت قطعه را به هایپرفب بسپارید
+
+- **مهندسی پیش از ساخت**: پیش از روشن‌شدن دستگاه، فایل شما از نظر ساخت‌پذیری، جنس، روش تولید و ابعاد بررسی می‌شود. اگر طرحی قابل ساخت نباشد، همان اول می‌گوییم چرا و چه باید کرد.
+- **قیمت شفاف، زمان واقع‌بینانه**: برای پرینت FDM و برش لیزر، قیمت همان لحظه آنلاین است. برای بقیه‌ی روش‌ها قیمت و زمان پس از بررسی قطعی می‌شود: بدون هزینه‌ی پنهان و بدون «بعداً معلوم می‌شود».
+- **پیگیری آنلاین و ارسال سراسری**: وضعیت سفارش را در حساب کاربری دنبال می‌کنید و قطعه با بسته‌بندی ایمن به هر نقطه‌ی ایران ارسال می‌شود.
+
+## نمونه‌کارهای واقعی هایپرفب
+
+عکس‌های واقعی از قطعاتی که هایپرفب ساخته است؛ از تراشکاری CNC و قطعات تفلونی تیراژی تا مجموعه‌ی استیلی جوشکاری‌شده و تست‌شده.
+
+- **مجموعه‌ی آب‌بند استیل ۳۰۴، تراشکاری CNC و جوش آرگون** (استیل ۳۰۴ · صنایع فرآیندی): ساخت کامل در هایپرفب: تراشکاری و سوراخ‌کاری دقیق CNC، جوش آرگون قطعات و تست PT جوش برای اطمینان از سلامت اتصال؛ با کنترل ابعادی نهایی مطابق نقشه، برای کاربرد صنعتی تحت فشار.
+- **قطعه و واشر تفلون (PTFE) تراشکاری‌شده با CNC** (تفلون PTFE · صنایع شیمیایی): قطعات و واشرهای تفلونی با تراشکاری دقیق CNC، به‌صورت تیراژی. تلرانس‌ها برای آب‌بندی بدون نشتی در محیط خورنده رعایت شده است.
+- **توپی فولادی CK45 تراشکاری‌شده با CNC** (فولاد CK45 · صنعتی): توپی فولادی با تراشکاری دقیق CNC؛ شیارها و پله‌ها با تلرانس دقیق برای قطعات دوّار و یاتاقان‌بندی.
+- **شفت فولادی ماشین‌کاری‌شده با هزارخار در دو سر** (فولاد · مکانیک و خودرو): شفت با هزارخار در هر دو انتها برای انتقال گشتاور بالا؛ ماشین‌کاری دقیق برای درگیری کامل و بدون لقی.
+- **بوش استیل ۳۰۴ تراشکاری‌شده** (استیل ۳۰۴ · صنعتی): بوش استیل با پله‌ها و شیارهای دقیق و سطح پرداخت تمیز، برای یاتاقان‌بندی و مواضع نیازمند ابعاد دقیق.
+- **قطعات دقیق خارج از محور از برنج، استیل و پلیمر** (برنج، استیل و پلیمر · مکانیزم): مجموعه‌ای از قطعات کوچک و دقیق، از جمله قطعات خارج از محور، از برنج، استیل و پلیمر در یک پروژه، با کنترل ابعادی موشکافانه.
+
+## سفارش ساخت قطعه در هایپرفب چطور انجام می‌شود؟
+
+از فایل تا قطعه‌ی آماده، در چهار قدم.
+
+1. **فایل را می‌فرستید**: مدل سه‌بعدی، نقشه‌ی فنی، یا حتی یک عکس و توضیح؛ در hyperfab.ir بارگذاری می‌کنید.
+2. **کارشناس بررسی می‌کند**: قابلیت ساخت، جنس، روش تولید و ابعاد واقعی سنجیده می‌شود.
+3. **قیمت و زمان قطعی می‌شود**: برای FDM و لیزر آنلاین و آنی؛ برای بقیه پس از بررسی. بدون هزینه‌ی پنهان.
+4. **می‌سازیم و می‌فرستیم**: با بازرسی پیش از بسته‌بندی و ارسال به سراسر ایران.
+
+## ما قطعه می‌سازیم. سال‌هاست.
+
+هایپرفب از دل کارگاه بیرون آمده، نه از دل یک اسلاید. ما خودمان قطعه طراحی کرده‌ایم، قالب ساخته‌ایم، بالای سر خط تولید ایستاده‌ایم و قطعه‌ی معیوب را با دست خودمان کنار گذاشته‌ایم. برای همین وقتی فایل شما را می‌بینیم، می‌دانیم کجا می‌شکند.
+
+هسته‌ی فنی هایپرفب سه مهندس است: دو فارغ‌التحصیل طراحی کاربردی دانشگاه صنعتی شریف و یک متخصص مهندسی ساخت و تولید. تخصص‌های تیم طراحی مکانیکی، شبیه‌سازی فرایند شکل‌دهی، کنترل و مدیریت تولید و کیفیت را پوشش می‌دهند.
+
+- ۴ قالب تزریق پلاستیک پلی‌اتیلن، از نظارت بر ساخت تا راه‌اندازی
+- ۸۰٬۰۰۰+ قطعه‌ی تولیدشده با همان قالب‌ها
+- ۸٬۰۰۰ لوله‌ی پانچ‌شده در یک پروژه‌ی صنعتی، با مسئولیت کنترل کیفیت
+- ۵۵ طرح سه‌بعدی منتشرشده‌ی برند طراحی ما، Manabun Lab
+
+تجربه‌ی ما به قطعه‌ی کوچک محدود نیست. از قالب تزریق و قالب کشش عمیق ورق آلومینیوم تا شبیه‌سازی فرایند با Abaqus و AutoForm، مسیر صنعتی‌شدن یک طرح را از نزدیک می‌شناسیم. پشت هر سفارش یک گروه مهندسی مسئول ایستاده است. سفارش را یک‌جا به ما می‌دهید و ما بهترین روش ساخت را انتخاب می‌کنیم، نمونه را پیش از تولید به تأیید شما می‌رسانیم و کیفیت را پیش از تحویل کنترل می‌کنیم.
+
+## دانشکده‌ی هایپرفب
+
+پیش از سفارش، بدانید کدام روش برای قطعه‌ی شما درست است.
+
+- **سرای دانش**: اصول فنی پرینت سه‌بعدی FDM و رزینی، برش لیزر، ماشین‌کاری و خم‌کاری؛ نکات طراحی، مقایسه‌ی روش‌ها و نحوه‌ی محاسبه‌ی هزینه.
+- **سرای تجربه**: پروژه‌های واقعی مشتریان: قطعه از کجا شروع شد، چه روشی برایش انتخاب شد، چه چالشی پیش آمد و نتیجه چه بود.
+- **سرای فناوری**: تازه‌های دنیای ساخت دیجیتال: متریال‌های جدید، پیشرفت دستگاه‌ها و روندهای آینده‌ی تولید قطعه.
+- **سرای راهنمایی**: کار با سایت هایپرفب گام‌به‌گام: ساخت حساب، بارگذاری فایل، گرفتن قیمت آنلاین، ثبت و پیگیری سفارش.
+
+## FAQ
+
+### هایپرفب چیست؟
+
+هایپرفب (HyperFab) پلتفرم آنلاین ساخت قطعه در تهران است که پرینت سه‌بعدی FDM و رزینی، ماشین‌کاری CNC، برش لیزر فلزات و غیرفلزات و خم‌کاری ورق را ارائه می‌دهد. هایپرفب تخمین‌گر آنلاین قیمت و سرویس تکه‌یاب برای خرید تکه‌ی متریال صنعتی هم دارد. سایت اصلی و ثبت سفارش در hyperfab.ir است.
+
+### چطور قیمت پرینت سه‌بعدی را آنلاین بگیرم؟
+
+در hyperfab.ir فایل STL یا 3MF را در بخش سفارش ساخت بارگذاری کنید. تخمین‌گر قیمت هایپرفب مدل را در مرورگر شما تحلیل می‌کند و قیمت پرینت FDM را بر اساس جنس، درصد پرشدگی، ضخامت لایه، مقیاس و تعداد، همان لحظه نشان می‌دهد. برای پرینت رزینی، قیمت پس از بررسی فایل اعلام می‌شود.
+
+### قیمت برش لیزر را چطور بگیرم؟
+
+فایل DXF قطعه را با مقیاس ۱:۱ و واحد میلی‌متر در hyperfab.ir بارگذاری کنید و جنس و ضخامت ورق را انتخاب کنید. تخمین‌گر طول مسیر برش، تعداد سوراخ‌کاری، خم‌ها و وزن ورق را از روی نقشه حساب می‌کند و قیمت را همان لحظه می‌دهد.
+
+### تکه‌یاب هایپرفب چیست؟
+
+تکه‌یاب سرویس خرید تکه‌ی کوچک متریال صنعتی است. مشخصات تکه را در یک فرم ثبت می‌کنید: جنس، شکل، ابعاد، تعداد، زمان نیاز و روش تحویل. هایپرفب آن را از تأمین‌کنندگان پیدا می‌کند، قیمت می‌دهد، در صورت نیاز به اندازه برش می‌زند و ارسال می‌کند. شکل‌ها ورق، میلگرد، شفت، تسمه، لوله و پروفیل‌اند و جنس‌ها آلومینیوم، استیل، فولاد، مس، برنج و پلاستیک مهندسی.
+
+### ساخت قطعه چقدر طول می‌کشد؟
+
+بیشتر سفارش‌ها حداکثر ظرف سه روز کاری آماده می‌شوند. زمان دقیق به روش تولید، حجم و تعداد قطعه بستگی دارد. زمان ارسال به این مدت اضافه می‌شود و به شهر مقصد و روش ارسال بستگی دارد. برنامه‌ی پروژه‌های پانچ و تزریق پلاستیک همراه پیشنهاد قیمت هماهنگ می‌شود.
+
+### حداقل تعداد سفارش چقدر است؟
+
+حداقل تعدادی وجود ندارد و حتی یک قطعه هم ساخته می‌شود. برای تیراژ بیشتر، تخفیف پلکانی به‌صورت خودکار روی قیمت واحد اعمال می‌شود. برای پانچ و تزریق پلاستیک که قالب دارند، تیراژ مناسب پس از بررسی پروژه پیشنهاد می‌شود.
+
+### هایپرفب پانچ لوله و ورق انجام می‌دهد؟
+
+بله. هایپرفب پانچ ورق و لوله را، فلزی و پلی‌اتیلن، انجام می‌دهد. طراحی و ساخت قالب پانچ و تولید ضربی هم بخشی از این خدمت است. نمونه‌اش پانچ شیار لوبیایی روی لوله‌ی پلی‌اتیلن به قطر ۱۲۵ میلی‌متر، ضخامت ۵ میلی‌متر و فشار کاری ۶ بار است. هزینه شامل ساخت قالب و هزینه‌ی هر ضرب است و به هندسه و جنس قطعه بستگی دارد.
+
+### هایپرفب قالب‌سازی و تزریق پلاستیک انجام می‌دهد؟
+
+بله. هایپرفب قالب تزریق را طراحی و می‌سازد و قطعات پلاستیکی را با متریال‌های مختلف، از جمله پلی‌اتیلن، پلی‌پروپیلن، ABS و نایلون، به‌صورت ضربی تولید و تحویل می‌دهد. تیم هایپرفب چهار قالب تزریق پلی‌اتیلن را از ساخت تا راه‌اندازی برده و با آن‌ها بیش از ۸۰٬۰۰۰ قطعه تولید شده است. مشاوره تلفنی است: ۰۹۹۶۲۲۳۳۸۹۸.
+
+### هایپرفب به شهرستان هم ارسال دارد؟
+
+بله، به سراسر ایران با پست پیشتاز، تیپاکس و اسنپ‌باکس. تحویل حضوری در تهران هم رایگان است.
+
+### فایل طراحی ندارم؛ چه کنم؟
+
+نقشه‌ی دستی، عکس قطعه‌ی نمونه یا توضیح کاربرد را بفرستید. خدمات طراحی و مدل‌سازی سه‌بعدی با هزینه‌ی جداگانه انجام می‌شود و پس از تأیید شما سفارش وارد تولید می‌شود. در فرم سفارش گزینه‌ی «مطمئن نیستم / مشاوره می‌خواهم» هم هست.
+
+### هایپرفب جوشکاری آرگون استیل و آلومینیوم انجام می‌دهد؟
+
+بله. هایپرفب جوشکاری TIG و MIG روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ انجام می‌دهد و سازه‌های جوشی دستگاه و سازه‌های پلتفرمی بزرگ را بر اساس نقشه‌ی مشتری می‌سازد. آزمون‌های VT، PT و PAUT هم به درخواست انجام می‌شود. هایپرفب نمونه‌های زیادی برای صنایع پزشکی و دریایی ساخته است.
+
+### هایپرفب تراشکاری CNC تیراژی انجام می‌دهد؟
+
+بله. هایپرفب قطعات تراشکاری تیراژی را طبق نقشه تولید می‌کند، از جمله قطعات برنجی با تلرانس‌های انطباقی و قطعات گیج از فولاد MO40 و CK45. نقاط حساس هر قطعه پیش از تولید مهندسی و کنترل می‌شود.
+
+### هایپرفب اکسترود پروفیل آلومینیوم انجام می‌دهد؟
+
+بله، به‌طور تخصصی و فقط برای آلومینیوم. پروفیل با مقطع دلخواه مشتری و قالب اختصاصی تولید می‌شود. مشتری تناژ لازم را دارد و هزینه‌ی قالب را می‌پردازد، و مشاوره‌ی مقطع تا تحویل با گروه مهندسی هایپرفب است.
+
+### هایپرفب آبکاری، آندایز و رنگ کوره‌ای انجام می‌دهد؟
+
+بله، برای سفارش‌های تیراژی. هایپرفب آبکاری نقره و طلا را روی برنج و فلزات دیگر انجام می‌دهد و آندایز و کروماته (آلوداین) را روی آلومینیوم. رنگ کوره‌ای پودری، صدفی، چکشی و بافت‌دار هم انجام می‌شود.
+
+### هایپرفب کجاست و چطور با آن تماس بگیرم؟
+
+مرکز پردازش سفارشات هایپرفب در تهران است: خیابان انقلاب، پیچ شمیران، خیابان صفی‌علیشاه، نبش کوچه تهرانی، پلاک ۳۹، واحد ۱. تلفن ۷۷۵۲۷۴۳۸-۰۲۱، موبایل و بله و تلگرام ۰۹۹۶۲۲۳۳۸۹۸ و ایمیل info@hyperfab.ir. ساعات کاری شنبه تا چهارشنبه ۹ تا ۱۷ و پنجشنبه ۹ تا ۱۳ است و ثبت سفارش آنلاین ۲۴ ساعته است.
+
+## تماس با هایپرفب
+
+پیش از ثبت سفارش سؤالی دارید؟ با ما در میان بگذارید.
+
+- مرکز پردازش سفارشات: تهران، خیابان انقلاب، پیچ شمیران، خیابان صفی‌علیشاه، نبش کوچه تهرانی، پلاک ۳۹، واحد ۱
+- تلفن: ۰۲۱-۷۷۵۲۷۴۳۸۰۹۹۶۲۲۳۳۸۹۸
+- سفارشات طراحی و خدمات: ۰۹۹۶۲۲۳۳۸۹۸بله، ایتا و تلگرام
+- ساعات کاری: شنبه تا چهارشنبه: ۹ صبح تا ۵ عصرپنجشنبه: ۹ صبح تا ۱ ظهرثبت سفارش آنلاین: ۲۴ ساعته
+- ایمیل: info@hyperfab.ir
+- بله و اینستاگرام: پرینت سه‌بعدی: @y_admin3d · @Hyper_3dprintصنعتی و تکه‌یاب: @hyperfab_pro · @hyperfab.ir
+
+---
+
+# تخمین‌گر آنلاین قیمت هایپرفب — قیمت ساخت قطعه، همان لحظه
+
+URL: https://hyperfabgroup.github.io/price-estimator/
+
+تخمین‌گر آنلاین قیمت هایپرفب (HyperFab Quote) ابزار رایگان سایت hyperfab.ir است که قیمت پرینت سه‌بعدی FDM را از فایل STL و 3MF و قیمت برش لیزر و خم‌کاری ورق را از فایل DXF همان لحظه محاسبه می‌کند. تحلیل فایل در مرورگر خود شما انجام می‌شود و فایل فقط پس از نهایی‌کردن سفارش ارسال می‌شود. برای پرینت رزینی و ماشین‌کاری CNC، فایل را بارگذاری می‌کنید و قیمت پس از بررسی کارشناس اعلام می‌شود.
+
+فایل سه‌بعدی یا نقشه‌ی DXF را بارگذاری کنید تا حجم، وزن، زمان ساخت و قیمت را همان لحظه ببینید. محاسبه کاملاً در مرورگر شما انجام می‌شود و فایلتان برای گرفتن قیمت جایی فرستاده نمی‌شود.
+
+- ابزار: محاسبه‌ی آنلاین و لحظه‌ای قیمت ساخت قطعه
+- پرینت سه‌بعدی FDM: قیمت آنی از فایل STL و 3MF
+- برش لیزر و خم‌کاری ورق: قیمت آنی از فایل DXF، با بررسی خودکار نقشه
+- حریم فایل: محاسبه در مرورگر؛ بدون ارسال فایل برای گرفتن قیمت
+- هزینه: رایگان و بدون تعهد؛ حداقل سفارش یک قطعه
+- سفارش: آنلاین در hyperfab.ir، ۲۴ ساعته
+
+- پرینت سه‌بعدی FDM: STL · 3MF
+- برش لیزر و خم‌کاری ورق: DXF
+- روش‌های دیگر: رزینی و CNC با قیمت کارشناس پس از بررسی فایل
+
+## تخمین‌گر قیمت هایپرفب چیست؟
+
+تخمین‌گر قیمت هایپرفب (HyperFab Quote) ابزار آنلاین محاسبه‌ی قیمت ساخت قطعه در سایت hyperfab.ir است. فایل قطعه را بارگذاری می‌کنید، جنس، ضخامت، مقیاس و تعداد را انتخاب می‌کنید و قیمت تولید را همان لحظه می‌بینید؛ بدون تماس تلفنی، بدون رفت‌وبرگشت ایمیل و بدون چند روز انتظار برای استعلام.
+
+این ابزار دو موتور محاسبه دارد: موتور پرینت سه‌بعدی FDM که فایل STL و 3MF را تحلیل می‌کند، و موتور برش لیزر و خم‌کاری ورق که فایل DXF را می‌خواند. هر دو موتور در مرورگر خود شما اجرا می‌شوند. برای گرفتن قیمت، فایل به هیچ سروری فرستاده نمی‌شود و فقط وقتی سفارش را نهایی کنید، برای تولید همان سفارش ارسال می‌شود.
+
+قیمتی که تخمین‌گر می‌دهد حدس سرانگشتی نیست. موتور پرینت مدل را مثل نرم‌افزار اسلایسر در ارتفاع برش می‌زند و حجم دیواره، پرشدگی و ساپورت را جدا حساب می‌کند. موتور لیزر هم طول واقعی مسیر برش، تعداد سوراخ‌کاری و خم‌ها را از روی نقشه اندازه می‌گیرد. هیچ نرخی داخل کد نوشته نشده است: همه‌ی نرخ‌ها، از قیمت هر کیلو متریال تا کارمزد هر خم، از پنل مدیریت هایپرفب تنظیم می‌شوند.
+
+- **قیمت همان لحظه**: برای پرینت FDM و برش لیزر لازم نیست منتظر استعلام بمانید. فایل را بارگذاری می‌کنید و قیمت را همان‌جا می‌بینید، ساعت ۳ بامداد هم.
+- **فایل شما پیش خودتان می‌ماند**: تحلیل هندسه و محاسبه‌ی قیمت در مرورگر شما انجام می‌شود. فایل فقط وقتی سفارش را نهایی کنید ارسال و فقط برای تولید همان سفارش استفاده می‌شود.
+- **خطای نقشه، پیش از پرداخت**: مسیر باز، خط تکراری یا سوراخی که با این ضخامت برش نمی‌خورد، پیش از ثبت سفارش روی خود نقشه نشان داده می‌شود؛ نه بعد از ساخت قطعه‌ی خراب.
+
+## قیمت پرینت سه‌بعدی FDM چطور محاسبه می‌شود؟
+
+قیمت پرینت سه‌بعدی بیش از هر چیز تابع زمان دستگاه و جرم فیلامنت است. موتور هایپرفب این دو را از هندسه‌ی واقعی مدل شما حساب می‌کند.
+
+- **خواندن فایل STL و 3MF**: مدل سه‌بعدی در مرورگر باز می‌شود و حجم، ابعاد، سطح و مقاطع آن استخراج می‌شود. پیش‌نمایش سه‌بعدی قطعه هم همان‌جا نمایش داده می‌شود.
+- **جهت‌گیری بهینه روی بستر**: موتور وجه‌های مختلف مدل را می‌سنجد و جهتی را برای قرارگرفتن روی بستر چاپ انتخاب می‌کند که ساپورت کمتر و چاپ مطمئن‌تری بدهد.
+- **تحلیل ساپورت**: سطح‌هایی که زیرشان خالی است شناسایی و حجم ساپورت لازم برآورد می‌شود. ساپورت هم متریال مصرف می‌کند و هم زمان دستگاه می‌گیرد.
+- **دیواره و پرشدگی، مقطع‌به‌مقطع**: مدل در ارتفاع به مقطع‌های متوالی تقسیم می‌شود. محیط هر مقطع حجم دیواره و مساحت داخلش حجم پرشدگی را می‌دهد، با همان ضخامت لایه و درصد پرشدگی که انتخاب کرده‌اید.
+- **جرم فیلامنت و زمان چاپ**: از حجم‌ها و سرعت حرکت نازل، جرم فیلامنت مصرفی و زمان واقعی دستگاه به دست می‌آید. پوسته‌های افقی بالا و پایین از تغییر مساحت بین مقطع‌ها حساب می‌شوند تا سطح‌های منحنی و پلکانی کم‌برآورد نشوند.
+- **مقیاس، تعداد و تخفیف**: تغییر مقیاس قطعه بدون بارگذاری دوباره فوراً در قیمت دیده می‌شود. با افزایش تعداد، تخفیف تیراژ به‌صورت پلکانی تا یک سقف مشخص روی قیمت واحد اعمال می‌شود.
+
+## قیمت برش لیزر و خم‌کاری ورق از روی DXF چطور حساب می‌شود؟
+
+هر جزء قیمت برش لیزر و خم‌کاری از اندازه‌گیری مستقیم روی نقشه می‌آید: طول برش، تعداد سوراخ‌کاری، خم‌ها، حکاکی و وزن ورق. فایل DXF را با مقیاس ۱:۱ و واحد میلی‌متر بارگذاری کنید و جنس و ضخامت ورق را انتخاب کنید.
+
+| جزء قیمت | از کجای نقشه حساب می‌شود |
+|---|---|
+| برش | طول کل مسیر برش × ضخامت ورق، با نرخ مخصوص هر جنس و ضخامت و نوع گاز کمکی (اکسیژن یا نیتروژن) |
+| سوراخ‌کاری (پیرس) | تعداد نقطه‌هایی که لیزر باید ورق را سوراخ کند تا برش هر کانتور را شروع کند |
+| خم‌کاری | تعداد خم‌ها و طول هر خط خم، به‌علاوه‌ی راه‌اندازی خم‌کن |
+| حکاکی | طول مسیرهای حکاکی روی قطعه |
+| متریال | وزن ورق از روی مساحت قطعه، ضخامت و چگالی جنس، ضرب در قیمت هر کیلو |
+| راه‌اندازی | هزینه‌ی یک‌باره‌ی هر سفارش که روی تعداد قطعات سرشکن می‌شود، نه اینکه کامل به هر قطعه بخورد |
+| تیراژ | پله‌های تخفیف بر اساس تعداد |
+
+نکته: سرشکن‌شدن هزینه‌ی راه‌اندازی یعنی در تیراژ ۲۰ یا ۴۰ قطعه، قیمت واحد واقعاً پایین می‌آید و فقط به تخفیف وابسته نیست.
+
+## تخمین‌گر چه خطاهایی را در نقشه‌ی DXF پیدا می‌کند؟
+
+تخمین‌گر لیزر هایپرفب پیش از ثبت سفارش، نقشه را از نظر خطوط تکراری، مسیر باز، سوراخ و باریکه‌ی ریزتر از ضخامت ورق و مشکلات خم‌کاری بررسی می‌کند و هر مشکل را روی خود نقشه نشان می‌دهد؛ مثل یک اپراتور باتجربه.
+
+- خطوط تکراری روی هم: یک مسیر دو بار برش می‌خورد و لبه خراب می‌شود. خطوط تکراری از قیمت کنار گذاشته می‌شوند.
+- مسیر باز: کانتوری که بسته نشده است؛ قطعه از ورق جدا نمی‌شود.
+- مسیر خودمتقاطع و نبودن هیچ کانتور بسته در نقشه.
+- سوراخ کوچک‌تر از ضخامت ورق: با لیزر به‌درستی برش نمی‌خورد.
+- باریکه‌ی نازک‌تر از ضخامت: نوار باریکی که هنگام برش تاب برمی‌دارد یا می‌سوزد.
+- قطعه بزرگ‌تر از ورق استاندارد و ظرفیت دستگاه.
+- متن، هاشور و خطوط اندازه‌گذاری که به‌اشتباه در نقشه‌ی برش مانده‌اند.
+- سوراخ نزدیک خط خم: هنگام خم‌کاری تغییر شکل می‌دهد.
+- بال کوتاه: لبه‌ای که برای قرارگرفتن روی ابزار خم کوتاه است.
+- ضخامت زیاد برای خم‌کاری و طول خم بیش از ظرفیت خم‌کن.
+- نبودن نقشه‌ی فنی خم‌کاری وقتی قطعه خم دارد.
+
+## برای هر خدمت چه فایلی بفرستم و قیمت چطور اعلام می‌شود؟
+
+پرینت سه‌بعدی FDM و برش لیزر قیمت آنی دارند؛ برای پرینت رزینی و ماشین‌کاری CNC قیمت پس از بررسی فایل اعلام می‌شود و قیمت خم‌کاری پس از بررسی نقشه‌ی خم قطعی می‌شود.
+
+| روش تولید | فرمت فایل | قیمت‌گذاری |
+|---|---|---|
+| پرینت سه‌بعدی FDM | STL · 3MF (و OBJ، STEP) | آنی، با تخمین‌گر |
+| برش لیزر فلزات | DXF | آنی، با تخمین‌گر |
+| برش لیزر غیرفلزات | DXF | آنی، با تخمین‌گر |
+| خم‌کاری ورق | DXF · STEP · PDF | محاسبه‌ی خم‌ها از DXF، قطعی پس از بررسی نقشه‌ی خم |
+| پرینت سه‌بعدی رزینی | STL · OBJ · STEP · 3MF | پس از بررسی فایل، بر اساس حجم رزین و زمان چاپ |
+| ماشین‌کاری CNC | STEP · IGES · DWG · DXF · PDF | پس از بررسی نقشه، بر اساس جنس، برداشت براده و زمان دستگاه |
+| مطمئن نیستم / مشاوره | هر فرمتی، حتی عکس و توضیح | پس از گفت‌وگو با کارشناس |
+
+## چطور آنلاین قیمت بگیرم و سفارش ثبت کنم؟
+
+در چهار قدم: فایل را در hyperfab.ir بارگذاری می‌کنید، مشخصات را انتخاب می‌کنید، قیمت و هشدارهای نقشه را می‌بینید و سفارش را ثبت می‌کنید.
+
+1. **بارگذاری فایل**: در hyperfab.ir روش ساخت را انتخاب و فایل STL، 3MF یا DXF را بارگذاری کنید. روش از روی پسوند فایل حدس زده می‌شود.
+2. **انتخاب مشخصات**: جنس، رنگ، ضخامت ورق، ضخامت لایه، پرشدگی، مقیاس و تعداد را تعیین کنید؛ قیمت با هر تغییر به‌روز می‌شود.
+3. **دیدن قیمت و هشدارها**: قیمت واحد و کل، به‌همراه هشدارهای ساخت‌پذیری روی نقشه، نمایش داده می‌شود.
+4. **ثبت و پیگیری**: قطعه را به سبد اضافه و سفارش را ثبت کنید. وضعیت سفارش در «سفارش‌های ساخت» حساب کاربری دیده می‌شود.
+
+## FAQ
+
+### تخمین‌گر آنلاین قیمت هایپرفب چیست؟
+
+تخمین‌گر آنلاین قیمت هایپرفب (HyperFab Quote) ابزار رایگان سایت hyperfab.ir برای محاسبه‌ی لحظه‌ای قیمت ساخت قطعه است. قیمت پرینت سه‌بعدی FDM را از فایل STL و 3MF و قیمت برش لیزر و خم‌کاری ورق را از فایل DXF همان لحظه می‌دهد و نقشه را از نظر ساخت‌پذیری هم بررسی می‌کند.
+
+### برای گرفتن قیمت آنلاین چه فایلی لازم است؟
+
+برای پرینت سه‌بعدی FDM فایل STL یا 3MF، و برای برش لیزر و خم‌کاری ورق فایل DXF با مقیاس ۱:۱ و واحد میلی‌متر. تخمین‌گر هایپرفب برای همین فایل‌ها قیمت آنی می‌دهد. برای پرینت رزینی و ماشین‌کاری CNC هم فایل را در hyperfab.ir بارگذاری می‌کنید و قیمت پس از بررسی اعلام می‌شود.
+
+### قیمت پرینت سه‌بعدی در هایپرفب چطور محاسبه می‌شود؟
+
+تخمین‌گر هایپرفب فایل STL یا 3MF را در مرورگر شما تحلیل می‌کند. مدل را در بهترین جهت روی بستر می‌گذارد، ساپورت لازم را برآورد می‌کند، حجم دیواره و پرشدگی را مقطع‌به‌مقطع حساب می‌کند و از آن جرم فیلامنت و زمان چاپ را به دست می‌آورد. قیمت از همین دو و نرخ‌های روز ساخته می‌شود و با افزایش تعداد تخفیف پلکانی می‌گیرد.
+
+### قیمت برش لیزر را چطور آنلاین بگیرم؟
+
+فایل DXF قطعه را با مقیاس ۱:۱ و واحد میلی‌متر در hyperfab.ir بارگذاری کنید و جنس و ضخامت ورق را انتخاب کنید. تخمین‌گر هایپرفب طول مسیر برش، تعداد سوراخ‌کاری، خم‌ها، حکاکی و وزن ورق را از نقشه اندازه می‌گیرد و قیمت را همان لحظه نشان می‌دهد.
+
+### آیا فایل من برای محاسبه‌ی قیمت به سرور فرستاده می‌شود؟
+
+خیر. در تخمین‌گر هایپرفب، تحلیل و محاسبه‌ی قیمت کاملاً در مرورگر خود شما انجام می‌شود. فایل فقط وقتی سفارش را نهایی کنید ارسال و فقط برای تولید همان سفارش استفاده می‌شود.
+
+### قیمت تخمین‌گر قطعی است؟
+
+قیمت تخمین‌گر هایپرفب از هندسه‌ی واقعی فایل و نرخ‌های روز ساخته می‌شود و مبنای سفارش است. اگر در بررسی فنی پیش از تولید نکته‌ای دیده شود، پیش از شروع ساخت با شما هماهنگ می‌شود.
+
+### برای پرینت رزینی و ماشین‌کاری CNC هم قیمت آنی می‌دهد؟
+
+خیر. قیمت پرینت رزینی و ماشین‌کاری CNC به عواملی بستگی دارد که بررسی کارشناس لازم دارد، مثل جهت چاپ رزین یا ابزار و تعداد عملیات CNC. فایل را در hyperfab.ir بارگذاری می‌کنید و هایپرفب قیمت و زمان تحویل را پس از بررسی اعلام می‌کند.
+
+### استفاده از تخمین‌گر قیمت هزینه دارد؟
+
+خیر. گرفتن قیمت با تخمین‌گر هایپرفب رایگان است و تعهدی ایجاد نمی‌کند. برای ثبت نهایی سفارش وارد حساب کاربری هایپرفب می‌شوید.
+
+### چرا زمان چاپ قیمت پرینت سه‌بعدی را تعیین می‌کند؟
+
+در پرینت سه‌بعدی، سهم اصلی هزینه زمانی است که دستگاه صرف ساخت قطعه می‌کند، نه وزن پلاستیک. دو قطعه‌ی هم‌وزن با هندسه‌ی متفاوت می‌توانند زمان چاپ و در نتیجه قیمت بسیار متفاوتی داشته باشند. برای همین تخمین‌گر هایپرفب زمان چاپ را از هندسه‌ی واقعی مدل حساب می‌کند.
+
+### حداقل سفارش وجود دارد؟
+
+در هایپرفب حداقل تعدادی وجود ندارد و یک قطعه هم پذیرفته می‌شود. ممکن است حداقل مبلغ سفارش اعمال شود که تخمین‌گر آن را جدا و شفاف نشان می‌دهد.
+
+---
+
+# تکه‌یاب هایپرفب — خرید تکه‌ی متریال صنعتی، به اندازه‌ی نیاز
+
+URL: https://hyperfabgroup.github.io/tekeyab/
+
+تکه‌یاب سرویس آنلاین هایپرفب برای خرید تکه‌ی کوچک متریال صنعتی است: ورق، میلگرد، شفت، تسمه، لوله و پروفیل از آلومینیوم، استیل، فولاد، مس، برنج و پلاستیک مهندسی، به اندازه‌ای که لازم دارید. مشخصات تکه را یک بار در فرم تکه‌یاب در hyperfab.ir ثبت می‌کنید؛ هایپرفب از تأمین‌کنندگان استعلام می‌گیرد، قیمت را در حساب کاربری‌تان اعلام می‌کند و در صورت نیاز تکه را به اندازه برش می‌زند. تحویل با پیک در تهران، حضوری یا با ارسال به شهرهای دیگر است.
+
+به یک تکه ورق آلومینیوم، چند سانت میلگرد استیل یا یک شفت برنجی نیاز دارید و بازار فقط شاخه‌ی کامل یا ورق درسته می‌فروشد؟ مشخصات تکه را در فرم تکه‌یاب بنویسید؛ هایپرفب پیدایش می‌کند، قیمت را اعلام می‌کند و در صورت نیاز به اندازه برش می‌زند.
+
+- خدمت: خرید تکه‌ی کوچک متریال صنعتی، با برش به اندازه
+- متریال: آلومینیوم، استیل، فولاد، مس و برنج، پلاستیک مهندسی، فلزات خاص
+- شکل: ورق و صفحه، شفت و میلگرد، تسمه، لوله، پروفیل
+- حداقل خرید: یک تکه
+- قیمت: پس از استعلام، در حساب کاربری هایپرفب؛ ثبت درخواست در hyperfab.ir
+- تحویل: پیک در تهران، تحویل حضوری، ارسال به شهرهای دیگر
+
+- جنس‌ها: آلومینیوم، استیل، فولاد، مس و برنج، پلاستیک مهندسی، فلزات خاص
+- شکل‌ها: ورق و صفحه، شفت و میلگرد، تسمه، لوله، پروفیل
+- تحویل: پیک در تهران، تحویل حضوری، ارسال به شهرهای دیگر
+
+## تکه‌یاب چیست و چه مشکلی را حل می‌کند؟
+
+تکه‌یاب سرویس آنلاین هایپرفب برای خرید تکه‌ی کوچک متریال صنعتی است؛ به‌جای تلفن پشت تلفن به فروشنده‌هایی که فقط شاخه‌ی کامل یا ورق درسته می‌فروشند، یک فرم پر می‌کنید.
+
+هر کس قطعه‌ای ساخته یا دستگاهی را تعمیر کرده، این وضع را می‌شناسد. برای یک بوش برنجی یا یک صفحه‌ی کوچک آلومینیومی باید به چند فروشنده زنگ بزنید. هر کدام فقط شاخه‌ی شش‌متری یا ورق کامل می‌فروشد و قیمت را تلفنی می‌گوید. آخر هم معلوم نیست جنس همان گرید درخواستی باشد. خرید تکه‌ی کوچک متریال صنعتی معمولاً یعنی تلفن پشت تلفن.
+
+تکه‌یاب سرویس آنلاین هایپرفب برای همین کار است. مشخصات تکه‌ای را که لازم دارید یک بار در فرم چهارمرحله‌ای تکه‌یاب ثبت می‌کنید: جنس و گرید، شکل، ابعاد، تعداد، زمان نیاز و روش تحویل. اگر لازم باشد، عکس یا توضیح هم پیوست می‌کنید. تیم هایپرفب از شبکه‌ی تأمین‌کنندگان استعلام می‌گیرد و قیمت نهایی را در حساب کاربری‌تان اعلام می‌کند. پس از پرداخت، تکه را آماده می‌کند، در صورت نیاز به اندازه برش می‌زند و می‌فرستد.
+
+تکه‌یاب جدا از خدمات ساخت هایپرفب نیست. اگر تکه‌ی متریال قرار است تراشکاری، ماشین‌کاری CNC، برش لیزر یا خم‌کاری ورق شود، ساخت قطعه را هم همین‌جا می‌سپارید. این‌طوری متریال و ساخت یک‌جا انجام می‌شود و لازم نیست مواد را بین فروشنده و کارگاه جابه‌جا کنید.
+
+## با تکه‌یاب چه متریال‌هایی می‌شود خرید؟
+
+شش خانواده‌ی متریال: آلومینیوم، استیل، فولاد، مس و برنج، پلاستیک مهندسی و فلزات خاص. اگر گرید یا آلیاژ خاصی لازم دارید، در فرم بنویسید.
+
+- **آلومینیوم**: ورق، صفحه، میلگرد، تسمه و پروفیل آلومینیومی؛ سبک و خوش‌تراش برای بدنه، صفحه‌ی نصب، فیکسچر و قطعات ماشین‌کاری.
+- **استیل (فولاد ضدزنگ)**: ورق، میلگرد و لوله‌ی استیل برای قطعه‌هایی که با آب، مواد غذایی یا مواد شیمیایی سروکار دارند.
+- **فولاد**: میلگرد، شفت، تسمه و ورق فولادی برای شفت، فلنج، براکت و قطعات باربر.
+- **مس و برنج**: برنج خوش‌تراش برای بوش، نازل و اتصالات، و مس برای کاربردهای الکتریکی و حرارتی.
+- **پلاستیک مهندسی**: تفلون (PTFE)، پلی‌اتیلن، پلی‌استال (POM)، نایلون و پلکسی؛ برای واشر، بوش، چرخ‌دنده و قطعات لغزشی و عایق.
+- **سایر و فلزات خاص**: اگر متریال یا آلیاژ کمیابی لازم دارید، مشخصاتش را بنویسید تا امکان تأمینش بررسی شود.
+
+## در فرم تکه‌یاب چه ابعادی وارد کنم؟
+
+بسته به شکل تکه، ابعاد اصلی‌اش را وارد می‌کنید؛ مثلاً برای ورق طول، عرض و ضخامت، و برای میلگرد قطر و طول.
+
+| شکل | ابعادی که لازم است | نمونه |
+|---|---|---|
+| ورق و صفحه | طول × عرض × ضخامت | صفحه‌ی آلومینیوم ۲۰۰ × ۱۵۰ × ۵ میلی‌متر |
+| شفت و میلگرد | قطر × طول | میلگرد استیل قطر ۲۰، طول ۳۰۰ میلی‌متر |
+| تسمه | عرض × ضخامت × طول | تسمه‌ی برنجی ۳۰ × ۵، طول ۵۰۰ میلی‌متر |
+| لوله | قطر خارجی × ضخامت دیواره × طول | لوله‌ی استیل ۴۲ × ۲، طول ۱ متر |
+| پروفیل و سایر | مقطع و طول | نبشی، ناودانی یا قوطی با مقطع دلخواه |
+
+نکته: اگر از ابعاد یا گرید مطمئن نیستید، کاربرد قطعه را در توضیحات بنویسید یا عکس بفرستید. در صورت نیاز، پیش از اعلام قیمت درباره‌ی ابعاد با شما هماهنگ می‌شود.
+
+## خرید با تکه‌یاب چطور انجام می‌شود؟
+
+در پنج مرحله: ثبت درخواست، استعلام، اعلام قیمت، پرداخت و آماده‌سازی، و ارسال یا تحویل.
+
+1. **ثبت درخواست**: فرم چهارمرحله‌ای را در hyperfab.ir پر می‌کنید. شماره‌ی موبایل با کد پیامکی تأیید می‌شود و حساب کاربری‌تان خودکار ساخته می‌شود.
+2. **استعلام**: تیم تکه‌یاب از تأمین‌کنندگان استعلام می‌گیرد و جنس، گرید و ابعاد را تطبیق می‌دهد.
+3. **اعلام قیمت**: قیمت نهایی در حساب کاربری اعلام و با ایمیل یا پیام‌رسان به شما خبر داده می‌شود.
+4. **پرداخت و آماده‌سازی**: پس از پرداخت، تکه آماده و در صورت نیاز به اندازه برش می‌خورد.
+5. **ارسال یا تحویل**: با پیک در تهران، تحویل حضوری یا ارسال به شهرهای دیگر.
+
+## وضعیت درخواست تکه‌یاب را چطور پیگیری کنم؟
+
+هر درخواست تکه‌یاب یک کد پیگیری مثل TK1001 می‌گیرد و در زبانه‌ی «سفارش‌های تکه‌متریال» حساب کاربری هایپرفب دیده می‌شود. وضعیت درخواست، از «در حال استعلام» و «قیمت داده شد» تا «پرداخت تأیید شد»، «در حال آماده‌سازی»، «ارسال شد» و «تحویل شد»، همان‌جا به‌روز می‌شود.
+
+اگر متریال درخواستی پیدا نشود، همین را صریح اعلام می‌کنیم و درخواست بی‌دلیل معلق نمی‌ماند. سؤال‌های تکه‌یاب را بخش صنعتی هایپرفب در پیام‌رسان بله (@hyperfab_pro) جواب می‌دهد.
+
+## تکه‌یاب به کار چه کسانی می‌آید؟
+
+- تعمیرکاران ماشین‌آلات و نگهداری خط تولید که برای ساخت یک قطعه‌ی یدکی، تکه‌ی کوچکی از جنس مشخص لازم دارند.
+- کارگاه‌های تراشکاری و ساخت با سفارش‌های تک یا تیراژ کم که خرید شاخه‌ی کامل برایشان صرفه ندارد.
+- دانشجویان مهندسی و پروژه‌های پایان‌نامه و مسابقات رباتیک.
+- سازندگان نمونه‌ی اولیه و تیم‌های سخت‌افزاری که متریال چند جنس مختلف را با هم می‌خواهند.
+- طراحان و سازندگان مبلمان، دکور و محصولات دست‌ساز فلزی و پلاستیکی.
+- خریداران شهرهای دیگر که به بازار آهن و فلزات تهران دسترسی ندارند.
+
+## FAQ
+
+### تکه‌یاب هایپرفب چیست؟
+
+تکه‌یاب سرویس آنلاین هایپرفب برای خرید تکه‌ی کوچک متریال صنعتی است. مشخصات تکه را در یک فرم ثبت می‌کنید: جنس، شکل، ابعاد، تعداد، زمان نیاز و روش تحویل. هایپرفب آن را از تأمین‌کنندگان پیدا می‌کند، قیمت می‌دهد، در صورت نیاز به اندازه برش می‌زند و ارسال می‌کند.
+
+### با تکه‌یاب چه متریال‌هایی می‌شود خرید؟
+
+با تکه‌یاب هایپرفب می‌توانید آلومینیوم، استیل (فولاد ضدزنگ)، فولاد، مس و برنج، پلاستیک‌های مهندسی مثل تفلون، پلی‌اتیلن، پلی‌استال، نایلون و پلکسی، و فلزات خاص را بخرید. شکل‌ها ورق و صفحه، شفت و میلگرد، تسمه، لوله و پروفیل‌اند.
+
+### حداقل مقدار خرید در تکه‌یاب چقدر است؟
+
+تکه‌یاب هایپرفب برای خرید مقدار کم ساخته شده است و یک تکه را هم می‌توانید ثبت کنید. قیمت نهایی به جنس، ابعاد و برش لازم بستگی دارد.
+
+### متریال را به اندازه برش می‌زنید؟
+
+بله. در تکه‌یاب هایپرفب، تکه در صورت نیاز به اندازه‌ی درخواستی برش می‌خورد. اگر بعد از آن تراشکاری، برش لیزر یا خم‌کاری هم لازم باشد، می‌توانید ساخت قطعه را هم به هایپرفب بسپارید.
+
+### قیمت را کی و چطور می‌گیرم؟
+
+پس از استعلام از تأمین‌کنندگان، قیمت نهایی در حساب کاربری هایپرفب اعلام و با ایمیل یا پیام‌رسان به شما خبر داده می‌شود. لازم نیست برای گرفتن قیمت تماس بگیرید.
+
+### برای ثبت درخواست تکه‌یاب چه چیزی لازم است؟
+
+فقط مشخصات تکه و یک شماره‌ی موبایل؛ درخواست را در فرم تکه‌یاب در hyperfab.ir ثبت می‌کنید. موبایل با کد پیامکی تأیید می‌شود و حساب کاربری برای پیگیری درخواست خودکار ساخته می‌شود.
+
+### تکه‌یاب به شهرهای دیگر هم ارسال دارد؟
+
+بله. تکه‌یاب هایپرفب سه روش تحویل دارد: پیک در تهران، تحویل حضوری و ارسال به شهرهای دیگر.
+
+### اگر متریال پیدا نشود چه می‌شود؟
+
+اگر هایپرفب متریال را با مشخصات درخواستی پیدا نکند، وضعیت درخواست «پیدا نشد» اعلام می‌شود و هزینه‌ای از شما گرفته نمی‌شود. اگر جایگزین مناسبی باشد، پیشنهاد می‌شود.
+
+---
+
+# پانچ ورق و لوله — از طراحی قالب تا تولید ضربی
+
+URL: https://hyperfabgroup.github.io/punching/
+
+پانچ ورق و لوله یعنی ایجاد سوراخ، شیار و فرم‌های خاص روی ورق و لوله با ضربه‌ی پرس و قالب؛ از سریع‌ترین و اقتصادی‌ترین روش‌ها برای تیراژ تکراری. هایپرفب در تهران پانچ ورق و لوله‌ی فلزی و پلی‌اتیلن را از طراحی و ساخت قالب پانچ و نمونه‌ی آزمایشی تا تولید ضربی و کنترل کیفیت انجام می‌دهد و قطعات را به سراسر ایران ارسال می‌کند. هزینه دو بخش دارد، ساخت قالب و هزینه‌ی هر ضرب، و پس از بررسی نقشه اعلام می‌شود؛ مشاوره: ۰۹۹۶۲۲۳۳۸۹۸.
+
+سوراخ، شیار و فرم‌های خاص روی ورق و لوله‌ی فلزی و پلی‌اتیلن. هایپرفب قالب پانچ را طراحی و می‌سازد، نمونه‌ی آزمایشی را برای تأیید شما می‌زند و تولید ضربی را با کنترل کیفیت کامل تا تحویل قطعه پیش می‌برد.
+
+- خدمت: پانچ ورق و لوله، طراحی و ساخت قالب پانچ، تولید ضربی
+- جنس: فلزات (فولاد، گالوانیزه، استیل، آلومینیوم) و پلیمرها، از جمله پلی‌اتیلن
+- قیمت‌گذاری: هزینه‌ی یک‌باره‌ی قالب + هزینه‌ی هر ضرب، پس از بررسی نقشه
+- نمونه‌کار: شیار لوبیایی روی لوله‌ی پلی‌اتیلن ۱۲۵ میلی‌متری
+- سفارش: تلفنی: ۰۹۹۶۲۲۳۳۸۹۸ · بله: @hyperfab_pro
+- محل: تهران؛ ارسال به سراسر ایران
+
+- پانچ: ورق و لوله
+- جنس: فلزات و پلیمرها، از جمله پلی‌اتیلن
+- قیمت‌گذاری: هزینه‌ی ساخت قالب + هزینه‌ی هر ضرب، بر اساس هندسه و جنس
+
+## پانچ چیست و هایپرفب چه کاری انجام می‌دهد؟
+
+پانچ (Punching) روش ایجاد سوراخ، شیار و برش‌های شکل‌دار روی ورق و لوله با ضربه‌ی پرس و قالب است. برای تیراژ تکراری، پانچ از سریع‌ترین و اقتصادی‌ترین روش‌هاست. پس از ساخت قالب، هر قطعه با یک یا چند ضرب به شکل نهایی می‌رسد و همه‌ی قطعات یکسان درمی‌آیند. برای تیراژ کم یا طرحی که مدام عوض می‌شود، برش لیزر فلزات در هایپرفب اقتصادی‌تر است، چون هزینه‌ی قالب ندارد.
+
+هایپرفب پانچ را کامل انجام می‌دهد. نقشه را بررسی می‌کند، قالب پانچ را متناسب با جنس و ضخامت طراحی می‌کند و می‌سازد، نمونه‌ی آزمایشی را برای تأیید شما می‌زند و بعد تولید ضربی و کنترل کیفیت را تا تحویل پیش می‌برد. این خدمت هم ورق و هم لوله را پوشش می‌دهد، هم فلز و هم پلیمرهایی مثل پلی‌اتیلن.
+
+پانچ لوله‌ی پلیمری از کارهای دشوار این حوزه است. لوله گرد است، دیواره زیر ضربه تغییر شکل می‌دهد و پلی‌اتیلن رفتاری کاملاً متفاوت با فلز دارد. تیم هایپرفب روی لوله‌ی پلی‌اتیلن با قطر ۱۲۵ میلی‌متر، ضخامت دیواره‌ی ۵ میلی‌متر و فشار کاری ۶ بار، شیارهای لوبیایی (kidney-shaped) پانچ کرده است. در یک پروژه‌ی صنعتی دیگر هم کنترل کیفیت ۸٬۰۰۰ لوله‌ی پانچ‌شده با این تیم بوده است.
+
+## هایپرفب چه چیزهایی را پانچ می‌کند؟
+
+ورق و لوله و پروفیل فلزی، لوله‌ی پلی‌اتیلن و ورق‌های پلیمری؛ با سوراخ، شیار، الگوی مشبک و فرم‌های سفارشی، دقیقاً طبق نقشه‌ی شما.
+
+- **پانچ ورق فلزی**: سوراخ گرد و چهارگوش، شیار، الگوهای تکرارشونده و فرم‌های خاص روی ورق فولادی، گالوانیزه، استیل و آلومینیوم.
+- **پانچ لوله و پروفیل فلزی**: سوراخ‌کاری و شیارزنی لوله و پروفیل فلزی برای سازه، اتصالات، قفسه، نرده و مبلمان.
+- **پانچ لوله‌ی پلی‌اتیلن**: شیار و سوراخ روی لوله‌ی پلی‌اتیلن، از جمله شیار لوبیایی؛ برای لوله‌های زهکش، فیلتر و توزیع.
+- **پانچ ورق پلیمری**: ورق پلی‌اتیلن و پلاستیک‌های مهندسی برای واشر، صفحه‌های مشبک و قطعات تخت سوراخ‌دار.
+- **شکل‌های سفارشی**: از سوراخ گرد ساده تا شیار لوبیایی، الگوهای مشبک و فرم‌های خاص، دقیقاً طبق نقشه‌ی شما.
+- **تولید ضربی تکرارپذیر**: پس از ساخت قالب، قطعات با ضرب‌های یکسان تولید می‌شوند و ابعاد از قطعه‌ی اول تا آخر ثابت می‌ماند.
+
+## قیمت پانچ ورق و لوله چطور محاسبه می‌شود؟
+
+قیمت پانچ دو بخش دارد: هزینه‌ی یک‌باره‌ی ساخت قالب و هزینه‌ی هر ضرب در تولید. هر دو جدا و شفاف اعلام می‌شوند و به هندسه‌ی قطعه و جنس متریالی که پانچ می‌شود بستگی دارند.
+
+| بخش هزینه | به چه چیزی بستگی دارد |
+|---|---|
+| ساخت قالب پانچ (یک‌بار) | هندسه و تعداد سوراخ‌ها و شیارها، دقت لازم، جنس و ضخامت قطعه، و ساده یا چندمرحله‌ای بودن قالب و مخصوص لوله بودنش |
+| هر ضرب (تولید) | جنس و ضخامت متریال، تعداد ضرب لازم برای هر قطعه و تیراژ سفارش |
+| متریال | اگر ورق یا لوله را هایپرفب تأمین کند، به قیمت روز |
+
+نکته: هزینه‌ی ساخت قالب یک‌بار است و روی تیراژ سرشکن می‌شود؛ هرچه تیراژ بیشتر باشد، سهم قالب در قیمت هر قطعه کمتر می‌شود.
+
+## چرا پروژه‌ی پانچ را به هایپرفب بسپارید؟
+
+- **مهندسی پیش از ساخت قالب**: قالب گران‌ترین بخش پروژه است. پیش از ساخت، طرح از نگاه قالب بررسی می‌شود: فاصله‌ی سوراخ از لبه، نسبت قطر سوراخ به ضخامت و رفتار متریال زیر ضربه. هدف این است که قالب یک بار و درست ساخته شود.
+- **تجربه‌ی واقعی در پانچ لوله**: از کنترل کیفیت ۸٬۰۰۰ لوله‌ی پانچ‌شده تا پانچ شیار لوبیایی روی لوله‌ی پلی‌اتیلن ۱۲۵ میلی‌متری؛ مسائل واقعی این کار را از نزدیک می‌شناسیم.
+- **مسئولیت کامل تا تحویل**: از طراحی قالب تا آخرین ضرب، پروژه یک مسئول دارد: هایپرفب. نمونه را پیش از تولید می‌بینید و کیفیت قطعات پیش از تحویل کنترل می‌شود.
+
+## سفارش پانچ در هایپرفب چه مراحلی دارد؟
+
+پنج مرحله: ارسال نقشه، بررسی مهندسی، پیشنهاد قیمت، ساخت قالب و نمونه، و تولید ضربی و تحویل.
+
+1. **ارسال نقشه و مشخصات**: نقشه‌ی قطعه، جنس، ضخامت و تیراژ را بفرستید یا تلفنی شرح دهید. نمونه‌ی فیزیکی قطعه هم کافی است.
+2. **بررسی مهندسی**: طرح از نظر ساخت‌پذیری با قالب بررسی و در صورت نیاز اصلاح پیشنهاد می‌شود.
+3. **پیشنهاد قیمت**: هزینه‌ی ساخت قالب و هزینه‌ی هر ضرب جدا و شفاف اعلام می‌شود.
+4. **ساخت قالب و نمونه**: قالب ساخته و نمونه‌ی آزمایشی زده می‌شود تا پیش از تولید تأییدش کنید.
+5. **تولید ضربی و تحویل**: تولید با کنترل کیفیت ابعادی انجام و قطعات بسته‌بندی و تحویل می‌شوند.
+
+## پانچ ورق و لوله کجا به کار می‌رود؟
+
+- لوله‌های زهکش و تخلیه‌ی آب با شیار یا سوراخ‌های تکرارشونده.
+- لوله‌ی فیلتر و صافی و لوله‌های توزیع آب و هوا.
+- صفحه‌های مشبک، توری و دریچه‌ی تهویه.
+- قطعات تخت سوراخ‌دار برای مونتاژ مثل واشر، براکت و صفحه‌ی نصب.
+- بدنه و پنل تجهیزات صنعتی با الگوی سوراخ ثابت.
+- پروفیل و لوله‌ی سوراخ‌دار برای سازه، قفسه و مبلمان.
+
+## FAQ
+
+### هایپرفب پانچ ورق و لوله انجام می‌دهد؟
+
+بله. هایپرفب در تهران پانچ ورق و لوله‌ی فلزی و پلی‌اتیلن را کامل انجام می‌دهد: بررسی نقشه، طراحی و ساخت قالب پانچ، نمونه‌ی آزمایشی برای تأیید شما، و تولید ضربی با کنترل کیفیت تا تحویل قطعه.
+
+### هایپرفب پانچ لوله‌ی پلی‌اتیلن انجام می‌دهد؟
+
+بله. هایپرفب روی لوله‌ی پلی‌اتیلن با قطر ۱۲۵ میلی‌متر، ضخامت دیواره‌ی ۵ میلی‌متر و فشار کاری ۶ بار، شیار لوبیایی پانچ کرده است. پانچ لوله و ورق فلزی هم در هایپرفب انجام می‌شود.
+
+### قیمت پانچ ورق و لوله چطور محاسبه می‌شود؟
+
+قیمت پانچ در هایپرفب دو بخش دارد: هزینه‌ی یک‌باره‌ی ساخت قالب پانچ و هزینه‌ی هر ضرب در تولید. هر دو به هندسه‌ی قطعه، یعنی تعداد و شکل سوراخ‌ها و شیارها، و به جنس و ضخامت متریال بستگی دارند. پس از بررسی نقشه، هر دو جدا اعلام می‌شوند.
+
+### حداقل تیراژ سفارش پانچ چقدر است؟
+
+پانچ چون قالب دارد، برای تیراژ تکراری به‌صرفه است و هایپرفب تیراژ مناسب هر پروژه را پس از بررسی نقشه پیشنهاد می‌کند. هرچه تیراژ بیشتر باشد، سهم قالب در قیمت هر قطعه کمتر می‌شود.
+
+### قالب پانچ را هم شما می‌سازید؟
+
+بله. طراحی و ساخت قالب پانچ بخشی از خدمت هایپرفب است. پیش از تولید، نمونه‌ی آزمایشی برای تأیید شما زده می‌شود.
+
+### چه شکل‌هایی را می‌شود پانچ کرد؟
+
+هایپرفب سوراخ گرد و چهارگوش، شیار مستقیم، شیار لوبیایی، الگوهای مشبک و فرم‌های سفارشی را طبق نقشه روی ورق و لوله پانچ می‌کند.
+
+### برای گرفتن قیمت پانچ چه چیزی بفرستم؟
+
+نقشه یا نمونه‌ی قطعه، جنس و ضخامت متریال و تیراژ تقریبی را برای هایپرفب بفرستید. می‌توانید مشخصات را تلفنی هم بگویید: ۰۹۹۶۲۲۳۳۸۹۸.
+
+### پانچ بهتر است یا برش لیزر؟
+
+برای تیراژ کم یا طرحی که مدام عوض می‌شود، برش لیزر اقتصادی‌تر است، چون هزینه‌ی قالب ندارد. برای تیراژ تکراری، پانچ پس از ساخت قالب هر قطعه را سریع‌تر و ارزان‌تر می‌سازد. هایپرفب هر دو را انجام می‌دهد و بر اساس تیراژ و هندسه، روش مناسب را پیشنهاد می‌کند.
+
+### هایپرفب کجاست و به شهرهای دیگر هم ارسال دارد؟
+
+هایپرفب در تهران است و قطعات پانچ‌شده را به سراسر ایران ارسال می‌کند. مشاوره و سفارش پروژه‌های پانچ تلفنی است: ۰۹۹۶۲۲۳۳۸۹۸.
+
+---
+
+# قالب‌سازی و تزریق پلاستیک — از طرح قطعه تا تولید انبوه
+
+URL: https://hyperfabgroup.github.io/injection-molding/
+
+تزریق پلاستیک روش اصلی تولید انبوه قطعات پلاستیکی است: پلیمر ذوب‌شده با فشار به درون قالب فولادی تزریق می‌شود و قطعه با ابعاد تکرارپذیر بیرون می‌آید. هایپرفب در تهران قالب تزریق را طراحی می‌کند و می‌سازد و قطعات پلاستیکی را با پلی‌اتیلن، پلی‌پروپیلن، ABS، نایلون و ترموپلاستیک‌های مهندسی به‌صورت ضربی تولید و تحویل می‌دهد. هزینه شامل ساخت قالب و هزینه‌ی هر ضرب است و پس از بررسی طرح اعلام می‌شود؛ مشاوره: ۰۹۹۶۲۲۳۳۸۹۸.
+
+طراحی و ساخت قالب تزریق و تولید ضربی قطعات پلاستیکی با متریال‌های مختلف. هایپرفب پروژه را از بررسی طرح قطعه تا تحویل محصول نهایی، با کیفیت کنترل‌شده، پیش می‌برد.
+
+- خدمت: بررسی قالب‌پذیری، طراحی و ساخت قالب تزریق، نمونه‌گیری، تولید ضربی
+- متریال: پلی‌اتیلن، پلی‌پروپیلن، ABS، نایلون، پلی‌کربنات، پلی‌استال
+- قیمت‌گذاری: هزینه‌ی یک‌باره‌ی قالب + هزینه‌ی هر ضرب، پس از بررسی طرح
+- سابقه: ۴ قالب تزریق پلی‌اتیلن و بیش از ۸۰٬۰۰۰ قطعه‌ی تولیدی
+- سفارش: تلفنی: ۰۹۹۶۲۲۳۳۸۹۸ · بله: @hyperfab_pro
+- محل: تهران
+
+- خدمات: طراحی و ساخت قالب، نمونه‌گیری، تولید ضربی
+- متریال: پلی‌اتیلن، پلی‌پروپیلن، ABS، نایلون و سایر ترموپلاستیک‌ها
+- قیمت‌گذاری: هزینه‌ی ساخت قالب + هزینه‌ی هر ضرب
+
+## تزریق پلاستیک چیست و هایپرفب چه کاری انجام می‌دهد؟
+
+تزریق پلاستیک (Injection Molding) روش اصلی تولید انبوه قطعات پلاستیکی است. پلیمر ذوب‌شده با فشار به درون قالب فولادی تزریق می‌شود، سرد می‌شود و قطعه با ابعاد تکرارپذیر بیرون می‌آید. وقتی تیراژ زیاد است، هیچ روش دیگری به این قیمت هر قطعه و این یکنواختی نمی‌رسد.
+
+موفقیت پروژه‌ی تزریق پیش از هر چیز به قالب بستگی دارد و هایپرفب کار را از همان‌جا شروع می‌کند. اول طرح قطعه برای قالب‌پذیری بررسی می‌شود. بعد قالب طراحی و ساخته می‌شود و نمونه‌گیری و اصلاح تا رسیدن به قطعه‌ی تأییدشده ادامه پیدا می‌کند. در پایان تولید ضربی با کنترل کیفیت تا تحویل انجام می‌شود.
+
+تیم هایپرفب چهار قالب تزریق پلی‌اتیلن را از نظارت بر ساخت تا راه‌اندازی به نتیجه رسانده و با همان قالب‌ها بیش از ۸۰٬۰۰۰ قطعه تولید شده است. همین تجربه پیش از ساخت قالب نشان می‌دهد کجای طرح ممکن است در تولید دردسر بسازد.
+
+## پیش از ساخت قالب تزریق، چه چیزهایی در طرح بررسی می‌شود؟
+
+هایپرفب پیش از ساخت قالب، زاویه‌ی خروج، ضخامت دیواره، ریب و باس، محل نقطه‌ی تزریق، زیربرش‌ها و تلرانس هر جنس را بررسی می‌کند؛ چون اصلاح طرح روی کاغذ تقریباً هزینه‌ای ندارد و اصلاح قالب فولادی گران است.
+
+- زاویه‌ی خروج (Draft) کافی روی دیواره‌ها، تا قطعه بدون خش و گیر از قالب جدا شود.
+- ضخامت دیواره‌ی یکنواخت، تا قطعه تاب برندارد و فرورفتگی سطحی (Sink mark) نگیرد.
+- ریب و باس درست، به‌جای دیواره‌های ضخیم و پرمصرف.
+- محل نقطه‌ی تزریق، خط جدایش قالب و جای پین‌های بیرون‌انداز.
+- زیربرش‌ها (Undercut) و نیاز به کشویی یا ماهیچه در قالب.
+- تلرانس واقعی هر جنس، با در نظر گرفتن جمع‌شدگی (Shrinkage) پلیمر.
+
+## با چه متریال‌هایی تزریق پلاستیک انجام می‌شود؟
+
+هایپرفب با پلی‌اتیلن، پلی‌پروپیلن، ABS، نایلون و ترموپلاستیک‌های مهندسی تزریق انجام می‌دهد. جنس بر اساس بار، دما، محیط کار و هزینه‌ی قطعه پیشنهاد می‌شود.
+
+- **پلی‌اتیلن (PE)**: مقاوم در برابر مواد شیمیایی و ضربه؛ برای درپوش، ظرف، اتصالات و قطعات صنعتی.
+- **پلی‌پروپیلن (PP)**: سبک و مقاوم در برابر خستگی؛ برای لولای یکپارچه، بسته‌بندی و قطعات مصرفی.
+- **ABS**: سطح خوش‌ظاهر و استحکام خوب؛ برای بدنه‌ی دستگاه و قطعات ظاهری.
+- **نایلون (PA)**: چقرمه و مقاوم در برابر سایش؛ برای چرخ‌دنده، بوش و قطعات مکانیکی.
+- **ترموپلاستیک‌های مهندسی**: پلی‌کربنات، پلی‌استال (POM) و متریال‌های دیگر، بسته به کاربرد قطعه.
+- **انتخاب متریال با ما**: اگر مطمئن نیستید، کاربرد قطعه را بگویید تا جنس و گرید مناسب پیشنهاد شود.
+
+## قیمت قالب‌سازی و تزریق پلاستیک چطور محاسبه می‌شود؟
+
+قیمت دو بخش اصلی دارد: هزینه‌ی یک‌باره‌ی ساخت قالب و هزینه‌ی هر ضرب در تولید. هر دو جدا و شفاف اعلام می‌شوند.
+
+| بخش هزینه | به چه چیزی بستگی دارد |
+|---|---|
+| ساخت قالب (یک‌بار) | اندازه و پیچیدگی قطعه، تعداد حفره‌های قالب، زیربرش‌ها و کشویی‌ها، کیفیت سطح و جنس فولاد قالب |
+| هر ضرب (تولید) | جنس و وزن قطعه، زمان سیکل تزریق و تیراژ |
+| متریال | نوع، گرید و رنگ پلیمر |
+
+نکته: هزینه‌ی ساخت قالب یک‌بار است و روی تیراژ سرشکن می‌شود؛ هرچه تیراژ بیشتر باشد، سهم قالب در قیمت هر قطعه کمتر می‌شود.
+
+## سفارش تزریق پلاستیک در هایپرفب چه مراحلی دارد؟
+
+پنج مرحله: ارسال طرح، بررسی قالب‌پذیری، پیشنهاد قیمت، ساخت قالب و نمونه‌گیری، و تولید ضربی و تحویل.
+
+1. **ارسال طرح**: فایل سه‌بعدی، نقشه یا نمونه‌ی قطعه را بفرستید. اگر فقط ایده دارید، طراحی قطعه هم انجام می‌شود.
+2. **بررسی قالب‌پذیری**: طرح از نظر زاویه‌ی خروج، ضخامت دیواره و خط جدایش بررسی و اصلاحات لازم پیشنهاد می‌شود.
+3. **پیشنهاد قیمت**: هزینه‌ی ساخت قالب و هزینه‌ی هر ضرب جدا و شفاف اعلام می‌شود.
+4. **ساخت قالب و نمونه‌گیری**: قالب ساخته و نمونه زده می‌شود و تا تأیید نهایی شما اصلاح می‌شود.
+5. **تولید ضربی و تحویل**: تولید با کنترل کیفیت انجام و قطعات تحویل می‌شوند.
+
+پیش از سرمایه‌گذاری روی قالب: می‌توانید نمونه‌ی قطعه را با پرینت سه‌بعدی FDM در هایپرفب بسازید و فرم، ابعاد و مونتاژ را روی قطعه‌ی واقعی بسنجید.
+
+## چرا پروژه‌ی تزریق را به هایپرفب بسپارید؟
+
+- **مهندسی پیش از قالب**: گروه مهندسی هایپرفب از دانشگاه‌های برتر کشور می‌آید و سال‌ها در دل صنعت کار کرده است. طرح شما را پیش از ساخت قالب از نگاه تولید بررسی می‌کند تا قالب یک بار و درست ساخته شود.
+- **تجربه‌ی تولید واقعی**: چهار قالب تزریق از نظارت بر ساخت تا راه‌اندازی و بیش از ۸۰٬۰۰۰ قطعه‌ی تولیدی؛ مسیر یک قطعه از طرح تا تولید انبوه را از نزدیک می‌شناسیم.
+- **یک مسئول از طرح تا تحویل**: از قالب تا آخرین قطعه، مسئولیت کامل پروژه با هایپرفب است. نمونه را پیش از تولید تأیید می‌کنید و کیفیت پیش از تحویل کنترل می‌شود.
+
+## FAQ
+
+### هایپرفب قالب تزریق پلاستیک می‌سازد؟
+
+بله. هایپرفب در تهران قالب تزریق را طراحی می‌کند و می‌سازد و تولید ضربی قطعات پلاستیکی را هم با متریال‌های مختلف انجام می‌دهد. پروژه از بررسی طرح تا تحویل قطعه با هایپرفب است.
+
+### قیمت قالب‌سازی و تزریق پلاستیک چطور محاسبه می‌شود؟
+
+قیمت تزریق پلاستیک در هایپرفب دو بخش اصلی دارد: هزینه‌ی یک‌باره‌ی ساخت قالب و هزینه‌ی هر ضرب در تولید. هزینه‌ی قالب به اندازه و پیچیدگی قطعه، تعداد حفره‌ها و زیربرش‌ها بستگی دارد. هزینه‌ی هر ضرب به جنس و وزن قطعه و زمان سیکل بستگی دارد. پس از بررسی طرح، هر دو جدا اعلام می‌شوند.
+
+### هایپرفب با چه متریال‌هایی تزریق انجام می‌دهد؟
+
+هایپرفب با پلی‌اتیلن، پلی‌پروپیلن، ABS، نایلون و ترموپلاستیک‌های مهندسی دیگر مثل پلی‌کربنات و پلی‌استال تزریق انجام می‌دهد. جنس مناسب بر اساس کاربرد قطعه پیشنهاد می‌شود.
+
+### تزریق پلاستیک از چه تیراژی به‌صرفه است؟
+
+به هزینه‌ی قالب و قیمت هر قطعه بستگی دارد و معمولاً برای تیراژهای بالا به‌صرفه است. برای تیراژ کمتر، پرینت سه‌بعدی یا ماشین‌کاری CNC ممکن است اقتصادی‌تر باشد. هایپرفب هر سه را انجام می‌دهد و با بررسی پروژه، روش مناسب را پیشنهاد می‌کند.
+
+### برای گرفتن قیمت تزریق پلاستیک چه چیزی بفرستم؟
+
+فایل سه‌بعدی، نقشه یا نمونه‌ی قطعه را برای هایپرفب بفرستید یا تلفنی شرح دهید: ۰۹۹۶۲۲۳۳۸۹۸. اگر فقط ایده دارید، طراحی قطعه هم انجام می‌شود.
+
+### فایل یا نقشه‌ی قطعه ندارم؛ چه کنم؟
+
+نمونه‌ی قطعه، عکس یا ایده‌ی خود را برای هایپرفب بفرستید. طراحی و مدل‌سازی قطعه هم انجام می‌شود و پس از تأیید شما، قالب ساخته می‌شود.
+
+### پیش از تولید، نمونه‌ی قطعه را می‌بینم؟
+
+بله. هایپرفب پس از ساخت قالب نمونه می‌زند و تولید پس از تأیید شما شروع می‌شود. پیش از ساخت قالب هم می‌توانید نمونه را با پرینت سه‌بعدی هایپرفب بسازید.
+
+### هایپرفب کجاست و سفارش تزریق پلاستیک چطور ثبت می‌شود؟
+
+هایپرفب در تهران است و سفارش قالب‌سازی و تزریق پلاستیک تلفنی ثبت می‌شود: ۰۹۹۶۲۲۳۳۸۹۸. طرح یا نقشه را می‌توانید در پیام‌رسان بله (@hyperfab_pro) یا با ایمیل info@hyperfab.ir هم بفرستید.
+
+---
+
+# تراشکاری CNC قطعات صنعتی — تولید تیراژی با دقت تأییدشده
+
+URL: https://hyperfabgroup.github.io/cnc-turning/
+
+تراشکاری CNC تیراژی یعنی تولید سری قطعات دوار مثل شفت، بوش، پین، نازل و اتصالات طبق نقشه، طوری که همه‌ی قطعات دقیقاً مثل نمونه‌ی تأییدشده باشند. هایپرفب در تهران قطعات تراشکاری تیراژی را از برنج، فولاد MO40 و CK45 و فلزات دیگر با تلرانس‌های انطباقی تولید می‌کند و نمونه‌ی اول را پیش از تولید سری به تأیید شما می‌رساند. قیمت بر اساس جنس، پیچیدگی قطعه، تلرانس‌ها و تیراژ اعلام می‌شود؛ مشاوره: ۰۹۹۶۲۲۳۳۸۹۸.
+
+تولید تیراژی قطعات تراشکاری از برنج، فولاد آلیاژی MO40 و فولاد CK45 و فلزات دیگر، طبق نقشه و با تلرانس‌های انطباقی دقیق. نقاط حساس هر قطعه پیش از تولید مهندسی و کنترل می‌شود، از اولین نمونه تا آخرین قطعه‌ی سری.
+
+- خدمت: تراشکاری CNC تیراژی قطعات صنعتی طبق نقشه
+- جنس: برنج، MO40 (42CrMo4)، CK45 (C45)، استیل، آلومینیوم
+- دقت: تلرانس‌های انطباقی، قطعات جفت‌شونده و گیج
+- حداقل سفارش: مخصوص تیراژ؛ تک‌قطعه فقط به‌ندرت پذیرفته می‌شود
+- قیمت‌گذاری: بر اساس جنس، پیچیدگی، تلرانس‌ها و تیراژ
+- سفارش: تلفنی: ۰۹۹۶۲۲۳۳۸۹۸ · بله: @hyperfab_pro · تهران
+
+- مخصوص: سفارش‌های تیراژی
+- جنس: برنج، MO40 (42CrMo4)، CK45 (C45) و فلزات دیگر
+- دقت: تلرانس‌های انطباقی، قطعات جفت‌شونده و گیج
+
+## تراشکاری CNC تیراژی چیست و هایپرفب چه قطعاتی می‌سازد؟
+
+تراشکاری CNC روش اصلی تولید قطعات دوار است: شفت، بوش، پین، مهره، نازل، اتصالات و قطعاتی که باید دقیقاً درون هم جا بیفتند. در تولید تیراژی، چالش واقعی ساختن یک قطعه‌ی خوب نیست. چالش این است که صدها و هزاران قطعه، همه دقیقاً مثل همان قطعه‌ی خوب باشند.
+
+هایپرفب مدت‌هاست قطعات تراشکاری تیراژی تولید می‌کند. از قطعات برنجی با تلرانس‌های انطباقی که باید درون هم جفت شوند، تا قطعات گیج از فولاد آلیاژی MO40 و فولاد CK45. این قطعات با دقت بالا تولید شده‌اند و تأیید مشتری را گرفته‌اند.
+
+پشتوانه‌ی این دقت، مهندسی پیش از تراش است. پیش از شروع تولید، نکات فنی هر قطعه مهندسی و به تراشکار ابلاغ می‌شود: سطوح انطباقی، قطرهای حساس، هم‌محوری و کیفیت سطح در نقاط ویژه. این‌طوری تراشکار دقیقاً می‌داند کجای قطعه چه دقتی می‌خواهد. برای هر قطعه، روش ساخت و سطح دقت متناسب با الزاماتش انتخاب می‌شود؛ نه گران‌تر از لازم، نه ضعیف‌تر از الزامات.
+
+مخصوص سفارش‌های تیراژی: این خدمت برای تولید سری انجام می‌شود و سفارش تک‌قطعه فقط به‌ندرت پذیرفته می‌شود. تیراژ مناسب پس از بررسی پروژه پیشنهاد می‌شود.
+
+## هایپرفب چه جنس‌ها و قطعاتی را تراش می‌دهد؟
+
+قطعات برنجی، فولاد آلیاژی MO40، فولاد CK45، قطعات گیج و جفت‌شونده، و قطعاتی از استیل، آلومینیوم و فولادهای دیگر؛ همه به‌صورت تیراژی و طبق نقشه.
+
+- **قطعات برنجی**: بوش، نازل، اتصالات، پین و قطعات جفت‌شونده‌ی برنجی با تلرانس انطباقی و سطح تمیز.
+- **فولاد MO40 (42CrMo4)**: فولاد آلیاژی کروم-مولیبدن برای قطعات تحت بار و گیج‌ها، با استحکام و چقرمگی بالا.
+- **فولاد CK45 (C45)**: فولاد کربنی متوسط برای شفت، پین، قطعات ماشین‌آلات و گیج.
+- **قطعات گیج**: گیج‌های کنترل ابعادی که خودشان مرجع دقت خط تولیدند و خطایشان مستقیم به محصول منتقل می‌شود.
+- **قطعات جفت‌شونده**: انطباق‌های لغزشی و پرسی بین قطعات، با کنترل قطرهای حساس و هم‌محوری.
+- **فلزات دیگر**: استیل، آلومینیوم و فولادهای دیگر، بسته به نیاز پروژه.
+
+## دقت قطعات در تولید تیراژی چطور حفظ می‌شود؟
+
+با مهندسی نقشه پیش از تولید، تأیید نمونه‌ی اول و کنترل ابعادی در طول تولید و پیش از تحویل.
+
+- مهندسی نقشه پیش از تولید: شناسایی سطوح انطباقی، ابعاد بحرانی و مبناهای اندازه‌گیری.
+- ابلاغ نکات فنی به تراشکار: دقت هر نقطه‌ی ویژه، ترتیب عملیات و روش اندازه‌گیری.
+- دقت متناسب با الزامات: سطح دقت و هزینه‌ی ساخت با اهمیت هر قطعه تنظیم می‌شود؛ نه بیشتر از لازم، نه کمتر.
+- تأیید نمونه‌ی اول پیش از شروع تولید سری.
+- کنترل ابعادی در طول تولید و پیش از تحویل.
+- بسته‌بندی متناسب قطعات دقیق تا سطوح انطباقی آسیب نبینند.
+
+## قطعه‌ی تراش‌خورده را آبکاری یا رنگ هم می‌کنید؟
+
+بله. قطعه‌ی تراشکاری‌شده معمولاً به پوشش یا مونتاژ هم نیاز دارد و در هایپرفب می‌توانید آبکاری نقره و طلا، آندایز و کروماته، رنگ کوره‌ای و جوشکاری را هم در همان پروژه بسپارید، تا قطعه‌ی نهایی و آماده‌ی مصرف تحویل بگیرید.
+
+برای تک‌قطعه و نمونه‌ی اولیه، ماشین‌کاری CNC در سایت هایپرفب را ببینید.
+
+## سفارش تراشکاری تیراژی چه مراحلی دارد؟
+
+پنج مرحله: ارسال نقشه، بررسی مهندسی، پیشنهاد قیمت، ساخت و تأیید نمونه‌ی اول، و تولید سری و تحویل.
+
+1. **ارسال نقشه**: نقشه‌ی ابعادگذاری‌شده با تلرانس‌ها، جنس و تیراژ را بفرستید یا تلفنی شرح دهید.
+2. **بررسی مهندسی**: سطوح انطباقی و ابعاد بحرانی شناسایی و نکات ساخت مشخص می‌شود.
+3. **پیشنهاد قیمت**: قیمت بر اساس جنس، پیچیدگی، تلرانس‌ها و تیراژ اعلام می‌شود.
+4. **نمونه‌ی اول**: نمونه‌ی اول ساخته و کنترل می‌شود و پس از تأیید شما تولید سری شروع می‌شود.
+5. **تولید و تحویل**: تولید سری با کنترل ابعادی و تحویل قطعات.
+
+## FAQ
+
+### هایپرفب تراشکاری CNC تیراژی انجام می‌دهد؟
+
+بله. هایپرفب در تهران تولید تیراژی قطعات تراشکاری‌شده را طبق نقشه انجام می‌دهد. نمونه‌ها قطعات برنجی با تلرانس‌های انطباقی و قطعات گیج از فولاد MO40 و CK45 است که با دقت بالا تولید شده و تأیید مشتری را گرفته‌اند.
+
+### قطعات فولاد MO40 و CK45 تراش می‌دهید؟
+
+بله. MO40 (معادل 42CrMo4) و CK45 (معادل C45) از جنس‌هایی‌اند که هایپرفب قطعات گیج و قطعات صنعتی تیراژی را با آن‌ها ساخته است.
+
+### قطعات برنجی جفت‌شونده با تلرانس دقیق می‌سازید؟
+
+بله. قطعات برنجی که باید با انطباق لغزشی یا پرسی درون هم جا بیفتند، از تجربه‌های اصلی هایپرفب است. قطرهای حساس و هم‌محوری پیش از تولید مهندسی و در طول تولید کنترل می‌شوند.
+
+### حداقل سفارش تراشکاری تیراژی چقدر است؟ تک‌قطعه هم تراش می‌دهید؟
+
+تراشکاری CNC تیراژی هایپرفب مخصوص سفارش‌های سری است و تک‌قطعه فقط به‌ندرت پذیرفته می‌شود؛ تیراژ مناسب پس از بررسی پروژه پیشنهاد می‌شود. برای تک‌قطعه و نمونه، ماشین‌کاری CNC هایپرفب در سایت hyperfab.ir را ببینید.
+
+### قیمت تراشکاری CNC تیراژی چطور محاسبه می‌شود؟
+
+هایپرفب قیمت را بر اساس جنس، پیچیدگی قطعه، تلرانس‌ها و تیراژ اعلام می‌کند. روش ساخت و سطح دقت متناسب با الزامات قطعه انتخاب می‌شود، پس قیمت با اهمیت و دقت لازم قطعه متناسب است؛ نه گران‌تر از لازم، نه ضعیف‌تر از الزامات.
+
+### برای سفارش تراشکاری تیراژی چه چیزی بفرستم؟
+
+نقشه‌ی ابعادگذاری‌شده با تلرانس‌ها، جنس قطعه و تیراژ را برای هایپرفب بفرستید یا تلفنی شرح دهید: ۰۹۹۶۲۲۳۳۸۹۸. هایپرفب در تهران است و سفارش را تلفنی، در پیام‌رسان بله یا با ایمیل می‌پذیرد.
+
+### آبکاری یا رنگ قطعات را هم انجام می‌دهید؟
+
+بله. آبکاری نقره و طلا، آندایز و کروماته و رنگ کوره‌ای هم در هایپرفب انجام می‌شود و قطعه‌ی نهایی تحویل داده می‌شود.
+
+---
+
+# اکسترود پروفیل آلومینیوم — مقطع دلخواه شما، با قالب اختصاصی
+
+URL: https://hyperfabgroup.github.io/aluminium-extrusion/
+
+اکسترود (اکستروژن) آلومینیوم یعنی عبور دادن شمش داغ آلومینیوم با فشار از قالب فولادی، تا پروفیلی با مقطع ثابت و طول بلند ساخته شود. هایپرفب در تهران به‌طور تخصصی پروفیل آلومینیوم با مقطع دلخواه شما را با قالب اختصاصی تولید می‌کند: سهم شما تناژ لازم و هزینه‌ی قالب است و مشاوره‌ی مقطع، ساخت قالب، تولید، کنترل کیفیت و تحویل با گروه مهندسی هایپرفب. هزینه‌ی قالب و قیمت پروفیل بر اساس آلیاژ، وزن و تناژ جدا اعلام می‌شود؛ مشاوره: ۰۹۹۶۲۲۳۳۸۹۸.
+
+تولید انواع پروفیل آلومینیومی با مقطع دلخواه شما. گروه مهندسی هایپرفب درباره‌ی هندسه‌ی مقطع مشاوره می‌دهد، بعد قالب اکستروژن اختصاصی ساخته و پروفیل تولید می‌شود. کافی است تناژ لازم را داشته باشید و هزینه‌ی قالب را بپردازید؛ بقیه‌ی کار با گروه مهندسی هایپرفب است.
+
+- خدمت: اکسترود پروفیل آلومینیوم با مقطع سفارشی و قالب اختصاصی
+- جنس: فقط آلومینیوم
+- سهم شما: تناژ لازم + هزینه‌ی ساخت قالب
+- سهم هایپرفب: مشاوره‌ی مقطع، ساخت قالب، تولید، کنترل کیفیت، تحویل
+- حداقل سفارش: بر اساس تناژ؛ پس از مشاوره اعلام می‌شود
+- سفارش: تلفنی: ۰۹۹۶۲۲۳۳۸۹۸ · بله: @hyperfab_pro · تهران
+
+- تخصص: فقط اکسترود آلومینیوم
+- سهم شما: تناژ لازم + هزینه‌ی قالب
+- سهم ما: مشاوره‌ی مقطع، قالب، تولید، کنترل کیفیت و تحویل
+
+## اکسترود آلومینیوم چیست و هایپرفب چه کاری انجام می‌دهد؟
+
+اکستروژن آلومینیوم (Aluminium Extrusion) یعنی عبور دادن شمش داغ آلومینیوم با فشار از یک قالب فولادی، تا پروفیلی با مقطع ثابت و طول بلند ساخته شود. تقریباً هر مقطعی که بتوان روی کاغذ کشید با یک قالب اختصاصی ساختنی است: توپر، توخالی، شیاردار، پره‌دار یا با جای پیچ. همین است که اکستروژن را اقتصادی‌ترین راه ساخت قطعات آلومینیومی بلند و یکنواخت می‌کند.
+
+هایپرفب به‌طور تخصصی روی اکسترود آلومینیوم کار می‌کند. مدل همکاری ساده است: شما تناژ لازم را دارید و هزینه‌ی ساخت قالب را می‌پردازید. مشاوره‌ی طراحی مقطع، ساخت قالب، تولید پروفیل، کنترل کیفیت و تحویل با گروه مهندسی هایپرفب است. نتیجه پروفیلی است که مقطعش دقیقاً مطابق نیاز شماست، نه نزدیک‌ترین پروفیل موجود در بازار.
+
+مشاوره پیش از ساخت قالب اهمیت زیادی دارد. قالب اکستروژن گران است و مقطعی که بد طراحی شده باشد ممکن است به تاب‌برداشتن پروفیل، سطح ناهموار یا شکستن قالب ختم شود. گروه مهندسی هایپرفب پیش از ساخت قالب، مقطع شما را از نظر ضخامت دیواره، تقارن، شعاع گوشه‌ها و نسبت زبانه‌ها بررسی می‌کند و اصلاحات لازم را پیشنهاد می‌دهد، تا قالب یک بار و درست ساخته شود.
+
+فقط آلومینیوم: هایپرفب در حوزه‌ی اکستروژن، تخصصی روی آلومینیوم کار می‌کند. سفارش بر اساس تناژ است و تناژ مناسب هر مقطع پس از مشاوره اعلام می‌شود.
+
+## در سفارش پروفیل آلومینیوم، هر مرحله با کیست؟
+
+شما کاربرد و مقطع اولیه را مشخص و هزینه‌ی قالب را پرداخت می‌کنید؛ مقطع با مشاوره‌ی هایپرفب و تأیید شما نهایی می‌شود و ساخت قالب، تولید، کنترل کیفیت و تحویل با هایپرفب است.
+
+| مرحله | با چه کسی |
+|---|---|
+| مشخص‌کردن کاربرد و مقطع اولیه | شما |
+| مشاوره و نهایی‌کردن هندسه‌ی مقطع | گروه مهندسی هایپرفب، با تأیید شما |
+| پرداخت هزینه‌ی ساخت قالب | شما |
+| طراحی و ساخت قالب اکستروژن | هایپرفب |
+| تولید پروفیل در تناژ سفارش | هایپرفب |
+| کنترل کیفیت و تحویل | هایپرفب |
+
+## هایپرفب چه پروفیل‌هایی اکسترود می‌کند؟
+
+پروفیل صنعتی و شیاردار، هیت‌سینک و پروفیل پره‌دار، بدنه و قاب محصول، پروفیل معماری، مقاطع توخالی و چندحفره، و ریل و راهنما؛ همه با مقطع اختصاصی شما.
+
+- **پروفیل صنعتی و شیاردار**: پروفیل‌های سازه‌ای و شیاردار برای شاسی دستگاه، فریم، میز کار و خط تولید.
+- **هیت‌سینک و پروفیل پره‌دار**: پروفیل‌های پره‌دار برای دفع حرارت در الکترونیک قدرت، درایو و LED.
+- **بدنه و قاب محصول**: بدنه‌ی دستگاه و محفظه‌ی الکترونیکی با مقطع اختصاصی محصول شما.
+- **پروفیل معماری و دکوراتیو**: قاب، لبه، دستگیره و پروفیل‌های تزئینی.
+- **پروفیل توخالی و چندحفره**: مقاطع توخالی و چندحفره‌ای که هم سبک‌اند و هم مستحکم.
+- **ریل و راهنما**: ریل، راهنمای خطی و قطعات سبک برای تجهیزات و حمل‌ونقل.
+
+## مقطع پروفیل اکستروژن را چطور طراحی کنیم؟
+
+با ضخامت دیواره‌ی یکنواخت، گوشه‌های گرد، مقطع متعادل و زبانه‌های کنترل‌شده؛ این نکات عمر قالب را بالا و هزینه‌ی هر کیلو پروفیل را پایین می‌آورند و همه در مشاوره‌ی هایپرفب بررسی می‌شوند.
+
+- ضخامت دیواره‌ی یکنواخت: اختلاف زیاد ضخامت، جریان فلز را نامتوازن می‌کند و پروفیل تاب برمی‌دارد.
+- گوشه‌های گرد: گوشه‌ی تیز را با شعاع کوچک گرد کنید؛ هم عمر قالب بیشتر می‌شود و هم سطح بهتر.
+- مقطع متعادل: مقطع متقارن و متعادل، اکستروژن پایدارتر و دقیق‌تری دارد.
+- زبانه‌های قالب: شیار عمیق و باریک، زبانه‌ی قالب را ضعیف می‌کند؛ نسبت عمق به عرض باید کنترل شود.
+- اندازه‌ی مقطع: مقطع باید در محدوده‌ی تولید قرار بگیرد؛ اندازه‌ی مناسب در مشاوره مشخص می‌شود.
+- تلرانس‌ها: تلرانس سخت را فقط روی ابعاد عملکردی بگذارید.
+
+## آندایز و رنگ پروفیل آلومینیوم هم انجام می‌شود؟
+
+بله. پروفیل اکسترودشده معمولاً هنوز به محصول نهایی نرسیده است و در هایپرفب می‌توانید آندایز پروفیل آلومینیوم، رنگ کوره‌ای، ماشین‌کاری، پانچ و جوشکاری آلومینیوم پروفیل را هم بسپارید، تا قطعه‌ی آماده‌ی مونتاژ تحویل بگیرید.
+
+## سفارش اکسترود آلومینیوم چه مراحلی دارد؟
+
+پنج مرحله: ارسال مقطع یا ایده، مشاوره‌ی مقطع، پیشنهاد قیمت، ساخت قالب و نمونه، و تولید و تحویل.
+
+1. **ارسال مقطع یا ایده**: نقشه‌ی مقطع، فایل DXF یا حتی طرح دستی و کاربرد پروفیل را بفرستید یا تلفنی شرح دهید.
+2. **مشاوره‌ی مقطع**: گروه مهندسی هندسه‌ی مقطع را بررسی و برای اکستروژن بهینه می‌کند و تناژ مناسب را اعلام می‌کند.
+3. **پیشنهاد قیمت**: هزینه‌ی قالب و قیمت پروفیل بر اساس آلیاژ، وزن و تناژ جدا اعلام می‌شود.
+4. **ساخت قالب و نمونه**: قالب ساخته و نمونه‌ی پروفیل برای تأیید شما تولید می‌شود.
+5. **تولید و تحویل**: پروفیل در تناژ سفارش تولید، کنترل و تحویل می‌شود.
+
+## FAQ
+
+### هایپرفب اکسترود پروفیل آلومینیوم انجام می‌دهد؟
+
+بله. هایپرفب در تهران به‌طور تخصصی اکسترود آلومینیوم انجام می‌دهد: انواع پروفیل آلومینیومی با مقطع دلخواه مشتری، با قالب اختصاصی. مشاوره‌ی مقطع، ساخت قالب، تولید و تحویل با گروه مهندسی هایپرفب است.
+
+### برای سفارش پروفیل آلومینیوم اختصاصی چه لازم است؟
+
+تناژ لازم و پرداخت هزینه‌ی ساخت قالب. مقطع پس از مشاوره با گروه مهندسی هایپرفب نهایی می‌شود و بقیه‌ی کار، از ساخت قالب تا تحویل پروفیل، با هایپرفب است.
+
+### قیمت اکسترود پروفیل آلومینیوم چطور محاسبه می‌شود؟
+
+هایپرفب هزینه‌ی ساخت قالب اکستروژن و قیمت پروفیل را جدا اعلام می‌کند. قیمت پروفیل بر اساس آلیاژ، وزن و تناژ است و هزینه‌ی ساخت قالب را مشتری می‌پردازد.
+
+### حداقل سفارش اکسترود آلومینیوم چقدر است؟
+
+سفارش اکسترود در هایپرفب بر اساس تناژ است. تناژ مناسب به اندازه و وزن مقطع بستگی دارد و پس از مشاوره اعلام می‌شود.
+
+### برای مشاوره‌ی اکسترود چه چیزی بفرستم؟
+
+نقشه‌ی مقطع، فایل DXF یا حتی طرح دستی و کاربرد پروفیل را برای هایپرفب بفرستید یا تلفنی شرح دهید: ۰۹۹۶۲۲۳۳۸۹۸. هایپرفب در تهران است و درخواست را در پیام‌رسان بله و با ایمیل هم می‌پذیرد.
+
+### طراحی مقطع پروفیل را هم انجام می‌دهید؟
+
+گروه مهندسی هایپرفب درباره‌ی هندسه‌ی مقطع مشاوره می‌دهد و آن را برای اکستروژن بهینه می‌کند: ضخامت دیواره، تقارن، شعاع گوشه‌ها و نسبت زبانه‌ها. مقطع نهایی با تأیید شما ساخته می‌شود.
+
+### غیر از آلومینیوم هم اکسترود می‌کنید؟
+
+خیر. هایپرفب در حوزه‌ی اکستروژن فقط روی آلومینیوم کار می‌کند.
+
+### پروفیل را آندایز یا رنگ هم می‌کنید؟
+
+بله. آندایز، رنگ کوره‌ای، ماشین‌کاری، پانچ و جوشکاری پروفیل هم در هایپرفب انجام می‌شود.
+
+---
+
+# جوشکاری آرگون TIG و MIG — استیل ضدزنگ، آلومینیوم و سازه‌های جوشی
+
+URL: https://hyperfabgroup.github.io/welding/
+
+جوشکاری آرگون، یعنی جوش TIG و MIG، روش اصلی اتصال استیل ضدزنگ و آلومینیوم در ساخت دستگاه و تجهیزات صنعتی است. هایپرفب در تهران جوشکاری TIG و MIG روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ و ساخت سازه‌های جوشی را بر اساس نقشه‌ی شما، از نقشه تا تحویل و با آزمون‌های VT، PT و PAUT به درخواست شما، انجام می‌دهد. قیمت بر اساس جنس، طول و نوع جوش، ابعاد سازه و آزمون‌های درخواستی اعلام می‌شود؛ مشاوره: ۰۹۹۶۲۲۳۳۸۹۸.
+
+جوشکاری TIG و MIG روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰، ساخت و مونتاژ سازه‌های جوشی برای دستگاه‌ها و ساخت سازه‌های پلتفرمی بزرگ؛ با آزمون‌های جوش VT، PT و Phased Array به درخواست شما، از نقشه تا تحویل.
+
+- خدمت: جوشکاری آرگون TIG و MIG، ساخت و مونتاژ سازه‌های جوشی
+- جنس: استیل ضدزنگ، آلومینیوم سری ۶۰۰۰ (مثل ۶۰۶۱ و ۶۰۶۳)
+- آزمون جوش: VT، PT، PAUT و آزمون‌های دیگر، به درخواست مشتری
+- سابقه: صنایع پزشکی و دریایی، سازه‌های پلتفرمی بزرگ
+- قیمت‌گذاری: بر اساس جنس، طول و نوع جوش، ابعاد سازه و آزمون‌ها
+- سفارش: تلفنی: ۰۹۹۶۲۲۳۳۸۹۸ · بله: @hyperfab_pro · تهران
+
+- روش‌ها: جوش آرگون TIG و MIG
+- جنس: استیل ضدزنگ، آلومینیوم سری 6000
+- آزمون جوش: VT · PT · PAUT و آزمون‌های دیگر طبق نیاز
+
+## جوشکاری آرگون TIG و MIG چیست و هایپرفب چه می‌سازد؟
+
+جوشکاری آرگون، یعنی TIG (GTAW) و MIG (GMAW)، روش اصلی اتصال استیل ضدزنگ و آلومینیوم در ساخت دستگاه و تجهیزات صنعتی است. TIG برای جوش‌های تمیز و دقیق روی ورق نازک و قطعات حساس به کار می‌رود و MIG برای سرعت بیشتر در جوش‌های طولانی و سازه‌ای. هایپرفب هر دو را روی استیل ضدزنگ و آلومینیوم سری ۶۰۰۰ انجام می‌دهد.
+
+کار هایپرفب فقط زدن جوش نیست؛ ساختن و جمع‌کردن پروژه از نقشه تا تحویل است. این مسیر برش و آماده‌سازی قطعات، فیکسچربندی، جوشکاری با کنترل تاب و اعوجاج، پرداخت جوش و آزمون را در بر می‌گیرد. هایپرفب تاکنون نمونه‌های زیادی برای صنایع پزشکی و صنایع دریایی ساخته است. در این دو حوزه، هم تمیزی جوش و هم مقاومت در برابر خوردگی حیاتی است.
+
+تجربه‌ی هایپرفب به قطعات کوچک محدود نیست. هایپرفب سازه‌های پلتفرمی بزرگ هم ساخته است، از جمله یک شاسی شبکه‌ای که روی چرخ نصب می‌شود و روی ریل حرکت می‌کند. در چنین سازه‌ای، صافی، هم‌راستایی و دقت ابعادی در طول زیاد تعیین‌کننده است.
+
+## هایپرفب چه خدمات جوشکاری‌ای ارائه می‌دهد؟
+
+جوش TIG استیل ضدزنگ، جوش TIG و MIG آلومینیوم سری ۶۰۰۰، ساخت سازه‌های جوشی دستگاه و پلتفرم‌های بزرگ، و آزمون جوش.
+
+- **جوش TIG استیل ضدزنگ**: جوش تمیز و دقیق روی استیل ضدزنگ برای تجهیزات پزشکی، غذایی و دریایی، با کنترل حرارت برای حفظ مقاومت در برابر خوردگی.
+- **جوش آلومینیوم سری ۶۰۰۰**: جوش TIG و MIG آلومینیوم‌های سری ۶۰۰۰ مثل ۶۰۶۱ و ۶۰۶۳؛ برای شاسی، فریم و سازه‌های سبک.
+- **سازه‌های جوشی دستگاه**: شاسی، فریم، بدنه و قاب دستگاه‌های مختلف از استیل ضدزنگ یا آلومینیوم، از قطعات بریده‌شده تا سازه‌ی مونتاژشده.
+- **سازه‌های پلتفرمی بزرگ**: پلتفرم‌ها و شاسی‌های شبکه‌ای بزرگ، از جمله سازه‌ای که روی چرخ نصب می‌شود و روی ریل حرکت می‌کند.
+- **صنایع پزشکی و دریایی**: نمونه‌های متعدد برای تجهیزات پزشکی و کاربردهای دریایی، با الزامات تمیزی و خوردگی این صنایع.
+- **آزمون جوش**: آزمون چشمی (VT)، مایع نافذ (PT)، فراصوتی آرایه‌فازی (PAUT) و آزمون‌های دیگر به درخواست مشتری.
+
+## طراحی سازه با کیست و ساخت چطور انجام می‌شود؟
+
+در سازه‌های جوشی، طراحی سازه با کارفرماست و هایپرفب ساخت را بر اساس نقشه‌ی تأییدشده‌ی شما انجام می‌دهد. پیش از شروع، نقشه از نظر ساخت‌پذیری بررسی می‌شود: ترتیب جوشکاری، دسترسی به درزها، کنترل اعوجاج و تلرانس‌هایی که در عمل دست‌یافتنی‌اند. اگر نکته‌ای باشد، پیش از ساخت با شما در میان گذاشته می‌شود.
+
+برای سازه‌های بزرگ و پلتفرمی، داشتن نقشه‌ی کامل و تأییدشده پیش از شروع ساخت ضروری است. هایپرفب ساخت، پیگیری و کنترل کیفیت سازه را تا تحویل بر عهده می‌گیرد.
+
+قطعات ورقی سازه را می‌توانید با برش لیزر فلزات هایپرفب سفارش دهید و سازه‌ی جوشکاری‌شده را با رنگ کوره‌ای رنگ‌شده و نهایی تحویل بگیرید.
+
+## چه آزمون‌هایی روی جوش انجام می‌شود؟
+
+آزمون چشمی (VT)، مایع نافذ (PT)، فراصوتی آرایه‌فازی (PAUT) و آزمون‌های دیگر؛ به درخواست مشتری و متناسب با الزامات پروژه.
+
+| آزمون | چه چیزی را بررسی می‌کند |
+|---|---|
+| VT — بازرسی چشمی | شکل و ابعاد جوش، ترک سطحی، بریدگی کناره (Undercut)، پاشش و نقص‌های ظاهری |
+| PT — مایع نافذ | ترک‌ها و ناپیوستگی‌های باز به سطح؛ مناسب استیل ضدزنگ و آلومینیوم که غیرمغناطیسی‌اند |
+| PAUT — فراصوتی آرایه‌فازی | عیوب داخلی جوش مثل عدم ذوب، ترک داخلی و حفره، با تصویر مقطع جوش |
+| آزمون‌های دیگر | طبق الزامات پروژه و درخواست مشتری |
+
+## سفارش جوشکاری در هایپرفب چه مراحلی دارد؟
+
+پنج مرحله: ارسال نقشه، بررسی ساخت‌پذیری، پیشنهاد قیمت، ساخت و جوشکاری، و آزمون و تحویل.
+
+1. **ارسال نقشه**: نقشه‌ی سازه یا قطعه، جنس، تعداد و آزمون‌های لازم را بفرستید یا تلفنی شرح دهید.
+2. **بررسی ساخت‌پذیری**: ترتیب جوش، دسترسی به درزها و کنترل اعوجاج بررسی می‌شود.
+3. **پیشنهاد قیمت**: قیمت بر اساس جنس، طول و نوع جوش، ابعاد سازه و آزمون‌های درخواستی اعلام می‌شود.
+4. **ساخت و جوشکاری**: قطعات آماده، فیکسچربندی و جوشکاری و در صورت نیاز پرداخت می‌شوند.
+5. **آزمون و تحویل**: آزمون‌های درخواستی انجام و سازه تحویل می‌شود.
+
+## چرا جوشکاری را به هایپرفب بسپارید؟
+
+- **مهندسی پیش از جوش**: ترتیب جوشکاری و فیکسچربندی پیش از شروع طراحی می‌شود تا سازه تاب برندارد و در ابعاد نقشه بماند.
+- **تجربه در صنایع حساس**: نمونه‌های متعدد برای صنایع پزشکی و دریایی، و سازه‌های پلتفرمی بزرگ روی چرخ و ریل.
+- **کیفیت قابل اثبات**: آزمون‌های VT، PT و PAUT به درخواست شما؛ کیفیت جوش با آزمون تأیید می‌شود، نه با حرف.
+
+## FAQ
+
+### هایپرفب جوش آرگون استیل ضدزنگ انجام می‌دهد؟
+
+بله. هایپرفب در تهران جوشکاری TIG و MIG روی استیل ضدزنگ انجام می‌دهد و نمونه‌های زیادی برای صنایع پزشکی و دریایی ساخته است. ساخت و مونتاژ سازه‌های جوشی استیل هم از نقشه تا تحویل انجام می‌شود.
+
+### جوشکاری آلومینیوم ۶۰۶۱ و ۶۰۶۳ انجام می‌دهید؟
+
+بله. هایپرفب جوش TIG و MIG را روی آلومینیوم‌های سری ۶۰۰۰، از جمله ۶۰۶۱ و ۶۰۶۳، برای شاسی، فریم و سازه‌های سبک انجام می‌دهد.
+
+### جوش TIG بهتر است یا MIG؟
+
+TIG جوش تمیزتر و دقیق‌تری می‌دهد و برای ورق نازک، قطعات ظاهری و تجهیزات پزشکی و غذایی مناسب‌تر است. MIG سریع‌تر است و برای جوش‌های طولانی و سازه‌ای اقتصادی‌تر. هایپرفب هر دو را انجام می‌دهد و روش مناسب را بر اساس جنس، ضخامت و کاربرد پیشنهاد می‌کند.
+
+### قیمت جوشکاری و ساخت سازه‌ی جوشی چطور محاسبه می‌شود؟
+
+هایپرفب قیمت را پس از بررسی نقشه و بر اساس جنس، طول و نوع جوش، ابعاد سازه و آزمون‌های درخواستی اعلام می‌کند.
+
+### طراحی سازه را هم انجام می‌دهید؟
+
+خیر. طراحی سازه با کارفرماست و هایپرفب ساخت را بر اساس نقشه‌ی تأییدشده انجام می‌دهد. نقشه پیش از ساخت از نظر ساخت‌پذیری بررسی می‌شود و نکته‌ها با شما در میان گذاشته می‌شود.
+
+### چه آزمون‌هایی روی جوش انجام می‌دهید؟
+
+هایپرفب آزمون چشمی (VT)، مایع نافذ (PT)، فراصوتی آرایه‌فازی (PAUT) و آزمون‌های دیگر را به درخواست مشتری و متناسب با الزامات پروژه انجام می‌دهد.
+
+### سازه‌های بزرگ هم می‌سازید؟
+
+بله. هایپرفب سازه‌های پلتفرمی بزرگ ساخته است، از جمله شاسی شبکه‌ای که روی چرخ نصب می‌شود و روی ریل حرکت می‌کند.
+
+### سفارش جوشکاری را چطور ثبت کنم و چه چیزی بفرستم؟
+
+هایپرفب در تهران است و سفارش جوشکاری را تلفنی (۰۹۹۶۲۲۳۳۸۹۸)، در پیام‌رسان بله یا با ایمیل می‌پذیرد. نقشه‌ی سازه یا قطعه، جنس، تعداد و آزمون‌های لازم را بفرستید یا تلفنی شرح دهید.
+
+---
+
+# آبکاری نقره و طلا، آندایز و کروماته — پوشش‌دهی قطعات فلزی تیراژی
+
+URL: https://hyperfabgroup.github.io/plating-anodizing/
+
+آبکاری و آندایز پوشش‌دهی سطح قطعه‌ی فلزی است که ظاهر قطعه، مقاومتش در برابر خوردگی و سایش و رفتار الکتریکی‌اش را تعیین می‌کند. هایپرفب در تهران آبکاری نقره و طلا را روی برنج و انواع فلزات، و آندایز و کروماته (آلوداین) را روی آلومینیوم، برای کاربردهای زینتی، الکتریکی و صنعتی و مخصوص سفارش‌های تیراژی انجام می‌دهد. برای قیمت، جنس قطعه، نوع پوشش و تیراژ را بگویید یا نمونه بفرستید؛ مشاوره: ۰۹۹۶۲۲۳۳۸۹۸.
+
+آبکاری نقره و طلا روی برنج و انواع فلزات، و آندایز و کروماته (آلوداین) روی آلومینیوم؛ برای کاربردهای زینتی، الکتریکی و صنعتی، با کیفیت یکنواخت در تیراژ.
+
+- خدمت: آبکاری نقره، آبکاری طلا، آندایز، کروماته (آلوداین)
+- فلز پایه: برنج و انواع فلزات؛ آلومینیوم برای آندایز و کروماته
+- کاربرد: زینتی، الکتریکی و صنعتی
+- حداقل سفارش: مخصوص تیراژ؛ تک‌قطعه فقط به‌ندرت پذیرفته می‌شود
+- برای قیمت: جنس قطعه، نوع پوشش و تیراژ، یا ارسال نمونه
+- سفارش: تلفنی: ۰۹۹۶۲۲۳۳۸۹۸ · بله: @hyperfab_pro · تهران
+
+- آبکاری: نقره و طلا روی برنج و فلزات دیگر
+- آلومینیوم: آندایز و کروماته (آلوداین)
+- مخصوص: سفارش‌های تیراژی
+
+## هایپرفب چه آبکاری و پوششی انجام می‌دهد؟
+
+هایپرفب آبکاری نقره و طلا را روی برنج و انواع فلزات، و آندایز و کروماته (آلوداین) را روی آلومینیوم انجام می‌دهد؛ مخصوص سفارش‌های تیراژی.
+
+پوشش سطح، آخرین و دیده‌شدنی‌ترین مرحله‌ی ساخت یک قطعه است. هم ظاهر قطعه را تعیین می‌کند و هم مقاومت آن در برابر خوردگی، سایش و رفتار الکتریکی‌اش را. هایپرفب آبکاری نقره و طلا را روی برنج و انواع فلزات انجام می‌دهد، و آندایز و کروماته (آلوداین) را روی آلومینیوم.
+
+این خدمت هم برای قطعات زینتی است و هم برای قطعات فنی. برای زینتی‌ها ظاهر درخشان و ماندگار مهم است، مثل اقلام دکوری، یراق‌آلات، تندیس و هدایای سازمانی. برای فنی‌ها رسانایی الکتریکی، مقاومت در برابر خوردگی و پایه‌ی مناسب برای رنگ مهم است، مثل کانکتور، کنتاکت و قطعات الکترونیکی و صنعتی. این خدمت مخصوص سفارش‌های تیراژی است و ترکیب خوبی با تراشکاری CNC تیراژی هایپرفب دارد: قطعه‌ی برنجی تراش‌خورده، آبکاری‌شده و آماده تحویل می‌شود.
+
+مخصوص سفارش‌های تیراژی: این خدمت برای تولید سری انجام می‌شود و سفارش تک‌قطعه فقط به‌ندرت پذیرفته می‌شود. تیراژ مناسب پس از بررسی پروژه پیشنهاد می‌شود.
+
+## هر پوشش چه کاری برای قطعه می‌کند؟
+
+نقره بیشترین رسانایی الکتریکی را دارد، طلا اکسید نمی‌شود، آندایز لایه‌ی اکسید سخت و مقاوم روی آلومینیوم می‌سازد و کروماته از خوردگی جلوگیری می‌کند و رسانایی سطح را حفظ می‌کند.
+
+- **آبکاری نقره**: بالاترین رسانایی الکتریکی میان فلزات؛ برای کنتاکت، کانکتور، شینه و قطعات الکتریکی، و برای اقلام زینتی با درخشش سفید نقره‌ای.
+- **آبکاری طلا**: مقاومت عالی در برابر اکسید شدن و مقاومت تماسی پایدار؛ برای کانکتور و قطعات الکترونیکی، و برای زیورآلات، یراق‌آلات و اقلام لوکس.
+- **آندایز آلومینیوم**: لایه‌ی اکسید سخت و چسبیده به آلومینیوم که مقاومت در برابر خوردگی و سایش را بالا می‌برد؛ برای بدنه‌ی دستگاه، پروفیل، قطعات صنعتی و تزئینی.
+- **کروماته (آلوداین)**: پوشش تبدیلی نازک روی آلومینیوم که از خوردگی جلوگیری می‌کند، رسانایی الکتریکی سطح را حفظ می‌کند و پایه‌ی مناسبی برای رنگ است.
+- **روی برنج و انواع فلزات**: آبکاری روی قطعات برنجی و فلزات دیگر، از قطعات تراشکاری تا قطعات ریخته‌گری و ورقی.
+- **کیفیت یکنواخت در تیراژ**: آماده‌سازی و کنترل یکسان برای همه‌ی قطعات یک سری، تا رنگ و ظاهر از قطعه‌ی اول تا آخر یکی باشد.
+
+## آبکاری نقره، طلا، آندایز یا کروماته؛ کدام برای قطعه‌ی شما مناسب است؟
+
+به فلز پایه و کاربرد بستگی دارد: برای کنتاکت و کانکتور، آبکاری نقره یا طلا؛ برای قطعات آلومینیومی، آندایز یا کروماته.
+
+| پوشش | فلز پایه | ویژگی اصلی | کاربردهای رایج |
+|---|---|---|---|
+| آبکاری نقره | برنج، مس و فلزات دیگر | بیشترین رسانایی الکتریکی، ظاهر نقره‌ای | کنتاکت و کانکتور، شینه، قطعات RF، اقلام زینتی |
+| آبکاری طلا | برنج، مس و فلزات دیگر | مقاوم در برابر اکسید شدن، مقاومت تماسی پایدار، ظاهر طلایی | کانکتور و الکترونیک، زیورآلات، یراق‌آلات لوکس |
+| آندایز | آلومینیوم | لایه‌ی اکسید سخت، مقاوم در برابر خوردگی و سایش | بدنه‌ی دستگاه، پروفیل، قطعات صنعتی و تزئینی |
+| کروماته (آلوداین) | آلومینیوم | محافظت در برابر خوردگی با حفظ رسانایی سطح، پایه‌ی رنگ | قطعات الکترونیکی، بدنه‌ها، قطعات پیش از رنگ |
+
+## آبکاری و آندایز کجا به کار می‌رود؟
+
+- قطعات الکتریکی و الکترونیکی: کنتاکت، کانکتور، ترمینال و شینه با آبکاری نقره یا طلا.
+- اقلام زینتی و هدایا: تندیس، نشان، یراق‌آلات و اقلام دکوری با آبکاری طلا و نقره.
+- بدنه و قاب دستگاه‌ها: قطعات آلومینیومی آندایز یا کروماته‌شده.
+- قطعات تراشکاری برنجی: اتصالات و قطعات دقیق با آبکاری محافظ یا تزئینی.
+- قطعات آلومینیومی پیش از رنگ: کروماته به‌عنوان پایه‌ی چسبندگی رنگ.
+
+## FAQ
+
+### هایپرفب آبکاری طلا و نقره انجام می‌دهد؟
+
+بله. هایپرفب در تهران آبکاری نقره و طلا را روی برنج و انواع فلزات انجام می‌دهد، برای کاربردهای زینتی، الکتریکی و صنعتی. این خدمت مخصوص سفارش‌های تیراژی است.
+
+### آندایز آلومینیوم انجام می‌دهید؟
+
+بله. هایپرفب آندایز و کروماته (آلوداین) را روی قطعات آلومینیومی انجام می‌دهد، از جمله برای بدنه‌ی دستگاه، پروفیل و قطعات صنعتی و تزئینی.
+
+### کروماته یا آلوداین چیست؟
+
+کروماته پوشش تبدیلی نازکی روی آلومینیوم است که از خوردگی جلوگیری می‌کند و برخلاف آندایز، رسانایی الکتریکی سطح را حفظ می‌کند. پایه‌ی خوبی برای رنگ هم هست. «آلوداین» نام تجاری شناخته‌شده‌ی این نوع پوشش است و هایپرفب آن را روی آلومینیوم انجام می‌دهد.
+
+### آبکاری نقره بهتر است یا طلا؟
+
+نقره بیشترین رسانایی را دارد و اقتصادی‌تر است، ولی در هوا به‌مرور تیره می‌شود. طلا رسانایی کمتری دارد اما اکسید نمی‌شود و مقاومت تماسی‌اش پایدار می‌ماند. انتخاب به کاربرد، محیط و بودجه بستگی دارد و هایپرفب هر دو را انجام می‌دهد.
+
+### تک‌قطعه هم آبکاری می‌کنید؟
+
+آبکاری و آندایز هایپرفب برای سفارش‌های تیراژی است و کار تک‌قطعه فقط به‌ندرت پذیرفته می‌شود. تیراژ مناسب پس از بررسی پروژه پیشنهاد می‌شود.
+
+### برای قیمت آبکاری یا آندایز چه چیزی بفرستم؟
+
+جنس قطعه، نوع پوشش و تیراژ را به هایپرفب بگویید یا نمونه‌ی قطعه را بفرستید. هایپرفب در تهران است و سفارش را تلفنی (۰۹۹۶۲۲۳۳۸۹۸)، در پیام‌رسان بله یا با ایمیل می‌پذیرد.
+
+### قطعه را هم شما می‌سازید؟
+
+بله. می‌توانید ساخت قطعه را هم با تراشکاری CNC تیراژی، پانچ یا تزریق به هایپرفب بسپارید و قطعه‌ی پوشش‌خورده و نهایی تحویل بگیرید.
+
+---
+
+# رنگ کوره‌ای و پودری الکترواستاتیک — پوشش بادوام برای قطعات تیراژی
+
+URL: https://hyperfabgroup.github.io/powder-coating/
+
+رنگ کوره‌ای (رنگ پودری الکترواستاتیک) پودری است که با بار الکتریکی روی قطعه‌ی فلزی می‌نشیند و در کوره پخته می‌شود تا لایه‌ای سخت، یکنواخت و بادوام‌تر از رنگ مایع بسازد. هایپرفب در تهران رنگ کوره‌ای پودری، صدفی، چکشی و بافت‌دار، براق و مات را روی قطعات فلزی تیراژی از فولاد، آهن، آلومینیوم و فلزات دیگر انجام می‌دهد. قیمت بر اساس ابعاد و سطح قطعه، نوع رنگ و بافت، آماده‌سازی لازم و تیراژ اعلام می‌شود؛ مشاوره: ۰۹۹۶۲۲۳۳۸۹۸.
+
+رنگ کوره‌ای پودری، صدفی، چکشی و بافت‌دار، براق و مات، روی قطعات فلزی تیراژی؛ پوششی سخت، یکنواخت و بادوام برای بدنه‌ی دستگاه، سازه، قطعات صنعتی و محصولات مصرفی.
+
+- خدمت: رنگ کوره‌ای پودری الکترواستاتیک
+- انواع: پودری، صدفی، چکشی، بافت‌دار؛ براق، نیم‌براق و مات؛ کدهای RAL
+- روی: فولاد، آهن، آلومینیوم و فلزات دیگر
+- حداقل سفارش: مخصوص تیراژ؛ تک‌قطعه فقط به‌ندرت پذیرفته می‌شود
+- قیمت‌گذاری: بر اساس ابعاد و سطح قطعه، نوع رنگ، آماده‌سازی و تیراژ
+- سفارش: تلفنی: ۰۹۹۶۲۲۳۳۸۹۸ · بله: @hyperfab_pro · تهران
+
+- انواع: پودری، صدفی، چکشی، بافت‌دار، براق و مات
+- روی: فولاد، آهن، آلومینیوم و فلزات دیگر
+- مخصوص: سفارش‌های تیراژی
+
+## رنگ کوره‌ای چیست؟
+
+رنگ کوره‌ای (رنگ پودری الکترواستاتیک، Powder Coating) پوششی است که به‌صورت پودر خشک روی قطعه‌ی فلزی پاشیده می‌شود. پودر با بار الکتریکی به سطح قطعه می‌چسبد و قطعه در کوره پخته می‌شود تا پودر ذوب شود و لایه‌ای پیوسته و سخت بسازد. نتیجه پوششی است که از رنگ مایع ضخیم‌تر، یکنواخت‌تر و مقاوم‌تر در برابر ضربه، خط‌وخش و خوردگی است.
+
+هایپرفب رنگ کوره‌ای را با کیفیت بالا و قیمت مناسب روی قطعات فلزی تیراژی انجام می‌دهد: بدنه و شاسی دستگاه، سازه‌ها و قطعات صنعتی و محصولات مصرفی. اگر قطعه را هم در هایپرفب بسازید، با پانچ، جوشکاری یا تراشکاری، قطعه‌ی رنگ‌شده و نهایی را یک‌جا تحویل می‌گیرید.
+
+مخصوص سفارش‌های تیراژی: این خدمت برای تولید سری انجام می‌شود و سفارش تک‌قطعه فقط به‌ندرت پذیرفته می‌شود. تیراژ مناسب پس از بررسی پروژه پیشنهاد می‌شود.
+
+## رنگ کوره‌ای چه انواعی دارد؟
+
+هایپرفب رنگ کوره‌ای پودری الکترواستاتیک، صدفی، چکشی و بافت‌دار را با براقیت براق، نیم‌براق یا مات و در رنگ‌های متنوع، از جمله کدهای استاندارد RAL، اجرا می‌کند.
+
+- **پودری الکترواستاتیک**: رایج‌ترین رنگ کوره‌ای؛ پوشش یکنواخت و بدون حلال، با چسبندگی و دوام بالا.
+- **صدفی (متالیک و پرلسنت)**: جلوه‌ی براق فلزی یا صدفی برای قطعات ظاهری، لوازم دکوری و محصولات لوکس.
+- **چکشی**: بافتی شبیه فلز چکش‌کاری‌شده که عیب‌پوش است؛ پرکاربرد در بدنه‌ی دستگاه، تابلو و ابزار.
+- **بافت‌دار و چروک**: سطح زبر و مات که اثر انگشت و خط‌وخش را کمتر نشان می‌دهد؛ برای قطعات پرتماس.
+- **براق، نیم‌براق و مات**: میزان براقیت متناسب با کاربرد و ظاهر محصول.
+- **رنگ‌های متنوع**: طیف گسترده‌ای از رنگ‌ها، از جمله بر اساس کدهای استاندارد RAL.
+
+## رنگ کوره‌ای چطور انجام می‌شود؟
+
+در چهار مرحله: آماده‌سازی سطح، پاشش پودر با بار الکتریکی، پخت در کوره، و کنترل و تحویل.
+
+1. **آماده‌سازی سطح**: چربی‌گیری و تمیزکاری سطح، و در صورت نیاز آماده‌سازی‌های دیگر برای چسبندگی بهتر.
+2. **پاشش پودر**: پودر با بار الکتریکی به‌طور یکنواخت روی قطعه پاشیده می‌شود.
+3. **پخت در کوره**: قطعه در کوره پخته می‌شود تا پودر ذوب شود و لایه‌ای سخت و پیوسته بسازد.
+4. **کنترل و تحویل**: ظاهر و یکنواختی پوشش کنترل و قطعات بسته‌بندی و تحویل می‌شوند.
+
+## رنگ کوره‌ای برای چه قطعاتی مناسب است؟
+
+- بدنه و شاسی دستگاه‌ها و تجهیزات صنعتی.
+- تابلو برق، کابینت و محفظه‌های فلزی.
+- سازه‌ها، قفسه‌ها و رک‌ها فلزی.
+- مبلمان فلزی و لوازم دکوری.
+- قطعات خودرو و موتورسیکلت، رینگ و قطعات بدنه.
+- لوازم خانگی و محصولات مصرفی فلزی.
+
+## رنگ کوره‌ای بهتر است یا رنگ معمولی؟
+
+رنگ کوره‌ای از رنگ مایع بادوام‌تر است: پوشش ضخیم‌تر و سخت‌تر، یکنواخت روی همه‌ی قطعات یک سری، و با ظاهرهای متنوع.
+
+- **دوام بیشتر**: پوشش ضخیم‌تر و سخت‌تر که در برابر ضربه، خط‌وخش و خوردگی بیشتر دوام می‌آورد.
+- **یکنواختی در تیراژ**: ضخامت و ظاهر یکسان روی همه‌ی قطعات یک سری، بدون شره و لکه.
+- **تنوع ظاهر**: از مات و براق تا صدفی، چکشی و بافت‌دار، برای هر سلیقه و کاربرد.
+
+## FAQ
+
+### رنگ کوره‌ای چیست؟
+
+رنگ کوره‌ای یا رنگ پودری الکترواستاتیک، پودری است که با بار الکتریکی روی قطعه‌ی فلزی می‌نشیند و در کوره پخته می‌شود تا لایه‌ای سخت و یکنواخت بسازد. از رنگ مایع بادوام‌تر است. هایپرفب در تهران رنگ کوره‌ای قطعات فلزی تیراژی را انجام می‌دهد.
+
+### هایپرفب چه نوع رنگ کوره‌ای انجام می‌دهد؟
+
+هایپرفب رنگ کوره‌ای پودری الکترواستاتیک، صدفی (متالیک و پرلسنت)، چکشی، بافت‌دار و چروک را با براقیت براق، نیم‌براق یا مات و در رنگ‌های متنوع انجام می‌دهد.
+
+### رنگ صدفی چیست؟
+
+رنگ کوره‌ای با ذرات متالیک یا پرلسنت که جلوه‌ی براق فلزی یا صدفی می‌دهد و برای قطعات ظاهری و محصولات لوکس پرطرفدار است. رنگ صدفی هم در هایپرفب انجام می‌شود.
+
+### روی آلومینیوم هم رنگ کوره‌ای می‌زنید؟
+
+بله. هایپرفب رنگ کوره‌ای را روی فولاد، آهن، آلومینیوم و فلزات دیگر انجام می‌دهد. روی آلومینیوم، کروماته به‌عنوان پایه، چسبندگی رنگ را بیشتر می‌کند.
+
+### تک‌قطعه هم رنگ می‌کنید؟
+
+رنگ کوره‌ای هایپرفب برای سفارش‌های تیراژی است و کار تک‌قطعه فقط به‌ندرت پذیرفته می‌شود. تیراژ مناسب پس از بررسی پروژه پیشنهاد می‌شود.
+
+### قیمت رنگ کوره‌ای چطور محاسبه می‌شود؟
+
+هایپرفب قیمت رنگ کوره‌ای را بر اساس ابعاد و سطح قطعه، نوع رنگ و بافت، آماده‌سازی لازم و تیراژ، پس از بررسی اعلام می‌کند.
+
+### برای سفارش رنگ کوره‌ای چه چیزی بفرستم؟
+
+ابعاد قطعه، نوع رنگ و تیراژ را به هایپرفب بگویید یا نمونه بفرستید. هایپرفب در تهران است و سفارش را تلفنی (۰۹۹۶۲۲۳۳۸۹۸)، در پیام‌رسان بله یا با ایمیل می‌پذیرد.

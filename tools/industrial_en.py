@@ -4,6 +4,7 @@ from common import SITE, MAIN, CONTACT
 
 TEL = 'tel:+989962233898'
 TEL_EN = '+98 996 223 3898'
+ORDER_PHONE = 'By phone (' + TEL_EN + ') or Bale (@hyperfab_pro)'
 
 CTA_BTNS = [('w', 'Call ' + TEL_EN, TEL), ('o', 'Chat on Bale', CONTACT['bale_pro_url']),
             ('o', 'Email', 'mailto:' + CONTACT['email'])]
@@ -13,6 +14,19 @@ PRICE_NOTE = ('<b>Note:</b> the tooling cost is paid once and spread across the 
 
 PUNCHING = {
     'depth': 2,
+    'answer': ('<b>Sheet and tube punching</b> makes holes, slots and shaped cut-outs with a press stroke and a die, and is one of the fastest '
+               'and most economical processes for repeat quantities. HyperFab, a manufacturing company in Tehran, Iran, punches metal and '
+               'polyethylene sheet and tube, designs and builds the punching die, and runs production with quality control — including '
+               'kidney-shaped slots in 125 mm polyethylene pipe. Pricing is a one-off die cost plus a cost per stroke, quoted after the drawing '
+               'is reviewed; call ' + TEL_EN + '.'),
+    'key_facts': [
+        ('Service', 'Sheet and tube punching, punching die design and manufacture, production runs'),
+        ('Materials', 'Metal and polymer sheet and tube, including polyethylene pipe'),
+        ('Pricing model', 'One-off die cost plus cost per stroke, by geometry and material'),
+        ('Minimum quantity', 'Recommended after project review, as a die is needed'),
+        ('Ordering', ORDER_PHONE),
+        ('Location', 'Tehran, Iran; parts shipped across Iran'),
+    ],
     'hero': {
         'crumb': 'Sheet & Tube Punching',
         'h1': '<em>Sheet and tube punching</em><br>From die design to production runs',
@@ -25,13 +39,15 @@ PUNCHING = {
                   ('layers', '2', 'stages', 'die making and production'), ('shield', '1', 'owner', 'from design to delivery')],
     },
     'sections': [
-        {'kicker': 'WHAT IT IS', 'title': 'What punching is and what HyperFab does', 'id': 'what',
+        {'kicker': 'WHAT IT IS', 'title': 'What is sheet and tube punching?', 'id': 'what',
          'paras': [
              '<b>Punching</b> creates holes, slots and shaped cut-outs in sheet and tube with a press stroke and a die. For repeat quantities it is one of the fastest and most economical processes. Once the die is made, each part reaches its final shape in one or a few strokes, and every part comes out the same.',
-             'HyperFab handles punching end to end. The drawing is reviewed, a punching die is designed and built for the material and thickness, and a trial sample is punched for your approval. Production and quality control then run through to delivery. The service covers both sheet and tube, in metal and in polymers such as polyethylene.',
+             'HyperFab handles punching end to end. The drawing is reviewed, a punching die is designed and built for the material and thickness, and a trial sample is punched for your approval. Production and quality control then run through to delivery. The service covers both sheet and tube, in metal and in polymers such as polyethylene, and punched parts can also be <a href="../powder-coating/">powder coated at HyperFab</a> and delivered finished.',
              'Punching polymer pipe is one of the hard jobs in this field. The pipe is round, the wall deforms under the stroke, and polyethylene behaves very differently from metal. HyperFab’s team has punched kidney-shaped slots in polyethylene pipe with a 125 mm diameter, 5 mm wall and 6-bar pressure rating. In another industrial project, the team was responsible for quality control of 8,000 punched tubes.',
+             'Punching or laser cutting? For low quantities or designs that keep changing, <a href="https://hyperfab.ir/services/laser-metal/">metal laser cutting</a> is cheaper because there is no die cost. For repeat quantities, once the die is built, punching makes each part faster and cheaper. HyperFab offers both and recommends the right one for your quantity and geometry.',
          ]},
-        {'kicker': 'WHAT WE PUNCH', 'title': 'What we punch', 'id': 'scope',
+        {'kicker': 'WHAT WE PUNCH', 'title': 'What can HyperFab punch?', 'id': 'scope',
+         'sub': 'Metal and polymer sheet, metal tube and profile, and polyethylene pipe — with round and square holes, slots, kidney-shaped slots, perforated patterns and custom shapes to your drawing.',
          'adv': [
              ('sheet', 'Metal sheet punching', 'Round and square holes, slots, repeating patterns and custom shapes in mild steel, galvanised, stainless steel and aluminium sheet.'),
              ('layers', 'Metal tube and profile punching', 'Holes and slots in metal tube and profile for structures, fittings, shelving, railings and furniture.'),
@@ -40,8 +56,8 @@ PUNCHING = {
              ('target', 'Custom shapes', 'From a simple round hole to kidney slots, perforated patterns and special forms, exactly to your drawing.'),
              ('chart', 'Repeatable production runs', 'Once the die is built, parts are produced with identical strokes and dimensions stay consistent from the first part to the last.'),
          ]},
-        {'kicker': 'PRICING', 'title': 'How punching is priced', 'id': 'pricing',
-         'sub': 'Each project has two cost components, quoted separately. Both depend on the part’s geometry and the material being punched.',
+        {'kicker': 'PRICING', 'title': 'How is punching priced?', 'id': 'pricing',
+         'sub': 'Punching is priced as a one-off die cost plus a cost per stroke, quoted separately after the drawing is reviewed. Both depend on the part’s geometry and the material being punched.',
          'table': [
              ('Cost component', 'What it depends on'),
              ('Punching die (one-off)', 'Geometry and number of holes and slots, required accuracy, material and thickness, and whether the die is simple, progressive or tube-specific'),
@@ -49,13 +65,15 @@ PUNCHING = {
              ('Material', 'At current prices, if HyperFab supplies the sheet or tube'),
          ],
          'note': PRICE_NOTE},
-        {'kicker': 'WHY HYPERFAB', 'title': 'Why trust HyperFab with a punching project', 'id': 'why',
+        {'kicker': 'WHY HYPERFAB', 'title': 'Why choose HyperFab for a punching project?', 'id': 'why',
+         'sub': 'Engineering review before the die is built, real tube-punching experience, and one owner from die design to delivery.',
          'why': [
              ('file', 'Engineering before the die', 'The die is the most expensive part of the project. Before it is built, the design is reviewed from the die’s point of view: hole-to-edge distance, hole-diameter-to-thickness ratio and how the material behaves under the stroke. The goal is to build the die once, and build it right.'),
              ('target', 'Real tube-punching experience', 'From quality control of 8,000 punched tubes to kidney slots in 125 mm polyethylene pipe, we know the practical problems of this work first-hand.'),
              ('shield', 'Full responsibility to delivery', 'From die design to the last stroke, the project has one owner: HyperFab. You approve a sample before production, and parts are inspected before delivery.'),
          ]},
-        {'kicker': 'HOW IT WORKS', 'title': 'How a punching project runs', 'id': 'steps',
+        {'kicker': 'HOW IT WORKS', 'title': 'How does a punching project work?', 'id': 'steps',
+         'sub': 'Send a drawing or sample with material, thickness and quantity; after engineering review and a quotation, the die is built and a trial sample is approved before production.',
          'steps': [
              ('Send drawing and specs', 'Send the part drawing, material, thickness and quantity, or describe them by phone. A physical sample also works.'),
              ('Engineering review', 'The design is checked for die manufacturability and changes are suggested where needed.'),
@@ -63,7 +81,7 @@ PUNCHING = {
              ('Die and sample', 'The die is built and a trial sample is punched for your approval before production.'),
              ('Production and delivery', 'Parts are produced with dimensional quality control, packed and delivered.'),
          ]},
-        {'kicker': 'APPLICATIONS', 'title': 'Applications of sheet and tube punching', 'id': 'uses',
+        {'kicker': 'APPLICATIONS', 'title': 'What is sheet and tube punching used for?', 'id': 'uses',
          'checks': [
              '<b>Drainage and dewatering pipes</b> with repeating slots or holes.',
              '<b>Filter and strainer pipes</b>, and water and air distribution pipes.',
@@ -74,13 +92,14 @@ PUNCHING = {
          ]},
     ],
     'faq': [
-        ('Does HyperFab punch polyethylene pipe?', 'Yes. HyperFab has punched kidney-shaped slots in polyethylene pipe with a 125 mm diameter, 5 mm wall and 6-bar pressure rating. Metal tube and sheet punching is also available.'),
-        ('How is punching priced?', 'There are two parts: a one-off punching die cost and a cost per stroke in production. Both depend on the part’s geometry, meaning the number and shape of holes and slots, and on the material and thickness. Both are quoted separately after the drawing is reviewed.'),
-        ('Do you make the punching die too?', 'Yes. Designing and building the punching die is part of HyperFab’s service, and a trial sample is punched for your approval before production.'),
-        ('What shapes can be punched?', 'Round and square holes, straight slots, kidney-shaped slots, perforated patterns and custom forms to your drawing, in sheet and tube.'),
-        ('What do I need for a punching quote?', 'A drawing or sample of the part, the material and thickness, and an approximate quantity. You can also give the details by phone.'),
+        ('Does HyperFab punch polyethylene pipe?', 'Yes. HyperFab, based in Tehran, Iran, has punched kidney-shaped slots in polyethylene pipe with a 125 mm diameter, 5 mm wall and 6-bar pressure rating. Metal tube and sheet punching is also available.'),
+        ('How is punching priced?', 'HyperFab prices punching in two parts: a one-off punching die cost and a cost per stroke in production. Both depend on the part’s geometry, meaning the number and shape of holes and slots, and on the material and thickness. Both are quoted separately after the drawing is reviewed.'),
+        ('Does HyperFab make the punching die?', 'Yes. Designing and building the punching die is part of HyperFab’s service, and a trial sample is punched for your approval before production.'),
+        ('What shapes can HyperFab punch?', 'HyperFab punches round and square holes, straight slots, kidney-shaped slots, perforated patterns and custom forms to your drawing, in sheet and tube.'),
+        ('What should I send for a punching quote?', 'Send HyperFab a drawing or sample of the part, the material and thickness, and an approximate quantity. You can also give the details by phone on ' + TEL_EN + '.'),
+        ('Is there a minimum quantity for punching?', 'Punching needs a die, so HyperFab recommends a suitable quantity after reviewing the project. For low quantities or designs that keep changing, laser cutting is usually cheaper because there is no die cost.'),
         ('Punching or laser cutting — which is better?', 'For low quantities or designs that keep changing, laser cutting is cheaper because there is no die cost. For repeat quantities, once the die is built, punching makes each part faster and cheaper. HyperFab offers both and recommends the right one for your quantity and geometry.'),
-        ('Do you deliver outside Tehran?', 'Yes, parts are shipped across Iran.'),
+        ('Where is HyperFab, and does it deliver outside Tehran?', 'HyperFab is based in Tehran, Iran, and punched parts are shipped across Iran. Punching projects are discussed by phone on ' + TEL_EN + ' or on Bale (@hyperfab_pro).'),
     ],
     'cta_h': 'Tell us about your punching project',
     'cta_p': 'Send a drawing or a sample part, or call. HyperFab’s industrial projects specialist answers by phone.',
@@ -96,6 +115,19 @@ PUNCHING = {
 
 INJECTION = {
     'depth': 2,
+    'answer': ('<b>Plastic injection moulding</b> mass-produces plastic parts by injecting molten polymer into a steel mould, giving repeatable '
+               'dimensions and, at high quantities, the lowest cost per part. HyperFab, a manufacturing company in Tehran, Iran, reviews the '
+               'part for mouldability, designs and builds the injection mould, and runs production in polyethylene, polypropylene, ABS, nylon '
+               'and other thermoplastics; its team has taken four polyethylene moulds to commissioning, producing more than 80,000 parts. '
+               'Pricing is a one-off mould cost plus a cost per shot; call ' + TEL_EN + '.'),
+    'key_facts': [
+        ('Service', 'Injection mould design and manufacture, sampling and production runs'),
+        ('Materials', 'PE, PP, ABS, nylon, polycarbonate, acetal and other thermoplastics'),
+        ('Team experience', '4 polyethylene injection moulds to commissioning; 80,000+ parts produced'),
+        ('Pricing model', 'One-off mould cost plus cost per shot, after design review'),
+        ('Ordering', ORDER_PHONE),
+        ('Location', 'Tehran, Iran'),
+    ],
     'hero': {
         'crumb': 'Mould Making & Injection Moulding',
         'h1': '<em>Mould making and plastic injection moulding</em><br>From part design to mass production',
@@ -109,15 +141,16 @@ INJECTION = {
                   ('file', 'DFM', 'review', 'of mouldability before tooling'), ('shield', '1', 'owner', 'from design to delivery')],
     },
     'sections': [
-        {'kicker': 'WHAT IT IS', 'title': 'Mould making and injection moulding at HyperFab', 'id': 'what',
+        {'kicker': 'WHAT IT IS', 'title': 'What is injection moulding, and how does HyperFab handle it?', 'id': 'what',
          'paras': [
              '<b>Injection moulding</b> is the main process for mass-producing plastic parts. Molten polymer is injected under pressure into a steel mould, cools, and the part comes out with repeatable dimensions. At high quantities, no other process matches its cost per part and consistency.',
              'An injection project succeeds or fails on the mould, and HyperFab starts there. First the part design is reviewed for mouldability. Then the mould is designed and built, and sampling and correction continue until the part is approved. Production runs follow, with quality control through to delivery.',
              'HyperFab’s team has taken four polyethylene injection moulds from build supervision to commissioning, and more than 80,000 parts have been produced with them. That experience shows, before the mould is built, where a design is likely to cause trouble in production.',
+             'For smaller runs, <a href="https://hyperfab.ir/services/3d-printing/">3D printing</a> or <a href="https://hyperfab.ir/services/cnc/">CNC machining</a> may be cheaper than a mould. HyperFab offers all three and recommends the right process after reviewing the project.',
          ],
          'figure': {'img': 'assets/img/arc-injection-robot.jpg', 'alt': 'Injection moulding machine with a part-removal robot', 'caption': 'Production runs of plastic parts on an injection moulding machine with a part-removal robot.'}},
-        {'kicker': 'DESIGN FOR MOULDING', 'title': 'Design review before the mould is built', 'id': 'dfm',
-         'sub': 'Changing a design on paper costs almost nothing; changing a steel mould is expensive. These points are reviewed before tooling.',
+        {'kicker': 'DESIGN FOR MOULDING', 'title': 'What is checked before an injection mould is built?', 'id': 'dfm',
+         'sub': 'Draft angles, wall thickness, ribs and bosses, gate location, undercuts and realistic tolerances are reviewed before tooling, because changing a design on paper costs almost nothing and changing a steel mould is expensive.',
          'checks': [
              '<b>Sufficient draft angle</b> on walls, so the part releases without scuffing or sticking.',
              '<b>Uniform wall thickness</b>, so the part does not warp or show sink marks.',
@@ -126,8 +159,8 @@ INJECTION = {
              '<b>Undercuts</b> and the need for slides or cores in the mould.',
              '<b>Realistic tolerances for each material</b>, allowing for polymer shrinkage.',
          ]},
-        {'kicker': 'MATERIALS', 'title': 'Injection moulding materials', 'id': 'materials',
-         'sub': 'The material is recommended based on load, temperature, working environment and part cost.',
+        {'kicker': 'MATERIALS', 'title': 'Which plastics can HyperFab injection mould?', 'id': 'materials',
+         'sub': 'Polyethylene, polypropylene, ABS, nylon and engineering thermoplastics such as polycarbonate and acetal; the material is recommended based on load, temperature, working environment and part cost.',
          'adv': [
              ('cube', 'Polyethylene (PE)', 'Chemical- and impact-resistant; for caps, containers, fittings and industrial parts.'),
              ('layers', 'Polypropylene (PP)', 'Light and fatigue-resistant; for living hinges, packaging and consumer parts.'),
@@ -136,8 +169,8 @@ INJECTION = {
              ('shield', 'Engineering thermoplastics', 'Polycarbonate, acetal (POM) and other materials, depending on the part’s use.'),
              ('chat', 'Choose the material with us', 'Not sure? Describe the part’s use and a suitable material and grade will be recommended.'),
          ]},
-        {'kicker': 'PRICING', 'title': 'How mould making and injection moulding are priced', 'id': 'pricing',
-         'sub': 'Each project has two main cost components, quoted separately and clearly.',
+        {'kicker': 'PRICING', 'title': 'How is injection moulding priced?', 'id': 'pricing',
+         'sub': 'Injection moulding is priced as a one-off mould cost plus a cost per shot in production, quoted separately and clearly after the design is reviewed.',
          'table': [
              ('Cost component', 'What it depends on'),
              ('Mould (one-off)', 'Part size and complexity, number of cavities, undercuts and slides, surface finish and mould steel'),
@@ -145,7 +178,8 @@ INJECTION = {
              ('Material', 'Polymer type, grade and colour'),
          ],
          'note': PRICE_NOTE},
-        {'kicker': 'HOW IT WORKS', 'title': 'How an injection moulding project runs', 'id': 'steps',
+        {'kicker': 'HOW IT WORKS', 'title': 'How does an injection moulding project work?', 'id': 'steps',
+         'sub': 'Send a 3D file, drawing or sample part; after a mouldability review and a quotation, the mould is built and sampled until you approve, then production runs.',
          'steps': [
              ('Send the design', 'Send a 3D file, drawing or sample part. If you only have an idea, part design is available too.'),
              ('Mouldability review', 'The design is checked for draft, wall thickness and parting line, and changes are suggested.'),
@@ -153,8 +187,9 @@ INJECTION = {
              ('Mould and sampling', 'The mould is built, sampled and corrected until you give final approval.'),
              ('Production and delivery', 'Parts are produced with quality control and delivered.'),
          ],
-         'note': '<b>Before investing in a mould:</b> you can make a prototype with <a href="../#fdm">HyperFab 3D printing</a> and check form, dimensions and assembly on a real part.'},
-        {'kicker': 'WHY HYPERFAB', 'title': 'Why trust HyperFab with an injection project', 'id': 'why',
+         'note': '<b>Before investing in a mould:</b> you can make a prototype with <a href="../#fdm">HyperFab FDM 3D printing</a> and check form, dimensions and assembly on a real part.'},
+        {'kicker': 'WHY HYPERFAB', 'title': 'Why choose HyperFab for an injection moulding project?', 'id': 'why',
+         'sub': 'Engineering review before tooling, real production experience and one owner from design to delivery.',
          'why': [
              ('file', 'Engineering before tooling', 'HyperFab’s engineering team comes from Iran’s top universities and has worked at the heart of industry for years. It reviews your design from a production point of view before the mould is built, so the mould is built once, and built right.'),
              ('chart', 'Real production experience', 'Four injection moulds from build supervision to commissioning and more than 80,000 parts produced; we know the road from design to mass production first-hand.'),
@@ -162,12 +197,14 @@ INJECTION = {
          ]},
     ],
     'faq': [
-        ('Does HyperFab make plastic injection moulds?', 'Yes. HyperFab designs and builds injection moulds and runs production of plastic parts in a range of materials. The project is with HyperFab from design review to delivery.'),
-        ('How are mould making and injection moulding priced?', 'There are two main parts: a one-off mould cost and a cost per shot in production. The mould cost depends on part size and complexity, number of cavities and undercuts. The cost per shot depends on part material and weight and cycle time. Both are quoted separately after the design is reviewed.'),
-        ('Which materials do you mould?', 'Polyethylene, polypropylene, ABS, nylon and other engineering thermoplastics such as polycarbonate and acetal, depending on the part’s use.'),
+        ('Does HyperFab make plastic injection moulds?', 'Yes. HyperFab, based in Tehran, Iran, designs and builds injection moulds and runs production of plastic parts in a range of materials. The project is with HyperFab from design review to delivery.'),
+        ('How are mould making and injection moulding priced?', 'HyperFab prices them in two main parts: a one-off mould cost and a cost per shot in production. The mould cost depends on part size and complexity, number of cavities and undercuts. The cost per shot depends on part material and weight and cycle time. Both are quoted separately after the design is reviewed.'),
+        ('Which plastics does HyperFab injection mould?', 'HyperFab moulds polyethylene, polypropylene, ABS, nylon and other engineering thermoplastics such as polycarbonate and acetal, depending on the part’s use.'),
         ('At what quantity does injection moulding pay off?', 'It depends on the mould cost and the price per part, and it usually pays off at high quantities. For smaller runs, 3D printing or CNC machining may be cheaper. HyperFab offers all three and recommends the right process after reviewing the project.'),
-        ('I don’t have a file or drawing. What can I do?', 'Send a sample part, a photo or your idea. Part design and modelling are available, and the mould is built after you approve the design.'),
-        ('Will I see a sample before production?', 'Yes. Samples are taken after the mould is built and production starts after your approval. Before tooling, you can also make a prototype with 3D printing.'),
+        ('Is there a minimum quantity for injection moulding?', 'Injection moulding needs a mould, so HyperFab recommends a suitable quantity after reviewing the project. For smaller runs, 3D printing or CNC machining may be cheaper.'),
+        ('What should I send for an injection moulding quote?', 'Send HyperFab a 3D file, a drawing or a sample part. If you only have a photo or an idea, part design and modelling are available, and the mould is built after you approve the design.'),
+        ('Will I see a sample before production?', 'Yes. HyperFab takes samples after the mould is built and production starts after your approval. Before tooling, you can also make a prototype with 3D printing.'),
+        ('Where is HyperFab’s injection moulding service based?', 'HyperFab is based in Tehran, Iran. Mould making and injection moulding projects are discussed by phone on ' + TEL_EN + ' or on Bale (@hyperfab_pro).'),
     ],
     'cta_h': 'Tell us about your injection moulding project',
     'cta_p': 'Send a design, drawing or sample part, or call. HyperFab’s industrial projects specialist answers by phone.',
@@ -205,16 +242,16 @@ PAGES = {
     'page_punching': {
         'key': 'punching', 'file': 'en/punching/index.html', 'path': '/en/punching/',
         'alt_path': '/punching/', 'alt_rel': 'punching/', 'priority': '0.8',
-        'title': 'Sheet & Tube Punching | Polyethylene and Metal Pipe Punching, Punching Dies — HyperFab, Iran',
-        'desc': 'Sheet and tube punching in metal and polyethylene by HyperFab, Iran: punching die design and manufacture, trial samples and production runs with quality control. Kidney slots punched in 125 mm polyethylene pipe. Phone consultation.',
-        'keywords': 'tube punching Iran, pipe punching, polyethylene pipe punching, PE pipe slotting, sheet metal punching, punching die, kidney slot pipe, drainage pipe perforation, HyperFab',
+        'title': 'Sheet & Tube Punching, PE Pipe Slotting, Iran | HyperFab',
+        'desc': 'HyperFab in Tehran, Iran punches metal and polyethylene sheet and tube, builds the die and runs production. Priced as die cost plus cost per stroke.',
+        'keywords': 'tube punching Iran, sheet metal punching Tehran, pipe punching Iran, polyethylene pipe punching, PE pipe slotting, punching die manufacture, kidney slot pipe, drainage pipe perforation, perforated plate Iran, HyperFab',
     },
     'page_injection': {
         'key': 'injection', 'file': 'en/injection-molding/index.html', 'path': '/en/injection-molding/',
         'alt_path': '/injection-molding/', 'alt_rel': 'injection-molding/', 'priority': '0.8',
-        'title': 'Mould Making & Plastic Injection Moulding | Injection Moulds and Production Runs — HyperFab, Iran',
-        'desc': 'Mould making and plastic injection moulding by HyperFab, Iran: mouldability review, injection mould design and manufacture, sampling and production runs in PE, PP, ABS and nylon. Phone consultation.',
-        'keywords': 'injection molding Iran, plastic injection moulding Tehran, mold making Iran, injection mould manufacture, plastic parts production, PE injection molding, HyperFab',
+        'title': 'Plastic Injection Moulding & Mould Making, Iran | HyperFab',
+        'desc': 'HyperFab in Tehran, Iran designs and builds injection moulds and produces plastic parts in PE, PP, ABS and nylon. Priced as mould cost plus cost per shot.',
+        'keywords': 'plastic injection moulding Iran, injection molding Tehran, mould making Iran, mold making Iran, injection mould manufacture, plastic parts production Iran, PE injection molding, PP ABS nylon moulding, HyperFab',
     },
 }
 

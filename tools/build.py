@@ -11,21 +11,36 @@
 اجرا:  python3 tools/build.py
 خروجی: index.html، en/index.html و زیرپوشه‌های هر صفحه، sitemap.xml، llms.txt
 """
+import copy
 import json
 import os
+import re
 import sys
 from datetime import date
-from html import escape
+from html import escape, unescape
+
+from PIL import Image
 
 sys.path.insert(0, os.path.dirname(__file__))
 import content_fa  # noqa: E402
 import content_en  # noqa: E402
-from common import SITE, OLD_SITE, MAIN, CONTACT  # noqa: E402
+from common import SITE, MAIN, CONTACT  # noqa: E402
 from images import IMAGE_CREDITS  # noqa: E402
 from media import WORKS, VIDEOS, video_url, video_embed  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TODAY = date.today().isoformat()
+ORG_ID = MAIN + '/#organization'
+# شماره‌ها در پیوند tel: به قالب E.164 و بدون جداکننده
+TEL_LANDLINE = CONTACT.get('landline_e164', '+982177527438')
+TEL_MOBILE = CONTACT.get('mobile_e164', '+989962233898')
+HOME_IMG = 'assets/img/hero-parts.png'
+WARNINGS = []
+
+
+def warn(msg):
+    WARNINGS.append(msg)
+    print('WARNING:', msg)
 
 # ---------------------------------------------------------------- icons
 # همان مسیرهای hf_svc_icon در inc-services.php
@@ -76,12 +91,80 @@ def rel(depth, path):
     return ('../' * depth) + path
 
 
+# ---------------------------------------------------------------- images
+_SIZES = {}
+
+
+def img_size(path):
+    """ابعاد واقعی تصویر (path نسبت به ریشه‌ی سایت)؛ برای width/height و جلوگیری از جابه‌جایی صفحه"""
+    if path not in _SIZES:
+        try:
+            with Image.open(os.path.join(ROOT, path)) as im:
+                _SIZES[path] = im.size
+        except OSError:
+            warn(f'image not readable: {path}')
+            _SIZES[path] = None
+    return _SIZES[path]
+
+
+def webp_of(path):
+    """نسخه‌ی webp کنار یک jpg/png، اگر باشد"""
+    base, ext = os.path.splitext(path)
+    if ext.lower() in ('.jpg', '.jpeg', '.png') and os.path.exists(os.path.join(ROOT, base + '.webp')):
+        return base + '.webp'
+    return None
+
+
+def img(depth, path, alt, cls='', eager=False, picture=False):
+    """<img> با ابعاد واقعی؛ اگر webp کنارش باشد داخل <picture> با <source> می‌رود."""
+    size = img_size(path)
+    wh = f' width="{size[0]}" height="{size[1]}"' if size else ''
+    c = f' class="{cls}"' if cls else ''
+    load = ' loading="eager" fetchpriority="high"' if eager else ' loading="lazy"'
+    tag = f'<img{c} src="{rel(depth, path)}" alt="{e(alt)}"{wh}{load} decoding="async">'
+    w = webp_of(path)
+    if w:
+        return f'<picture><source type="image/webp" srcset="{rel(depth, w)}">{tag}</picture>'
+    return f'<picture>{tag}</picture>' if picture else tag
+
+
+def abs_url(path):
+    return SITE + '/' + path.lstrip('/')
+
+
+def image_object(path, caption=''):
+    o = {'@type': 'ImageObject', 'url': abs_url(path), 'contentUrl': abs_url(path)}
+    size = img_size(path)
+    if size:
+        o['width'], o['height'] = size
+    if caption:
+        o['caption'] = caption
+    return o
+
+
+FA_DIGITS = str.maketrans('۰۱۲۳۴۵۶۷۸۹٠١٢٣٤٥٦٧٨٩', '01234567890123456789')
+
+
+def e164(num):
+    """هر شکلی از شماره‌ی ایران را به +98… بی‌جداکننده برمی‌گرداند"""
+    d = re.sub(r'[^\d+]', '', num.translate(FA_DIGITS))
+    if d.startswith('00'):
+        return '+' + d[2:]
+    if d.startswith('0'):
+        return '+98' + d[1:]
+    return d if d.startswith('+') else '+' + d
+
+
+def fix_tel(html):
+    return re.sub(r'href="tel:([^"]*)"', lambda m: f'href="tel:{e164(m.group(1))}"', html)
+
+
 # ---------------------------------------------------------------- schema
 def org_schema(c):
     """سازمان هایپرفب؛ هر صفحه همین را با @id ثابت دارد تا موتورها یکی بشمارند."""
     return {
-        '@type': ['Organization', 'LocalBusiness'],
-        '@id': MAIN + '/#organization',
+        '@type': ['Organization', 'LocalBusiness', 'ProfessionalService'],
+        '@id': ORG_ID,
         'name': c['brand_name'],
         'alternateName': c['brand_alt'],
         'url': MAIN + '/',
@@ -109,7 +192,7 @@ def org_schema(c):
              'telephone': CONTACT['mobile_intl'], 'email': CONTACT['email'],
              'availableLanguage': ['fa', 'en']},
         ],
-        'sameAs': [MAIN + '/', SITE + '/', OLD_SITE + '/', CONTACT['instagram'], CONTACT['instagram_pro'],
+        'sameAs': [MAIN + '/', SITE + '/', CONTACT['instagram'], CONTACT['instagram_pro'],
                    CONTACT['bale_channel_url'], CONTACT['bale_pro_url']],
         'knowsAbout': c['knows_about'],
         'hasOfferCatalog': {'@type': 'OfferCatalog', 'name': c['catalog_name'], 'itemListElement': [
@@ -139,6 +222,12 @@ def head(c, page, depth):
     alt = SITE + page['alt_path']
     fa_url, en_url = (url, alt) if c['lang'] == 'fa' else (alt, url)
     css = rel(depth, 'assets/')
+    og_img = abs_url(page.get('og_img', 'assets/img/og-default.jpg'))
+    size = img_size(page.get('og_img', 'assets/img/og-default.jpg'))
+    og_size = (f'\n<meta property="og:image:width" content="{size[0]}">'
+               f'\n<meta property="og:image:height" content="{size[1]}">') if size else ''
+    og_alt = f'\n<meta property="og:image:alt" content="{e(page["og_alt"])}">' if page.get('og_alt') else ''
+    alt_locale = 'en_US' if c['lang'] == 'fa' else 'fa_IR'
     return f'''<!DOCTYPE html>
 <html lang="{c['lang']}" dir="{c['dir']}">
 <head>
@@ -157,20 +246,23 @@ def head(c, page, depth):
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{e(c['brand_name'])}">
 <meta property="og:locale" content="{c['og_locale']}">
+<meta property="og:locale:alternate" content="{alt_locale}">
 <meta property="og:title" content="{e(page['title'])}">
 <meta property="og:description" content="{e(page['desc'])}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{SITE}/assets/img/og-default.jpg">
+<meta property="og:image" content="{og_img}">{og_size}{og_alt}
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{og_img}">
 <meta name="theme-color" content="#171d2b">
 <link rel="icon" href="{css}img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="{css}img/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="{css}img/apple-touch-icon.png">
 <link rel="preload" href="{css}fonts/Vazirmatn-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{css}fonts.css">
-<link rel="stylesheet" href="{css}hyperfab.css">
+<link rel="stylesheet" href="{css}hyperfab.min.css">
 <link rel="stylesheet" href="{css}site.css">
 <link rel="alternate" type="text/plain" title="llms.txt" href="{SITE}/llms.txt">
+<link rel="alternate" type="text/plain" title="llms-full.txt" href="{SITE}/llms-full.txt">
 {ld(page['schema'])}
 </head>
 '''
@@ -232,7 +324,7 @@ def footer(c, depth):
 <section class="bale-band">
 	<div class="wrap">
 		<a class="bale-cta" href="{CONTACT['bale_channel_url']}" target="_blank" rel="noopener">
-			<img class="bale-logo" src="{rel(depth, 'assets/img/bale-logo.png')}" width="52" height="52" alt="{e(f['bale_alt'])}" loading="lazy" decoding="async">
+			{img(depth, 'assets/img/bale-logo.png', f['bale_alt'], 'bale-logo')}
 			<span class="bale-text">
 				<b>{e(f['bale_title'])} <span class="bale-id" dir="ltr">{CONTACT['bale_channel']}</span></b>
 				<span>{e(f['bale_sub'])}</span>
@@ -261,9 +353,9 @@ def footer(c, depth):
 				<h5>{e(f['h_info'])}</h5>
 				<ul class="foot-contact">
 					<li>{fi(pin)}<span><b>{e(f['addr_label'])}:</b> {e(f['address'])}</span></li>
-					<li>{fi(tel)}<span>{e(f['tel'])}: <a class="fc-num" href="tel:{CONTACT['landline']}" dir="ltr">{f['landline_pretty']}</a></span></li>
-					<li>{fi(chat)}<span>{e(f['design'])}: <a class="fc-num" href="tel:{CONTACT['mobile']}" dir="ltr">{f['mobile_pretty']}</a> <span class="foot-note">{e(f['design_note'])}</span></span></li>
-					<li>{fi(chat)}<span>{e(f['service'])}: <a class="fc-num" href="tel:{CONTACT['mobile']}" dir="ltr">{f['mobile_pretty']}</a> <span class="foot-note">{e(f['service_note'])}</span></span></li>
+					<li>{fi(tel)}<span>{e(f['tel'])}: <a class="fc-num" href="tel:{TEL_LANDLINE}" dir="ltr">{f['landline_pretty']}</a></span></li>
+					<li>{fi(chat)}<span>{e(f['design'])}: <a class="fc-num" href="tel:{TEL_MOBILE}" dir="ltr">{f['mobile_pretty']}</a> <span class="foot-note">{e(f['design_note'])}</span></span></li>
+					<li>{fi(chat)}<span>{e(f['service'])}: <a class="fc-num" href="tel:{TEL_MOBILE}" dir="ltr">{f['mobile_pretty']}</a> <span class="foot-note">{e(f['service_note'])}</span></span></li>
 					<li>{fi(clock)}<span>{e(f['hours_label'])}: {e(f['hours'])}</span></li>
 					<li>{fi(mail)}<span>{e(f['email'])}: <a class="fc-num" href="mailto:{CONTACT['email']}" dir="ltr">{CONTACT['email']}</a></span></li>
 				</ul>
@@ -356,7 +448,7 @@ def svc_hero(c, depth, d):
 			<ul class="hfs-ticks">{ticks}</ul>
 			<div class="hfs-hero-btns">{btns}</div>
 		</div>
-		<figure class="hfs-hero-art has-pic"><picture><img src="{rel(depth, d['img'])}" alt="{e(d['img_alt'])}" width="600" height="420" loading="eager" fetchpriority="high" decoding="async"></picture>{credit(c, d['img'], 'hero-credit')}</figure>
+		<figure class="hfs-hero-art has-pic">{img(depth, d['img'], d['img_alt'], eager=True, picture=True)}{credit(c, d['img'], 'hero-credit')}</figure>
 	</div>
 	{stats_bar(d['stats'])}
 </section>
@@ -381,16 +473,16 @@ def credit(c, img, cls):
 def gallery(c, depth, items):
     """عکس‌های واقعی کار هایپرفب؛ برچسب «عکس واقعی» دارند تا از تصویرهای آرشیوی جدا باشند."""
     return '<div class="gallery">' + ''.join(
-        f'<figure><img src="{rel(depth, img)}" alt="{e(cap)}" loading="lazy" decoding="async">'
+        f'<figure>{img(depth, src, cap)}'
         f'<figcaption><span class="real-tag">{e(c["real_label"])}</span>{e(cap)}</figcaption></figure>'
-        for img, cap in items) + '</div>'
+        for src, cap in items) + '</div>'
 
 
 def works_block(c, depth):
     cards = ''
     for w in WORKS:
         t, meta, d = w[c['lang']]
-        cards += (f'<article class="work-card"><img src="{rel(depth, w["img"])}" alt="{e(t)}" loading="lazy" decoding="async">'
+        cards += (f'<article class="work-card">{img(depth, w["img"], t)}'
                   f'<div><span class="real-tag">{e(c["real_label"])}</span><h3>{e(t)}</h3><p class="work-meta">{e(meta)}</p><p>{e(d)}</p></div></article>')
     return cards
 
@@ -400,7 +492,7 @@ def videos_block(c, depth):
     for code, cover, fa, en in VIDEOS:
         t, d = fa if c['lang'] == 'fa' else en
         out += (f'<a class="vid-card" href="{video_url(code)}" target="_blank" rel="noopener">'
-                f'<img src="{rel(depth, "assets/img/videos/" + cover + ".webp")}" alt="{e(t)}" width="360" height="640" loading="lazy" decoding="async">'
+                f'{img(depth, "assets/img/videos/" + cover + ".webp", t)}'
                 f'<span class="vid-play" aria-hidden="true"></span><b>{e(t)}</b><small>{e(d)}</small></a>')
     return out
 
@@ -423,8 +515,7 @@ def page_home(c):
     h = c['home']
     cards = ''.join(
         f'<div class="proc-card"><a class="proc-illo" href="#{s["key"]}" aria-label="{e(s["title"])}">'
-        f'<picture><source srcset="{rel(depth, "assets/img/" + s["img"] + ".webp")}" type="image/webp">'
-        f'<img src="{rel(depth, "assets/img/" + s["img"] + ".png")}" alt="{e(s["title"])}" width="110" height="110" loading="lazy" decoding="async"></picture></a>'
+        f'{img(depth, "assets/img/" + s["img"] + ".png", s["title"], picture=True)}</a>'
         f'<h4><a href="#{s["key"]}">{e(s["title"])}</a></h4><p>{e(s["short"])}</p></div>'
         for s in c['services'])
 
@@ -432,7 +523,7 @@ def page_home(c):
     for k, s in enumerate(c['services']):
         rows = ''.join(f'<div class="hfs-tech-row"><span class="k">{e(a)}</span><span class="v">{b}</span></div>' for a, b in s['specs'])
         details += f'''<article class="svc-detail" id="{s['key']}">
-	<div class="svc-detail-pic"><picture><source srcset="{rel(depth, 'assets/img/' + s['img'] + '.webp')}" type="image/webp"><img src="{rel(depth, 'assets/img/' + s['img'] + '.png')}" alt="{e(s['title'])}" width="110" height="110" loading="lazy" decoding="async"></picture></div>
+	<div class="svc-detail-pic">{img(depth, 'assets/img/' + s['img'] + '.png', s['title'], picture=True)}</div>
 	<div class="svc-detail-body">
 		<h3>{e(s['title'])}</h3>
 		{prose(s['paras'])}
@@ -453,7 +544,7 @@ def page_home(c):
 				{checks(f['points'])}
 				<div class="svc-links"><a class="btn-red" href="{rel(depth, f['more_rel'])}">{e(f['more'])}</a><a class="svc-link2" href="{f['try_url'] if f['try_url'].startswith('http') else rel(depth, f['try_url'])}">{e(f['try'])} {c['arrow']}</a></div>
 			</div>
-			<figure class="feature-pic"><img src="{rel(depth, f['img'])}" alt="{e(f['img_alt'])}" width="{f['img_w']}" height="{f['img_h']}" loading="lazy" decoding="async"><figcaption>{e(f['caption'])}{credit(c, f['img'], 'inline-credit')}</figcaption></figure>
+			<figure class="feature-pic">{img(depth, f['img'], f['img_alt'])}<figcaption>{e(f['caption'])}{credit(c, f['img'], 'inline-credit')}</figcaption></figure>
 		</div>
 	</div>
 </section>
@@ -478,7 +569,7 @@ def page_home(c):
 				<a class="btn-ghost" href="{rel(depth, c['est_rel'])}">{e(h['btn2'])}</a>
 			</div>
 		</div>
-		<div class="hero-illo"><div class="hero-illo-frame"><picture><source srcset="{rel(depth, 'assets/img/hero-parts.webp')}" type="image/webp"><img src="{rel(depth, 'assets/img/hero-parts.png')}" alt="{e(h['hero_alt'])}" width="1000" height="685" loading="eager" fetchpriority="high" decoding="async"></picture></div></div>
+		<div class="hero-illo"><div class="hero-illo-frame">{img(depth, HOME_IMG, h['hero_alt'], eager=True, picture=True)}</div></div>
 	</div>
 </section>
 
@@ -609,55 +700,140 @@ def page_tool(c, key):
             inner += gallery(c, depth, s['gallery'])
         if s.get('figure'):
             g = s['figure']
-            inner += (f'<figure class="sec-figure"><img src="{rel(depth, g["img"])}" alt="{e(g["alt"])}" loading="lazy" decoding="async">'
+            inner += (f'<figure class="sec-figure">{img(depth, g["img"], g["alt"])}'
                       f'<figcaption>{e(g["caption"])}{credit(c, g["img"], "inline-credit")}</figcaption></figure>')
         if s.get('video'):
             v = s['video']
             inner += (f'<a class="video-card" href="{v["url"]}" target="_blank" rel="noopener">'
-                      f'<img src="{rel(depth, v["img"])}" alt="{e(v["alt"])}" width="360" height="640" loading="lazy" decoding="async">'
+                      f'{img(depth, v["img"], v["alt"])}'
                       f'<span><b>{e(v["title"])}</b>{e(v["desc"])}<em>{e(v["cta"])} {c['arrow']}</em></span></a>')
         sections += f'<section class="block{alt}"><div class="wrap">{inner}</div></section>\n'
-    body = (svc_hero(c, depth, d['hero']) + sections + related_block(c, depth, c['page_' + key]['path'])
+    body = (svc_hero(c, depth, d['hero']) + answer_block(c, d) + sections
+            + related_block(c, depth, c['page_' + key]['path'])
             + faq_block(c, d['faq']) + cta_block(d['cta_h'], d['cta_p'], d['cta_btns']))
     return depth, body
+
+
+def isolate_ltr(html):
+    """شناسه‌هایی مثل @hyperfab_pro در متن راست‌چین وارونه دیده می‌شوند («hyperfab_pro@»)؛
+    داخل <bdi> جهتشان جدا حساب می‌شود. فقط متن بیرون از برچسب‌ها و نه ایمیل‌ها."""
+    return ''.join(part if part.startswith('<') else re.sub(r'(?<![\w.])(@[A-Za-z0-9_]+)', r'<bdi>\1</bdi>', part)
+                   for part in re.split(r'(<[^>]+>)', str(html)))
+
+
+def answer_block(c, d):
+    """پاسخ کوتاه و چند واقعیت کلیدی، درست زیر هیرو؛ برای خواننده‌ی عجول و دستیارهای هوش مصنوعی"""
+    answer, facts = d.get('answer'), d.get('key_facts')
+    if not answer and not facts:
+        return ''
+    inner = f'<p class="answer">{isolate_ltr(answer)}</p>' if answer else ''
+    if facts:
+        inner += '<dl class="key-facts">' + ''.join(
+            f'<div><dt>{e(str(k))}</dt><dd>{isolate_ltr(v if "<" in str(v) else e(str(v)))}</dd></div>'
+            for k, v in facts) + '</dl>'
+    cls = 'answer-card' + (' has-facts' if answer and facts else '')
+    label = 'پاسخ کوتاه' if c['lang'] == 'fa' else 'Quick answer'
+    return (f'<section class="answer-sec" aria-label="{label}"><div class="wrap">'
+            f'<div class="{cls}">{inner}</div></div></section>\n')
+
+
+WRITTEN = {}
 
 
 def write(path, html):
     full = os.path.join(ROOT, path)
     os.makedirs(os.path.dirname(full) or ROOT, exist_ok=True)
+    if path.endswith('.html'):
+        html = fix_tel(html)
+        WRITTEN[path] = html
     with open(full, 'w', encoding='utf-8') as fh:
         fh.write(html)
     print('wrote', path)
+
+
+# ---------------------------------------------------------------- schema enrichment
+def city_country(c):
+    fa = c['lang'] == 'fa'
+    return [{'@type': 'City', 'name': 'تهران' if fa else 'Tehran'},
+            {'@type': 'Country', 'name': 'ایران' if fa else 'Iran'}]
+
+
+def types_of(node):
+    t = node.get('@type', [])
+    return t if isinstance(t, list) else [t]
+
+
+def page_schema(c, key, p):
+    """گره‌های schema.org صفحه‌ی ابزار/خدمت؛ فایل‌های محتوا دست نمی‌خورند و همه‌چیز اینجا افزوده می‌شود."""
+    url = SITE + p['path']
+    nodes = copy.deepcopy(c[key]['schema'])
+    main_node = next((n for n in nodes if {'Service', 'WebApplication'} & set(types_of(n))), None)
+    if main_node is not None:
+        main_node.setdefault('@id', url + '#service')
+    for n in nodes:
+        if 'Service' in types_of(n):
+            n['areaServed'] = city_country(c)
+            n['availableChannel'] = {
+                '@type': 'ServiceChannel', 'serviceUrl': url,
+                'servicePhone': {'@type': 'ContactPoint', 'telephone': TEL_MOBILE},
+                # inLanguage در schema.org برای Service تعریف نشده؛ زبان خدمت روی کانال آن می‌آید
+                'availableLanguage': {'@type': 'Language', 'name': 'Persian' if c['lang'] == 'fa' else 'English',
+                                      'alternateName': c['lang']}}
+            n['offers'] = {'@type': 'Offer', 'availability': 'https://schema.org/InStock', 'seller': {'@id': ORG_ID}}
+    hero = c[key]['hero']
+    website_id = SITE + c['home_path'] + '#website'
+    webpage = {'@type': 'WebPage', '@id': url, 'url': url, 'name': p['title'], 'description': p['desc'],
+               'inLanguage': c['lang'], 'dateModified': TODAY, 'isPartOf': {'@id': website_id},
+               'breadcrumb': {'@id': url + '#breadcrumb'},
+               'primaryImageOfPage': image_object(hero['img'], hero.get('img_alt', ''))}
+    if main_node is not None:
+        webpage['about'] = {'@id': main_node['@id']}
+    return [org_schema(c), website_node(c), webpage, *nodes,
+            {'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
+                {'@type': 'ListItem', 'position': 1, 'name': c['brand_name'], 'item': SITE + c['home_path']},
+                {'@type': 'ListItem', 'position': 2, 'name': hero['crumb'], 'item': url}]},
+            faq_schema(c[key]['faq'])]
+
+
+def website_node(c):
+    return {'@type': 'WebSite', '@id': SITE + c['home_path'] + '#website', 'url': SITE + c['home_path'],
+            'name': c['site_name'], 'inLanguage': c['lang'], 'publisher': {'@id': ORG_ID}}
+
+
+def check_lengths(p):
+    if len(p['title']) > 60:
+        warn(f'{p["path"]}: title is {len(p["title"])} chars (> 60): {p["title"]}')
+    if len(p['desc']) > 160:
+        warn(f'{p["path"]}: description is {len(p["desc"])} chars (> 160)')
 
 
 def build_lang(c):
     pages = []
     depth, body = page_home(c)
     p = c['page_home']
-    p['schema'] = [org_schema(c),
-                   {'@type': 'WebSite', '@id': SITE + c['home_path'] + '#website', 'url': SITE + c['home_path'],
-                    'name': c['site_name'], 'inLanguage': c['lang'], 'publisher': {'@id': MAIN + '/#organization'}},
+    p['og_img'], p['og_alt'] = HOME_IMG, c['home']['hero_alt']
+    p['schema'] = [org_schema(c), website_node(c),
                    {'@type': 'WebPage', '@id': SITE + c['home_path'], 'url': SITE + c['home_path'], 'name': p['title'],
                     'description': p['desc'], 'inLanguage': c['lang'], 'isPartOf': {'@id': SITE + c['home_path'] + '#website'},
-                    'about': {'@id': MAIN + '/#organization'}, 'dateModified': TODAY},
+                    'about': {'@id': ORG_ID}, 'dateModified': TODAY,
+                    'primaryImageOfPage': image_object(HOME_IMG, c['home']['hero_alt'])},
                    {'@type': 'ItemList', 'name': c['home']['svc_title'], 'itemListElement': [
                        {'@type': 'ListItem', 'position': k, 'item': {
                            '@type': 'Service', 'name': s['title'], 'description': s['paras'][0].replace('<b>', '').replace('</b>', ''),
-                           'url': s['url'] if s['url'].startswith('http') else MAIN + s['url'], 'serviceType': s['title'], 'provider': {'@id': MAIN + '/#organization'},
+                           'url': s['url'] if s['url'].startswith('http') else MAIN + s['url'], 'serviceType': s['title'], 'provider': {'@id': ORG_ID},
                            'areaServed': {'@type': 'Country', 'name': c['country']}}}
                        for k, s in enumerate(c['services'] + c['tools_as_services'], 1)]},
                    faq_schema(c['home']['faq']), *video_schema(c)]
+    check_lengths(p)
     write(p['file'], head(c, p, depth) + header(c, p, depth) + body + footer(c, depth))
     pages.append(p)
 
     for key in c['tool_keys']:
         depth, body = page_tool(c, key)
         p = c['page_' + key]
-        p['schema'] = [org_schema(c), *c[key]['schema'],
-                       {'@type': 'BreadcrumbList', 'itemListElement': [
-                           {'@type': 'ListItem', 'position': 1, 'name': c['brand_name'], 'item': SITE + c['home_path']},
-                           {'@type': 'ListItem', 'position': 2, 'name': c[key]['hero']['crumb'], 'item': SITE + p['path']}]},
-                       faq_schema(c[key]['faq'])]
+        p['og_img'], p['og_alt'] = c[key]['hero']['img'], c[key]['hero'].get('img_alt', '')
+        p['schema'] = page_schema(c, key, p)
+        check_lengths(p)
         write(p['file'], head(c, p, depth) + header(c, p, depth) + body + footer(c, depth))
         pages.append(p)
     return pages
@@ -678,6 +854,265 @@ def sitemap(pages):
     write('sitemap.xml', '\n'.join(out))
 
 
+# ---------------------------------------------------------------- llms-full.txt
+def text(h, br=' '):
+    """HTML کوتاه محتوا → متن ساده"""
+    h = re.sub(r'<br\s*/?>', br, str(h))
+    h = unescape(re.sub(r'<[^>]+>', '', h))
+    return re.sub(r'\s+', ' ', h).strip()
+
+
+def md_section(title, level=2):
+    return f'\n{"#" * level} {text(title)}\n'
+
+
+def md_items(items):
+    return '\n'.join(f'- {x}' for x in items if x) + '\n' if items else ''
+
+
+def md_table(rows):
+    def cell(x):
+        return text(x).replace('|', '/')
+    out = ['| ' + ' | '.join(cell(x) for x in rows[0]) + ' |', '|' + '---|' * len(rows[0])]
+    out += ['| ' + ' | '.join(cell(x) for x in r) + ' |' for r in rows[1:]]
+    return '\n'.join(out) + '\n'
+
+
+def md_faq(faq):
+    return md_section('FAQ') + ''.join(f'\n### {text(q)}\n\n{text(a)}\n' for q, a in faq)
+
+
+def md_paras(paras):
+    return ''.join(f'\n{text(x)}\n' for x in paras if x)
+
+
+def md_home(c):
+    h, p = c['home'], c['page_home']
+    out = f'# {text(p["title"])}\n\nURL: {SITE}{p["path"]}\n' + md_paras([h['h1'], h['lead'], h['p']])
+    out += md_section(h['sum_title']) + md_paras(h['sum_paras'])
+    out += md_section(h['svc_title']) + md_paras([h['svc_sub']])
+    for s in c['services']:
+        out += md_section(s['title'], 3) + md_paras(s['paras'])
+        out += md_items([f'{text(a)}: {text(b)}' for a, b in s['specs']])
+        out += f'\nURL: {s["url"] if s["url"].startswith("http") else MAIN + s["url"]}\n'
+    for f in (h['est_feature'], h['tek_feature'], h['ind_feature']):
+        out += md_section(f['title']) + md_paras([f['sub']] + list(f['paras'])) + '\n' + md_items([text(x) for x in f['points']])
+    out += md_section(h['why_title']) + '\n' + md_items([f'**{text(t)}**: {text(d)}' for _, t, d in h['why']])
+    out += md_section(c['works_title']) + md_paras([c['works_sub']]) + '\n'
+    out += md_items([f'**{text(w[c["lang"]][0])}** ({text(w[c["lang"]][1])}): {text(w[c["lang"]][2])}' for w in WORKS])
+    out += md_section(h['how_title']) + md_paras([h['how_sub']]) + '\n'
+    out += ''.join(f'{k}. **{text(t)}**: {text(d)}\n' for k, (t, d) in enumerate(h['how'], 1))
+    out += md_section(h['about_title']) + md_paras(h['about_paras'])
+    out += '\n' + md_items([f'{text(v)} {text(t)}' for v, t in h['team_stats']]) + md_paras(h['about_paras2'])
+    out += md_section(h['acad_title']) + md_paras([h['acad_sub']]) + '\n' + md_items([f'**{text(t)}**: {text(d)}' for _, t, d in h['acad']])
+    out += md_faq(h['faq'])
+    out += md_section(h['contact_title']) + md_paras([h['contact_sub']]) + '\n'
+    out += md_items([f'{text(t)}: {text(v)}' for _, t, v in h['contact_items']])
+    return out
+
+
+def md_tool(c, key):
+    d, p = c[key], c['page_' + key]
+    hero = d['hero']
+    out = f'# {text(hero["h1"], " — ")}\n\nURL: {SITE}{p["path"]}\n'
+    out += md_paras([d.get('answer', ''), hero['lead']])
+    if d.get('key_facts'):
+        out += '\n' + md_items([f'{text(k)}: {text(v)}' for k, v in d['key_facts']])
+    out += '\n' + md_items([f'{text(a)} {text(b)}' for a, b, _ in hero['ticks']])
+    for s in d['sections']:
+        out += md_section(s['title']) + md_paras([s.get('sub', '')] + list(s.get('paras', [])))
+        cards = [f'**{text(t)}**: {text(x)}' for _, t, x in (s.get('why') or []) + (s.get('adv') or [])]
+        cards += [text(x) for x in s.get('checks') or []]
+        if cards:
+            out += '\n' + md_items(cards)
+        if s.get('steps'):
+            out += '\n' + ''.join(f'{k}. **{text(t)}**: {text(x)}\n' for k, (t, x) in enumerate(s['steps'], 1))
+        if s.get('table'):
+            out += '\n' + md_table(s['table'])
+        if s.get('note'):
+            out += md_paras([s['note']])
+    return out + md_faq(d['faq'])
+
+
+def llms_full(langs):
+    out = ['# HyperFab (هایپرفب) — full site content\n\n',
+           f'> Full text of every page of {SITE}/ in English and Persian, generated from the site sources on {TODAY}. '
+           f'English pages come first, then Persian. Short index: {SITE}/llms.txt. '
+           f'Main website and online ordering: {MAIN}/\n']
+    for c in langs:
+        out.append(f'\n---\n\n<!-- language: {c["lang"]} -->\n\n' + md_home(c))
+        for key in c['tool_keys']:
+            out.append('\n---\n\n' + md_tool(c, key))
+    write('llms-full.txt', re.sub(r'\n{3,}', '\n\n', ''.join(out)))
+
+
+# ---------------------------------------------------------------- CSS purge
+SAFE_CLASSES = {'open', 'on', 'hf-js'}  # کلاس‌هایی که اسکریپت روشن/خاموش می‌کند
+GROUP_AT = ('@media', '@supports', '@container', '@layer', '@document')
+
+
+def _skip_string(s, i):
+    q = s[i]
+    i += 1
+    while i < len(s) and s[i] != q:
+        i += 2 if s[i] == '\\' else 1
+    return i + 1
+
+
+def _block_end(s, i):
+    """اندیس آکولاد بسته‌ی متناظر با بلوکی که از i (بعد از «{») شروع شده"""
+    depth = 1
+    while i < len(s):
+        ch = s[i]
+        if ch in '"\'':
+            i = _skip_string(s, i)
+            continue
+        if s.startswith('/*', i):
+            i = s.find('*/', i + 2) + 2
+            continue
+        if ch == '{':
+            depth += 1
+        elif ch == '}':
+            depth -= 1
+            if depth == 0:
+                return i
+        i += 1
+    return i
+
+
+def _strip_comments(s):
+    return re.sub(r'/\*.*?\*/', '', s, flags=re.S)
+
+
+def parse_css(s, i=0):
+    """درخت ساده: ('stmt', prelude) | ('group', prelude, children) | ('rule', prelude, body)"""
+    items = []
+    n = len(s)
+    while i < n:
+        while i < n and (s[i].isspace() or s.startswith('/*', i)):
+            i = s.find('*/', i + 2) + 2 if s.startswith('/*', i) else i + 1
+        if i >= n:
+            break
+        if s[i] == '}':
+            return items, i + 1
+        start, paren = i, 0
+        while i < n:
+            ch = s[i]
+            if ch in '"\'':
+                i = _skip_string(s, i)
+                continue
+            if s.startswith('/*', i):
+                i = s.find('*/', i + 2) + 2
+                continue
+            if ch == '(':
+                paren += 1
+            elif ch == ')':
+                paren -= 1
+            elif paren == 0 and (ch in '{}' or (ch == ';' and s[start] == '@')):
+                break
+            i += 1
+        prelude = re.sub(r'\s+', ' ', _strip_comments(s[start:i])).strip()
+        if i >= n:
+            break
+        if s[i] == ';':
+            items.append(('stmt', prelude))
+            i += 1
+        elif s[i] == '}':
+            continue
+        elif prelude.lower().startswith(GROUP_AT):
+            children, i = parse_css(s, i + 1)
+            items.append(('group', prelude, children))
+        else:
+            j = _block_end(s, i + 1)
+            items.append(('rule', prelude, s[i + 1:j]))
+            i = j + 1
+    return items, i
+
+
+def _split_top(sel):
+    parts, depth, cur = [], 0, ''
+    for ch in sel:
+        if ch in '([':
+            depth += 1
+        elif ch in ')]':
+            depth -= 1
+        if ch == ',' and depth == 0:
+            parts.append(cur)
+            cur = ''
+        else:
+            cur += ch
+    return parts + [cur]
+
+
+def selector_can_match(sel, classes, ids):
+    s = re.sub(r'\[[^\]]*\]', '', sel)                               # صفت‌ها محدود نمی‌کنند
+    s = re.sub(r'::?[\w-]+(\((?:[^()]|\([^()]*\))*\))?', '', s)       # شبه‌کلاس/عنصر و آرگومان‌هایشان
+    return (all(x in classes for x in re.findall(r'\.(-?[_a-zA-Z][\w-]*)', s))
+            and all(x in ids for x in re.findall(r'#(-?[_a-zA-Z][\w-]*)', s)))
+
+
+def _min_body(body):
+    out = []
+    for k, part in enumerate(re.split(r'("(?:[^"\\]|\\.)*"|\'(?:[^\'\\]|\\.)*\')', body)):
+        if k % 2:
+            out.append(part)
+            continue
+        part = re.sub(r'\s+', ' ', _strip_comments(part))
+        out.append(re.sub(r'\s*([;{}])\s*', r'\1', re.sub(r'\s*:\s*', ':', part) if '{' not in part else part))
+    return ''.join(out).strip().rstrip(';')
+
+
+def _min_sel(sel):
+    return re.sub(r'\s*([,>])\s*', r'\1', sel)
+
+
+def emit_css(items, classes, ids):
+    out = []
+    for it in items:
+        if it[0] == 'stmt':
+            out.append(it[1] + ';')
+        elif it[0] == 'group':
+            inner = emit_css(it[2], classes, ids)
+            if inner:
+                out.append(it[1] + '{' + inner + '}')
+        else:
+            pre, body = it[1], it[2]
+            if pre.startswith('@') or any(selector_can_match(x, classes, ids) for x in _split_top(pre)):
+                out.append(_min_sel(pre) + '{' + _min_body(body) + '}')
+    return ''.join(out)
+
+
+def purge_css():
+    classes, ids = set(SAFE_CLASSES), set()
+    for html in WRITTEN.values():
+        for m in re.findall(r'\sclass="([^"]*)"', html):
+            classes.update(m.split())
+        ids.update(re.findall(r'\sid="([^"]*)"', html))
+    src = open(os.path.join(ROOT, 'assets/hyperfab.css'), encoding='utf-8').read()
+    items, _ = parse_css(src)
+    css = ('/* generated by tools/build.py from hyperfab.css: only rules this site uses. Do not edit. */\n'
+           + emit_css(items, classes, ids) + '\n')
+    write('assets/hyperfab.min.css', css)
+    print(f'CSS: hyperfab.css {len(src.encode()):,} B -> hyperfab.min.css {len(css.encode()):,} B '
+          f'({100 - 100 * len(css.encode()) / len(src.encode()):.0f}% smaller)')
+
+
+# ---------------------------------------------------------------- checks
+def check_links():
+    """هر href/src داخلی باید به فایلی موجود برسد"""
+    for path, html in WRITTEN.items():
+        base = os.path.dirname(path)
+        for ref in re.findall(r'\s(?:href|src|srcset)="([^"]+)"', html):
+            if re.match(r'^(?:[a-z]+:|//|#)', ref):
+                continue
+            ref = ref.split('#')[0].split('?')[0]
+            target = os.path.normpath(os.path.join(ROOT, base, ref))
+            if ref.endswith('/') or os.path.isdir(target):
+                target = os.path.join(target, 'index.html')
+            if not os.path.exists(target):
+                warn(f'{path}: missing target {ref}')
+
+
 def main():
     pages = []
     for c in (content_fa.C, content_en.C):
@@ -685,6 +1120,11 @@ def main():
             c[p]['lang'] = c['lang']
         pages += build_lang(c)
     sitemap(pages)
+    llms_full((content_en.C, content_fa.C))
+    purge_css()
+    check_links()
+    if WARNINGS:
+        print(f'{len(WARNINGS)} warning(s)')
 
 
 if __name__ == '__main__':

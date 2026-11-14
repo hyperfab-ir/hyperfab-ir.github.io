@@ -137,9 +137,9 @@ C = {
     # ------------------------------------------------------------ home
     'page_home': {
         'key': 'home', 'file': 'en/index.html', 'path': '/en/', 'alt_path': '/', 'alt_rel': '', 'priority': '0.9',
-        'title': 'HyperFab | Online Manufacturing & Industrial Production in Tehran, Iran',
-        'desc': 'HyperFab (هایپرفب) is an online manufacturing service in Tehran, Iran: FDM and resin 3D printing, CNC machining, laser cutting and sheet bending with instant online pricing, Tekeyab for buying small pieces of industrial material, and sheet and tube punching and injection moulding for industrial production. Ships across Iran.',
-        'keywords': 'HyperFab, هایپرفب, 3D printing Iran, 3D printing Tehran, online 3D printing quote, CNC machining Iran, laser cutting Tehran, sheet metal bending, instant manufacturing quote, Tekeyab, buy small metal pieces, rapid prototyping Iran, tube punching Iran, injection molding Iran, mold making Iran',
+        'title': '3D Printing, CNC & Laser Cutting in Tehran, Iran | HyperFab',
+        'desc': 'HyperFab (هایپرفب), Tehran, Iran: 3D printing, CNC machining, laser cutting and bending with instant online quotes, plus batch and industrial production.',
+        'keywords': 'HyperFab, هایپرفب, online manufacturing Iran, 3D printing Tehran, 3D printing Iran, instant 3D printing quote Iran, CNC machining Iran, laser cutting Tehran, sheet metal bending Iran, Tekeyab, buy small metal pieces Iran, rapid prototyping Iran, tube punching Iran, injection moulding Iran, batch CNC turning Iran, aluminium extrusion Iran, TIG welding Tehran, gold plating Tehran, powder coating Tehran',
     },
     'home': {
         'eyebrow': '3D printing, machining and on-demand parts — online',
@@ -152,9 +152,9 @@ C = {
         'hero_alt': 'Sample parts made by HyperFab with 3D printing and CNC machining',
         'sum_kicker': 'IN SHORT', 'sum_title': 'HyperFab at a glance',
         'sum_paras': [
-            '<b>HyperFab</b> (Persian: هایپرفب) is an online manufacturing platform based in Tehran, Iran. HyperFab offers FDM and resin 3D printing, CNC machining, metal and non-metal laser cutting and sheet metal bending online. Customers upload a design file on <a href="https://hyperfab.ir/">hyperfab.ir</a>. For FDM 3D printing and laser cutting, the <a href="price-estimator/">online price estimator</a> gives a price instantly. For other processes, an engineer reviews the file and quotes a price.',
-            'HyperFab’s <a href="tekeyab/">Tekeyab</a> service sources small pieces of industrial material, quotes a price and cuts them to size if needed. The materials are sheet, bar, shaft, flat bar, tube and profile in aluminium, stainless steel, steel, copper, brass and engineering plastics. 3D printing, CNC, laser and bending orders are usually ready within three working days, and the minimum order is one part. Shipping across Iran is by Post, Tipax and Snappbox, and pickup in Tehran is free.',
-            'For industrial production, HyperFab offers <a href="punching/">sheet and tube punching</a> (metal and polyethylene) and <a href="injection-molding/">mould making and plastic injection moulding</a>. Tooling design and manufacture, production runs and quality control through to delivery are part of these services. HyperFab’s engineering team comes from Iran’s top universities and has worked in industry for years. These projects are handled by phone: +98 996 223 3898.',
+            '<b>HyperFab</b> (Persian: هایپرفب) is an online manufacturing platform in Tehran, Iran, offering FDM and resin 3D printing, CNC machining, metal and non-metal laser cutting and sheet metal bending, plus batch and industrial production. Customers upload a design file on <a href="https://hyperfab.ir/">hyperfab.ir</a>: FDM 3D printing and laser cutting are priced instantly by the <a href="price-estimator/">online price estimator</a>, and other processes are quoted after an engineer reviews the file.',
+            'HyperFab’s 3D printing, CNC, laser and bending orders are usually ready within three working days, and the minimum order is one part. Parts are shipped across Iran by Post, Tipax and Snappbox, and pickup in Tehran is free. HyperFab’s <a href="tekeyab/">Tekeyab</a> service sources small pieces of industrial material — sheet, bar, shaft, flat bar, tube and profile in aluminium, stainless steel, steel, copper, brass and engineering plastics — quotes a price and cuts them to size if needed.',
+            'For industrial and batch production, HyperFab offers <a href="punching/">sheet and tube punching</a> (metal and polyethylene), <a href="injection-molding/">mould making and plastic injection moulding</a>, <a href="cnc-turning/">batch CNC turning</a>, <a href="aluminium-extrusion/">custom aluminium extrusion</a>, <a href="welding/">TIG and MIG welding</a>, <a href="plating-anodizing/">gold and silver plating and anodizing</a> and <a href="powder-coating/">powder coating</a>. For punching, injection moulding and extrusion, tooling design and manufacture are part of the service, and every industrial project runs through quality control to delivery. HyperFab’s engineering team comes from Iran’s top universities and has worked in industry for years. Industrial projects are handled by phone: <a href="tel:+989962233898">+98 996 223 3898</a>.',
         ],
         'svc_title': 'Services and manufacturing processes',
         'svc_sub': 'Every order is placed online: upload your design and get a price within minutes.',
@@ -255,12 +255,24 @@ C = {
     'page_estimator': {
         'key': 'estimator', 'file': 'en/price-estimator/index.html', 'path': '/en/price-estimator/',
         'alt_path': '/price-estimator/', 'alt_rel': 'price-estimator/', 'priority': '0.8',
-        'title': 'HyperFab Online Price Estimator | Instant 3D Printing & Laser Cutting Quotes',
-        'desc': 'Instant online pricing for FDM 3D printing from STL and 3MF files and for laser cutting and sheet bending from DXF files at HyperFab, Iran — with automatic manufacturability checks and no file upload needed to get a price.',
-        'keywords': '3D printing price calculator, instant 3D printing quote, online laser cutting quote, DXF laser cutting price, sheet metal bending price, instant manufacturing quote Iran, HyperFab Quote, HyperFab',
+        'title': 'Instant 3D Printing & Laser Cutting Quotes, Iran | HyperFab',
+        'desc': 'Get an instant price for FDM 3D printing (STL, 3MF) and laser cutting and bending (DXF) on hyperfab.ir. Free, runs in your browser. HyperFab, Tehran, Iran.',
+        'keywords': 'instant 3D printing quote Iran, 3D printing price calculator, online 3D printing quote Tehran, STL price calculator, online laser cutting quote Iran, DXF laser cutting price, sheet metal bending price, instant manufacturing quote Iran, HyperFab Quote, HyperFab',
     },
     'estimator': {
         'depth': 2,
+        'answer': ('The <b>HyperFab Online Price Estimator</b> is a free tool on hyperfab.ir that gives an instant price for FDM 3D printing from '
+                   'STL or 3MF files and for laser cutting and sheet bending from DXF files. It runs in your browser, so your file is not '
+                   'uploaded until you finalise the order, and the laser engine marks drawing errors before you pay. HyperFab is an online manufacturing '
+                   'platform in Tehran, Iran; resin 3D printing and CNC machining are quoted after an engineer reviews the file.'),
+        'key_facts': [
+            ('Service', 'Instant online quotes for FDM 3D printing and laser cutting and bending'),
+            ('File formats', 'STL and 3MF for 3D printing; DXF for laser cutting and bending'),
+            ('Cost', 'Free, with no obligation; an account is needed only to order'),
+            ('Minimum order', 'One part; a minimum order value may apply'),
+            ('Ordering', 'Online at hyperfab.ir, at any hour'),
+            ('Location', 'HyperFab, Tehran, Iran'),
+        ],
         'hero': {
             'crumb': 'Online Price Estimator',
             'h1': 'HyperFab <em>Online Price Estimator</em><br>The price of your part, instantly',
@@ -283,7 +295,7 @@ C = {
                  ('shield', 'Your file stays with you', 'Geometry analysis and pricing run in your browser. The file is uploaded only when you finalise the order, and used only to make that order.'),
                  ('search', 'Drawing errors, before you pay', 'An open contour, a duplicate line or a hole too small for the thickness is shown on the drawing before you order, not after a bad part is made.'),
              ]},
-            {'kicker': '3D PRINTING ENGINE', 'title': 'How the FDM 3D printing price engine works', 'id': 'fdm',
+            {'kicker': '3D PRINTING ENGINE', 'title': 'How is a 3D printing price calculated from an STL file?', 'id': 'fdm',
              'sub': 'A 3D print’s price depends above all on machine time and filament mass. HyperFab’s engine calculates both from your model’s real geometry.',
              'adv': [
                  ('file', 'Reads STL and 3MF', 'The 3D model opens in your browser and its volume, dimensions, surface and cross-sections are extracted. A 3D preview of the part is shown on the same page.'),
@@ -293,8 +305,8 @@ C = {
                  ('clock', 'Filament mass and print time', 'Volumes and nozzle speeds give filament mass and real machine time. Top and bottom skins are computed from the change in area between slices, so curved and stepped surfaces are not under-estimated.'),
                  ('chart', 'Scale, quantity and discount', 'Changing the scale updates the price instantly without re-uploading. As quantity rises, a stepped volume discount up to a set cap is applied to the unit price.'),
              ]},
-            {'kicker': 'LASER & BENDING ENGINE', 'title': 'Laser cutting and bending prices from a DXF file', 'id': 'laser',
-             'sub': 'Upload a DXF at 1:1 scale in millimetres and choose sheet material and thickness. Each part of the price comes from a direct measurement of the drawing.',
+            {'kicker': 'LASER & BENDING ENGINE', 'title': 'How is laser cutting priced from a DXF file?', 'id': 'laser',
+             'sub': 'Each part of the price comes from a direct measurement of the drawing: cut length, pierce count, bends, engraving and sheet weight, plus setup and quantity. Upload a DXF at 1:1 scale in millimetres and choose sheet material and thickness. To order the part, see <a href="https://hyperfab.ir/services/laser-metal/">metal laser cutting</a> and <a href="https://hyperfab.ir/services/bending/">sheet metal bending</a> on hyperfab.ir.',
              'table': [
                  ('Price component', 'How it is measured from the drawing'),
                  ('Cutting', 'Total cut length × sheet thickness, at a rate specific to each material, thickness and assist gas (oxygen or nitrogen)'),
@@ -306,8 +318,8 @@ C = {
                  ('Quantity', 'Stepped discounts by quantity'),
              ],
              'note': '<b>Note:</b> because setup is spread across the quantity, the unit price genuinely drops at 20 or 40 parts; it does not depend on the discount alone.'},
-            {'kicker': 'DFM CHECKS', 'title': 'Automatic manufacturability checks before you order', 'id': 'dfm',
-             'sub': 'The laser estimator does more than price. It reviews the drawing like an experienced operator and marks every problem on the drawing itself.',
+            {'kicker': 'DFM CHECKS', 'title': 'Which drawing errors does the estimator catch before you order?', 'id': 'dfm',
+             'sub': 'Duplicate lines, open contours, holes smaller than the sheet thickness, holes too close to a bend line and other common errors. The laser estimator reviews the drawing like an experienced operator and marks every problem on the drawing itself.',
              'checks': [
                  '<b>Duplicate overlapping lines:</b> the same path would be cut twice and ruin the edge. Duplicates are excluded from the price.',
                  '<b>Open contour:</b> an outline that does not close, so the part will not drop out of the sheet.',
@@ -321,7 +333,8 @@ C = {
                  '<b>Sheet too thick to bend</b> and <b>bend longer than the press brake</b>.',
                  '<b>Missing bending drawing</b> when the part has bends.',
              ]},
-            {'kicker': 'ALL METHODS', 'title': 'File formats and pricing for each service', 'id': 'formats',
+            {'kicker': 'ALL METHODS', 'title': 'Which file formats does HyperFab accept, and how is each service priced?', 'id': 'formats',
+             'sub': 'FDM 3D printing and laser cutting are priced instantly by the estimator; resin 3D printing and CNC machining are quoted after an engineer reviews the file. For production runs of turned parts, see <a href="../cnc-turning/">batch CNC turning</a>; for small pieces of raw material, see <a href="../tekeyab/">Tekeyab</a>.',
              'table': [
                  ('Process', 'File format', 'Pricing'),
                  ('FDM 3D printing', '<span class="hfs-lat">STL · 3MF</span> (also OBJ, STEP)', 'Instant, with the estimator'),
@@ -332,7 +345,8 @@ C = {
                  ('CNC machining', '<span class="hfs-lat">STEP · IGES · DWG · DXF · PDF</span>', 'After drawing review, by material, stock removal and machine time'),
                  ('Not sure / advice', 'Any format, even a photo and description', 'After talking to an engineer'),
              ]},
-            {'kicker': 'HOW IT WORKS', 'title': 'From file to order in four steps', 'id': 'steps',
+            {'kicker': 'HOW IT WORKS', 'title': 'How do you order a part with an instant online quote?', 'id': 'steps',
+             'sub': 'Upload the file on hyperfab.ir, choose the specs, check the price and warnings, then order and track the part in your account.',
              'video': {'url': 'https://www.aparat.com/v/kxxl13o', 'img': 'assets/img/videos/print-price.webp', 'alt': 'Time is price video on Aparat',
                        'title': 'Video: Time is price (Persian)', 'desc': 'Why print time sets the price of a 3D print.', 'cta': 'Watch on Aparat'},
              'steps': [
@@ -345,12 +359,14 @@ C = {
         'faq': [
             ('How does HyperFab calculate a 3D printing price?', 'HyperFab’s estimator analyses your STL or 3MF file in your browser. It places the model in the best orientation, estimates the supports needed, calculates wall and infill volume slice by slice, and derives filament mass and print time from these. The price comes from these two values and current rates, with a stepped discount for larger quantities.'),
             ('How do I get an online laser cutting quote?', 'Upload the part’s DXF file at 1:1 scale in millimetres on hyperfab.ir and choose sheet material and thickness. The estimator measures cut length, pierce count, bends, engraving and sheet weight from the drawing and shows the price immediately.'),
-            ('Is my file sent to a server to calculate the price?', 'No. Analysis and pricing run entirely in your own browser. The file is uploaded only when you finalise the order, and used only to make that order.'),
+            ('Is my file sent to a server to calculate the price?', 'No. In HyperFab’s estimator, analysis and pricing run entirely in your own browser. The file is uploaded only when you finalise the order, and used only to make that order.'),
             ('Is the estimator’s price final?', 'The estimator’s price comes from your file’s real geometry and current rates, and it is the basis of the order. If the technical review before production finds an issue, HyperFab contacts you before production starts.'),
-            ('Does it give instant prices for resin printing and CNC machining?', 'No. Resin printing and CNC machining depend on factors that need an engineer’s review, such as resin print orientation or the tooling and number of CNC operations. You upload the file and a price and lead time are quoted after review.'),
-            ('Does the price estimator cost anything?', 'No. Getting a price is free and creates no obligation. You sign in to a HyperFab account only to place the final order.'),
+            ('Does the HyperFab estimator give instant prices for resin printing and CNC machining?', 'No. At HyperFab, resin printing and CNC machining depend on factors that need an engineer’s review, such as resin print orientation or the tooling and number of CNC operations. You upload the file and a price and lead time are quoted after review.'),
+            ('Is the HyperFab price estimator free?', 'Yes. Getting a price is free and creates no obligation. You sign in to a HyperFab account only to place the final order.'),
             ('Why does print time determine a 3D printing price?', 'In 3D printing, the main cost is the time the machine spends building the part, not the weight of the plastic. Two parts of the same weight but different geometry can have very different print times and therefore very different prices. That is why HyperFab’s estimator calculates print time from the model’s real geometry.'),
-            ('Is there a minimum order?', 'There is no minimum quantity; one part is accepted. A minimum order value may apply, and the estimator shows it clearly as a separate line.'),
+            ('Is there a minimum order?', 'HyperFab has no minimum quantity; one part is accepted. A minimum order value may apply, and the estimator shows it clearly as a separate line.'),
+            ('Which files can I upload to get an instant quote?', 'HyperFab’s estimator reads STL and 3MF files for FDM 3D printing and DXF files, at 1:1 scale in millimetres, for laser cutting and sheet bending. Resin printing files (STL, OBJ, STEP, 3MF) and CNC machining files (STEP, IGES, DWG, DXF, PDF) are quoted after review.'),
+            ('Where is HyperFab and where do I get an instant quote?', 'HyperFab is an online manufacturing platform based in Tehran, Iran. Instant quotes are on hyperfab.ir in the order section, available at any hour; for advice, call +98 996 223 3898.'),
         ],
         'cta_h': 'See the price of your own part',
         'cta_p': 'Upload an STL, 3MF or DXF file on HyperFab’s main website, see the price instantly and place your order.',
@@ -373,12 +389,24 @@ C = {
     'page_tekeyab': {
         'key': 'tekeyab', 'file': 'en/tekeyab/index.html', 'path': '/en/tekeyab/',
         'alt_path': '/tekeyab/', 'alt_rel': 'tekeyab/', 'priority': '0.8',
-        'title': 'HyperFab Tekeyab | Buy Small Pieces of Metal & Plastic — Sheet, Bar, Shaft, Tube, Profile',
-        'desc': 'HyperFab Tekeyab: buy small pieces of industrial material online in Iran — sheet, bar, shaft, flat bar, tube and profile in aluminium, stainless steel, steel, copper, brass and engineering plastics, cut to size and shipped nationwide.',
-        'keywords': 'Tekeyab, تکه یاب, buy small metal pieces Iran, aluminium sheet cut to size, stainless steel bar, brass shaft, PTFE rod, engineering plastics Iran, metal supplier Tehran, material cut to size, HyperFab',
+        'title': 'Buy Small Metal & Plastic Pieces, Iran – Tekeyab | HyperFab',
+        'desc': 'Buy small pieces of aluminium, stainless steel, brass, copper or engineering plastic in Iran, cut to size. Tekeyab by HyperFab, Tehran; ships nationwide.',
+        'keywords': 'Tekeyab, تکه یاب, buy small metal pieces Iran, metal cut to size Tehran, aluminium sheet cut to size Iran, stainless steel bar Tehran, brass shaft Iran, PTFE rod Iran, engineering plastics Iran, metal supplier Tehran, HyperFab',
     },
     'tekeyab': {
         'depth': 2,
+        'answer': ('<b>Tekeyab</b> is HyperFab’s online service for buying small pieces of industrial material in Iran — sheet, bar, shaft, '
+                   'flat bar, tube and profile in aluminium, stainless steel, steel, copper, brass and engineering plastics. You describe the '
+                   'piece once in a four-step form on hyperfab.ir; HyperFab, based in Tehran, sources it, posts the price to your account, cuts '
+                   'it to size if needed and delivers it by courier in Tehran, by pickup or by shipping to other cities. You can request a single piece.'),
+        'key_facts': [
+            ('Service', 'Sourcing and cut-to-size supply of small pieces of industrial material'),
+            ('Materials', 'Aluminium, stainless steel, steel, copper, brass, engineering plastics, special metals'),
+            ('Shapes', 'Sheet and plate, shaft and round bar, flat bar, tube, profile'),
+            ('Ordering', 'Online four-step form at hyperfab.ir; a single piece is accepted'),
+            ('Pricing model', 'Final price posted to your account after sourcing'),
+            ('Delivery', 'Courier in Tehran, pickup, or shipping to other cities in Iran'),
+        ],
         'hero': {
             'crumb': 'Tekeyab',
             'h1': 'HyperFab <em>Tekeyab</em><br>Industrial material, in the size you need',
@@ -392,14 +420,15 @@ C = {
                       ('file', '4', 'steps', 'in the request form'), ('truck', '3', 'options', 'for delivery')],
         },
         'sections': [
-            {'kicker': 'WHAT IT IS', 'title': 'What Tekeyab is and the problem it solves', 'id': 'what',
+            {'kicker': 'WHAT IT IS', 'title': 'What is Tekeyab, and what problem does it solve?', 'id': 'what',
+             'sub': 'Tekeyab is HyperFab’s online service for buying a small piece of industrial material — one plate, a short bar or a single shaft — without calling supplier after supplier.',
              'paras': [
                  'Anyone who has built a part or repaired a machine knows the routine. For one brass bushing or a small aluminium plate, you call several suppliers. Each sells only six-metre lengths or full sheets and quotes prices over the phone. In the end you are still not sure the material is the grade you asked for. Buying a small piece of industrial material usually means call after call.',
                  '<b>Tekeyab</b> is HyperFab’s online service built for exactly this. You describe the piece once in Tekeyab’s four-step form: material and grade, shape, dimensions, quantity, when you need it and how it should be delivered. You can attach a photo or notes if needed. The HyperFab team asks its supplier network and posts the final price to your account. After payment, the piece is prepared, cut to size if needed and shipped.',
-                 'Tekeyab is connected to HyperFab’s fabrication services. If the piece will be turned, CNC-milled, laser-cut or bent, you can order the fabrication in the same place. Material and manufacturing are handled together, and you don’t have to carry stock between supplier and workshop.',
+                 'Tekeyab is connected to HyperFab’s fabrication services. If the piece will be turned or milled by <a href="https://hyperfab.ir/services/cnc/">CNC machining</a>, <a href="https://hyperfab.ir/services/laser-metal/">laser-cut</a> or <a href="https://hyperfab.ir/services/bending/">bent</a>, you can order the fabrication in the same place. Material and manufacturing are handled together, and you don’t have to carry stock between supplier and workshop.',
              ]},
-            {'kicker': 'MATERIALS', 'title': 'What you can buy through Tekeyab', 'id': 'materials',
-             'sub': 'Six material families; if you need a specific grade or alloy, write it in the form.',
+            {'kicker': 'MATERIALS', 'title': 'What materials can you buy through Tekeyab?', 'id': 'materials',
+             'sub': 'Six material families: aluminium, stainless steel, steel, copper and brass, engineering plastics, and other special metals. If you need a specific grade or alloy, write it in the form.',
              'adv': [
                  ('sheet', 'Aluminium', 'Aluminium sheet, plate, bar, flat bar and profile; light and easy to machine for housings, mounting plates, fixtures and machined parts.'),
                  ('shield', 'Stainless steel', 'Stainless sheet, bar and tube for parts in contact with water, food or chemicals.'),
@@ -408,7 +437,8 @@ C = {
                  ('cube', 'Engineering plastics', 'PTFE (Teflon), polyethylene, acetal (POM), nylon and acrylic for gaskets, bushings, gears, sliding and insulating parts.'),
                  ('sparkle', 'Other and special metals', 'If you need a rare material or alloy, describe it and its availability will be checked.'),
              ]},
-            {'kicker': 'SHAPES & SIZES', 'title': 'Shapes and the dimensions you enter', 'id': 'shapes',
+            {'kicker': 'SHAPES & SIZES', 'title': 'Which shapes and sizes can you order?', 'id': 'shapes',
+             'sub': 'Sheet and plate, shaft and round bar, flat bar, tube and profile, each described by the dimensions below.',
              'table': [
                  ('Shape', 'Dimensions needed', 'Example'),
                  ('Sheet and plate', 'length × width × thickness', 'Aluminium plate 200 × 150 × 5 mm'),
@@ -418,7 +448,8 @@ C = {
                  ('Profile and other', 'section and length', 'Angle, channel or box section of any size'),
              ],
              'note': '<b>Note:</b> if you are unsure of the dimensions or grade, describe the part’s use or send a photo. If needed, dimensions are confirmed with you before the price is quoted.'},
-            {'kicker': 'HOW IT WORKS', 'title': 'The journey of a Tekeyab request', 'id': 'steps',
+            {'kicker': 'HOW IT WORKS', 'title': 'How does a Tekeyab request work?', 'id': 'steps',
+             'sub': 'You submit a four-step form on hyperfab.ir, HyperFab sources the material and posts a price to your account, and after payment the piece is cut to size if needed and delivered.',
              'steps': [
                  ('Submit the request', 'Fill in the four-step form on hyperfab.ir. Your mobile number is verified by SMS code and an account is created for you automatically.'),
                  ('Sourcing', 'The Tekeyab team asks suppliers and matches material, grade and dimensions.'),
@@ -426,14 +457,15 @@ C = {
                  ('Payment and preparation', 'After payment, the piece is prepared and cut to size when needed.'),
                  ('Shipping or pickup', 'By courier in Tehran, in-person pickup, or shipping to other cities.'),
              ]},
-            {'kicker': 'TRACKING', 'title': 'Track your request with a TK code', 'id': 'tracking',
+            {'kicker': 'TRACKING', 'title': 'How do you track a Tekeyab request?', 'id': 'tracking',
              'paras': [
                  'Every Tekeyab request gets a tracking code such as <span class="hfs-lat">TK1001</span> and appears under the “Material orders” tab of your HyperFab account. Its status updates there, from “sourcing” and “price quoted” to “payment confirmed”, “preparing”, “shipped” and “delivered”.',
                  'If the requested material cannot be found, you are told so clearly; requests are not left hanging. Tekeyab questions are answered by HyperFab’s industrial team on the Bale messenger (<a href="https://ble.ir/hyperfab_pro">@hyperfab_pro</a>).',
              ],
              'video': {'url': 'https://www.aparat.com/v/poq88kr', 'img': 'assets/img/video-tekeyab.webp', 'alt': 'HyperFab Tekeyab introduction video on Aparat',
                        'title': 'Tekeyab introduction video (Persian)', 'desc': 'Get a price for a piece of material without calling around.', 'cta': 'Watch on Aparat'}},
-            {'kicker': 'WHO IT IS FOR', 'title': 'Who Tekeyab is for', 'id': 'who',
+            {'kicker': 'WHO IT IS FOR', 'title': 'Who is Tekeyab for?', 'id': 'who',
+             'sub': 'Anyone who needs a small piece of industrial material rather than a full length or a whole sheet.',
              'checks': [
                  '<b>Machine repairers and maintenance teams</b> who need a small piece of a specific material to make one spare part.',
                  '<b>Turning and fabrication workshops</b> with one-off or low-volume jobs, for whom a full length does not pay.',
@@ -445,12 +477,12 @@ C = {
         ],
         'faq': [
             ('What is HyperFab Tekeyab?', 'Tekeyab is HyperFab’s online service for buying small pieces of industrial material. You describe the piece in a form: material, shape, dimensions, quantity, when you need it and how to deliver it. HyperFab sources it from suppliers, quotes a price, cuts it to size if needed and ships it.'),
-            ('What materials can I buy through Tekeyab?', 'Aluminium, stainless steel, steel, copper and brass, engineering plastics such as PTFE, polyethylene, acetal (POM), nylon and acrylic, and special metals. Shapes include sheet and plate, shaft and round bar, flat bar, tube and profile.'),
-            ('What is the minimum quantity?', 'Tekeyab is built for small quantities, and you can request a single piece. The final price depends on material, dimensions and any cutting required.'),
-            ('Do you cut material to size?', 'Yes. The piece is cut to the requested size when needed. If it then needs machining, laser cutting or bending, you can order that fabrication from HyperFab as well.'),
-            ('When and how do I receive the price?', 'After sourcing from suppliers, the final price is posted to your HyperFab account and you are notified by email or messenger. You don’t need to call to get a price.'),
-            ('What do I need to submit a request?', 'Only the piece’s specifications and a mobile number. The number is verified by SMS code, and an account is created automatically so you can track the request.'),
-            ('Does Tekeyab deliver outside Tehran?', 'Yes. There are three delivery options: courier in Tehran, in-person pickup, and shipping to other cities.'),
+            ('What materials can I buy through Tekeyab?', 'Through HyperFab Tekeyab you can buy aluminium, stainless steel, steel, copper and brass, engineering plastics such as PTFE, polyethylene, acetal (POM), nylon and acrylic, and special metals. Shapes include sheet and plate, shaft and round bar, flat bar, tube and profile.'),
+            ('What is the minimum quantity on Tekeyab?', 'HyperFab Tekeyab is built for small quantities, and you can request a single piece. The final price depends on material, dimensions and any cutting required.'),
+            ('Does HyperFab cut material to size?', 'Yes. Through Tekeyab, the piece is cut to the requested size when needed. If it then needs machining, laser cutting or bending, you can order that fabrication from HyperFab as well.'),
+            ('How is the Tekeyab price given?', 'After sourcing from suppliers, the final price is posted to your HyperFab account and you are notified by email or messenger. You don’t need to call to get a price.'),
+            ('What do I need to submit a Tekeyab request?', 'Only the piece’s specifications and a mobile number, entered in the Tekeyab form on hyperfab.ir. You can attach a photo or notes if needed. The number is verified by SMS code, and an account is created automatically so you can track the request.'),
+            ('Does Tekeyab deliver outside Tehran?', 'Yes. HyperFab is based in Tehran, Iran, and Tekeyab has three delivery options: courier in Tehran, in-person pickup, and shipping to other cities.'),
             ('What if the material cannot be found?', 'If material matching your specifications cannot be found, the request is marked “not found” and you are not charged. If a suitable alternative exists, it is suggested.'),
         ],
         'cta_h': 'Request the piece you need',

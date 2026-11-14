@@ -7,9 +7,12 @@ MAIN = 'https://hyperfab.ir'
 
 CONTACT = {
     'landline': '02177527438',
-    'landline_intl': '+98-21-77527438',
+    # قالب E.164 (بدون فاصله و خط تیره)؛ برای telephone در schema.org و پیوندهای tel:
+    'landline_intl': '+982177527438',
+    'landline_e164': '+982177527438',
     'mobile': '09962233898',
-    'mobile_intl': '+98-996-223-3898',
+    'mobile_intl': '+989962233898',
+    'mobile_e164': '+989962233898',
     'email': 'info@hyperfab.ir',
     'bale_channel': '@hyper3d',
     'bale_channel_url': 'https://ble.ir/hyper3d',

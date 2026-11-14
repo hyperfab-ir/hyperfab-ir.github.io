@@ -140,3 +140,32 @@
 .rel-chip{background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-pill);padding:var(--sp-2) var(--sp-4);font-size:var(--fs-3);font-weight:600;color:var(--ink);transition:.15s}
 .rel-chip:hover{border-color:var(--accent);color:var(--accent);box-shadow:var(--sh-1)}
 .hfs-steps + .video-card{margin-top:var(--sp-6)}
+
+/* تصویرهایی که build.py داخل <picture> می‌گذارد (نسخه‌ی webp)؛ picture مثل خود img بلوکی است */
+.gallery picture,.work-card picture,.feature-pic picture,.sec-figure picture,.video-card picture,.vid-card picture,.svc-detail-pic picture{display:block}
+
+/* =====================================================================
+   پاسخ کوتاه و واقعیت‌های کلیدی، درست زیر هیروی صفحه‌های خدمت
+   (d['answer'] و d['key_facts'] در محتوا). پاسخ با خط قرمز کنار متن
+   مشخص است؛ واقعیت‌ها ردیف‌های برچسب/مقدارند، هم‌خانواده‌ی .hfs-tech-row.
+   جهت‌ها منطقی‌اند (inline-start) تا راست‌چین و چپ‌چین هر دو درست باشند.
+   ===================================================================== */
+.answer-sec{padding:var(--sp-6) 0 var(--sp-7)}
+.answer-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--sh-1);padding:var(--sp-5) var(--sp-6);display:grid;gap:var(--sp-5);align-items:start}
+.answer-card.has-facts{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:var(--sp-7)}
+.answer{margin:0;border-inline-start:3px solid var(--accent);padding-inline-start:var(--sp-4);font-size:var(--fs-5);line-height:2.05;color:var(--ink);max-width:var(--hf-w-read)}
+.answer b,.answer strong{color:var(--navy)}
+.answer a{color:var(--accent);font-weight:600}
+.key-facts{margin:0;display:grid}
+.key-facts>div{display:grid;grid-template-columns:9em minmax(0,1fr);gap:var(--sp-3);align-items:baseline;padding:var(--sp-2) 0;border-top:1px solid var(--line)}
+.key-facts>div:first-child{border-top:0;padding-top:0}
+.key-facts>div:last-child{padding-bottom:0}
+.key-facts dt{font-size:var(--fs-2);color:var(--ink-soft);font-weight:600;line-height:1.8}
+.key-facts dd{margin:0;font-size:var(--fs-3);font-weight:600;color:var(--navy);line-height:1.9;overflow-wrap:anywhere}
+@media(max-width:960px){.answer-card.has-facts{grid-template-columns:1fr;gap:var(--sp-5)}}
+@media(max-width:600px){
+	.answer-sec{padding:var(--sp-5) 0 var(--sp-6)}
+	.answer-card{padding:var(--sp-4);border-radius:var(--r-m)}
+	.answer{font-size:var(--fs-4);padding-inline-start:var(--sp-3)}
+	.key-facts>div{grid-template-columns:6.5em minmax(0,1fr);gap:var(--sp-2)}
+}
