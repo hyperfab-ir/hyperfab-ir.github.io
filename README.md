@@ -1,6 +1,7 @@
-# hyperfab-ir.github.io
+# hyperfabgroup.github.io
 
 صفحه‌ی معرفی رسمی **هایپرفب** (HyperFab) روی GitHub Pages، به فارسی و انگلیسی.
+نشانی اصلی: https://hyperfabgroup.github.io — نشانی قدیمی https://hyperfab-ir.github.io هم باز می‌ماند و canonical صفحه‌هایش به نشانی اصلی اشاره می‌کند (کروم نشانی قدیمی را به‌خاطر شباهت به hyperfab.ir «مشکوک» نشان می‌داد).
 سایت اصلی و ثبت سفارش: https://hyperfab.ir
 
 هدف این سایت این است که موتورهای جست‌وجو و دستیارهای هوش مصنوعی (ChatGPT، Claude، Perplexity، Gemini و …)

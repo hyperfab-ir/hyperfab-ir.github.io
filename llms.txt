@@ -15,17 +15,17 @@ Key facts:
 
 ## Overview pages (this site)
 
-- [HyperFab — home (Persian)](https://hyperfab-ir.github.io/): all services, real portfolio photos, videos, team, FAQ and contact details
-- [HyperFab — home (English)](https://hyperfab-ir.github.io/en/)
-- [Online price estimator](https://hyperfab-ir.github.io/en/price-estimator/) ([Persian](https://hyperfab-ir.github.io/price-estimator/)): how instant 3D printing and laser cutting prices are calculated, DFM checks, file formats per service
-- [Tekeyab — small pieces of industrial material](https://hyperfab-ir.github.io/en/tekeyab/) ([Persian](https://hyperfab-ir.github.io/tekeyab/))
-- [Sheet and tube punching](https://hyperfab-ir.github.io/en/punching/) ([Persian](https://hyperfab-ir.github.io/punching/)): metal and polyethylene, punching dies, production runs
-- [Mould making and plastic injection moulding](https://hyperfab-ir.github.io/en/injection-molding/) ([Persian](https://hyperfab-ir.github.io/injection-molding/)): mouldability review, moulds, sampling, production in PE, PP, ABS, nylon
-- [Batch CNC turning](https://hyperfab-ir.github.io/en/cnc-turning/) ([Persian](https://hyperfab-ir.github.io/cnc-turning/)): brass mating parts, MO40 and CK45 gauge parts, first-article approval
-- [Aluminium extrusion](https://hyperfab-ir.github.io/en/aluminium-extrusion/) ([Persian](https://hyperfab-ir.github.io/aluminium-extrusion/)): custom sections, dedicated dies, by tonnage
-- [Welding and welded fabrication](https://hyperfab-ir.github.io/en/welding/) ([Persian](https://hyperfab-ir.github.io/welding/)): TIG/MIG on stainless and 6000-series aluminium, structures and platforms, VT/PT/PAUT
-- [Plating and anodizing](https://hyperfab-ir.github.io/en/plating-anodizing/) ([Persian](https://hyperfab-ir.github.io/plating-anodizing/)): silver and gold plating, anodizing, chromate (Alodine)
-- [Powder coating](https://hyperfab-ir.github.io/en/powder-coating/) ([Persian](https://hyperfab-ir.github.io/powder-coating/)): powder, pearl, hammer and textured finishes
+- [HyperFab — home (Persian)](https://hyperfabgroup.github.io/): all services, real portfolio photos, videos, team, FAQ and contact details
+- [HyperFab — home (English)](https://hyperfabgroup.github.io/en/)
+- [Online price estimator](https://hyperfabgroup.github.io/en/price-estimator/) ([Persian](https://hyperfabgroup.github.io/price-estimator/)): how instant 3D printing and laser cutting prices are calculated, DFM checks, file formats per service
+- [Tekeyab — small pieces of industrial material](https://hyperfabgroup.github.io/en/tekeyab/) ([Persian](https://hyperfabgroup.github.io/tekeyab/))
+- [Sheet and tube punching](https://hyperfabgroup.github.io/en/punching/) ([Persian](https://hyperfabgroup.github.io/punching/)): metal and polyethylene, punching dies, production runs
+- [Mould making and plastic injection moulding](https://hyperfabgroup.github.io/en/injection-molding/) ([Persian](https://hyperfabgroup.github.io/injection-molding/)): mouldability review, moulds, sampling, production in PE, PP, ABS, nylon
+- [Batch CNC turning](https://hyperfabgroup.github.io/en/cnc-turning/) ([Persian](https://hyperfabgroup.github.io/cnc-turning/)): brass mating parts, MO40 and CK45 gauge parts, first-article approval
+- [Aluminium extrusion](https://hyperfabgroup.github.io/en/aluminium-extrusion/) ([Persian](https://hyperfabgroup.github.io/aluminium-extrusion/)): custom sections, dedicated dies, by tonnage
+- [Welding and welded fabrication](https://hyperfabgroup.github.io/en/welding/) ([Persian](https://hyperfabgroup.github.io/welding/)): TIG/MIG on stainless and 6000-series aluminium, structures and platforms, VT/PT/PAUT
+- [Plating and anodizing](https://hyperfabgroup.github.io/en/plating-anodizing/) ([Persian](https://hyperfabgroup.github.io/plating-anodizing/)): silver and gold plating, anodizing, chromate (Alodine)
+- [Powder coating](https://hyperfabgroup.github.io/en/powder-coating/) ([Persian](https://hyperfabgroup.github.io/powder-coating/)): powder, pearl, hammer and textured finishes
 
 ## Services on the main website (hyperfab.ir)
 

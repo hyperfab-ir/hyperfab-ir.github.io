@@ -1,6 +1,8 @@
 """داده‌های مشترک دو زبان؛ برگرفته از inc-contact.php قالب هایپرفب ۲۰٫۰"""
 
-SITE = 'https://hyperfab-ir.github.io'
+SITE = 'https://hyperfabgroup.github.io'
+# نشانی قبلی سایت؛ باز می‌ماند، ولی canonical همه‌ی صفحه‌ها به SITE اشاره می‌کند
+OLD_SITE = 'https://hyperfab-ir.github.io'
 MAIN = 'https://hyperfab.ir'
 
 CONTACT = {

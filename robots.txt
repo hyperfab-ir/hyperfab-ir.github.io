@@ -1,4 +1,4 @@
-# hyperfab-ir.github.io — معرفی خدمات هایپرفب (سایت اصلی: https://hyperfab.ir)
+# hyperfabgroup.github.io — معرفی خدمات هایپرفب (سایت اصلی: https://hyperfab.ir)
 # همه‌ی خزنده‌ها، از جمله خزنده‌های جست‌وجو و دستیارهای هوش مصنوعی، خوش‌آمدند.
 
 User-agent: *
@@ -61,4 +61,4 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-Sitemap: https://hyperfab-ir.github.io/sitemap.xml
+Sitemap: https://hyperfabgroup.github.io/sitemap.xml

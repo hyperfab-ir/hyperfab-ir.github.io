@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-سازنده‌ی صفحه‌های ایستای hyperfab-ir.github.io
+سازنده‌ی صفحه‌های ایستای hyperfabgroup.github.io (و نسخه‌ی قدیمی hyperfab-ir.github.io)
 
 این سایت معرفی‌نامه‌ی هایپرفب برای موتورهای جست‌وجو و دستیارهای هوش مصنوعی است.
 سایت اصلی و ثبت سفارش در https://hyperfab.ir است و همه‌ی دکمه‌ها به آنجا می‌روند.
@@ -20,7 +20,7 @@ from html import escape
 sys.path.insert(0, os.path.dirname(__file__))
 import content_fa  # noqa: E402
 import content_en  # noqa: E402
-from common import SITE, MAIN, CONTACT  # noqa: E402
+from common import SITE, OLD_SITE, MAIN, CONTACT  # noqa: E402
 from images import IMAGE_CREDITS  # noqa: E402
 from media import WORKS, VIDEOS, video_url, video_embed  # noqa: E402
 
@@ -109,7 +109,7 @@ def org_schema(c):
              'telephone': CONTACT['mobile_intl'], 'email': CONTACT['email'],
              'availableLanguage': ['fa', 'en']},
         ],
-        'sameAs': [MAIN + '/', SITE + '/', CONTACT['instagram'], CONTACT['instagram_pro'],
+        'sameAs': [MAIN + '/', SITE + '/', OLD_SITE + '/', CONTACT['instagram'], CONTACT['instagram_pro'],
                    CONTACT['bale_channel_url'], CONTACT['bale_pro_url']],
         'knowsAbout': c['knows_about'],
         'hasOfferCatalog': {'@type': 'OfferCatalog', 'name': c['catalog_name'], 'itemListElement': [
