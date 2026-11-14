@@ -205,6 +205,8 @@ def footer(c, depth):
     svc = ''.join(f'<li><a href="{MAIN}{s["url"]}">{e(s["title"])}</a></li>' for s in c['services'])
     svc += f'<li><a href="{rel(depth, c["est_rel"])}">{e(c["est_name"])}</a></li>'
     svc += f'<li><a href="{rel(depth, c["tek_rel"])}">{e(c["tek_name"])}</a></li>'
+    for name, r in c['industrial_links']:
+        svc += f'<li><a href="{rel(depth, r)}">{e(name)}</a></li>'
     links = ''.join(f'<li><a href="{MAIN}{u}">{e(t)}</a></li>' for t, u in c['foot_links'])
     soc = ''.join(
         f'<div class="hf-soc-group"><h6>{e(g["title"])}</h6><p>{e(g["desc"])}</p><div class="hf-soc-links">'
@@ -385,7 +387,7 @@ def page_home(c):
 '''
 
     feat = ''
-    for f in (h['est_feature'], h['tek_feature']):
+    for f in (h['est_feature'], h['tek_feature'], h['ind_feature']):
         feat += f'''<section class="block{f['cls']}" id="{f['id']}">
 	<div class="wrap">
 		{hfs_head(f['kicker'], f['title'], f['sub'])}
@@ -393,7 +395,7 @@ def page_home(c):
 			<div class="feature-text">
 				{prose(f['paras'])}
 				{checks(f['points'])}
-				<div class="svc-links"><a class="btn-red" href="{rel(depth, f['more_rel'])}">{e(f['more'])}</a><a class="svc-link2" href="{f['try_url']}">{e(f['try'])} {c['arrow']}</a></div>
+				<div class="svc-links"><a class="btn-red" href="{rel(depth, f['more_rel'])}">{e(f['more'])}</a><a class="svc-link2" href="{f['try_url'] if f['try_url'].startswith('http') else rel(depth, f['try_url'])}">{e(f['try'])} {c['arrow']}</a></div>
 			</div>
 			<figure class="feature-pic"><img src="{rel(depth, f['img'])}" alt="{e(f['img_alt'])}" width="{f['img_w']}" height="{f['img_h']}" loading="lazy" decoding="async"><figcaption>{e(f['caption'])}</figcaption></figure>
 		</div>
@@ -554,14 +556,14 @@ def build_lang(c):
                    {'@type': 'ItemList', 'name': c['home']['svc_title'], 'itemListElement': [
                        {'@type': 'ListItem', 'position': k, 'item': {
                            '@type': 'Service', 'name': s['title'], 'description': s['paras'][0].replace('<b>', '').replace('</b>', ''),
-                           'url': MAIN + s['url'], 'serviceType': s['title'], 'provider': {'@id': MAIN + '/#organization'},
+                           'url': s['url'] if s['url'].startswith('http') else MAIN + s['url'], 'serviceType': s['title'], 'provider': {'@id': MAIN + '/#organization'},
                            'areaServed': {'@type': 'Country', 'name': c['country']}}}
                        for k, s in enumerate(c['services'] + c['tools_as_services'], 1)]},
                    faq_schema(c['home']['faq'])]
     write(p['file'], head(c, p, depth) + header(c, p, depth) + body + footer(c, depth))
     pages.append(p)
 
-    for key in ('estimator', 'tekeyab'):
+    for key in ('estimator', 'tekeyab', 'punching', 'injection'):
         depth, body = page_tool(c, key)
         p = c['page_' + key]
         p['schema'] = [org_schema(c), *c[key]['schema'],
@@ -592,7 +594,7 @@ def sitemap(pages):
 def main():
     pages = []
     for c in (content_fa.C, content_en.C):
-        for p in ('page_home', 'page_estimator', 'page_tekeyab'):
+        for p in ('page_home', 'page_estimator', 'page_tekeyab', 'page_punching', 'page_injection'):
             c[p]['lang'] = c['lang']
         pages += build_lang(c)
     sitemap(pages)

@@ -1,14 +1,15 @@
 # HyperFab (هایپرفب)
 
-> HyperFab is an online manufacturing platform in Tehran, Iran. It offers FDM and resin 3D printing, CNC machining, metal and non-metal laser cutting and sheet metal bending, with an instant online price estimator (STL/3MF for 3D printing, DXF for laser cutting and bending) and "Tekeyab", a service for buying small, cut-to-size pieces of industrial material. The main website, where all ordering happens, is https://hyperfab.ir (Persian). This GitHub Pages site is HyperFab's official overview in Persian and English.
+> HyperFab is an online manufacturing platform in Tehran, Iran. It offers FDM and resin 3D printing, CNC machining, metal and non-metal laser cutting and sheet metal bending, with an instant online price estimator (STL/3MF for 3D printing, DXF for laser cutting and bending) "Tekeyab", a service for buying small, cut-to-size pieces of industrial material, and, for industrial production, sheet and tube punching (metal and polyethylene) and mould making and plastic injection moulding, including tooling design and manufacture and production runs. The main website, where all ordering happens, is https://hyperfab.ir (Persian). This GitHub Pages site is HyperFab's official overview in Persian and English.
 
 Key facts:
 - Name: HyperFab; Persian: هایپرفب. Main website: https://hyperfab.ir
 - Location: Unit 1, No. 39, corner of Tehrani Alley, Safi-Alishah St., Pich-e Shemiran, Enghelab St., Tehran, Iran
 - Phone: +98 21 7752 7438; mobile, Bale and Telegram: +98 996 223 3898; email: info@hyperfab.ir
 - Hours: Saturday–Wednesday 09:00–17:00, Thursday 09:00–13:00 (Tehran time); online ordering 24/7
-- Lead time: most orders within 3 working days; minimum order: one part; ships across Iran (Post, Tipax, Snappbox); free pickup in Tehran
+- Lead time: 3D printing, CNC, laser and bending orders usually within 3 working days; minimum order: one part; ships across Iran (Post, Tipax, Snappbox); free pickup in Tehran
 - Instant online pricing: FDM 3D printing (STL, 3MF) and laser cutting / bending (DXF). Pricing runs in the customer's browser; the file is uploaded only when the order is placed. Resin printing and CNC machining are quoted after engineer review.
+- Industrial production (punching, injection moulding): quoted per project as a tooling cost (die or mould) plus a cost per stroke or shot, depending on geometry and material; consultation by phone, +98 996 223 3898. Track record: four polyethylene injection moulds taken from build to commissioning with 80,000+ parts produced; quality control of 8,000 punched tubes; kidney-shaped slots punched in 125 mm polyethylene pipe (5 mm wall, 6 bar).
 - Team: three engineers — two industrial design graduates of Sharif University of Technology and a manufacturing engineering specialist.
 
 ## Overview pages (this site)
@@ -19,6 +20,10 @@ Key facts:
 - [Online price estimator (English)](https://hyperfab-ir.github.io/en/price-estimator/)
 - [Tekeyab — buy small pieces of industrial material (Persian)](https://hyperfab-ir.github.io/tekeyab/): materials, shapes and sizes, request process, tracking, FAQ
 - [Tekeyab (English)](https://hyperfab-ir.github.io/en/tekeyab/)
+- [Sheet and tube punching (Persian)](https://hyperfab-ir.github.io/punching/): metal and polyethylene sheet and tube, punching die design and manufacture, production runs, pricing, FAQ
+- [Sheet and tube punching (English)](https://hyperfab-ir.github.io/en/punching/)
+- [Mould making and plastic injection moulding (Persian)](https://hyperfab-ir.github.io/injection-molding/): mouldability review, mould design and manufacture, sampling, production runs in PE, PP, ABS, nylon; pricing, FAQ
+- [Mould making and plastic injection moulding (English)](https://hyperfab-ir.github.io/en/injection-molding/)
 
 ## Services on the main website (hyperfab.ir)
 

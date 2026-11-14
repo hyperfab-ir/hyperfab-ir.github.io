@@ -122,7 +122,7 @@ C = {
          'links': [('Instagram', '@hyperfab.ir', CONTACT['instagram_pro']), ('Bale', CONTACT['bale_pro'], CONTACT['bale_pro_url'])]},
     ],
     'foot': {
-        'tag': 'Online manufacturing platform: FDM and resin 3D printing, CNC machining, laser cutting and bending — plus an instant online price estimator, the Tekeyab material service and a shop of printed models.',
+        'tag': 'Online manufacturing platform: FDM and resin 3D printing, CNC machining, laser cutting and bending, punching and injection moulding — plus an instant online price estimator, the Tekeyab material service and a shop of printed models.',
         'h_services': 'Services', 'h_access': 'On hyperfab.ir', 'h_info': 'HyperFab details',
         'addr_label': 'Order processing centre',
         'address': 'Unit 1, No. 39, corner of Tehrani Alley, Safi-Alishah St., Pich-e Shemiran, Enghelab St., Tehran, Iran',
@@ -137,9 +137,9 @@ C = {
     # ------------------------------------------------------------ home
     'page_home': {
         'key': 'home', 'file': 'en/index.html', 'path': '/en/', 'alt_path': '/', 'alt_rel': '', 'priority': '0.9',
-        'title': 'HyperFab | 3D Printing, CNC, Laser Cutting, Instant Quotes & Tekeyab — Tehran, Iran',
-        'desc': 'HyperFab (هایپرفب) is an online manufacturing service in Tehran, Iran: FDM and resin 3D printing, CNC machining, laser cutting and sheet bending with instant online pricing, plus Tekeyab for buying small pieces of industrial material. Ships across Iran.',
-        'keywords': 'HyperFab, هایپرفب, 3D printing Iran, 3D printing Tehran, online 3D printing quote, CNC machining Iran, laser cutting Tehran, sheet metal bending, instant manufacturing quote, Tekeyab, buy small metal pieces, rapid prototyping Iran',
+        'title': 'HyperFab | 3D Printing, CNC, Laser Cutting, Punching, Injection Moulding & Instant Quotes — Iran',
+        'desc': 'HyperFab (هایپرفب) is an online manufacturing service in Tehran, Iran: FDM and resin 3D printing, CNC machining, laser cutting and sheet bending with instant online pricing, Tekeyab for buying small pieces of industrial material, and sheet and tube punching and injection moulding for industrial production. Ships across Iran.',
+        'keywords': 'HyperFab, هایپرفب, 3D printing Iran, 3D printing Tehran, online 3D printing quote, CNC machining Iran, laser cutting Tehran, sheet metal bending, instant manufacturing quote, Tekeyab, buy small metal pieces, rapid prototyping Iran, tube punching Iran, injection molding Iran, mold making Iran',
     },
     'home': {
         'eyebrow': '3D printing, machining and on-demand parts — online',
@@ -153,7 +153,8 @@ C = {
         'sum_kicker': 'IN SHORT', 'sum_title': 'HyperFab at a glance',
         'sum_paras': [
             '<b>HyperFab</b> (Persian: هایپرفب) is an online manufacturing platform based in Tehran, Iran. HyperFab offers FDM and resin 3D printing, CNC machining, metal and non-metal laser cutting and sheet metal bending online. Customers upload a design file on <a href="https://hyperfab.ir/">hyperfab.ir</a>. For FDM 3D printing and laser cutting, the <a href="price-estimator/">online price estimator</a> gives a price instantly. For other processes, an engineer reviews the file and quotes a price.',
-            'HyperFab’s <a href="tekeyab/">Tekeyab</a> service sources small pieces of industrial material, quotes a price and cuts them to size if needed. The materials are sheet, bar, shaft, flat bar, tube and profile in aluminium, stainless steel, steel, copper, brass and engineering plastics. Most orders are ready within three working days and the minimum order is one part. Shipping across Iran is by Post, Tipax and Snappbox, and pickup in Tehran is free.',
+            'HyperFab’s <a href="tekeyab/">Tekeyab</a> service sources small pieces of industrial material, quotes a price and cuts them to size if needed. The materials are sheet, bar, shaft, flat bar, tube and profile in aluminium, stainless steel, steel, copper, brass and engineering plastics. 3D printing, CNC, laser and bending orders are usually ready within three working days, and the minimum order is one part. Shipping across Iran is by Post, Tipax and Snappbox, and pickup in Tehran is free.',
+            'For industrial production, HyperFab offers <a href="punching/">sheet and tube punching</a> (metal and polyethylene) and <a href="injection-molding/">mould making and plastic injection moulding</a>. Tooling design and manufacture, production runs and quality control through to delivery are part of these services. HyperFab’s engineering team comes from Iran’s top universities and has worked in industry for years. These projects are handled by phone: +98 996 223 3898.',
         ],
         'svc_title': 'Services and manufacturing processes',
         'svc_sub': 'Every order is placed online: upload your design and get a price within minutes.',
@@ -229,8 +230,10 @@ C = {
             ('How do I get an online 3D printing price?', 'On hyperfab.ir, upload an STL or 3MF file in the order section. HyperFab’s estimator analyses the model in your browser and instantly shows the FDM price based on material, infill, layer height, scale and quantity. Resin printing is quoted after file review.'),
             ('How do I get a laser cutting price?', 'Upload the part’s DXF file at 1:1 scale in millimetres on hyperfab.ir and choose sheet material and thickness. The estimator measures cut length, pierce count, bends and sheet weight from the drawing and gives a price instantly.'),
             ('What is HyperFab Tekeyab?', 'Tekeyab is a service for buying small pieces of industrial material. You describe the piece in a form: material, shape, dimensions, quantity, when you need it and how to deliver it. HyperFab sources it from suppliers, quotes a price, cuts it to size if needed and ships it. Shapes include sheet, bar, shaft, flat bar, tube and profile, and materials include aluminium, stainless steel, steel, copper, brass and engineering plastics.'),
-            ('How long does manufacturing take?', 'Most orders are ready within three working days. The exact time depends on the process, size and quantity. Shipping time is added to this and depends on the destination city and shipping method.'),
-            ('Is there a minimum order quantity?', 'No. Even a single part is made. For larger quantities, a stepped discount is applied to the unit price automatically.'),
+            ('How long does manufacturing take?', 'Most orders are ready within three working days. The exact time depends on the process, size and quantity. Shipping time is added to this and depends on the destination city and shipping method. Schedules for punching and injection moulding projects are agreed together with the quotation.'),
+            ('Is there a minimum order quantity?', 'No. Even a single part is made. For larger quantities, a stepped discount is applied to the unit price automatically. For punching and injection moulding, which need tooling, a suitable quantity is recommended after reviewing the project.'),
+            ('Does HyperFab do tube and sheet punching?', 'Yes. HyperFab punches sheet and tube in metal and polyethylene, including punching die design and manufacture and production runs. One example is kidney-shaped slots punched in polyethylene pipe with a 125 mm diameter, 5 mm wall and 6-bar pressure rating. Pricing is a die cost plus a cost per stroke, depending on the part’s geometry and material.'),
+            ('Does HyperFab do mould making and plastic injection moulding?', 'Yes. HyperFab designs and builds injection moulds and produces and delivers plastic parts in a range of materials, including polyethylene, polypropylene, ABS and nylon. HyperFab’s team has taken four polyethylene injection moulds from build to commissioning, and more than 80,000 parts have been produced with them. Consultation is by phone: +98 996 223 3898.'),
             ('Does HyperFab ship outside Tehran?', 'Yes, anywhere in Iran via Post, Tipax and Snappbox. Pickup in Tehran is free.'),
             ('I don’t have a design file. What can I do?', 'Send a hand sketch, a photo of a sample part or a description of what it does. Design and 3D modelling are offered at a separate cost, and production starts after you approve the design. The order form also has an “I’m not sure / I want advice” option.'),
             ('Where is HyperFab and how do I contact it?', 'HyperFab’s order processing centre is at Unit 1, No. 39, corner of Tehrani Alley, Safi-Alishah St., Pich-e Shemiran, Enghelab St., Tehran, Iran. Phone +98 21 7752 7438; mobile, Bale and Telegram +98 996 223 3898; email info@hyperfab.ir. Hours are Saturday to Wednesday 9:00–17:00 and Thursday 9:00–13:00, Tehran time. Online ordering is open 24 hours.'),
@@ -461,3 +464,6 @@ C = {
         }],
     },
 }
+
+import industrial_en  # noqa: E402
+industrial_en.apply(C)
