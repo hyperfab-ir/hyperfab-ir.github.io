@@ -794,7 +794,8 @@ def credits_table(c, depth):
     for f, m in sorted(IMAGE_CREDITS.items()):
         src = 'Vecteezy' if m.get('source') == 'vecteezy' else 'Wikimedia Commons'
         lic = (f'<a href="{m["licurl"]}" rel="license noopener">{e(m["lic"])}</a>' if m.get('licurl') else e(m.get('lic', '')))
-        rows += (f'<tr><td class="cr-thumb">{img(depth, "assets/img/" + f, m.get("file", f))}</td>'
+        thumb = m.get('poster') or 'assets/img/' + f
+        rows += (f'<tr><td class="cr-thumb">{img(depth, thumb, m.get("file", f))}</td>'
                  f'<td>{e(m["artist"])}</td><td>{lic}</td><td><a href="{m["page"]}" rel="noopener">{src}</a></td></tr>')
     return (f'{hfs_head("CREDITS", e(L["credits_title"]))}<div class="hfs-tbl-wrap hfs-scroll"><table class="hfs-tbl credits-tbl">'
             f'<thead><tr>{head_row}</tr></thead><tbody>{rows}</tbody></table></div>')

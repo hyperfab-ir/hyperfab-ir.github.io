@@ -16,9 +16,9 @@ MEDIA = {'bending': {'clip': None,
                 'photos': ['assets/img/stock/printing3d-1.jpg', 'assets/img/stock/printing3d-2.jpg', 'assets/img/stock/printing3d-3.jpg']},
  'punching': {'clip': None,
               'photos': ['assets/img/stock/punching-1.jpg', 'assets/img/stock/punching-2.jpg', 'assets/img/stock/punching-3.jpg']},
- 'turning': {'clip': None,
+ 'turning': {'clip': ('assets/media/turning-clip.mp4', 'assets/img/stock/turning-clip.jpg'),
              'photos': ['assets/img/stock/turning-1.jpg', 'assets/img/stock/turning-2.jpg', 'assets/img/stock/turning-3.jpg']},
- 'welding': {'clip': None,
+ 'welding': {'clip': ('assets/media/welding-clip.mp4', 'assets/img/stock/welding-clip.jpg'),
              'photos': ['assets/img/stock/welding-1.jpg', 'assets/img/stock/welding-2.jpg', 'assets/img/stock/welding-3.jpg']}}
 
 # صفحه‌ی هر خدمت ← موضوع(های) آرشیوی آن
