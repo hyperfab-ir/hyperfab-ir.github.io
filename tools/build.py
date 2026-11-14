@@ -28,6 +28,7 @@ from common import SITE, MAIN, CONTACT  # noqa: E402
 from images import IMAGE_CREDITS  # noqa: E402
 from media import WORKS, VIDEOS, video_url, video_embed  # noqa: E402
 from structure import HUBS, NAV_LABELS, INDUSTRIAL_KEYS  # noqa: E402
+from stock import MEDIA, PAGE_TOPICS  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TODAY = date.today().isoformat()
@@ -805,7 +806,8 @@ def page_hub(c, key, hb):
     body = hub_hero(c, depth, key, hb)
     if key == 'services':
         est = dict(h['est_feature'], cls='')
-        body += sec_online(c, depth, on_services=True, alt='') + sec_details(c, depth) + feature(c, depth, est, '../') \
+        body += sec_online(c, depth, on_services=True, alt='') + sec_details(c, depth) \
+            + stock_block(c, depth, 'services', hb['crumb']) + feature(c, depth, est, '../') \
             + sec_how(c) + home_cta(c)
     elif key == 'industrial':
         ind = dict(h['ind_feature'], cls=' section-alt', id='industrial')
@@ -845,6 +847,31 @@ def hub_schema(c, key, hb, p):
     if key == 'portfolio':
         nodes += video_schema(c)
     return nodes
+
+
+def stock_block(c, depth, page_key, title):
+    """کلیپ و عکس‌های آرشیوی یک صفحه، با زیرنویس منبع برای هر کدام؛ اگر چیزی نباشد خروجی ندارد."""
+    clips, photos = [], []
+    for t in PAGE_TOPICS.get(page_key, []):
+        m = MEDIA.get(t) or {}
+        if m.get('clip'):
+            clips.append(m['clip'])
+        photos += m.get('photos', [])
+    if not clips and not photos:
+        return ''
+    note = c['credit']['note']
+    out = ''
+    for mp4, poster in clips:
+        size = img_size(poster)
+        wh = f' width="{size[0]}" height="{size[1]}"' if size else ''
+        out += (f'<figure class="clip"><video autoplay muted loop playsinline preload="metadata" poster="{rel(depth, poster)}"{wh}>'
+                f'<source src="{rel(depth, mp4)}" type="video/mp4"></video>'
+                f'<figcaption>{credit(c, mp4, "inline-credit")}</figcaption></figure>')
+    out += '<div class="stock-grid">' + ''.join(
+        f'<figure>{img(depth, ph, title + " — " + note)}<figcaption>{credit(c, ph, "inline-credit")}</figcaption></figure>'
+        for ph in photos) + '</div>'
+    return (f'<section class="block section-alt" id="in-pictures"><div class="wrap">'
+            f'{hfs_head("IN PICTURES", e(title + c["in_pictures"]))}{out}</div></section>\n')
 
 
 def related_block(c, depth, path):
@@ -893,6 +920,7 @@ def page_tool(c, key):
                       f'<span><b>{e(v["title"])}</b>{e(v["desc"])}<em>{e(v["cta"])} {c['arrow']}</em></span></a>')
         sections += f'<section class="block{alt}"><div class="wrap">{inner}</div></section>\n'
     body = (svc_hero(c, depth, d['hero']) + answer_block(c, d) + sections
+            + stock_block(c, depth, key, d['hero']['crumb'])
             + related_block(c, depth, c['page_' + key]['path'])
             + faq_block(c, d['faq']) + cta_block(d['cta_h'], d['cta_p'], d['cta_btns']))
     return depth, body

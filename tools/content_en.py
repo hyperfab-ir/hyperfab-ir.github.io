@@ -509,6 +509,7 @@ C.update({
     'videos_title': 'HyperFab videos',
     'videos_sub': 'Behind the scenes, ordering guides and examples of HyperFab’s work on Aparat (in Persian).',
     'credit': {'note': 'Archive photo to illustrate the service', 'photo': 'Photo'},
+    'in_pictures': ' in pictures',
     'catalog_name': 'HyperFab services', 'related_title': 'More HyperFab services',
     'online_services': 'Online 3D printing, CNC, laser and bending',
 })

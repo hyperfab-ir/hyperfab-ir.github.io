@@ -185,3 +185,14 @@
 .credits-tbl td{vertical-align:middle}
 .credits-tbl .cr-thumb img{width:120px;height:80px;object-fit:cover;border-radius:var(--r-s)}
 @media(min-width:961px){.ind-grid .proc-card:last-child:nth-child(3n+1){grid-column:2}}
+
+/* «در تصویر»: کلیپ و عکس‌های آرشیوی هر خدمت */
+#in-pictures .clip{margin:0 0 var(--sp-5);max-width:960px;margin-inline:auto}
+#in-pictures .clip video{width:100%;height:auto;border-radius:var(--r-l);box-shadow:var(--sh-2);background:var(--navy)}
+#in-pictures .clip figcaption{text-align:center}
+.stock-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-4)}
+@media(max-width:960px){.stock-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.stock-grid{grid-template-columns:1fr}}
+.stock-grid figure{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden}
+.stock-grid img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.stock-grid figcaption{padding:var(--sp-2) var(--sp-3)}
