@@ -27,6 +27,7 @@ import content_en  # noqa: E402
 from common import SITE, MAIN, CONTACT  # noqa: E402
 from images import IMAGE_CREDITS  # noqa: E402
 from media import WORKS, VIDEOS, video_url, video_embed  # noqa: E402
+from structure import HUBS, NAV_LABELS, INDUSTRIAL_KEYS  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TODAY = date.today().isoformat()
@@ -268,18 +269,40 @@ def head(c, page, depth):
 '''
 
 
+def nav_items(c):
+    """منوی اصلی: (کلید، برچسب، مسیر نسبت به ریشه‌ی زبان، زیرمنو[(کلید، برچسب، مسیر)])"""
+    L = NAV_LABELS[c['lang']]
+    online = [(None, L['all_services'], 'services/')] + [(None, s['title'], 'services/#' + s['key']) for s in c['services']]
+    industrial = [(None, L['all_industrial'], 'industrial/')] + [
+        (k, c[k]['hero']['crumb'], c['page_' + k]['path'][len(c['home_path']):]) for k in INDUSTRIAL_KEYS]
+    tools = [('estimator', c['est_name'], 'price-estimator/'), ('tekeyab', c['tek_name'], 'tekeyab/')]
+    return [('home', L['home'], '', []), ('services', L['services'], 'services/', online),
+            ('industrial', L['industrial'], 'industrial/', industrial), ('tools', L['tools'], 'price-estimator/', tools),
+            ('portfolio', L['portfolio'], 'portfolio/', []), ('about', L['about'], 'about/', []),
+            ('contact', L['contact'], 'contact/', [])]
+
+
 def header(c, page, depth):
     home = rel(depth, c['home_rel']) or './'
-    # لنگرهای صفحه‌ی اصلی (#services) از صفحه‌های دیگر به صفحه‌ی اصلی برمی‌گردند
-    on_home = page['key'] == 'home'
+    L = NAV_LABELS[c['lang']]
 
     def href_of(h):
-        if h.startswith('#'):
-            return h if on_home else home + h
-        return rel(depth, c['home_rel'] + h)
-    nav = ''.join(
-        f'<li><a href="{href_of(href)}"{" aria-current=\"page\"" if key == page["key"] else ""}>{e(label)}</a></li>'
-        for key, label, href in c['nav'])
+        return (rel(depth, c['home_rel'] + h) or './') if h else home
+    cur = page['key']
+    cur_attr = ' aria-current="page"'
+    nav = ''
+    for key, label, h, kids in nav_items(c):
+        active = cur == key or any(k == cur for k, _, _ in kids)
+        a = f'<a href="{href_of(h)}"{cur_attr if cur == key else ""}>{e(label)}</a>'
+        if not kids:
+            nav += f'<li class="menu-item{" current-menu-item" if active else ""}">{a}</li>'
+            continue
+        sub = ''.join(f'<li class="menu-item{" current-menu-item" if k and k == cur else ""}"><a href="{href_of(kh)}"'
+                      f'{cur_attr if k and k == cur else ""}>{e(kl)}</a></li>' for k, kl, kh in kids)
+        nav += (f'<li class="menu-item menu-item-has-children{" current-menu-ancestor" if active else ""}">{a}'
+                f'<button class="hf-sub-toggle" type="button" aria-expanded="false" aria-label="{e(L["toggle_open"])}" '
+                f'data-open="{e(L["toggle_open"])}" data-close="{e(L["toggle_close"])}"></button>'
+                f'<ul class="sub-menu">{sub}</ul></li>')
     alt_href = rel(depth, page['alt_rel']) or './'
     return f'''<body>
 <a class="skip-link" href="#main">{e(c['skip'])}</a>
@@ -300,12 +323,13 @@ def header(c, page, depth):
 
 
 def footer(c, depth):
-    svc = ''.join(f'<li><a href="{MAIN}{s["url"]}">{e(s["title"])}</a></li>' for s in c['services'])
+    svc = ''.join(f'<li><a href="{rel(depth, c["home_rel"] + "services/")}#{s["key"]}">{e(s["title"])}</a></li>' for s in c['services'])
     svc += f'<li><a href="{rel(depth, c["est_rel"])}">{e(c["est_name"])}</a></li>'
     svc += f'<li><a href="{rel(depth, c["tek_rel"])}">{e(c["tek_name"])}</a></li>'
     for name, r in c['industrial_links']:
         svc += f'<li><a href="{rel(depth, r)}">{e(name)}</a></li>'
-    links = ''.join(f'<li><a href="{MAIN}{u}">{e(t)}</a></li>' for t, u in c['foot_links'])
+    links = ''.join(f'<li><a href="{rel(depth, c["home_rel"] + u)}">{e(t)}</a></li>' for t, u in NAV_LABELS[c['lang']]['site_pages'])
+    links += ''.join(f'<li><a href="{MAIN}{u}">{e(t)}</a></li>' for t, u in c['foot_links'])
     soc = ''.join(
         f'<div class="hf-soc-group"><h6>{e(g["title"])}</h6><p>{e(g["desc"])}</p><div class="hf-soc-links">'
         + ''.join(f'<a href="{u}" target="_blank" rel="noopener">{e(n)} <span dir="ltr">{e(h)}</span></a>' for n, h, u in g['links'])
@@ -373,7 +397,15 @@ def footer(c, depth):
 	if(!b||!n) return;
 	var close=function(){{ n.classList.remove('open'); b.classList.remove('on'); b.setAttribute('aria-expanded','false'); }};
 	b.addEventListener('click',function(ev){{ ev.stopPropagation(); var o=n.classList.toggle('open'); b.classList.toggle('on',o); b.setAttribute('aria-expanded',o?'true':'false'); }});
-	n.addEventListener('click',function(ev){{ if(ev.target.closest('a')) close(); }});
+	var sync=function(li){{ var t=li.querySelector('.hf-sub-toggle'); if(!t) return; var o=li.classList.contains('open');
+		t.setAttribute('aria-expanded',o?'true':'false'); t.setAttribute('aria-label',o?t.dataset.close:t.dataset.open); }};
+	n.addEventListener('click',function(ev){{
+		var t=ev.target.closest('.hf-sub-toggle');
+		if(t){{ ev.preventDefault(); ev.stopPropagation(); var li=t.closest('.menu-item-has-children'), was=li.classList.contains('open');
+			n.querySelectorAll('.menu-item-has-children.open').forEach(function(o){{ if(o!==li){{ o.classList.remove('open'); sync(o); }} }});
+			li.classList.toggle('open',!was); sync(li); return; }}
+		if(ev.target.closest('a')) close();
+	}});
 	document.addEventListener('click',function(ev){{ if(!n.contains(ev.target)) close(); }});
 	document.addEventListener('keydown',function(ev){{ if(ev.key==='Escape') close(); }});
 }})();
@@ -510,39 +542,75 @@ def prose(paras):
 
 
 # ---------------------------------------------------------------- pages
-def page_home(c):
-    depth = c['depth_home']
-    h = c['home']
-    cards = ''.join(
-        f'<div class="proc-card"><a class="proc-illo" href="#{s["key"]}" aria-label="{e(s["title"])}">'
+def relink(html, prefix):
+    """پیوندهای نسبی متن صفحه‌ی اصلی را برای صفحه‌ای که یک سطح پایین‌تر است اصلاح می‌کند."""
+    if not prefix:
+        return html
+    return re.sub(r'href="(?!https?:|#|mailto:|tel:|/|\.\./)', 'href="' + prefix, html)
+
+
+def online_cards(c, depth, on_services=False):
+    base = '' if on_services else rel(depth, c['home_rel'] + 'services/')
+    return ''.join(
+        f'<div class="proc-card"><a class="proc-illo" href="{base}#{s["key"]}" aria-label="{e(s["title"])}">'
         f'{img(depth, "assets/img/" + s["img"] + ".png", s["title"], picture=True)}</a>'
-        f'<h4><a href="#{s["key"]}">{e(s["title"])}</a></h4><p>{e(s["short"])}</p></div>'
+        f'<h4><a href="{base}#{s["key"]}">{e(s["title"])}</a></h4><p>{e(s["short"])}</p></div>'
         for s in c['services'])
 
-    details = ''
-    for k, s in enumerate(c['services']):
-        rows = ''.join(f'<div class="hfs-tech-row"><span class="k">{e(a)}</span><span class="v">{b}</span></div>' for a, b in s['specs'])
-        details += f'''<article class="svc-detail" id="{s['key']}">
-	<div class="svc-detail-pic">{img(depth, 'assets/img/' + s['img'] + '.png', s['title'], picture=True)}</div>
-	<div class="svc-detail-body">
-		<h3>{e(s['title'])}</h3>
-		{prose(s['paras'])}
-		<div class="svc-specs">{rows}</div>
-		<div class="svc-links"><a class="btn-red" href="{MAIN}{s['url']}">{e(c['svc_more'])}</a><a class="svc-link2" href="{MAIN}/order/?m={s['m']}">{e(c['svc_order'])} {c['arrow']}</a></div>
+
+def industrial_cards(c, depth):
+    """کارت تصویری هر خدمت صنعتی؛ تصویر همان سربرگ صفحه‌ی خدمت است (واقعی یا آرشیوی)."""
+    out = ''
+    for k in INDUSTRIAL_KEYS:
+        hero, page = c[k]['hero'], c['page_' + k]
+        href = rel(depth, page['path'].lstrip('/'))
+        out += (f'<div class="proc-card ind-card"><a class="proc-illo" href="{href}" aria-label="{e(hero["crumb"])}">'
+                f'{img(depth, hero["img"], hero.get("img_alt", hero["crumb"]), picture=True)}</a>'
+                f'<h4><a href="{href}">{e(hero["crumb"])}</a></h4><p>{e(page["desc"])}</p></div>')
+    return out
+
+
+def sec_online(c, depth, on_services=False, alt=' section-alt'):
+    h, L = c['home'], NAV_LABELS[c['lang']]
+    btn = '' if on_services else \
+        f'<a class="btn-shop" href="{rel(depth, c["home_rel"] + "services/")}">{e(L["all_services"])} {c["arrow"]}</a>'
+    return f'''<section class="block{alt}" id="services">
+	<div class="wrap">
+		<div class="shop-block">
+			<div class="shop-head"><div><div class="kicker">SERVICES</div><h2>{e(h['svc_title'])}</h2><p>{e(h['svc_sub'])}</p></div>{btn}</div>
+			<div class="proc-grid">{online_cards(c, depth, on_services)}</div>
+		</div>
 	</div>
-</article>
+</section>
 '''
 
-    feat = ''
-    for f in (h['est_feature'], h['tek_feature'], h['ind_feature']):
-        feat += f'''<section class="block{f['cls']}" id="{f['id']}">
+
+def sec_industrial(c, depth, on_hub=False, alt=''):
+    f, L = c['home']['ind_feature'], NAV_LABELS[c['lang']]
+    btn = '' if on_hub else \
+        f'<a class="btn-shop" href="{rel(depth, c["home_rel"] + "industrial/")}">{e(L["industrial_btn"])} {c["arrow"]}</a>'
+    return f'''<section class="block{alt}" id="industrial-services">
+	<div class="wrap">
+		<div class="shop-block">
+			<div class="shop-head"><div><div class="kicker">INDUSTRIAL PRODUCTION</div><h2>{e(f['title'])}</h2><p>{e(f['sub'])}</p></div>{btn}</div>
+			<div class="proc-grid ind-grid">{industrial_cards(c, depth)}</div>
+			<p class="archive-note"><a href="{rel(depth, c['home_rel'] + 'credits/')}">{e(c['credit']['note'])}</a></p>
+		</div>
+	</div>
+</section>
+'''
+
+
+def feature(c, depth, f, prefix=''):
+    try_href = f['try_url'] if f['try_url'].startswith('http') else rel(depth, f['try_url'])
+    return f'''<section class="block{f['cls']}" id="{f['id']}">
 	<div class="wrap">
 		{hfs_head(f['kicker'], f['title'], f['sub'])}
 		<div class="feature">
 			<div class="feature-text">
-				{prose(f['paras'])}
-				{checks(f['points'])}
-				<div class="svc-links"><a class="btn-red" href="{rel(depth, f['more_rel'])}">{e(f['more'])}</a><a class="svc-link2" href="{f['try_url'] if f['try_url'].startswith('http') else rel(depth, f['try_url'])}">{e(f['try'])} {c['arrow']}</a></div>
+				{relink(prose(f['paras']), prefix)}
+				{relink(checks(f['points']), prefix)}
+				<div class="svc-links"><a class="btn-red" href="{rel(depth, f['more_rel'])}">{e(f['more'])}</a><a class="svc-link2" href="{try_href}">{e(f['try'])} {c['arrow']}</a></div>
 			</div>
 			<figure class="feature-pic">{img(depth, f['img'], f['img_alt'])}<figcaption>{e(f['caption'])}{credit(c, f['img'], 'inline-credit')}</figcaption></figure>
 		</div>
@@ -550,10 +618,104 @@ def page_home(c):
 </section>
 '''
 
-    stats = ''.join(f'<div><b>{e(v)}</b><span>{e(t)}</span></div>' for v, t in h['team_stats'])
-    tag_svcs = '، '.join(f'<a href="#{s["key"]}">{e(s["title"])}</a>' for s in c['services']) if c['lang'] == 'fa' \
-        else ', '.join(f'<a href="#{s["key"]}">{e(s["title"])}</a>' for s in c['services'])
 
+def sec_details(c, depth, prefix='../'):
+    h = c['home']
+    details = ''
+    for s in c['services']:
+        rows = ''.join(f'<div class="hfs-tech-row"><span class="k">{e(a)}</span><span class="v">{b}</span></div>' for a, b in s['specs'])
+        details += f'''<article class="svc-detail" id="{s['key']}">
+	<div class="svc-detail-pic">{img(depth, 'assets/img/' + s['img'] + '.png', s['title'], picture=True)}</div>
+	<div class="svc-detail-body">
+		<h3>{e(s['title'])}</h3>
+		{relink(prose(s['paras']), prefix)}
+		<div class="svc-specs">{relink(rows, prefix)}</div>
+		<div class="svc-links"><a class="btn-red" href="{MAIN}{s['url']}">{e(c['svc_more'])}</a><a class="svc-link2" href="{MAIN}/order/?m={s['m']}">{e(c['svc_order'])} {c['arrow']}</a></div>
+	</div>
+</article>
+'''
+    return f'''<section class="block section-alt" id="service-details">
+	<div class="wrap">
+		{hfs_head('IN DETAIL', e(h['det_title']), e(h['det_sub']))}
+		<div class="svc-details">{details}</div>
+	</div>
+</section>
+'''
+
+
+def sec_simple(sid, alt, inner):
+    return f'<section class="block{alt}" id="{sid}"><div class="wrap">{inner}</div></section>\n'
+
+
+def sec_why(c, alt=''):
+    h = c['home']
+    return sec_simple('why', alt, hfs_head('WHY HYPERFAB', e(h['why_title'])) + why_cards(h['why']))
+
+
+def sec_how(c, alt=' section-alt'):
+    h = c['home']
+    return sec_simple('how', alt, hfs_head('HOW IT WORKS', e(h['how_title']), e(h['how_sub'])) + steps(h['how'], c['num']))
+
+
+def sec_works(c, depth, limit=None, alt=' section-alt'):
+    L = NAV_LABELS[c['lang']]
+    cards = works_block(c, depth)
+    if limit:
+        cards = ''.join(re.findall(r'<article class="work-card">.*?</article>', cards, re.S)[:limit])
+        cards += ''
+    btn = (f'<div class="center-cta"><a class="btn-red" href="{rel(depth, c["home_rel"] + "portfolio/")}">{e(L["works_btn"])}</a></div>'
+           if limit else '')
+    return sec_simple('works', alt, hfs_head('PORTFOLIO', e(c['works_title']), e(c['works_sub']))
+                      + f'<div class="works-grid">{cards}</div>' + btn)
+
+
+def sec_videos(c, depth, alt=''):
+    return sec_simple('videos', alt, hfs_head('VIDEOS', e(c['videos_title']), e(c['videos_sub']))
+                      + f'<div class="vid-grid">{videos_block(c, depth)}</div>')
+
+
+def sec_about(c, depth, prefix=''):
+    h = c['home']
+    stats = ''.join(f'<div><b>{e(v)}</b><span>{e(t)}</span></div>' for v, t in h['team_stats'])
+    return f'''<section class="block about" id="about">
+	<div class="wrap">
+		<div class="hf-panel about-panel">
+			<div class="sec-head"><div class="kicker">ABOUT</div><h2>{e(h['about_title'])}</h2></div>
+			<div class="about-body">{relink(prose(h['about_paras']), prefix)}</div>
+			<div class="hf-ab-stats team-stats">{stats}</div>
+			<div class="about-body">{relink(prose(h['about_paras2']), prefix)}<p class="about-sign">{e(h['about_sign'])}</p></div>
+		</div>
+	</div>
+</section>
+'''
+
+
+def sec_academy(c, alt=' section-alt'):
+    h = c['home']
+    return sec_simple('academy', alt, hfs_head('ACADEMY', e(h['acad_title']), e(h['acad_sub'])) + adv_cards(h['acad'])
+                      + f'<div class="center-cta"><a class="btn-red" href="{MAIN}/academy/">{e(h["acad_btn"])}</a></div>')
+
+
+def sec_contact(c, alt=''):
+    h = c['home']
+    items = ''.join(f'<div class="hf-contact-item"><span class="hf-contact-ico">{icon(i, 20)}</span><div><h4>{e(t)}</h4>{v}</div></div>'
+                    for i, t, v in h['contact_items'])
+    return sec_simple('contact', alt, hfs_head('CONTACT', e(h['contact_title']), e(h['contact_sub']))
+                      + f'<div class="hf-contact">{items}</div>')
+
+
+def home_cta(c):
+    h = c['home']
+    return cta_block(h['cta_h'], h['cta_p'], [('w', h['btn1'], MAIN + '/order/'), ('o', c['tek_cta'], MAIN + '/tekeyab/'),
+                                              ('o', c['bale_chat'], CONTACT['bale_admin_url'])])
+
+
+def page_home(c):
+    depth = c['depth_home']
+    h = c['home']
+    svc_base = rel(depth, c['home_rel'] + 'services/')
+    sep = '، ' if c['lang'] == 'fa' else ', '
+    tag_svcs = sep.join(f'<a href="{svc_base}#{s["key"]}">{e(s["title"])}</a>' for s in c['services'])
     body = f'''<section class="hero" id="home">
 	<div class="wrap">
 		<div class="hero-card">
@@ -581,86 +743,108 @@ def page_home(c):
 		</div>
 	</div>
 </section>
-
-<section class="block section-alt" id="services">
-	<div class="wrap">
-		<div class="shop-block">
-			<div class="shop-head"><div><div class="kicker">SERVICES</div><h2>{e(h['svc_title'])}</h2><p>{e(h['svc_sub'])}</p></div>
-				<a class="btn-shop" href="{MAIN}/services/">{e(h['svc_all'])} {c['arrow']}</a></div>
-			<div class="proc-grid">{cards}</div>
-		</div>
-	</div>
-</section>
-
-{feat}
-<section class="block section-alt" id="service-details">
-	<div class="wrap">
-		{hfs_head('IN DETAIL', e(h['det_title']), e(h['det_sub']))}
-		<div class="svc-details">{details}</div>
-	</div>
-</section>
-
-<section class="block" id="why">
-	<div class="wrap">
-		{hfs_head('WHY HYPERFAB', e(h['why_title']))}
-		{why_cards(h['why'])}
-	</div>
-</section>
-
-<section class="block section-alt" id="works">
-	<div class="wrap">
-		{hfs_head('PORTFOLIO', e(c['works_title']), e(c['works_sub']))}
-		<div class="works-grid">{works_block(c, depth)}</div>
-	</div>
-</section>
-
-<section class="block" id="videos">
-	<div class="wrap">
-		{hfs_head('VIDEOS', e(c['videos_title']), e(c['videos_sub']))}
-		<div class="vid-grid">{videos_block(c, depth)}</div>
-	</div>
-</section>
-
-<section class="block section-alt" id="how">
-	<div class="wrap">
-		{hfs_head('HOW IT WORKS', e(h['how_title']), e(h['how_sub']))}
-		{steps(h['how'], c['num'])}
-	</div>
-</section>
-
-<section class="block about" id="about">
-	<div class="wrap">
-		<div class="hf-panel about-panel">
-			<div class="sec-head"><div class="kicker">ABOUT</div><h2>{e(h['about_title'])}</h2></div>
-			<div class="about-body">{prose(h['about_paras'])}</div>
-			<div class="hf-ab-stats team-stats">{stats}</div>
-			<div class="about-body">{prose(h['about_paras2'])}<p class="about-sign">{e(h['about_sign'])}</p></div>
-		</div>
-	</div>
-</section>
-
-<section class="block section-alt" id="academy">
-	<div class="wrap">
-		{hfs_head('ACADEMY', e(h['acad_title']), e(h['acad_sub']))}
-		{adv_cards(h['acad'])}
-		<div class="center-cta"><a class="btn-red" href="{MAIN}/academy/">{e(h['acad_btn'])}</a></div>
-	</div>
-</section>
-
-{faq_block(c, h['faq'])}
-
-<section class="block" id="contact">
-	<div class="wrap">
-		{hfs_head('CONTACT', e(h['contact_title']), e(h['contact_sub']))}
-		<div class="hf-contact">
-			{''.join(f'<div class="hf-contact-item"><span class="hf-contact-ico">{icon(i, 20)}</span><div><h4>{e(t)}</h4>{v}</div></div>' for i, t, v in h['contact_items'])}
-		</div>
-	</div>
-</section>
-
-{cta_block(h['cta_h'], h['cta_p'], [('w', h['btn1'], MAIN + '/order/'), ('o', c['tek_cta'], MAIN + '/tekeyab/'), ('o', c['bale_chat'], CONTACT['bale_admin_url'])])}
 '''
+    est, tek = dict(h['est_feature'], cls=''), dict(h['tek_feature'], cls=' section-alt')
+    body += (sec_online(c, depth) + sec_industrial(c, depth) + feature(c, depth, est) + feature(c, depth, tek)
+             + sec_works(c, depth, limit=3, alt='') + faq_block(c, h['faq']) + home_cta(c))
     return depth, body
+
+
+# ---------------------------------------------------------------- hub pages
+def hub_page_meta(c, key, hb):
+    fa = c['lang'] == 'fa'
+    other_home_path, other_rel = ('/en/', 'en/') if fa else ('/', '')
+    return {'key': key, 'lang': c['lang'], 'file': c['home_rel'] + hb['slug'] + '/index.html',
+            'path': c['home_path'] + hb['slug'] + '/', 'alt_path': other_home_path + hb['slug'] + '/',
+            'alt_rel': other_rel + hb['slug'] + '/', 'priority': hb['priority'], 'title': hb['title'], 'desc': hb['desc'],
+            'keywords': c['page_home']['keywords'], 'og_img': hb['img'], 'og_alt': hb['crumb']}
+
+
+def hub_hero(c, depth, key, hb):
+    home = rel(depth, c['home_rel']) or './'
+    L = NAV_LABELS[c['lang']]
+    if key == 'industrial':
+        btns = [('btn-red', b[1], b[2]) if k == 0 else ('hfs-btn-ghost', b[1], b[2])
+                for k, b in enumerate(c['punching']['cta_btns'][:2])]
+    elif key == 'credits':
+        btns = []
+    else:
+        btns = [('btn-red', c['home']['btn1'], MAIN + '/order/'),
+                ('hfs-btn-ghost', L['contact'], rel(depth, c['home_rel'] + 'contact/'))]
+    b = ''.join(f'<a class="{cls}" href="{u}">{(icon("box", 18) + " ") if cls == "btn-red" else ""}{e(t)}</a>' for cls, t, u in btns)
+    return f'''<section class="hfs-hero">
+	<div class="wrap">
+		<div>
+			<div class="hfs-crumb"><a href="{home}">{e(c['brand_name'])}</a> ‹ {e(hb['crumb'])}</div>
+			<h1>{hb['h1']}</h1>
+			<p class="hfs-lead">{e(hb['lead'])}</p>
+			<div class="hfs-hero-btns">{b}</div>
+		</div>
+		<figure class="hfs-hero-art has-pic">{img(depth, hb['img'], hb['crumb'], eager=True, picture=True)}{credit(c, hb['img'], 'hero-credit')}</figure>
+	</div>
+</section>
+'''
+
+
+def credits_table(c, depth):
+    L = NAV_LABELS[c['lang']]
+    head_row = ''.join(f'<th>{e(x)}</th>' for x in L['credits_col'])
+    rows = ''
+    for f, m in sorted(IMAGE_CREDITS.items()):
+        src = 'Vecteezy' if m.get('source') == 'vecteezy' else 'Wikimedia Commons'
+        lic = (f'<a href="{m["licurl"]}" rel="license noopener">{e(m["lic"])}</a>' if m.get('licurl') else e(m.get('lic', '')))
+        rows += (f'<tr><td class="cr-thumb">{img(depth, "assets/img/" + f, m.get("file", f))}</td>'
+                 f'<td>{e(m["artist"])}</td><td>{lic}</td><td><a href="{m["page"]}" rel="noopener">{src}</a></td></tr>')
+    return (f'{hfs_head("CREDITS", e(L["credits_title"]))}<div class="hfs-tbl-wrap hfs-scroll"><table class="hfs-tbl credits-tbl">'
+            f'<thead><tr>{head_row}</tr></thead><tbody>{rows}</tbody></table></div>')
+
+
+def page_hub(c, key, hb):
+    depth = c['depth_home'] + 1
+    h = c['home']
+    body = hub_hero(c, depth, key, hb)
+    if key == 'services':
+        est = dict(h['est_feature'], cls='')
+        body += sec_online(c, depth, on_services=True, alt='') + sec_details(c, depth) + feature(c, depth, est, '../') \
+            + sec_how(c) + home_cta(c)
+    elif key == 'industrial':
+        ind = dict(h['ind_feature'], cls=' section-alt', id='industrial')
+        body += sec_industrial(c, depth, on_hub=True) + feature(c, depth, ind, '../') + sec_why(c) \
+            + cta_block(hb['cta_h'], hb['cta_p'], c['punching']['cta_btns'])
+    elif key == 'portfolio':
+        body += sec_works(c, depth, alt='') + sec_videos(c, depth, alt=' section-alt') + home_cta(c)
+    elif key == 'about':
+        body += sec_about(c, depth, '../') + sec_why(c, ' section-alt') + sec_how(c, '') + sec_academy(c) + home_cta(c)
+    elif key == 'contact':
+        body += sec_contact(c) + home_cta(c)
+    elif key == 'credits':
+        body += sec_simple('credits', '', credits_table(c, depth))
+    return depth, body
+
+
+def hub_schema(c, key, hb, p):
+    url = SITE + p['path']
+    website_id = SITE + c['home_path'] + '#website'
+    ptype = {'about': 'AboutPage', 'contact': 'ContactPage', 'credits': 'WebPage'}.get(key, 'CollectionPage')
+    nodes = [org_schema(c), website_node(c),
+             {'@type': ptype, '@id': url, 'url': url, 'name': p['title'], 'description': p['desc'], 'inLanguage': c['lang'],
+              'dateModified': TODAY, 'isPartOf': {'@id': website_id}, 'about': {'@id': ORG_ID},
+              'breadcrumb': {'@id': url + '#breadcrumb'}, 'primaryImageOfPage': image_object(hb['img'], hb['crumb'])},
+             {'@type': 'BreadcrumbList', '@id': url + '#breadcrumb', 'itemListElement': [
+                 {'@type': 'ListItem', 'position': 1, 'name': c['brand_name'], 'item': SITE + c['home_path']},
+                 {'@type': 'ListItem', 'position': 2, 'name': hb['crumb'], 'item': url}]}]
+    if key == 'services':
+        items = [(s['title'], url + '#' + s['key']) for s in c['services']]
+    elif key == 'industrial':
+        items = [(c[k]['hero']['crumb'], SITE + c['page_' + k]['path']) for k in INDUSTRIAL_KEYS]
+    else:
+        items = []
+    if items:
+        nodes.append({'@type': 'ItemList', 'name': hb['crumb'], 'itemListElement': [
+            {'@type': 'ListItem', 'position': k, 'name': n, 'url': u} for k, (n, u) in enumerate(items, 1)]})
+    if key == 'portfolio':
+        nodes += video_schema(c)
+    return nodes
 
 
 def related_block(c, depth, path):
@@ -668,7 +852,7 @@ def related_block(c, depth, path):
     links = [(c['est_name'], c['est_rel']), (c['tek_name'], c['tek_rel'])] + c['industrial_links']
     chips = ''.join(f'<a class="rel-chip" href="{rel(depth, r)}">{e(n)}</a>'
                     for n, r in links if '/' + r != path)
-    chips += f'<a class="rel-chip" href="{rel(depth, c["home_rel"]) or "./"}#services">{e(c["online_services"])}</a>'
+    chips += f'<a class="rel-chip" href="{rel(depth, c["home_rel"] + "services/")}">{e(c["online_services"])}</a>'
     return (f'<section class="block"><div class="wrap">{hfs_head("MORE SERVICES", e(c["related_title"]))}'
             f'<div class="rel-chips">{chips}</div></div></section>\n')
 
@@ -823,10 +1007,18 @@ def build_lang(c):
                            'url': s['url'] if s['url'].startswith('http') else MAIN + s['url'], 'serviceType': s['title'], 'provider': {'@id': ORG_ID},
                            'areaServed': {'@type': 'Country', 'name': c['country']}}}
                        for k, s in enumerate(c['services'] + c['tools_as_services'], 1)]},
-                   faq_schema(c['home']['faq']), *video_schema(c)]
+                   faq_schema(c['home']['faq'])]
     check_lengths(p)
     write(p['file'], head(c, p, depth) + header(c, p, depth) + body + footer(c, depth))
     pages.append(p)
+
+    for key, hb in HUBS[c['lang']].items():
+        p = hub_page_meta(c, key, hb)
+        depth, body = page_hub(c, key, hb)
+        p['schema'] = hub_schema(c, key, hb, p)
+        check_lengths(p)
+        write(p['file'], head(c, p, depth) + header(c, p, depth) + body + footer(c, depth))
+        pages.append(p)
 
     for key in c['tool_keys']:
         depth, body = page_tool(c, key)

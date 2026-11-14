@@ -552,6 +552,7 @@ def apply(C):
     f.update({'title': 'تولید صنعتی و تیراژی: از قالب و تراش تا جوش، آبکاری و رنگ',
               'sub': 'زنجیره‌ی کامل ساخت قطعات تیراژی، از ساخت قطعه تا پوشش نهایی، با یک گروه مهندسی مسئول.',
               'paras': FEATURE_PARAS, 'points': FEATURE_POINTS,
+              'img': 'assets/img/works/flange-steel-4.jpg', 'img_alt': 'تراشکاری قطعه‌ی استیل ۳۰۴ در کارگاه، یکی از پروژه‌های هایپرفب', 'caption': 'عکس واقعی: تراشکاری قطعه‌ی استیل ۳۰۴ در یکی از پروژه‌های هایپرفب.', 'img_w': 868, 'img_h': 1156,
               'more_rel': 'cnc-turning/', 'more': 'تراشکاری CNC تیراژی', 'try_url': 'welding/', 'try': 'جوشکاری و سازه‌های جوشی'})
     C['nav'][4] = ('industrial', 'تولید صنعتی', '#industrial')
     C['industrial_links'] += [('تراشکاری CNC تیراژی', 'cnc-turning/'), ('اکسترود پروفیل آلومینیوم', 'aluminium-extrusion/'), ('جوشکاری و سازه‌های جوشی', 'welding/'),

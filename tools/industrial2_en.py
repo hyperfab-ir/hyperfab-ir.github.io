@@ -530,6 +530,7 @@ def apply(C):
     f.update({'title': 'Industrial and batch production: from moulds and turning to welding, plating and coating',
               'sub': 'A complete chain for batch parts, from production to final finish, with one responsible engineering team.',
               'paras': FEATURE_PARAS, 'points': FEATURE_POINTS,
+              'img': 'assets/img/works/flange-steel-4.jpg', 'img_alt': 'Turning an AISI 304 stainless part on a HyperFab project', 'caption': 'Real photo: turning an AISI 304 stainless part on a HyperFab project.', 'img_w': 868, 'img_h': 1156,
               'more_rel': 'en/cnc-turning/', 'more': 'Batch CNC turning', 'try_url': 'en/welding/', 'try': 'Welding and welded fabrication'})
     C['industrial_links'] += [('Batch CNC turning', 'en/cnc-turning/'), ('Aluminium extrusion', 'en/aluminium-extrusion/'),
                               ('Welding and welded fabrication', 'en/welding/'), ('Plating and anodizing', 'en/plating-anodizing/'),

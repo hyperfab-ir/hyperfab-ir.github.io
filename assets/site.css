@@ -169,3 +169,19 @@
 	.answer{font-size:var(--fs-4);padding-inline-start:var(--sp-3)}
 	.key-facts>div{grid-template-columns:6.5em minmax(0,1fr);gap:var(--sp-2)}
 }
+
+/* کارت‌های تصویری خدمات صنعتی: همان قاب گرد خدمات آنلاین، با عکس واقعی/آرشیوی */
+#industrial-services .proc-card{overflow:visible}
+#industrial-services .proc-illo{height:auto}
+#industrial-services .proc-illo img{width:150px;height:150px;border-radius:50%;object-fit:cover;
+	border:5px solid var(--card);box-shadow:0 0 0 1px var(--line-2),var(--sh-2)}
+.ind-grid .proc-card p{min-height:0}
+@media(max-width:960px){#industrial-services .proc-illo img{width:112px;height:112px}}
+@media(max-width:400px){#industrial-services .proc-illo img{width:92px;height:92px}}
+.archive-note{margin:var(--sp-4) 0 0;font-size:var(--fs-1);color:var(--muted);text-align:center}
+.archive-note a{text-decoration:underline}
+
+/* جدول اعتبار تصاویر */
+.credits-tbl td{vertical-align:middle}
+.credits-tbl .cr-thumb img{width:120px;height:80px;object-fit:cover;border-radius:var(--r-s)}
+@media(min-width:961px){.ind-grid .proc-card:last-child:nth-child(3n+1){grid-column:2}}
