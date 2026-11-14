@@ -538,6 +538,13 @@ HOME_FAQ = [
 
 
 def apply(C):
+    # یک سؤال «کجاست؟» برای هر صفحه، مثل صفحه‌های پانچ و تزریق؛ نشانی از همان منبع پابرگ
+    addr = C['foot']['address']
+    for d in (WELDING, TURNING, EXTRUSION, PLATING, COATING):
+        name = d['hero']['crumb']
+        q = f'{name} هایپرفب کجاست؟'
+        if not any(f[0] == q for f in d['faq']):
+            d['faq'].append((q, f'هایپرفب در تهران است: {addr}. مشاوره و سفارش {name} تلفنی است: {TEL_FA}، و در پیام‌رسان بله: {CONTACT["bale_pro"]}.'))
     C.update({'welding': WELDING, 'turning': TURNING, 'plating': PLATING, 'coating': COATING, 'extrusion': EXTRUSION})
     C.update(PAGES)
     C['tool_keys'] = ['estimator', 'tekeyab', 'punching', 'injection', 'turning', 'extrusion', 'welding', 'plating', 'coating']
