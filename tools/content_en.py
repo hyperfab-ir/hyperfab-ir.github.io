@@ -23,7 +23,7 @@ SERVICES = [
         'title': 'Resin 3D Printing (SLA / DLP)',
         'short': 'SLA and DLP for small parts with fine detail and a smooth surface; ideal for precise prototypes and display models.',
         'paras': [
-            'Resin 3D printing (SLA / DLP) cures liquid resin layer by layer with ultraviolet light, giving far finer detail and a much smoother surface than FDM. HyperFab’s resin printer uses a 16K screen with roughly 14 × 19 micron horizontal resolution, and layer height is adjustable from 0.02 to 0.1 mm, so layer lines are almost invisible.',
+            'Resin 3D printing (SLA / DLP) cures liquid resin layer by layer with ultraviolet light, giving far finer detail and a much smoother surface than FDM. HyperFab’s resin printing runs at 16K resolution, roughly 14 × 19 microns horizontally, and layer height is adjustable from 0.02 to 0.1 mm, so layer lines are almost invisible.',
             'It is the first choice for small, precise parts: figures and miniatures, dental models, jewellery casting patterns, high-detail prototypes and display models. Three resins are available: standard resin for the highest detail, a tough engineering resin for parts that must take some impact, and a castable resin for investment-casting patterns. Resin print prices are based on resin volume and print time and are quoted after the file has been reviewed.',
         ],
         'specs': [('Resolution', '<span class="hfs-lat">16K</span> — <span class="hfs-lat">14 × 19 µm</span> XY'),
@@ -69,7 +69,7 @@ SERVICES = [
         'title': 'Sheet Metal Bending',
         'short': 'Sheet metal bending to your drawing; bend radius, sequence and feasibility are checked before production.',
         'paras': [
-            'HyperFab bends sheet metal on a press brake with V-dies (air bending) to an angular accuracy of ±1°. Bending can be ordered on its own or as the next step after laser cutting. When cutting and bending happen in one place, the part does not travel between workshops, lead time is shorter and bend positions line up more accurately with the holes.',
+            'HyperFab bends sheet metal on a press brake with V-dies (air bending) to an angular accuracy of ±1°. Bending can be ordered on its own or as the next step after laser cutting. When cutting and bending are done in one order, lead time is shorter and bend positions line up more accurately with the holes.',
             'Send the flat pattern as a DXF, a 3D STEP model or a dimensioned PDF; from a 3D model the correct flat pattern is calculated with the K-factor. Bend sequence, bend radius and tool clearance are checked before production so the sheet does not crack at the bend. Typical parts include L and U brackets, electrical cabinets and machine enclosures, chassis and frames for industrial equipment, cable trays and channels, façade panels and sheet-metal spare parts.',
         ],
         'specs': [('Method', 'Press brake, V-die air bending'), ('Angle accuracy', '<span class="hfs-lat">±1°</span>'),
@@ -214,7 +214,7 @@ C = {
         'team_stats': [('4', 'polyethylene injection moulds, from build supervision to commissioning'), ('80,000+', 'parts produced with those moulds'),
                        ('8,000', 'punched tubes in one industrial project, with quality-control responsibility'), ('55', '3D designs published by our design brand, Manabun Lab')],
         'about_paras2': [
-            'Our experience is not limited to small parts. From injection moulds and deep-drawing dies for aluminium sheet to process simulation in Abaqus and AutoForm, we know the road from design to industrial production first-hand. Every order is backed by our own workshop capacity and a network of selected partner workshops. You place the order with us once, and we decide which machine and which workshop will give the best result.',
+            'Our experience is not limited to small parts. From injection moulds and deep-drawing dies for aluminium sheet to process simulation in Abaqus and AutoForm, we know the road from design to industrial production first-hand. Every order is backed by one responsible engineering team. You place the order with us once, and we choose the best way to make it, get your approval on a sample before production and inspect quality before delivery.',
         ],
         'about_sign': 'Make it precise, get it fast — with HyperFab.',
         'acad_title': 'HyperFab Academy', 'acad_sub': 'Before you order, learn which process is right for your part (articles in Persian).',

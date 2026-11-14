@@ -114,7 +114,7 @@ TURNING = {
          'paras': [
              'CNC turning is the main way to make rotational parts: shafts, bushings, pins, nuts, nozzles, fittings and parts that must fit precisely into each other. In batch production, the real challenge is not making one good part. It is making hundreds or thousands of parts that are all exactly that good part.',
              'HyperFab has produced batch turned parts for a long time. They range from <b>brass parts with fit tolerances</b> that must mate with each other to <b>gauge parts</b> in <b>MO40</b> alloy steel and <b>CK45</b> steel. They were made to high precision and approved by the customers.',
-             'Behind that precision is engineering before turning. Before production starts, each part’s critical points are engineered and briefed to the machinist: fit surfaces, critical diameters, concentricity and surface finish at specific points. The machinist then knows exactly where the part needs which accuracy. HyperFab has the right turning capacity for every precision level and budget, and assigns each project to a machinist who can meet that part’s requirements — no more expensive than needed, never below requirements.',
+             'Behind that precision is engineering before turning. Before production starts, each part’s critical points are engineered and briefed to the machinist: fit surfaces, critical diameters, concentricity and surface finish at specific points. The machinist then knows exactly where the part needs which accuracy. For each part, the production method and precision level are chosen to match its requirements — no more expensive than needed, never below requirements.',
          ],
          'note': BATCH_NOTE,
          'gallery': [('assets/img/works/ptfe-part-1.jpg', 'Batch PTFE parts packed for delivery'),
@@ -136,7 +136,7 @@ TURNING = {
          'checks': [
              '<b>Drawing engineering before production:</b> identifying fit surfaces, critical dimensions and measurement datums.',
              '<b>Technical briefing for the machinist:</b> the accuracy of each critical point, the operation sequence and the measurement method.',
-             '<b>The right machinist for the project:</b> one who can meet the part’s requirements, at a price that matches the project’s importance.',
+             '<b>Precision matched to requirements:</b> the precision level and cost are set by each part’s importance — no more than needed, no less.',
              '<b>First-article approval</b> before the production run starts.',
              '<b>Dimensional inspection</b> during production and before delivery.',
              '<b>Suitable packing</b> so precision fit surfaces are not damaged.',
@@ -160,7 +160,7 @@ TURNING = {
         ('Do you turn MO40 and CK45 steel?', 'Yes. MO40 (equivalent to 42CrMo4) and CK45 (equivalent to C45) are among the materials HyperFab has used for gauge parts and batch industrial parts.'),
         ('Do you make precision mating brass parts?', 'Yes. Brass parts that must fit into each other with sliding or press fits are one of HyperFab’s core experiences. Critical diameters and concentricity are engineered before production and checked during it.'),
         ('Do you turn single parts?', 'This service is for production runs. For single parts and prototypes, see CNC machining on hyperfab.ir.'),
-        ('How is batch turning priced?', 'By material, part complexity, tolerances and quantity. Each project goes to a machinist who can meet its requirements, so the price matches the part’s importance and precision.'),
+        ('How is batch turning priced?', 'By material, part complexity, tolerances and quantity. The production method and precision level are matched to the part’s requirements, so the price matches its importance and precision.'),
         ('Can you plate or coat the parts too?', 'Yes. Silver and gold plating, anodizing and chromate, and powder coating are also available at HyperFab, and the finished part is delivered.'),
     ],
     'cta_h': 'Send the drawing of your batch part',
