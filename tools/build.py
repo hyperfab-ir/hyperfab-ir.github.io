@@ -844,8 +844,7 @@ def hub_schema(c, key, hb, p):
     if items:
         nodes.append({'@type': 'ItemList', 'name': hb['crumb'], 'itemListElement': [
             {'@type': 'ListItem', 'position': k, 'name': n, 'url': u} for k, (n, u) in enumerate(items, 1)]})
-    if key == 'portfolio':
-        nodes += video_schema(c)
+    # VideoObject عمداً نیست: ویدیوها روی آپارات‌اند و گوگل بدون uploadDate آن را خطا می‌گیرد
     return nodes
 
 
