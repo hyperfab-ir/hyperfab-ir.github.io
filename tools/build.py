@@ -492,7 +492,7 @@ def credit(c, img, cls):
     """زیرنویس منبع برای تصویرهای آرشیوی؛ تصویرهای خود هایپرفب زیرنویس ندارند.
     ویکی‌مدیا: نام عکاس + مجوز. Vecteezy: پیوند ذکر منبعی که مجوز رایگانش می‌خواهد
     («<موضوع> Stock photos by Vecteezy»)، به‌علاوه‌ی نام عکاس."""
-    m = IMAGE_CREDITS.get(os.path.basename(img))
+    m = IMAGE_CREDITS.get(img.split('assets/img/', 1)[-1]) or IMAGE_CREDITS.get(os.path.basename(img))
     if not m:
         return ''
     t = c['credit']
