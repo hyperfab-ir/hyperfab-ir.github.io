@@ -104,7 +104,7 @@ INJECTION = {
                   ('Materials:', 'polyethylene, polypropylene, ABS, nylon and other thermoplastics', False),
                   ('Pricing:', 'mould cost + cost per shot', False)],
         'buttons': [('btn-red', 'Call for a project consultation', TEL), ('hfs-btn-ghost', 'Chat on Bale', CONTACT['bale_pro_url'])],
-        'img': 'assets/img/about-hero.webp', 'img_alt': 'Quality control of production parts at HyperFab',
+        'img': 'assets/img/arc-injection.jpg', 'img_alt': 'Plastic injection moulding machine',
         'stats': [('layers', '4', 'moulds', 'from build supervision to commissioning'), ('stack', '80,000+', 'parts', 'produced with those moulds'),
                   ('file', 'DFM', 'review', 'of mouldability before tooling'), ('shield', '1', 'owner', 'from design to delivery')],
     },
@@ -114,7 +114,8 @@ INJECTION = {
              '<b>Injection moulding</b> is the main process for mass-producing plastic parts. Molten polymer is injected under pressure into a steel mould, cools, and the part comes out with repeatable dimensions. At high quantities, no other process matches its cost per part and consistency.',
              'An injection project succeeds or fails on the mould, and HyperFab starts there. First the part design is reviewed for mouldability. Then the mould is designed and built, and sampling and correction continue until the part is approved. Production runs follow, with quality control through to delivery.',
              'HyperFab’s team has taken four polyethylene injection moulds from build supervision to commissioning, and more than 80,000 parts have been produced with them. That experience shows, before the mould is built, where a design is likely to cause trouble in production.',
-         ]},
+         ],
+         'figure': {'img': 'assets/img/arc-injection-robot.jpg', 'alt': 'Injection moulding machine with a part-removal robot', 'caption': 'Production runs of plastic parts on an injection moulding machine with a part-removal robot.'}},
         {'kicker': 'DESIGN FOR MOULDING', 'title': 'Design review before the mould is built', 'id': 'dfm',
          'sub': 'Changing a design on paper costs almost nothing; changing a steel mould is expensive. These points are reviewed before tooling.',
          'checks': [

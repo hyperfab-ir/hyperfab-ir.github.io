@@ -472,3 +472,14 @@ C = {
 
 import industrial_fa  # noqa: E402
 industrial_fa.apply(C)
+
+C.update({
+    'real_label': 'عکس واقعی از کار هایپرفب',
+    'works_title': 'نمونه‌کارهای واقعی هایپرفب',
+    'works_sub': 'عکس‌های واقعی از قطعاتی که هایپرفب ساخته است؛ از تراشکاری CNC و قطعات تفلونی تیراژی تا مجموعه‌ی استیلی جوشکاری‌شده و تست‌شده.',
+    'videos_title': 'ویدیوهای هایپرفب',
+    'videos_sub': 'پشت صحنه‌ی ساخت، آموزش سفارش و نمونه‌ی کارهای هایپرفب در آپارات.',
+    'credit': {'note': 'تصویر آرشیوی برای روشن‌تر شدن خدمت', 'photo': 'عکس'},
+})
+import industrial2_fa  # noqa: E402
+industrial2_fa.apply(C)

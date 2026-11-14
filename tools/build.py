@@ -21,6 +21,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 import content_fa  # noqa: E402
 import content_en  # noqa: E402
 from common import SITE, MAIN, CONTACT  # noqa: E402
+from images import IMAGE_CREDITS  # noqa: E402
+from media import WORKS, VIDEOS, video_url, video_embed  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TODAY = date.today().isoformat()
@@ -350,11 +352,56 @@ def svc_hero(c, depth, d):
 			<ul class="hfs-ticks">{ticks}</ul>
 			<div class="hfs-hero-btns">{btns}</div>
 		</div>
-		<div class="hfs-hero-art has-pic"><picture><img src="{rel(depth, d['img'])}" alt="{e(d['img_alt'])}" width="600" height="420" loading="eager" fetchpriority="high" decoding="async"></picture></div>
+		<figure class="hfs-hero-art has-pic"><picture><img src="{rel(depth, d['img'])}" alt="{e(d['img_alt'])}" width="600" height="420" loading="eager" fetchpriority="high" decoding="async"></picture>{credit(c, d['img'], 'hero-credit')}</figure>
 	</div>
 	{stats_bar(d['stats'])}
 </section>
 '''
+
+
+def credit(c, img, cls):
+    """زیرنویس منبع برای تصویرهای آرشیوی (ویکی‌مدیا کامنز)؛ تصویرهای خود هایپرفب زیرنویس ندارند."""
+    m = IMAGE_CREDITS.get(os.path.basename(img))
+    if not m:
+        return ''
+    t = c['credit']
+    return (f'<small class="{cls}">{e(t["note"])} · {e(t["photo"])}: <a href="{m["page"]}" rel="noopener">{e(m["artist"])}</a>'
+            f', Wikimedia Commons · <a href="{m["licurl"]}" rel="license noopener">{e(m["lic"])}</a></small>')
+
+
+def gallery(c, depth, items):
+    """عکس‌های واقعی کار هایپرفب؛ برچسب «عکس واقعی» دارند تا از تصویرهای آرشیوی جدا باشند."""
+    return '<div class="gallery">' + ''.join(
+        f'<figure><img src="{rel(depth, img)}" alt="{e(cap)}" loading="lazy" decoding="async">'
+        f'<figcaption><span class="real-tag">{e(c["real_label"])}</span>{e(cap)}</figcaption></figure>'
+        for img, cap in items) + '</div>'
+
+
+def works_block(c, depth):
+    cards = ''
+    for w in WORKS:
+        t, meta, d = w[c['lang']]
+        cards += (f'<article class="work-card"><img src="{rel(depth, w["img"])}" alt="{e(t)}" loading="lazy" decoding="async">'
+                  f'<div><span class="real-tag">{e(c["real_label"])}</span><h3>{e(t)}</h3><p class="work-meta">{e(meta)}</p><p>{e(d)}</p></div></article>')
+    return cards
+
+
+def videos_block(c, depth):
+    out = ''
+    for code, cover, fa, en in VIDEOS:
+        t, d = fa if c['lang'] == 'fa' else en
+        out += (f'<a class="vid-card" href="{video_url(code)}" target="_blank" rel="noopener">'
+                f'<img src="{rel(depth, "assets/img/videos/" + cover + ".webp")}" alt="{e(t)}" width="360" height="640" loading="lazy" decoding="async">'
+                f'<span class="vid-play" aria-hidden="true"></span><b>{e(t)}</b><small>{e(d)}</small></a>')
+    return out
+
+
+def video_schema(c):
+    return [{'@type': 'VideoObject', 'name': (fa if c['lang'] == 'fa' else en)[0],
+             'description': (fa if c['lang'] == 'fa' else en)[1],
+             'thumbnailUrl': SITE + '/assets/img/videos/' + cover + '.webp', 'embedUrl': video_embed(code),
+             'url': video_url(code), 'inLanguage': 'fa', 'publisher': {'@id': MAIN + '/#organization'}}
+            for code, cover, fa, en in VIDEOS]
 
 
 def prose(paras):
@@ -366,7 +413,7 @@ def page_home(c):
     depth = c['depth_home']
     h = c['home']
     cards = ''.join(
-        f'<div class="proc-card"><a class="proc-illo" href="{MAIN}{s["url"]}" aria-label="{e(s["title"])}">'
+        f'<div class="proc-card"><a class="proc-illo" href="#{s["key"]}" aria-label="{e(s["title"])}">'
         f'<picture><source srcset="{rel(depth, "assets/img/" + s["img"] + ".webp")}" type="image/webp">'
         f'<img src="{rel(depth, "assets/img/" + s["img"] + ".png")}" alt="{e(s["title"])}" width="110" height="110" loading="lazy" decoding="async"></picture></a>'
         f'<h4><a href="#{s["key"]}">{e(s["title"])}</a></h4><p>{e(s["short"])}</p></div>'
@@ -397,7 +444,7 @@ def page_home(c):
 				{checks(f['points'])}
 				<div class="svc-links"><a class="btn-red" href="{rel(depth, f['more_rel'])}">{e(f['more'])}</a><a class="svc-link2" href="{f['try_url'] if f['try_url'].startswith('http') else rel(depth, f['try_url'])}">{e(f['try'])} {c['arrow']}</a></div>
 			</div>
-			<figure class="feature-pic"><img src="{rel(depth, f['img'])}" alt="{e(f['img_alt'])}" width="{f['img_w']}" height="{f['img_h']}" loading="lazy" decoding="async"><figcaption>{e(f['caption'])}</figcaption></figure>
+			<figure class="feature-pic"><img src="{rel(depth, f['img'])}" alt="{e(f['img_alt'])}" width="{f['img_w']}" height="{f['img_h']}" loading="lazy" decoding="async"><figcaption>{e(f['caption'])}{credit(c, f['img'], 'inline-credit')}</figcaption></figure>
 		</div>
 	</div>
 </section>
@@ -457,6 +504,20 @@ def page_home(c):
 	<div class="wrap">
 		{hfs_head('WHY HYPERFAB', e(h['why_title']))}
 		{why_cards(h['why'])}
+	</div>
+</section>
+
+<section class="block section-alt" id="works">
+	<div class="wrap">
+		{hfs_head('PORTFOLIO', e(c['works_title']), e(c['works_sub']))}
+		<div class="works-grid">{works_block(c, depth)}</div>
+	</div>
+</section>
+
+<section class="block" id="videos">
+	<div class="wrap">
+		{hfs_head('VIDEOS', e(c['videos_title']), e(c['videos_sub']))}
+		<div class="vid-grid">{videos_block(c, depth)}</div>
 	</div>
 </section>
 
@@ -525,6 +586,12 @@ def page_tool(c, key):
             inner += f'<div class="hfs-tbl-wrap hfs-scroll"><table class="hfs-tbl"><thead><tr>{head_row}</tr></thead><tbody>{rows}</tbody></table></div>'
         if s.get('note'):
             inner += f'<div class="hfs-note">{s["note"]}</div>'
+        if s.get('gallery'):
+            inner += gallery(c, depth, s['gallery'])
+        if s.get('figure'):
+            g = s['figure']
+            inner += (f'<figure class="sec-figure"><img src="{rel(depth, g["img"])}" alt="{e(g["alt"])}" loading="lazy" decoding="async">'
+                      f'<figcaption>{e(g["caption"])}{credit(c, g["img"], "inline-credit")}</figcaption></figure>')
         if s.get('video'):
             v = s['video']
             inner += (f'<a class="video-card" href="{v["url"]}" target="_blank" rel="noopener">'
@@ -559,11 +626,11 @@ def build_lang(c):
                            'url': s['url'] if s['url'].startswith('http') else MAIN + s['url'], 'serviceType': s['title'], 'provider': {'@id': MAIN + '/#organization'},
                            'areaServed': {'@type': 'Country', 'name': c['country']}}}
                        for k, s in enumerate(c['services'] + c['tools_as_services'], 1)]},
-                   faq_schema(c['home']['faq'])]
+                   faq_schema(c['home']['faq']), *video_schema(c)]
     write(p['file'], head(c, p, depth) + header(c, p, depth) + body + footer(c, depth))
     pages.append(p)
 
-    for key in ('estimator', 'tekeyab', 'punching', 'injection'):
+    for key in c['tool_keys']:
         depth, body = page_tool(c, key)
         p = c['page_' + key]
         p['schema'] = [org_schema(c), *c[key]['schema'],
@@ -594,7 +661,7 @@ def sitemap(pages):
 def main():
     pages = []
     for c in (content_fa.C, content_en.C):
-        for p in ('page_home', 'page_estimator', 'page_tekeyab', 'page_punching', 'page_injection'):
+        for p in ['page_home'] + ['page_' + k for k in c['tool_keys']]:
             c[p]['lang'] = c['lang']
         pages += build_lang(c)
     sitemap(pages)

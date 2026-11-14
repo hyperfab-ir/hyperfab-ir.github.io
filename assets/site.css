@@ -88,3 +88,49 @@
 [dir="ltr"] .taglist .tl-h{margin-inline-end:4px}
 [dir="ltr"] body{letter-spacing:0}
 [dir="ltr"] .hfs-faq summary,[dir="ltr"] .hfs-faq .ans{text-align:left}
+
+/* =====================================================================
+   رسانه‌ها: عکس‌های واقعی هایپرفب، ویدیوها و تصویرهای آرشیوی
+   عکس واقعی برچسب قرمز «عکس واقعی» دارد؛ تصویر آرشیوی زیرنویس منبع
+   کم‌رنگ دارد، تا این دو هیچ‌وقت با هم اشتباه نشوند.
+   ===================================================================== */
+.real-tag{display:inline-block;background:var(--accent-tint);color:var(--accent);font-size:var(--fs-0);font-weight:700;border-radius:var(--r-pill);padding:0 var(--sp-2);margin-inline-end:var(--sp-2);line-height:1.9}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--sp-4);margin-top:var(--sp-6)}
+.gallery figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;box-shadow:var(--sh-1)}
+.section-alt .gallery figure{background:var(--bg)}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gallery figcaption{padding:var(--sp-2) var(--sp-3) var(--sp-3);font-size:var(--fs-2);color:var(--ink-soft);line-height:1.9}
+
+.works-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-5)}
+@media(max-width:960px){.works-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.works-grid{grid-template-columns:1fr}}
+.work-card{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.work-card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.work-card>div{padding:var(--sp-4) var(--sp-5) var(--sp-5)}
+.work-card h3{font-size:var(--fs-5);margin:var(--sp-2) 0 var(--sp-1)}
+.work-meta{color:var(--steel);font-size:var(--fs-2);font-weight:600;margin:0 0 var(--sp-2)}
+.work-card p:not(.work-meta){color:var(--ink-soft);font-size:var(--fs-3);line-height:2;margin:0}
+
+.vid-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-4)}
+@media(max-width:960px){.vid-grid{grid-template-columns:repeat(2,1fr)}}
+.vid-card{position:relative;display:flex;flex-direction:column;gap:var(--sp-1);background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;padding-bottom:var(--sp-3);transition:.15s}
+.vid-card:hover{box-shadow:var(--sh-2)}
+.vid-card img{width:100%;aspect-ratio:9/12;object-fit:cover}
+.vid-card b,.vid-card small{padding-inline:var(--sp-3)}
+.vid-card b{font-size:var(--fs-3);margin-top:var(--sp-2)}
+.vid-card small{color:var(--ink-soft);font-size:var(--fs-1);line-height:1.8}
+.vid-play{position:absolute;top:var(--sp-3);inset-inline-start:var(--sp-3);width:40px;height:40px;border-radius:50%;background:var(--accent);box-shadow:var(--sh-2)}
+.vid-play::after{content:'';position:absolute;top:12px;left:15px;border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent var(--card)}
+
+.sec-figure{margin:var(--sp-6) 0 0;max-width:720px}
+.sec-figure img{width:100%;border-radius:var(--r-m);box-shadow:var(--sh-1)}
+.sec-figure figcaption{font-size:var(--fs-2);color:var(--ink-soft);margin-top:var(--sp-2);line-height:1.9}
+
+/* زیرنویس منبع تصویرهای آرشیوی */
+.hero-credit,.inline-credit{display:block;font-size:var(--fs-0);line-height:1.8;opacity:.75}
+.hero-credit{color:#a7afbe;margin-top:var(--sp-2);text-align:center}
+.hero-credit a,.inline-credit a{text-decoration:underline}
+.inline-credit{color:var(--muted);margin-top:var(--sp-1)}
+.hfs-hero-art{margin:0}
+.hfs-hero-art.has-pic{flex-direction:column}

@@ -209,7 +209,7 @@ C = {
         'about_title': 'We make parts. We have for years.',
         'about_paras': [
             'HyperFab grew out of the workshop, not out of a slide deck. We have designed parts, built moulds, stood over production lines and pulled defective parts with our own hands. So when we look at your file, we know where it will break.',
-            'HyperFab’s technical core is three engineers: two <b>industrial design graduates of Sharif University of Technology</b> and a <b>manufacturing engineering</b> specialist. Together they cover mechanical design, forming-process simulation, controls, and production and quality management.',
+            'HyperFab’s technical core is three engineers: two <b>Sharif University of Technology graduates in mechanical engineering (applied design)</b> and a <b>manufacturing engineering</b> specialist. Together they cover mechanical design, forming-process simulation, controls, and production and quality management.',
         ],
         'team_stats': [('4', 'polyethylene injection moulds, from build supervision to commissioning'), ('80,000+', 'parts produced with those moulds'),
                        ('8,000', 'punched tubes in one industrial project, with quality-control responsibility'), ('55', '3D designs published by our design brand, Manabun Lab')],
@@ -467,3 +467,14 @@ C = {
 
 import industrial_en  # noqa: E402
 industrial_en.apply(C)
+
+C.update({
+    'real_label': 'Real HyperFab photo',
+    'works_title': 'Real HyperFab work',
+    'works_sub': 'Real photos of parts HyperFab has made, from CNC turning and batch PTFE parts to a welded and tested stainless steel assembly.',
+    'videos_title': 'HyperFab videos',
+    'videos_sub': 'Behind the scenes, ordering guides and examples of HyperFab’s work on Aparat (in Persian).',
+    'credit': {'note': 'Archive photo to illustrate the service', 'photo': 'Photo'},
+})
+import industrial2_en  # noqa: E402
+industrial2_en.apply(C)
