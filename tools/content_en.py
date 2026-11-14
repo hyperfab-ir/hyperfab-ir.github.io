@@ -137,7 +137,7 @@ C = {
     # ------------------------------------------------------------ home
     'page_home': {
         'key': 'home', 'file': 'en/index.html', 'path': '/en/', 'alt_path': '/', 'alt_rel': '', 'priority': '0.9',
-        'title': 'HyperFab | 3D Printing, CNC, Laser Cutting, Punching, Injection Moulding & Instant Quotes — Iran',
+        'title': 'HyperFab | Online Manufacturing & Industrial Production in Tehran, Iran',
         'desc': 'HyperFab (هایپرفب) is an online manufacturing service in Tehran, Iran: FDM and resin 3D printing, CNC machining, laser cutting and sheet bending with instant online pricing, Tekeyab for buying small pieces of industrial material, and sheet and tube punching and injection moulding for industrial production. Ships across Iran.',
         'keywords': 'HyperFab, هایپرفب, 3D printing Iran, 3D printing Tehran, online 3D printing quote, CNC machining Iran, laser cutting Tehran, sheet metal bending, instant manufacturing quote, Tekeyab, buy small metal pieces, rapid prototyping Iran, tube punching Iran, injection molding Iran, mold making Iran',
     },
@@ -333,6 +333,8 @@ C = {
                  ('Not sure / advice', 'Any format, even a photo and description', 'After talking to an engineer'),
              ]},
             {'kicker': 'HOW IT WORKS', 'title': 'From file to order in four steps', 'id': 'steps',
+             'video': {'url': 'https://www.aparat.com/v/kxxl13o', 'img': 'assets/img/videos/print-price.webp', 'alt': 'Time is price video on Aparat',
+                       'title': 'Video: Time is price (Persian)', 'desc': 'Why print time sets the price of a 3D print.', 'cta': 'Watch on Aparat'},
              'steps': [
                  ('Upload the file', 'On hyperfab.ir choose the process and upload an STL, 3MF or DXF file; the process is guessed from the file extension.'),
                  ('Choose the specs', 'Set material, colour, sheet thickness, layer height, infill, scale and quantity; the price updates with every change.'),
@@ -475,6 +477,8 @@ C.update({
     'videos_title': 'HyperFab videos',
     'videos_sub': 'Behind the scenes, ordering guides and examples of HyperFab’s work on Aparat (in Persian).',
     'credit': {'note': 'Archive photo to illustrate the service', 'photo': 'Photo'},
+    'catalog_name': 'HyperFab services', 'related_title': 'More HyperFab services',
+    'online_services': 'Online 3D printing, CNC, laser and bending',
 })
 import industrial2_en  # noqa: E402
 industrial2_en.apply(C)

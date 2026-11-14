@@ -134,3 +134,9 @@
 .inline-credit{color:var(--muted);margin-top:var(--sp-1)}
 .hfs-hero-art{margin:0}
 .hfs-hero-art.has-pic{flex-direction:column}
+
+/* ردیف «خدمات دیگر هایپرفب» پایین هر صفحه‌ی خدمت */
+.rel-chips{display:flex;flex-wrap:wrap;gap:var(--sp-3)}
+.rel-chip{background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-pill);padding:var(--sp-2) var(--sp-4);font-size:var(--fs-3);font-weight:600;color:var(--ink);transition:.15s}
+.rel-chip:hover{border-color:var(--accent);color:var(--accent);box-shadow:var(--sh-1)}
+.hfs-steps + .video-card{margin-top:var(--sp-6)}

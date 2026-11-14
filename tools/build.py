@@ -112,6 +112,10 @@ def org_schema(c):
         'sameAs': [MAIN + '/', SITE + '/', CONTACT['instagram'], CONTACT['instagram_pro'],
                    CONTACT['bale_channel_url'], CONTACT['bale_pro_url']],
         'knowsAbout': c['knows_about'],
+        'hasOfferCatalog': {'@type': 'OfferCatalog', 'name': c['catalog_name'], 'itemListElement': [
+            {'@type': 'Offer', 'itemOffered': {'@type': 'Service', 'name': s['title'],
+                                               'url': s['url'] if s['url'].startswith('http') else MAIN + s['url']}}
+            for s in c['services'] + c['tools_as_services']]},
     }
 
 
@@ -563,6 +567,16 @@ def page_home(c):
     return depth, body
 
 
+def related_block(c, depth, path):
+    """پیوند به همه‌ی صفحه‌های خدمت دیگر؛ هم برای کاربر و هم برای خزنده‌ها."""
+    links = [(c['est_name'], c['est_rel']), (c['tek_name'], c['tek_rel'])] + c['industrial_links']
+    chips = ''.join(f'<a class="rel-chip" href="{rel(depth, r)}">{e(n)}</a>'
+                    for n, r in links if '/' + r != path)
+    chips += f'<a class="rel-chip" href="{rel(depth, c["home_rel"]) or "./"}#services">{e(c["online_services"])}</a>'
+    return (f'<section class="block"><div class="wrap">{hfs_head("MORE SERVICES", e(c["related_title"]))}'
+            f'<div class="rel-chips">{chips}</div></div></section>\n')
+
+
 def page_tool(c, key):
     d = c[key]
     depth = d['depth']
@@ -598,7 +612,8 @@ def page_tool(c, key):
                       f'<img src="{rel(depth, v["img"])}" alt="{e(v["alt"])}" width="360" height="640" loading="lazy" decoding="async">'
                       f'<span><b>{e(v["title"])}</b>{e(v["desc"])}<em>{e(v["cta"])} {c['arrow']}</em></span></a>')
         sections += f'<section class="block{alt}"><div class="wrap">{inner}</div></section>\n'
-    body = svc_hero(c, depth, d['hero']) + sections + faq_block(c, d['faq']) + cta_block(d['cta_h'], d['cta_p'], d['cta_btns'])
+    body = (svc_hero(c, depth, d['hero']) + sections + related_block(c, depth, c['page_' + key]['path'])
+            + faq_block(c, d['faq']) + cta_block(d['cta_h'], d['cta_p'], d['cta_btns']))
     return depth, body
 
 
