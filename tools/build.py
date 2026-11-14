@@ -364,11 +364,16 @@ def svc_hero(c, depth, d):
 
 
 def credit(c, img, cls):
-    """زیرنویس منبع برای تصویرهای آرشیوی (ویکی‌مدیا کامنز)؛ تصویرهای خود هایپرفب زیرنویس ندارند."""
+    """زیرنویس منبع برای تصویرهای آرشیوی؛ تصویرهای خود هایپرفب زیرنویس ندارند.
+    ویکی‌مدیا: نام عکاس + مجوز. Vecteezy: پیوند ذکر منبعی که مجوز رایگانش می‌خواهد
+    («<موضوع> Stock photos by Vecteezy»)، به‌علاوه‌ی نام عکاس."""
     m = IMAGE_CREDITS.get(os.path.basename(img))
     if not m:
         return ''
     t = c['credit']
+    if m.get('source') == 'vecteezy':
+        return (f'<small class="{cls}">{e(t["note"])} · {e(t["photo"])}: {e(m["artist"])} · '
+                f'<a href="{m["attr_url"]}" rel="noopener">{e(m["attr_text"])}</a></small>')
     return (f'<small class="{cls}">{e(t["note"])} · {e(t["photo"])}: <a href="{m["page"]}" rel="noopener">{e(m["artist"])}</a>'
             f', Wikimedia Commons · <a href="{m["licurl"]}" rel="license noopener">{e(m["lic"])}</a></small>')
 
