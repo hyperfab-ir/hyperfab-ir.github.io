@@ -52,7 +52,7 @@ HUBS = {
             'lead': 'برای سفارش آنلاین به hyperfab.ir بروید. برای پروژه‌های صنعتی، مشاوره و هر سؤالی پیش از سفارش، تلفنی یا در پیام‌رسان بله با هایپرفب در تماس باشید.',
         },
         'credits': {
-            'slug': 'credits', 'priority': '0.3', 'img': 'assets/img/arc-tig-stainless.jpg',
+            'slug': 'credits', 'priority': '0.3', 'img': 'assets/img/vz-tig-welding.jpg',
             'title': 'اعتبار تصاویر | هایپرفب',
             'desc': 'منبع، عکاس و مجوز تصاویر آرشیوی سایت هایپرفب که برای روشن‌تر شدن خدمات از ویکی‌مدیا کامنز آمده‌اند.',
             'crumb': 'اعتبار تصاویر',
@@ -104,7 +104,7 @@ HUBS = {
             'lead': 'Order online at hyperfab.ir. For industrial projects, advice and any question before ordering, contact HyperFab by phone or on the Bale messenger.',
         },
         'credits': {
-            'slug': 'credits', 'priority': '0.2', 'img': 'assets/img/arc-tig-stainless.jpg',
+            'slug': 'credits', 'priority': '0.2', 'img': 'assets/img/vz-tig-welding.jpg',
             'title': 'Image Credits | HyperFab',
             'desc': 'Source, photographer and licence of the archive images on the HyperFab site, used from Wikimedia Commons to illustrate the services.',
             'crumb': 'Image credits',

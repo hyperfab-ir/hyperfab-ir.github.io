@@ -34,7 +34,7 @@ PUNCHING = {
         'ticks': [('Punching:', 'sheet and tube', False), ('Materials:', 'metals and polymers, including polyethylene', False),
                   ('Pricing:', 'die cost + cost per stroke, by geometry and material', False)],
         'buttons': [('btn-red', 'Call for a project consultation', TEL), ('hfs-btn-ghost', 'Chat on Bale', CONTACT['bale_pro_url'])],
-        'img': 'assets/img/mat-sheet-metal.webp', 'img_alt': 'Punched metal sheet with a repeating hole pattern',
+        'img': 'assets/img/vz-perforated-plate.jpg', 'img_alt': 'Punched metal sheet with a repeating hole pattern',
         'stats': [('target', '8,000', 'tubes', 'punched in one industrial project'), ('ruler', '125', 'mm', 'polyethylene pipe punched'),
                   ('layers', '2', 'stages', 'die making and production'), ('shield', '1', 'owner', 'from design to delivery')],
     },

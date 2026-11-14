@@ -68,7 +68,7 @@ WELDING = {
              ('shield', 'Medical and marine industries', 'Many units built for medical equipment and marine applications, meeting those industries’ cleanliness and corrosion requirements.'),
              ('search', 'Weld testing', 'Visual testing (VT), liquid penetrant (PT), phased-array ultrasonics (PAUT) and other tests on request.'),
          ],
-         'figure': {'img': IMG['tig'], 'alt': 'TIG welding on a stainless steel vessel', 'caption': 'TIG welding on stainless steel.'}},
+         'figure': {'img': IMG['tig'], 'alt': 'TIG welding of a stainless steel pipe', 'caption': 'TIG welding on stainless steel pipe.'}},
         {'kicker': 'YOUR DESIGN', 'title': 'Does HyperFab design the welded structure?', 'id': 'design',
          'paras': [
              'No. For welded structures, the structural design is the client’s, and HyperFab fabricates to your approved drawings. Before work starts, the drawings are reviewed for manufacturability: welding sequence, joint access, distortion control and tolerances that can realistically be held. Anything worth flagging is discussed with you before fabrication.',
@@ -179,7 +179,8 @@ TURNING = {
              '<b>First-article approval</b> before the production run starts.',
              '<b>Dimensional inspection</b> during production and before delivery.',
              '<b>Suitable packing</b> so precision fit surfaces are not damaged.',
-         ]},
+         ],
+         'figure': {'img': 'assets/img/vz-cnc-lathe.jpg', 'alt': 'Steel workpieces in the chucks of CNC lathes', 'caption': 'CNC turning of steel workpieces.'}},
         {'kicker': 'MORE THAN TURNING', 'title': 'Can turned parts be plated, coated or welded?', 'id': 'after',
          'paras': [
              'Yes. A turned part usually needs a finish or assembly too. At HyperFab you can include <a href="../plating-anodizing/">silver and gold plating, anodizing and chromate</a>, <a href="../powder-coating/">powder coating</a> and <a href="../welding/">welding</a> in the same project, and receive the finished, ready-to-use part.',
@@ -330,7 +331,7 @@ PLATING = {
         'ticks': [('Plating:', 'silver and gold on brass and other metals', False), ('Aluminium:', 'anodizing and chromate (Alodine)', False),
                   ('For:', 'production runs', False)],
         'buttons': hero_btns(),
-        'img': IMG['plating'], 'img_alt': 'Gold-plated parts',
+        'img': IMG['plating'], 'img_alt': 'Machined aluminium parts with black and silver anodizing',
         'stats': [('sparkle', 'Ag', 'silver', 'on brass and other metals'), ('coin', 'Au', 'gold', 'on brass and other metals'),
                   ('layers', 'Al', 'anodizing', 'on aluminium'), ('shield', 'Alodine', 'chromate', 'conversion coating')],
     },
@@ -352,7 +353,7 @@ PLATING = {
              ('cube', 'On brass and other metals', 'Plating on brass and other metals, from turned parts to castings and sheet parts.'),
              ('stack', 'Consistent across the run', 'The same preparation and checks for every part in a batch, so colour and appearance match from first part to last.'),
          ],
-         'figure': {'img': IMG['anodizing'], 'alt': 'Colour-anodized aluminium parts', 'caption': 'Colour anodizing on aluminium parts.'}},
+         'figure': {'img': IMG['anodizing'], 'alt': 'Gold-plated connectors', 'caption': 'Gold plating on connectors.'}},
         {'kicker': 'COMPARE', 'title': 'Silver, gold, anodizing or chromate: which finish suits your part?', 'id': 'compare',
          'sub': 'Silver for the highest conductivity, gold for oxidation resistance and stable contact resistance, anodizing for a hard, corrosion- and wear-resistant layer on aluminium, and chromate for a conductive, paintable surface on aluminium.',
          'table': [
