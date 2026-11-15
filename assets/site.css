@@ -196,3 +196,5 @@
 .stock-grid figure{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden}
 .stock-grid img{width:100%;aspect-ratio:3/2;object-fit:cover}
 .stock-grid figcaption{padding:var(--sp-2) var(--sp-3)}
+#in-pictures .clip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--sp-4);margin-bottom:var(--sp-5)}
+#in-pictures .clip-grid .clip{margin:0;max-width:none}

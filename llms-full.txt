@@ -1,6 +1,6 @@
 # HyperFab (هایپرفب) — full site content
 
-> Full text of every page of https://hyperfabgroup.github.io/ in English and Persian, generated from the site sources on 2026-11-14. English pages come first, then Persian. Short index: https://hyperfabgroup.github.io/llms.txt. Main website and online ordering: https://hyperfab.ir/
+> Full text of every page of https://hyperfabgroup.github.io/ in English and Persian, generated from the site sources on 2026-11-15. English pages come first, then Persian. Short index: https://hyperfabgroup.github.io/llms.txt. Main website and online ordering: https://hyperfab.ir/
 
 ---
 

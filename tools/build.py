@@ -867,6 +867,8 @@ def stock_block(c, depth, page_key, title):
         out += (f'<figure class="clip"><video autoplay muted loop playsinline preload="metadata" poster="{rel(depth, poster)}"{wh}>'
                 f'<source src="{rel(depth, mp4)}" type="video/mp4"></video>'
                 f'<figcaption>{credit(c, mp4, "inline-credit")}</figcaption></figure>')
+    if len(clips) > 1:
+        out = f'<div class="clip-grid">{out}</div>'
     out += '<div class="stock-grid">' + ''.join(
         f'<figure>{img(depth, ph, title + " — " + note)}<figcaption>{credit(c, ph, "inline-credit")}</figcaption></figure>'
         for ph in photos) + '</div>'
